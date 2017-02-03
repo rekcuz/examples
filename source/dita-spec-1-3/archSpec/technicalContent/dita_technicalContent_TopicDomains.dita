@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="TopicDomains_TechnicalContent" xml:lang="en-us"> 
+  <title>Topic domains: Technical content</title> 
+  <shortdesc>A DITA domain defines a set of elements associated with a
+	 particular subject area or authoring requirement. DITA incorporates several
+	 domains into the Technical Content specializations. Other domains are
+	 incorporated into basic DITA.
+  </shortdesc> 
+  <conbody>
+		<draft-comment author="Kristen Eberlein" time="1 November 2014">
+			<p>As I updated the table to include markup, SVG, and XML mention domains, I noticed
+				that the file names for Schema, RNG, and RNC do not match what is currently in SVN.
+				I suspect that the naming conventions for the files was changed at some point in the
+				1.3 process.</p>
+			<p>For DITA 1.2, the XSD file for the UI domain was <filepath>uiDomain.xsd</filepath>.
+				For DITA 1.3, the file is named <filepath>uiDomainMod.xsd.</filepath></p>
+			<p>All rows in the table use the DITA 1.2 naming conventions, except for the ones
+				(markup, SVG, and XML mention) that I just added.</p>
+		</draft-comment> 
+	 <p>The elements in a domain are defined in a domain module which can be integrated with a topic
+			type to make the domain elements available within the topic type structure. Currently
+			the following domains are provided as part of the Technical Content specializations: </p> 
+	 <table>
+			<title>Technical content domains</title>
+			<desc>DITA includes domain specializations that are especially useful for authoring
+				technical content. The <ph rev="DITA1.2-errata">classification, highlighting</ph>,
+				utilities, hazard statement, and indexing domains associated with Base DITA are
+				described under DITA Markup. </desc>
+			<tgroup cols="4">
+				<colspec colname="col1" colwidth="1.26*"/>
+				<colspec colname="COLSPEC0" colwidth="3.16*"/>
+				<colspec colname="col2" colwidth="1.0*"/>
+				<colspec colname="col3" colwidth="3.14*"/>
+				<thead>
+					<row valign="bottom">
+						<entry colname="col1">Domain </entry>
+						<entry colname="COLSPEC0">Description </entry>
+						<entry colname="col2">Short name </entry>
+						<entry colname="col3">Module name </entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry colname="col1">Abbreviated form </entry>
+						<entry colname="COLSPEC0">For linking between a text reference to a
+								<xmlelement>glossentry</xmlelement> topic. A specialization of
+								<xmlelement>term</xmlelement> to provide an
+								<xmlelement>abbreviated-form</xmlelement> element.</entry>
+						<entry colname="col2">abbrev-d</entry>
+						<entry colname="col3">
+							<lines><filepath>abbreviateDomain.mod</filepath> (DTD)
+<filepath>abbreviateDomain.ent</filepath>
+<filepath>abbreviateDomain.xsd</filepath> (Schema)
+<filepath>abbreviateDomain.rng</filepath> (RELAX NG)
+<filepath>abbreviateDomain.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row rev="DITA1.3 proposal-13111">
+						<entry>Equation</entry>
+						<entry>For containing equations and providing an integration point for MathML.</entry>
+						<entry>equation-d</entry>
+						<entry colname="col3">
+							<lines><filepath>equationDomain.mod</filepath> (DTD)
+<filepath>equationDomain.ent</filepath>
+<filepath>equationDomain.xsd</filepath> (Schema)
+<filepath>equationDomain.rng</filepath> (RELAX NG)
+<filepath>equationDomain.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row>
+						<entry>Glossary reference </entry>
+						<entry>For linking from a term to its glossary topic. </entry>
+						<entry>glossref-d </entry>
+						<entry colname="col3">
+							<lines><filepath>glossrefDomain.mod</filepath> (DTD)
+<filepath>glossrefDomain.ent</filepath>
+<filepath>glossrefDomain.xsd</filepath> (Schema) 
+<filepath>glossrefDomain.rng</filepath> (RELAX NG)
+<filepath>glossrefDomain.rnc</filepath>(RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row rev="DITA1.3 proposal-13111">
+						<entry colname="col1">Markup</entry>
+						<entry colname="COLSPEC0">For describing markup.</entry>
+						<entry colname="col2">markup-d</entry>
+						<entry colname="col3">
+							<lines><filepath>markupDomain.mod</filepath> (DTD)
+<filepath>markupDomain.ent</filepath>
+<filepath>markupDomainMod.xsd</filepath> (Schema)
+<filepath>markupDomainMod.rng</filepath> (RELAX NG)
+<filepath>markupDomainMod.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row rev="DITA1.3 proposal-13111">
+						<entry colname="col1">MathML</entry>
+						<entry colname="COLSPEC0">For containing MathML markup.</entry>
+						<entry colname="col2">mathml-d</entry>
+						<entry colname="col3">
+							<lines><filepath>mathmlDomain.mod</filepath> (DTD)
+<filepath>mathmlDomain.ent</filepath>
+<filepath>mathmlDomainMod.xsd</filepath> (Schema)
+ <filepath>mathmlDomainMod.rng</filepath> (RELAX NG)
+<filepath>mathml3.rng</filepath>
+<filepath>mathmlDomainMod.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row>
+						<entry colname="col1">Programming </entry>
+						<entry colname="COLSPEC0">For describing programming and programming languages.</entry>
+						<entry colname="col2">pr-d </entry>
+						<entry colname="col3">
+							<lines><filepath>programmingDomain.mod</filepath> (DTD)
+<filepath>programmingDomain.ent</filepath>
+<filepath>programmingDomain.xsd</filepath> (Schema)
+<filepath>programmingDomain.rng</filepath> (RELAX NG)
+<filepath>programmingDomain.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row rev="DITA1.3 proposal-13102">
+						<entry colname="col1">Release management</entry>
+						<entry colname="COLSPEC0">For describing release management metadata.</entry>
+						<entry colname="col2">relmgmt-d</entry>
+						<entry colname="col3">
+							<lines><filepath>releaseManagementDomain.mod</filepath> (DTD)
+<filepath>releaseManagementDomain.net</filepath>
+<filepath>releaseManagementDomain.xsd</filepath> (Schema)
+<filepath>releaseManagementDomain.rng</filepath> (RELAX NG)
+<filepath>releaseManagementDomain.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row>
+						<entry colname="col1">Software </entry>
+						<entry colname="COLSPEC0">For describing software. </entry>
+						<entry colname="col2">sw-d </entry>
+						<entry colname="col3">
+							<lines><filepath>softwareDomain.mod</filepath> (DTD)
+<filepath>softwareDomain.ent</filepath>
+<filepath>softwareDomain.xsd</filepath> (Schema)
+<filepath>softwareDomain.rng</filepath> (RELAX NG)
+<filepath>softwareDomain.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row rev="DITA1.3 proposal-13119">
+						<entry colname="col1">SVG</entry>
+						<entry colname="COLSPEC0">For enabling use of SVG markup within DITA
+							documents.</entry>
+						<entry colname="col2">svg-d</entry>
+						<entry colname="col3">
+							<lines><filepath>svgDomain.mod</filepath> (DTD)
+<filepath>svgDomain.ent</filepath>
+<filepath>svgDomainMod.xsd</filepath> (Schema)
+<filepath>svgDomainMod.rng</filepath> (RELAX NG)
+<filepath>svgDomainMod.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					
+					<row>
+						<entry colname="col1">User interface </entry>
+						<entry colname="COLSPEC0">For describing elements in a user interface.</entry>
+						<entry colname="col2">ui-d </entry>
+						<entry colname="col3">
+							<lines><filepath>uiDomain.mod</filepath> (DTD)
+<filepath>uiDomain.ent</filepath>
+<filepath>uiDomain.xsd</filepath> (Schema)
+<filepath>uiDomain.rng</filepath> (RELAX NG)
+<filepath>uiDomain.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					<row rev="DITA1.3 proposal-13035">
+						<entry colname="col1">XML mention</entry>
+						<entry colname="COLSPEC0">For describing XML constructions.</entry>
+						<entry colname="col2">xml-d</entry>
+						<entry colname="col3">
+							<lines><filepath>xmlDomain.mod</filepath> (DTD)
+<filepath>xmlDomain.ent</filepath>
+<filepath>xmlDomainMod.xsd</filepath> (Schema)
+<filepath>xmlDomainMod.rng</filepath> (RELAX NG)
+<filepath>xmlDomainMod.rnc</filepath> (RELAX NG Compact)</lines>
+						</entry>
+					</row>
+					
+					
+				</tbody>
+			</tgroup>
+		</table> 
+	 <p>The technical content domain specializations, like all domain specializations, may be included
+			in the DITA document types beyond those in the technical content section. The DITA
+			document types in the technical content section make use of other domain specializations
+			in addition to those listed in the table. </p> 
+	 <p>The elements and attributes included in specific domain specializations are described in the
+			domain elements of the DITA 1.2 Language Reference. </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<reference id="oasisdomains" xml:lang="en-us" product="base" rev="DITA1.3 review-2">
+<title>Base document types: included domains</title>
+<shortdesc>This topic provides a summary of which domains are used in each of the base document
+types. </shortdesc>
+<refbody>
+<table frame="all" id="table_o5v_qkw_r4">
+<title>Domain usage in base document types</title>
+<tgroup cols="3">
+<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+<colspec colname="c3" colnum="3" colwidth="1.0*"/>
+<thead>
+<row>
+<entry>Document type</entry>
+<entry>Includes these domains</entry>
+<entry>Does not include</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>base map</entry>
+<entry>
+<ul product="base">
+<li><xmlatt>deliveryTarget</xmlatt> attribute</li>
+<li>Conref delayed resolution (map/topic)</li>
+<li>Hazard statement (map/topic)</li>
+<li>Highlighting (map/topic)</li>
+<li>Indexing (map/topic)</li>
+<li>Utilities (map/topic)</li>
+<li>Ditavalref (map)</li>
+<li>Map group (map)</li>
+</ul>
+</entry>
+<entry>
+<ul product="technicalContent learningTraining">
+<li product="technicalContent">Anything from technical content</li>
+<li product="learningTraining">Anything from learning and training</li>
+</ul>
+</entry>
+</row>
+<row>
+<entry>base topic</entry>
+<entry>
+<ul product="base">
+<li><xmlatt>deliveryTarget</xmlatt> attribute</li>
+<li>Hazard statement (map/topic)</li>
+<li>Highlighting (map/topic)</li>
+<li>Indexing (map/topic)</li>
+<li>Utilities (map/topic)</li>
+</ul>
+</entry>
+<entry>
+<ul>
+<li product="base">Base domains<ul>
+<li>Conref delayed resolution (map/topic)</li>
+<li>Ditavalref (map)</li>
+<li>Map group (map)</li>
+</ul></li>
+<li product="technicalContent">Anything from technical content</li>
+<li product="learningTraining">Anything from learning and training</li>
+</ul>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</refbody>
+<?tm 1241557125 2?>
+</reference>

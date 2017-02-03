@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap
+  PUBLIC "-//OASIS//DTD DITA BookMap//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/bookmap.dtd">
+<bookmap>
+  <title>The Project Gutenberg eBook of The Outline of Science, Volume 1 of 4, by J. Arthur
+  Thomson</title>
+  <bookmeta>
+    <category>non-fiction</category>
+    <data name="project-gutenberg-metadata">
+      <data name="etext-no." value="20417"/>
+      <data name="release-date" value="2007-01-22"/>
+      <data name="base-directory" value="/files/20417/"/>
+      <data name="language" value="English"/>
+      <data name="creator" value="Thomson, J. Arthur"/>
+      <data name="copyright-status" value="Not copyrighted in the United States. If you live elsewhere check the laws of your country before downloading this ebook."/>
+    </data>
+  </bookmeta>
+  <frontmatter>
+     <notices href="legalstuff/main-page.xml"/>
+     <topicref href="frontmatter/title-page.xml"/>
+     <topicref href="frontmatter/introductory-note.xml"/>
+     <preface href="chapters/chapter_01.xml" navtitle="INTRODUCTION "/>
+   </frontmatter>
+   <chapter href="chapters/chapter_02.xml" navtitle="I THE ROMANCE OF THE HEAVENS "/>
+   <chapter href="chapters/chapter_03.xml" navtitle="II THE STORY OF EVOLUTION "/>
+   <chapter href="chapters/chapter_04.xml" navtitle="III ADAPTATIONS TO ENVIRONMENT "/>
+   <chapter href="chapters/chapter_05.xml" navtitle="IV THE STRUGGLE FOR EXISTENCE "/>
+   <chapter href="chapters/chapter_06.xml" navtitle="V THE ASCENT OF MAN "/>
+   <chapter href="chapters/chapter_07.xml" navtitle="VI EVOLUTION GOING ON "/>
+   <chapter href="chapters/chapter_08.xml" navtitle="VII THE DAWN OF MIND "/>
+   <chapter href="chapters/chapter_09.xml" navtitle="VIII FOUNDATIONS OF THE UNIVERSE "/>
+   <backmatter>
+     <topicref href="legalstuff/end-of-book.xml"/>
+   </backmatter>
+</bookmap>

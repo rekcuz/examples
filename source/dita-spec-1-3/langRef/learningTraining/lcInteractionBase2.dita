@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+
+<reference id="lcInteractionBase2" xml:lang="en-us" rev="DITA1.3">
+ <title><xmlelement>lcInteractionBase2</xmlelement></title>
+ <shortdesc>Use <xmlelement>lcInteractionBase2</xmlelement> as the base for more specialized
+  assessment types. This element replaces the <xmlelement>lcInteractionBase</xmlelement> element
+  in DITA 1.2.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>lcInteractionBase2</indexterm>
+    <indexterm>learning and training elements<indexterm>lcInteractionBase2</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <refbody>
+  <section conref="../../common/commonNavLibraryTable.dita#contentmodel-lcInteractionBase2/contains"
+   id="contains" otherprops="contains"></section>
+  
+
+  <section id="inheritance" otherprops="inheritance">
+   <title>Inheritance</title>
+   <p>+ topic/div learningInteractionBase2-d/lcInteractionBase2</p>
+  </section>
+  <example id="example">
+   <title>Example</title>
+   <p><xmlelement>lcInteractionBase2</xmlelement> should only be used as a base for further
+    specialization.</p>
+  </example>
+  <section id="attributes"><title>Attributes</title><sectiondiv
+    conref="../../common/conref-attribute.dita#conref-attribute/universal-outputclass-required-id"
+   /></section>
+ </refbody>
+</reference>
+

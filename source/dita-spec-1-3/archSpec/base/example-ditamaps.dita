@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_lnh_zs5_qp">
+ <title>Examples of DITA maps</title>
+ <abstract>
+  <shortdesc>This section of the specification contains examples of DITA maps. The examples
+   illustrate the wide variety of purposes that DITA maps serve.</shortdesc>
+  <draft-comment author="Kristen Eberlein" time="7 October 2014" disposition="accepted">
+   <p>The children topic were relocated from thr "DITA map elements" topic. They each need a short
+    description and more contextual information that clarifies the importance of the example, that
+    is, why we think the example should be in the DITA specification.</p>
+  </draft-comment>
+ </abstract>
+</concept>

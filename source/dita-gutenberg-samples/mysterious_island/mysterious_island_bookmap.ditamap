@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap
+  id="mysterious-island">
+  <booktitle>
+    <mainbooktitle>The Mysterious Island</mainbooktitle>
+  </booktitle>
+  <bookmeta>
+    <author>Jules Verne</author>
+    <publisherinformation>
+      <organization>Project Gutenberg</organization>
+    </publisherinformation>
+    <bookrights>
+      <copyrfirst>
+        <year>1874</year>
+      </copyrfirst>
+      <bookowner>
+        <organization>Public Domain</organization>
+      </bookowner>
+    </bookrights>
+  </bookmeta>
+  <frontmatter>
+    <topicref
+      href="parts/title-page.xml"/>
+    <topicref
+      href="legalstuff/main-page.xml"/>
+  </frontmatter>
+  <part
+    href="parts/part-01_bookmap.ditamap"
+    format="ditamap"/>
+  <part
+    href="parts/part-02_bookmap.ditamap"
+    format="ditamap"/>
+  <part
+    href="parts/part-03_bookmap.ditamap"
+    format="ditamap"/>
+  <backmatter>
+    <topicref
+      href="legalstuff/end-of-book.xml"/>
+  </backmatter>
+</bookmap>

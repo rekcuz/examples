@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ditamarkup" xml:lang="en-US">
+ <title>DITA markup </title>
+ <shortdesc>Topics and maps are the basic building blocks of the Darwin Information Typing
+  Architecture (DITA). Metadata attributes and values can be added to DITA topics and maps, as well
+  as to elements within topics, to allow for conditional publishing and content reuse. </shortdesc>
+ <conbody>
+  <p>DITA topics and maps are XML documents that conform to the XML specification. As such, they can
+   be viewed, edited, validated, and processed with standard XML tools, although some DITA-specific
+   features, such as content reference, key reference, and specialization require DITA-specific
+   processing for full implementation and validation.</p>
+  <draft-comment author="Kristen Eberlein" time="28 November 2014">
+   <p>Comments from review #2:</p>
+   <p>[Eliot Kimber] As far as I can tell, the subject of @domains and @class as essential DITA
+    features are not mentioned anywhere before the DITA Processing section and in that context the
+    discussion of @domains comes out of the blue. While this focus of this section is on DITA markup
+    generally (maps and topics), I think it would be appropriate to have a section that discusses
+    the @domains and @class attributes generally. </p>
+   <p>[Robert Anderson] Kris and I agree that a topic about this would be extremely useful, but also
+    note that it has not appeared in the three previous versions of DITA (an oversight, but means we
+    can get by without it if we have to). Marking this as accepted and hoping to have time to
+    address. </p>
+  </draft-comment>
+ </conbody>
+</concept>

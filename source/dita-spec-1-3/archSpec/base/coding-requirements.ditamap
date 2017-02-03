@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Coding requirements for grammar files</title>
+ <topicref href="coding-requirements.dita">
+  <topicref href="dtd-requirements.dita">
+   <topicref href="shell-dtd-coding-reqs.dita"/>
+   <!--<topicref href="dtdmod.dita"/>-->
+   <topicref href="dtdGeneralCodingReq.dita"/>
+   <topicref href="dtdStructuralCodingReq.dita"/>
+   <topicref href="dtdTopicTypeCodingReq.dita"/>
+   <topicref href="dtdElementDomainCodingReq.dita"/>
+   <topicref href="dtdAttributeDomainCodingReq.dita"/>
+   <topicref href="constraints-dtd-coding-requirements.dita"/>
+  </topicref>
+  <topicref href="rng-requirements.dita">
+   <topicref href="relax-ng-doctyp-shell-coding-requirements.dita" rev="DITA1.3 proposal-13112"/>
+   <topicref href="coding-requirements-relax-ng.dita" rev="DITA1.3 proposal-13112">
+    <topicref href="relax-ng-element-type-coding-requirements.dita" rev="DITA1.3 proposal-13112"/>
+    <topicref href="relax-ng-structural-module-coding-requirements.dita"
+     rev="DITA1.3 proposal-13112"/>
+    <topicref href="relax-ng-topic-module-coding-requirements.dita" rev="DITA1.3 proposal-13112"/>
+    <topicref href="relax-ng-element-domain-module-coding-requirements.dita"
+     rev="DITA1.3 proposal-13112"/>
+    <topicref href="relax-ng-attribute-domain-module-coding-requirements.dita"
+     rev="DITA1.3 proposal-13112"/>
+   </topicref>
+   <topicref href="relax-ng-constraint-module-coding-requirements.dita"/>
+  </topicref>
+  <topicref href="xsd-requirements.dita">
+   <topicref href="xsdShellDoctypeCodeReq.dita"/>
+   <!--<topicref href="schemamod.dita"/>-->
+   <topicref href="xsdGeneralCodingReq.dita"/>
+   <topicref href="xsdStructuralSpecializationReqs.dita"/>
+   <topicref href="xsdAttributeDomainSpecializationCodeReq.dita"/>
+   <topicref href="constraints-xsd-coding-requirements.dita"/>
+  </topicref>
+ </topicref>
+</map>

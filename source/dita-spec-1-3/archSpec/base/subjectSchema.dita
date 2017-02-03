@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="subjectSchema" xml:lang="en-us">
+    <title>Subject scheme maps</title>
+    <shortdesc rev="targeted-review">Subject scheme maps use key definitions to define taxonomic
+        subjects and collections of controlled values.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>classifying content</indexterm>
+                <indexterm>controlled values<indexterm>classifying content for flagging and
+                        filtering</indexterm><indexterm>definition
+                        of</indexterm><indexterm>overview</indexterm></indexterm>
+                <indexterm>definitions<indexterm>controlled values</indexterm></indexterm>
+                <indexterm>filtering and flagging<indexterm>classifying content
+                    for</indexterm></indexterm>
+                <indexterm>subjectScheme<indexterm>extending</indexterm><indexterm>overview</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p><term>Controlled values</term> are keywords that can be used as values for attributes.
+            For example, the <xmlatt>audience</xmlatt> attribute can take a value that identifies
+            the users that are associated with a particular product. Typical values for a
+            medical-equipment product line might include "therapist", "oncologist", "physicist", and
+            "radiologist". In a subject scheme map, an information architect can define a list of
+            these values for the <xmlatt>audience</xmlatt> attribute. Controlled values can be used
+            to classify content for filtering and flagging at build time. </p>
+        <p rev="targeted-review"><term>Taxonomic subjects</term> are classifications and
+            sub-classifications that compose a taxonomy tree. In conjunction with the classification
+            domain, taxonomic subjects can be used for retrieval and traversal of the content at run
+            time when used with information viewing applications that provide such
+            functionality.</p>
+    </conbody>
+</concept>

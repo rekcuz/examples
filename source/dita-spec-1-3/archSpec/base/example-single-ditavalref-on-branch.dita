@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example-single-ditavalref">
+  <title>Example: Single <xmlelement>ditavalref</xmlelement> on a branch</title>
+  <shortdesc>A single <xmlelement>ditavalref</xmlelement> element may be used to supply filtering
+    conditions for a branch.</shortdesc>
+  <conbody>
+    <example id="ditaval-specific-to-branch">
+      <p>Consider the following DITA map and the DITAVAL file that is referenced from a
+          <xmlelement>ditavalref</xmlelement> element:</p>
+      <fig id="fig_bcv_nhj_ln">
+        <title><filepath>input.ditamap:</filepath></title>
+        <codeblock>
+&lt;map>
+  &lt;topicref href="intro.dita"/>
+  &lt;topicref href="install.dita">
+    &lt;ditavalref href="novice.ditaval"/>
+    &lt;topicref href="do-stuff.dita"/>
+    &lt;topicref href="advanced-stuff.dita" audience="admin"/>
+    &lt;!-- more topics -->
+  &lt;/topicref>
+  &lt;!-- Several chapters worth of other material -->
+&lt;/map>
+</codeblock>
+      </fig>
+      <fig id="fig_b3v_nhj_ln">
+        <title>Contents of <filepath>novice.ditaval</filepath></title>
+        <codeblock>&lt;val>
+  &lt;prop att="audience" val="novice" action="include"/>
+  &lt;prop att="audience" val="admin" action="exclude"/>
+&lt;/val></codeblock>
+      </fig>
+      <p>When this content is published, the following processing occurs:<ul>
+          <li>The first topic (<filepath>intro.dita</filepath>) does not use any of the conditions
+            that are specified in <filepath>novice.ditaval</filepath>. It is published normally,
+            potentially using other DITAVAL conditions that are specified externally.</li>
+          <li>The second topic (<filepath>install.dita</filepath>) is filtered using any external
+            conditions as well as the conditions that are specified in
+              <filepath>novice.ditaval</filepath>.</li>
+          <li>The third topic (<filepath>do-stuff.dita</filepath>) is filtered using any external
+            conditions as well as the conditions that are specified in
+              <filepath>novice.ditaval</filepath>.</li>
+          <li>The fourth topic (<filepath>advanced-stuff.dita</filepath>) is removed from the map
+            entirely, because it is filtered out with the conditions that are specified for the
+            branch.</li>
+        </ul></p>
+      <p>None of the resources that are filtered by <filepath>novice.ditaval</filepath> are renamed.
+          <ph rev="review-2">In cases where the original resource names map directly to names or
+          anchors in a deliverable,</ph> this ensures that external links to those topics are stable
+        regardless of whether the DITAVAL is used.</p>
+    </example>
+  </conbody>
+</concept>

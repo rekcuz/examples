@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conditional-processing-attributes-and-metadata-elements">
+ <title>Conditional processing attributes and metadata elements</title>
+ <shortdesc/>
+ <conbody>
+  <draft-comment author="Kristen Eberlein" time="8 February 2014" disposition="open">Should this be
+      a separate topic? What really is the focus -- a lot of the content really focuses on the
+      coordination of attributes and elements ...? How should this content connect with that in the
+      "Conditional processing attributes" topic in the "Markup" section?</draft-comment>
+  <p>Audience, platform, and product metadata can be expressed in two ways:<ul>
+    <li>Using attributes on elements within a topic or on <xmlelement>topicref</xmlelement>
+     elements</li>
+    <li>Using elements within the <xmlelement>prolog</xmlelement> element (topics) or
+      <xmlelement>topicmeta</xmlelement> element (maps)</li>
+   </ul></p>
+  <p>While the metadata elements are more expressive, the meaning of the values is the same and can
+      be used in coordination. For example, the prolog elements can fully define the audiences for a
+      topic, and then metadata attributes can be used within the content to identify the parts that
+      apply to only some of those audiences.<draft-comment author="Kristen Eberlein"
+        time="8 February 2014" disposition="open">
+        <p>What are we trying to convey by stating "the meaning of the values is the same"? It
+          obviously isn't, as far as the fact that the elements cannot be used for conditional
+          processing.</p>
+        <p>Do we want to provide an example of using elements and attributes in coordination? While
+          this material has been in the spec for a long time, I've never seen DITA content that
+          actually coordinated the attributes and elements.</p>
+        <p>[Robert Anderson: 21 April 2014] I don't think we should try and provide an example of
+          that - it would be taken as the "way to do it", when as you say, I've never seen anybody
+          implement it. I think it would probably be best to comment out the language, given that
+          we've dropped the proposal to define this from (at least) DITA 1.2 and 1.3, due to lack of
+          people willing to work on it.</p>
+      </draft-comment></p>
+  <draft-comment author="robander" rev="proposal-13056" time="2013" disposition="open">Deb's review
+      pointed out that the attribute descriptions below are very inconsistent in their style /
+      wording. This wording goes back to DITA 1.2 or earlier, but should be cleaned up when
+      integrating the new material..</draft-comment>
+  <draft-comment author="Kristen Eberlein" time="6 March 2014" disposition="open">
+      <p>Do we really want to say that the conditional processing attributes are equivalent to the
+        metadata elements?</p>
+      <p>[Robert Anderson: 21 April 2014] I don't think so. Maybe time to remove that, given the
+        failed efforts to coordinate them?</p>
+    </draft-comment>
+  <dl>
+   <dlentry>
+    <dt><xmlatt>audience</xmlatt></dt>
+    <dd>The end user or reader. This attribute is equivalent to the
+      <xmlelement>audience</xmlelement> element. The value of the <xmlatt>audience</xmlatt>
+     attribute can be used to reference a more complete description of an audience that is specified
+     in an <xmlelement>audience</xmlelement> element; use the same value for the
+      <xmlatt>name</xmlatt> attribute on the <xmlelement>audience</xmlelement> element and the
+      <xmlatt>audience</xmlatt> attribute.<p>The <xmlatt>audience</xmlatt> attribute takes a
+      space-delimited list of values, which might or might not match the name value of any
+       <xmlelement>audience</xmlelement> elements. <ph
+       conref="../../common/conref_file.dita#reuse_file/groupdefn" rev="DITA1.3 proposal-13056"
+      /></p>
+    </dd>
+   </dlentry>
+   <dlentry>
+    <dt><xmlatt>platform</xmlatt></dt>
+    <dd>The operating system, hardware, or other environment. This attribute is equivalent to the
+      <xmlelement>platform</xmlelement> element.</dd>
+    <dd>
+     <p>The <xmlatt>platform</xmlatt> attribute takes a space-delimited list of values, which might
+      or might not match the content of a <xmlelement>platform</xmlelement> element in the prolog.
+       <ph conref="../../common/conref_file.dita#reuse_file/groupdefn" rev="DITA1.3 proposal-13056"
+      /></p>
+    </dd>
+   </dlentry>
+   <dlentry>
+    <dt><xmlatt>product</xmlatt></dt>
+    <dd>The product or component name, version, brand, or internal code or number. This attribute is
+     equivalent to the <xmlelement>prodinfo</xmlelement> element.</dd>
+    <dd>
+     <p>The <xmlatt>product</xmlatt> attribute takes a space-delimited list of values, which may or
+      might or might not match the value of the <xmlelement>prodname</xmlelement> element in the
+      prolog. <ph conref="../../common/conref_file.dita#reuse_file/groupdefn"/></p>
+    </dd>
+   </dlentry>
+   <dlentry conref="../../common/conref_file.dita#reuse_file/deliveryTarget" id="deliveryTarget">
+        <dt/>
+        <dd/>
+      </dlentry>
+   <dlentry>
+    <dt><xmlatt>rev</xmlatt></dt>
+    <dd>The identifier for the revision level. The <xmlatt>rev</xmlatt> attribute takes a
+          space-delimited list of values. For example, if a paragraph was changed or added during
+          revision 1.1, the <xmlatt>rev</xmlatt> attribute might contain the value "1.1". </dd>
+   </dlentry>
+   <dlentry>
+    <dt><xmlatt>otherprops</xmlatt></dt>
+    <dd>Metadata qualification values about the content. This attribute is equivalent to the
+            <xmlelement>othermeta</xmlelement> element. <p>The attribute takes a space-delimited
+            list of values, which might or might not match the values of
+              <xmlelement>othermeta</xmlelement> elements in the prolog. <ph
+              conref="../../common/conref_file.dita#reuse_file/groupdefn"/>
+            <ph rev="DITA1.3 proposal-13056">The grouping syntax matches the original
+                <xmlatt>otherprops</xmlatt> grouping syntax that was defined in DITA 1.0 and 1.1.
+              That usage was reserved exclusively for <xmlatt>otherprops</xmlatt>; the usage was
+              deprecated in DITA
+          1.2.</ph></p><!--<draft-comment author="robander" rev="DITA1.3 proposal-13056">Removed these paragraphs from 1.2: <p>For example, a simple otherprops value list: <codeph>&lt;codeblock otherprops="java cpp"></codeph></p><p><draft-comment>MP: deprecated grouped value syntax per TC meeting 2007/01/02</draft-comment>The attribute <term>may</term> take labeled groups of values as for @props. Processors <term>may</term> treat such values as equivalent to @props or they <term>may</term> treat such values as simple strings. The use of labeled groups in @otherprops is deprecated in favor of using specializations of @props. Processors <term>should</term> clearly document how they treat grouped @otherprops values. See <xref href="attributegeneralize.dita#attributegeneralize" format="dita"/> for details on generalized @props attribute values.</p></draft-comment>-->
+        </dd>
+   </dlentry>
+   <dlentry>
+    <dt><xmlatt>props</xmlatt></dt>
+    <dd>A generic attribute for conditional processing values. Starting with DITA 1.1, the
+      <xmlatt>props</xmlatt> attribute can be specialized to create new conditional processing
+     attributes. <ph>See <xref href="attributegeneralize.dita"/>.</ph></dd>
+   </dlentry>
+  </dl>
+ </conbody>
+</concept>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="links-between-maps" rev="DITA1.3 proposal-13041">
+ <title>Links between maps</title>
+ <shortdesc>When using scoped keys, one map can refer to keys defined in a different root map,
+        creating peer map-to-map links. These map-to-map links enable the production of deliverables
+        with working links to other deliverables (cross-deliverable links).</shortdesc>
+ <conbody>
+        <draft-comment author="Kristen Eberlein" time="5 October 2014" disposition="open">
+            <p>I suspect that this content needs to be reworked to conform to the new key
+                terminology and the coverage of keys in the "Indirect key-based addressing"
+                section."</p>
+        </draft-comment>
+        <!--<draft-comment author="jtivy"><p>Note, here "keyspace" is synonomous with root map (root peer map). I think this is the correct use - one keyspace per peer root map, not one per scope. </p></draft-comment>-->
+  <p>When a key scope is defined on a topic reference to a DITA map and the value of
+                <xmlatt>scope</xmlatt> is set to "peer", then the referenced map is a <term>peer
+                map</term> to the referencing map. The implications are that the two maps are
+      managed in tandem, and that the author of the referencing map <ph rev="review-2">might have access</ph> to the
+            referenced map.</p>
+  <p>The keys that are defined by the peer map belong to the key scope that is declared on the
+                <xmlelement>topicref</xmlelement> element that references that map. Such keys can be
+            referenced from content in the referencing map by using standard scope-qualified key
+            names. However, processors handle references to keys defined in peer maps differently
+            from how they handle references to keys that are defined in the local map structure.</p>
+<!-- Following markup was here from a bad SVN merge, but I think the previous two paragraphs are what we want. -->
+<!--
+  <p>When a key scope is defined on a topic reference to a DITA map and the value of
+                <xmlatt>scope</xmlatt> is "peer", then the referenced map is a <term>peer map</term>
+            with respect to the map making the reference. The implication of a scope of "peer" in
+            this case is that the target map is managed along with the referencing map such that the
+            author or processor of the first map <ph rev="review-2">might have access</ph> to the
+            referenced map as well. </p>
+  <p>Keys defined by the <term>peer map</term> belong to the key scope declared on the topicref
+   element that references that map. Such keys can be referenced from content in the referencing map
+   using the standard scope-qualified key names used for any other key scope (that is, one of the
+   scope names, followed by a period, followed by the key name). However, references to keys defined
+   in peer maps are processed differently from references to keys defined in the local map
+   structure.</p>-->
+  <p>For example, given the map documents <filepath>map-a.ditamap</filepath> and
+                <filepath>map-b.ditamap</filepath>, Map A can treat Map B as a peer <!--root--> map
+            using the key definition:</p>
+  <codeblock>&lt;map>&lt;title>Map A&lt;/title>
+  &lt;topicref 
+    scope="peer"
+    format="ditamap"
+    keyscope="map-b"
+    href="../map-b/map-b.ditamap"
+    processing-role="resource-only"
+  />
+  &lt;!-- ... -->
+&lt;/map></codeblock>
+  <p>In this example, <filepath>map-b.ditamap</filepath> is not a submap of Map A; it is a peer
+      map.</p>
+<!-- >>>>>>> .r2169 -->
+  <p>Conforming DITA processors are not required to support the resolution of or delivery of key
+            references to peer maps. <draft-comment author="robander" time="March 9 2015">"...or
+                delivery of..." what is meant by "delivery of key references to peer
+                maps"?</draft-comment>Note, however, that the general implication of peer scope is
+            that the peer resources are all available in the same processing or management context.
+            This means that processors always have the potential to resolve peer key references when
+            the peer resources are in fact managed together. There may, of course, be performance,
+            scale, and user interface challenges in implementing such systems, but the fundamental
+            ability to resolve any given reference is ensured when the source files are physically
+            accessible. That is, given a correctly-specified reference to a peer map, if the map
+            itself is accessible, it must then be possible to process that map in order to resolve
+            keys defined by it, if it is also possible to resolve keys in the map making the peer
+            map reference.</p>
+  <p>Note also the inverse implication: if the peer resource is not available, then it is impossible
+      to resolve the key reference. For that reason, processors should provide appropriate messages
+      when a peer resource cannot be resolved. Depending on how a set of DITA resources is authored,
+      managed, and processed, peer resources may be resolvable or not at different points in the
+      content life cycle.</p>
+  <p>The referenced peer map may specify <xmlatt>keyscope</xmlatt> on its root element. In that case, the <xmlatt>keyscope</xmlatt>
+   on the peer map is ignored for the purpose of resolving scoped key references from the
+   referencing map. This avoids the need for processors to have access to or examine the peer map
+   before being able to determine that a given key reference is or is not in a peer scope.</p>
+  <p>For example, given this map reference in map Map A:</p>
+  <codeblock>&lt;mapref 
+  keyscope="scope-b"
+  scope="peer"  
+  href="map-b.ditamap"
+/> </codeblock>
+  <p>Where <filepath>map-b.ditamap</filepath>
+            is:<codeblock>&lt;map keyscope="scopeB">
+ &lt;!-- ... -->
+&lt;/map></codeblock></p>
+  <p>For references from the context of Map A, key references of the form "scope-b.somekey" will be
+            resolved to keys defined in the global scope of map B, but key references of the form
+            "scopeB.somekey" will not. The presence or absence of a <xmlatt>keyscope</xmlatt>
+            attribute on Map B's <xmlelement>map</xmlelement> element has no effect in this case.
+            Another way to view this is that a key reference to the scope "scope-b.somekey" is
+            equivalent to the unscoped reference "somekey" processed in the context of Map B as the
+            root map. In both cases, the presence of <xmlatt>keyscope</xmlatt> on Map B's
+                <xmlelement>map</xmlelement> element has no effect, in the first case (peer key
+            reference) because it is explicitly ignored, in the second because the key reference
+            will necessarily be within the scope "scope-b" and therefore does not need to be scope
+                qualified.<draft-comment author="robander" time="March 9 2015">I think the previous
+                sentence should end -- "necessarily be within the scope "scopeB" and therefore..."
+                -- but I'm not sure. Aren't we comparing to the context of Map B, in which case
+                we're talking about "scopeB" as defined on Map B?</draft-comment></p>
+  <p>For local-scope map references, the <xmlatt>keyscope</xmlatt> attribute values on the map
+            reference and the map element are merged, meaning that both the scopes named on the map
+            reference and on the map will be resolvable for key references processed in the context
+            of the referencing parent root map. The referenced map does not create another level of
+            scope hierarchy when referenced as a sub map.<note>This rule ensures that the same key
+                reference (for example, "scope-b.somekey") will resolve to the same resource whether
+                the referenced map is referenced as a local map (submap) or a peer map.</note></p>
+        <!--<example><title>Example: Declaration of a peer map</title><p>Map A declares <filepath>map-b.ditamap</filepath> as a peer map by specifying the following <xmlelement>topicref</xmlelement> element:</p><codeblock>&lt;map>
+  &lt;title>Map A&lt;/title>
+  &lt;topicref 
+    scope="peer"
+    format="ditamap"
+    keyscope="map-b"
+    href="../map-b/map-b.ditamap"
+    processing-role="resource-only"
+  />
+&lt;/map></codeblock><draft-comment author="robander" time="March 9 2015">I am not sure what the following paragraph was supposed to convey, but the text was bad (misspelling in first word and bad text in the rest of the sentence. I've rewritten it, but saved the original here:<p>Becuase <filepath>map-b.ditamap</filepath> does not contribute to the is not a submap of Map A; it is a peer map.</p></draft-comment><p>The map <filepath>map-b.ditamap</filepath> is not a submap of Map A; it is a peer map.</p></example>-->
+ </conbody>
+</concept>

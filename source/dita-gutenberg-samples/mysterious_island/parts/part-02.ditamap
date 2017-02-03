@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <topicref
+    href="part-02.xml"
+    id="part-2"
+    >
+    <topicref
+      href="part2/chapter-1.xml"/>
+    <topicref
+      href="part2/chapter-2.xml"/>
+    <topicref
+      href="part2/chapter-3.xml"/>
+    <topicref
+      href="part2/chapter-4.xml"/>
+    <topicref
+      href="part2/chapter-5.xml"/>
+    <topicref
+      href="part2/chapter-6.xml"/>
+    <topicref
+      href="part2/chapter-7.xml"/>
+    <topicref
+      href="part2/chapter-8.xml"/>
+    <topicref
+      href="part2/chapter-9.xml"/>
+    <topicref
+      href="part2/chapter-10.xml"/>
+    <topicref
+      href="part2/chapter-11.xml"/>
+    <topicref
+      href="part2/chapter-12.xml"/>
+    <topicref
+      href="part2/chapter-13.xml"/>
+    <topicref
+      href="part2/chapter-14.xml"/>
+    <topicref
+      href="part2/chapter-15.xml"/>
+    <topicref
+      href="part2/chapter-16.xml"/>
+    <topicref
+      href="part2/chapter-17.xml"/>
+    <topicref
+      href="part2/chapter-18.xml"/>
+    <topicref
+      href="part2/chapter-19.xml"/>
+    <topicref
+      href="part2/chapter-20.xml"/>
+  </topicref>
+</map>

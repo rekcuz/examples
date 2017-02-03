@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="domain-modules">
+  <title>Domain modules</title>
+  <shortdesc>The DITA standard provides domain modules that you can integrate into your
+    document-type shells.</shortdesc>
+  <refbody>
+    <section>
+      <p>The tables in this topic use the following variables:</p>
+      <ul>
+        <li><varname>grammar</varname> specifies the type of XML grammar, for example, "dtd", "xsd",
+          "rng", or "rnc".</li>
+        <li>.<varname>ext</varname> is the file extension, for example, "ent", "mod", "xsd", "rng",
+          or "rnc".</li>
+      </ul>
+      <draft-comment author="Kristen Eberlein" time="6 March 2014">I have added the new 1.3 domains
+        to the following table. I have not added the file names, as I cannot verify them against
+        packages yet. Accordingly, the<xmlelement> filepath </xmlelement>elements contain
+        "X".</draft-comment>
+    </section>
+    <table frame="all">
+      <title>Domain modules used in DITA topics</title>
+      <tgroup cols="3">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c3" colnum="2" colwidth="2*"/>
+        <colspec colname="c2" colnum="3" colwidth="2.0*"/>
+        <thead>
+          <row>
+            <entry>Domain</entry>
+            <entry>File names</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row product="base">
+            <entry>Abbreviation</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/abbreviateDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides an element (<xmlelement>abbreviated-form</xmlelement>) that represents a
+              reference to a term that can be displayed in both long and short form</entry>
+          </row>
+          <row product="technicalContent" rev="DITA1.3 proposal-13111">
+            <entry>Equation</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/X.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for representing equations</entry>
+          </row>
+          <row product="base">
+            <entry>Hazard statement</entry>
+            <entry><filepath>base/<varname>grammar</varname>/hazardstatementDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for constructing product safety-information labels</entry>
+          </row>
+          <row product="base">
+            <entry>Highlighting</entry>
+            <entry><filepath>base/<varname>grammar</varname>/highlightDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for highlighting text</entry>
+          </row>
+          <row product="base">
+            <entry>Indexing</entry>
+            <entry><filepath>base/<varname>grammar</varname>/indexingDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for use with indexing</entry>
+          </row>
+          <row product="learningTraining">
+            <entry>Learning</entry>
+            <entry><filepath>learning/<varname>grammar</varname>/learningDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for X<draft-comment author="Kristen Eberlein"
+                time="6 March 2014">What is this domain used for?</draft-comment></entry>
+          </row>
+          <row product="learningTraining">
+            <entry>Learning interaction base</entry>
+            <entry><filepath>learning/<varname>grammar</varname>/learningInteractionBaseDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements to describe learning interactions such as questions and
+              responses</entry>
+          </row>
+          <row product="learningTraining">
+            <entry>Learning metadata</entry>
+            <entry><filepath>learning/<varname>grammar</varname>/learningMetadataDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements to describe the characteristics of learning content</entry>
+          </row>
+          <row product="technicalContent" rev="DITA1.3 proposal-13035">
+            <entry>Markup</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/X.<varname>ext</varname></filepath></entry>
+            <entry>Provides an element that can be used a base for specializing elements to
+              represent markup elements</entry>
+          </row>
+          <row product="technicalContent" rev="DITA1.3 proposal-13111">
+            <entry>MathML</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/X.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for including or referencing MathML markup</entry>
+          </row>
+          <row product="technicalContent">
+            <entry>Programming</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/programmingDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for documenting programming concepts and syntax</entry>
+          </row>
+          <row product="technicalContent" rev="DITA1.3 proposal-13102">
+            <entry>Release management</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/X.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for human-authored information about the changes that have been
+              made to a DITA topic</entry>
+          </row>
+          <row product="technicalContent">
+            <entry>Software</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/softwareDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for documenting software applications</entry>
+          </row>
+          <row rev="DITA1.3 proposal-13119" product="technicalContent">
+            <entry>SVG</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/X.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for including or referencing SVG markup</entry>
+          </row>
+          <row product="technicalContent">
+            <entry>Task requirements</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/taskreqDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for use in tasks that involve machines or other pieces of
+              hardware</entry>
+          </row>
+          <row product="technicalContent">
+            <entry>User interface</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/uiDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for documenting user interfaces</entry>
+          </row>
+          <row product="base">
+            <entry>Utilities</entry>
+            <entry><filepath>base/<varname>grammar</varname>/utilitiesDomain.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for common features of a language that might not be semantic,
+              such as image maps</entry>
+          </row>
+          <row rev="DITA1.3 proposal-13035" product="technicalContent">
+            <entry>XML mention</entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/X.<varname>ext</varname></filepath></entry>
+            <entry>Provides elements for describing XML applications and document types</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>Domain modules used in DITA maps</title>
+      <tgroup cols="3">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="2.0*"/>
+        <colspec colname="c3" colnum="3" colwidth="2.0*"/>
+        <thead>
+          <row>
+            <entry>Domains</entry>
+            <entry>Description</entry>
+            <entry>File names</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row product="base">
+            <entry>Classification</entry>
+            <entry>Provides elements for associating topic references with subjects</entry>
+            <entry><filepath>subjectScheme/<varname>grammar</varname>/classifyDomain.<varname>ext</varname></filepath></entry>
+          </row>
+          <row product="base">
+            <entry>Delayed conref resolution</entry>
+            <entry>Provides elements for use in environments when conref resolution is delayed or
+              occurs at run time </entry>
+            <entry><filepath>base/<varname>grammar</varname>/delayResolutionDomain.<varname>ext</varname></filepath></entry>
+          </row>
+          <row product="technicalContent">
+            <entry>Glossref</entry>
+            <entry>Provides convenience elements that are used to reference glossary topics or to
+              reference multiple topics in a single collection </entry>
+            <entry><filepath>technicalContent/<varname>grammar</varname>/glossrefDomain.<varname>ext</varname></filepath></entry>
+          </row>
+          <row product="learningTraining">
+            <entry>Learning map</entry>
+            <entry>Provides elements to group topics as learning objects</entry>
+            <entry><filepath>learning/<varname>grammar</varname>/learningMapDomain.<varname>ext</varname></filepath></entry>
+          </row>
+          <row product="base">
+            <entry>Map group</entry>
+            <entry>Provides elements for use in addressing, defining, or grouping topic
+              references</entry>
+            <entry><filepath>base/<varname>grammar</varname>/mapGroup.<varname>ext</varname></filepath></entry>
+          </row>
+          <row product="technicalContent">
+            <entry>xNAL</entry>
+            <entry>Provides elements that represent a subset of the Extensible Name and Address
+              Standard</entry>
+            <entry><filepath>base/<varname>grammar</varname>/xnalDomain.<varname>ext</varname></filepath></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+ 
+</reference>

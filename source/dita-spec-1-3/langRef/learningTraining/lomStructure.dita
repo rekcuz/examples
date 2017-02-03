@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="lomStructure" xml:lang="en-us">
+	<title><xmlelement>lomStructure</xmlelement></title>
+	<shortdesc>The <xmlelement>lomStructure</xmlelement> provides learning metadata about the
+		underlying organizational structure of the resource. </shortdesc>
+	<prolog>
+		<metadata>
+			<keywords>
+				<indexterm>lomStructure</indexterm><indexterm>learning and training elements<indexterm>lomStructure</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<refbody>
+		<section id="contains" conref="../../common/commonNavLibraryTable.dita#contentmodel-lomStructure/contains" otherprops="contains"></section>
+		
+		<section id="inheritance" otherprops="inheritance">
+			<title>Inheritance</title><p>+ topic/data learning-d/lomStructure </p>
+</section>
+
+<example id="example"><title>Example</title>
+<p>See <xref href="lcLom.dita#lcLom/example">lcLom</xref>.</p>
+</example>
+
+<section id="attributes">
+<title>Attributes</title>
+			<p>The following attributes are available on this element: <xref
+					href="../attributes/universalAttributes.dita"/>, <xref
+					href="../attributes/commonAttributes.dita#common-atts/outputclass"/>, and the
+				attributes defined below.</p>
+			<dl>
+				<dlentry>
+					<dt><xmlatt>name</xmlatt></dt>
+					<dd>The name used to indicate this data. The default value for this attribute is
+						"lomStructure".</dd>
+				</dlentry>
+				<dlentry>
+					<dt><xmlatt>value</xmlatt>
+						<ph
+							conref="../../common/conref-attribute.dita#conref-attribute/required-attr"
+						/></dt>
+					<dd>The learning structure for this content. Allowable values are "atomic", "branched",
+						"collection", "hierarchical", "linear" "mixed", "networked", "parceled", or
+							<xref href="../attributes/ditauseconreftarget.dita"/>.<draft-comment
+							author="robander" time="17 February 2014" disposition="accepted"
+							>Notified TC: XSD has a mispelling of "branched", DTD is missing several
+							values. Leaving all listed for now. UPDATE OCTOBER 9 2014: Need to find
+							out if TC made a call on this one. UPDATE: TC decided to make all of
+							these values legal. Note to TC:
+							https://www.oasis-open.org/apps/org/workgroup/dita/email/archives/201402/msg00143.html
+							Meeting minutes:
+								https://lists.oasis-open.org/archives/dita/201402/msg00201.html<p>Leaving
+								this comment here until the grammar files have been
+							updated.</p></draft-comment></dd>
+				</dlentry>
+				<dlentry conref="../../common/conref-attribute.dita#conref-attribute/lomdatatype">
+					<dt/>
+					<dd/>
+				</dlentry>
+			</dl> 
+</section>
+</refbody>
+</reference>
+

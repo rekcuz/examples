@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_bb1_f11_wq">
+  <title>Conref compatibility with constraints</title>
+  <shortdesc>To determine compatibility between two document instances, a conref processor checks
+    the <xmlatt>domains</xmlatt> attribute to confirm whether the referencing document has a
+    superset of the vocabulary modules in the referenced document. If the two document instances
+    each are constrained, the conref processor checks to confirm the compatibility of the
+    constraints.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>conref<indexterm>constraint modules and compatibility</indexterm></indexterm>
+        <indexterm>constraints<indexterm>conref compatibility</indexterm></indexterm>
+        <indexterm>examples<indexterm>constraint modules and conref
+          compatibility</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <!--<p>To determine compatibility between two document instances, a conref processor can check the <xmlatt>domains</xmlatt> attribute to confirm the following:</p><ul><li>The referencing document has a superset of the vocabulary modules in the referenced document.</li><li></li></ul>-->
+    <draft-comment author="Kristen Eberlein" time="29 January 2015">
+      <p>The 1.2 topic also contained the following text (applicable to conref push): "For each
+        vocabulary module in the referenced document, the referencing document qualifies the common
+        module with a subset of the constraints in the referenced document." Might need to rephrase
+        and put it back into the content.</p>
+    </draft-comment>
+    <p>Conref processors take into account whether constraints are specified as strong. For strong
+      constraints, the following rules apply:</p>
+    <dl>
+      <dlentry>
+        <dt>Conref pull</dt>
+        <dd>The document type that contains the referencing element must be less (or equally)
+          constrained than the document type that contains the referenced element.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Conref push</dt>
+        <dd>The document type that contains the referencing element must be more (or equally)
+          constrained than the document type that contains the referenced element.</dd>
+      </dlentry>
+    </dl>
+    <example>
+      <title>Example: Conref pull and constraint compatibility</title>
+      <p rev="targeted-review">The following table contains scenarios where conref pull occurs
+        between constrained and unconstrained document instances. It assumes that the processor is
+          <b>not</b> configured to treat all constraints as strong constraints.</p>
+      <simpletable rev="targeted-review" relcolwidth="3* 3* 1* 2*">
+        <sthead>
+          <stentry>Values of @domains attribute on document type that contains the referencing
+            element</stentry>
+          <stentry>Values of @domains attribute on document type that contains the referenced
+            element</stentry>
+          <stentry>Resolution</stentry>
+          <stentry>Comments</stentry>
+        </sthead>
+        <strow>
+          <stentry><codeph>(topic)</codeph></stentry>
+          <stentry><codeph>(topic shortdescReq-c)</codeph></stentry>
+          <stentry>Allowed </stentry>
+          <stentry>The content model of the referenced topic is more constrained than the
+            referencing topic.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>s(topic shortdescReq-c)</codeph></stentry>
+          <stentry><codeph>(topic)</codeph></stentry>
+          <stentry>Prevented</stentry>
+          <stentry>The constraint is specified as a strong constraint, and the content model of the
+            referenced topic is less constrained than the referencing topic.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>(topic shortdescReq-c)</codeph></stentry>
+          <stentry><codeph>(topic)</codeph></stentry>
+          <stentry>Allowed </stentry>
+          <stentry>Although the content model of referenced topic is less constrained than the
+            referencing topic, this is a weak constraint and so permitted.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>(topic task) (topic hi-d basicHighlightingDomain-c)</codeph></stentry>
+          <stentry><codeph>(topic simpleSection-c) (topic task simpleStep-c)</codeph></stentry>
+          <stentry>Allowed </stentry>
+          <stentry>The referenced topic has a subset of the vocabulary modules that are integrated
+            into the document type shell for the referencing topic. Both document types integrate
+            constraints, but the referencing topic is less constrained than the referenced
+            topic.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>(topic hi-d) (topic simpleSection-c) s(topic
+            simpleP-c)</codeph></stentry>
+          <stentry><codeph>(topic simpleSection-c)(topic task) (topic hi-d
+              basicHighlightingDomain-c)</codeph></stentry>
+          <stentry>Prevented</stentry>
+          <stentry>The referencing document has more constraints than the referencing document,
+            including a strong constraint applied to the <xmlelement>p</xmlelement>
+            element.</stentry>
+        </strow>
+      </simpletable>
+    </example>
+    <example>
+      <title>Example: Conref push and constraint compatibility</title>
+      <p rev="targeted-review">The following table contains scenarios where conref push occurs
+        between constrained and unconstrained document instances. It assumes that the processor has
+          <b>not</b> been configured to treat all constraints as strong constraints.</p>
+      <simpletable rev="targeted-review" relcolwidth="3* 3* 1* 2*">
+        <sthead>
+          <stentry>Values of @domains attribute on referencing element</stentry>
+          <stentry>Values of @domains attribute on referenced element</stentry>
+          <stentry>Resolution</stentry>
+          <stentry>Comments</stentry>
+        </sthead>
+        <strow>
+          <stentry><codeph>(topic)</codeph></stentry>
+          <stentry><codeph>(topic shortdescReq-c)</codeph></stentry>
+          <stentry>Allowed</stentry>
+          <stentry>Although the content model of the referenced topic is more constrained than the
+            referencing topic, this is a weak constraint and so permitted.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>(topic)</codeph></stentry>
+          <stentry><codeph>s(topic shortdescReq-c)</codeph></stentry>
+          <stentry>Prevented</stentry>
+          <stentry>The constraint is specified as a strong constraint, and the content model of the
+            referenced topic is more constrained than the referencing topic.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>(topic shortdescReq-c)</codeph></stentry>
+          <stentry><codeph>(topic)</codeph></stentry>
+          <stentry>Allowed</stentry>
+          <stentry>The content model of the referencing topic is more constrained than the
+            referenced topic.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>(topic task) (topic hi-d basicHighlightingDomain-c)</codeph></stentry>
+          <stentry><codeph>(topic simpleSection-c) (topic task simpleStep-c)</codeph></stentry>
+          <stentry>Allowed </stentry>
+          <stentry>The referenced topic has a subset of the vocabulary modules that are integrated
+            into the document type shell for the referencing topic. Both document types integrate
+            constraints, but the referencing topic is less constrained than the referenced
+            topic.</stentry>
+        </strow>
+        <strow>
+          <stentry><codeph>(topic hi-d) (topic simpleSection-c) s(topic
+            simpleP-c)</codeph></stentry>
+          <stentry><codeph>(topic simpleSection-c)(topic task) (topic hi-d
+            basicHighlightingDomain-c)</codeph></stentry>
+          <stentry>Prevented</stentry>
+          <stentry>The referenced document has more constraints than the referencing document,
+            including a strong constraint applied to the <xmlelement>p</xmlelement>
+            element.</stentry>
+        </strow>
+      </simpletable>
+    </example>
+  </conbody>
+</concept>

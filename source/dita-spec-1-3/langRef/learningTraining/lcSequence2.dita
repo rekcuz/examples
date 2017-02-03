@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="lcSequence2" xml:lang="en-us" rev="DITA1.3">
+	<title><xmlelement>lcSequence2</xmlelement></title>
+	<shortdesc>The <xmlelement>lcSequence2</xmlelement> element in an assessment interaction
+		provides the position of a sequence option in a sequence. This element replaces the
+			<xmlelement>lcSequence</xmlelement> element in DITA 1.2. </shortdesc>
+	<prolog>
+		<metadata>
+			<keywords>
+				<indexterm>lcSequence2</indexterm>
+				<indexterm>learning and training
+					elements<indexterm>lcSequence2</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<refbody>
+		<section id="contains"
+			conref="../../common/commonNavLibraryTable.dita#contentmodel-lcSequence2/contains"
+			otherprops="contains"></section>
+		<section id="inheritance" otherprops="inheritance">
+			<title>Inheritance</title>
+			<p>+ topic/data learningInteractionBase2-d/data learning2-d/lcSequence2 </p>
+		</section>
+		<example conref="lcSequencing2.dita#lcSequencing2/example" id="example"/>
+		<section id="attributes">
+			<title>Attributes</title>
+			<p>The following attributes are available on this element: <xref
+					href="../attributes/universalAttributes.dita"/>, <xref
+					href="../attributes/commonAttributes.dita#common-atts/outputclass"/>, and the
+				attributes defined below.</p>
+			<dl>
+				<dlentry>
+					<dt><xmlatt>name</xmlatt></dt>
+					<dd>The name used to indicate this data. The default value for this attribute is
+						"lcSequence2".</dd>
+				</dlentry>
+				<dlentry>
+					<dt><xmlatt>value</xmlatt>
+						<ph
+							conref="../../common/conref-attribute.dita#conref-attribute/required-attr"
+						/></dt>
+					<dd>The position of an option in a sequence of options. The value <term
+							outputclass="RFC-2119" rev="terminology">MUST</term> be a number.</dd>
+				</dlentry>
+				<dlentry>
+					<dt><xmlatt>datatype</xmlatt>
+						<ph
+							conref="../../common/conref-attribute.dita#conref-attribute/required-attr"
+						/></dt>
+					<dd>The datatype for this data. Use numbers for sequence.<draft-comment author="robander"
+							time="14 February 2014" disposition="open">Read this while converting
+							attribute table. There is something wrong here. The attribute table says
+							"required", but I cannot tell from the description what is supposed to
+							go in the attribute. The example above shows
+								<xmlelement>lcSequence2</xmlelement> elements that do not use htis
+							attribute. I've sent email to the TC to clarify. UPDATE October 9 2014:
+							Need to find out if TC had a recommendation here.</draft-comment></dd>
+				</dlentry>
+			</dl>
+			
+		</section>
+	</refbody>
+</reference>

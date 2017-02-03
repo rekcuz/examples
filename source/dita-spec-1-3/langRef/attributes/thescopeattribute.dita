@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<reference id="thescopeattribute" xml:lang="en-us">
+<title>The <xmlatt>scope</xmlatt> attribute</title>
+<shortdesc>The <xmlatt>scope</xmlatt> attribute identifies the closeness of the relationship between
+        the current document and the target resource.</shortdesc>
+<refbody>
+<section><ul>
+<li>Set <xmlatt>scope</xmlatt> to "local" when the resource is part of the current set of
+                    content.</li>
+<li>Set <xmlatt>scope</xmlatt> to "peer" when the resource is part of the current set of content but
+                        <ph rev="review-2">might not accessible</ph> at build time, <ph
+                        rev="DITA1.3 proposal-13041">or for maps to be treated as root maps for the
+                        purpose of creating map-to-map key references (peer maps)</ph>. An
+                    implementation might choose to open such resources in the same browser window to
+                    distinguish them from those with <xmlatt>scope</xmlatt> set to "external".</li>
+<li>Set <xmlatt>scope</xmlatt> to "external" when the resource is not part of the current
+                    information set and should open in a new browser window.</li>
+<li>See <xref href="ditauseconreftarget.dita"></xref> for more information
+on -dita-use-conref-target.</li>
+</ul><p rev="DITA1.3 proposal-13107"><ph
+                    conref="../../common/conref-attribute.dita#conref-attribute/may-inherit"/> The
+                processing default is determined by the value of the <xmlatt>href</xmlatt>
+                attribute. In most cases, the processing default is local. However the processing
+                default is "external" whenever the absolute URI in the <xmlatt>href</xmlatt>
+                attribute begins with one of the following schemes:</p>
+    <ul rev="DITA1.3 proposal-13107">
+                <li>http</li>
+                <li>https</li>
+                <li>ftp</li>
+                <li>mailto</li>
+            </ul>
+    <p rev="DITA1.3 proposal-13107">Processors may consider additional URI schemes as external by
+                default, but must not consider all absolute URIs as external by default. Processors
+                    <term outputclass="RFC-2119" rev="terminology">MUST</term> always consider
+                relative URIs as local by default.</p>
+    <draft-comment author="Kristen Eberlein" time="7 March 2014" disposition="open">Do we need to use normative
+                RFC-2119 terminology in the above paragraph?</draft-comment></section>
+</refbody>
+</reference>

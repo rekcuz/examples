@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="using-relax-ng" rev="DITA1.3 proposal-13112 review-1">
+ <title>Using RELAX NG for document type shells, vocabulary modules, and constraint modules</title>
+ <shortdesc>The RELAX NG specification defines two syntaxes for RELAX NG grammars: the XML syntax
+    and the compact syntax. The two syntaxes are functionally equivalent, and either syntax can be
+    reliably converted into the other, for example, by using the open-source Trang tool. The OASIS
+    DITA Technical Committee uses the RELAX NG XML syntax for the normative versions of the XML
+    grammar files that comprise the DITA release. </shortdesc>
+ <conbody>
+    <p>The DITA Technical Committee chose the RELAX NG XML syntax for the following reasons:</p>
+    <dl>
+      <dlentry>
+        <dt>Easy use of foreign markup</dt>
+        <dd><draft-comment author="robander" time="17 February 2015">Nervous about "The DITA coding
+            requirements depend on" and "such metadata is required", given the non-standard aspect
+            of the foreign markup we're using. Maybe just state that the tools used by OASIS to
+            generate DTD and XSD versions of our grammar files depend on this feature? Then keep the
+            bit about Schematron.</draft-comment>The DITA coding requirements depend on this feature
+          of RELAX NG in order to capture metadata about document type shells and modules; such
+          metadata is required in order to generate the DTD- and XSD-based versions of the grammar
+            files.<p>The foreign vocabulary feature also can be used to include Schematron rules
+            directly in RELAX NG grammars. Schematron rules can check for patterns that either are
+            not expressible with RELAX NG directly or that would be inconvenient to
+          express.</p></dd>
+      </dlentry>
+      <dlentry>
+        <dt>RELAX NG <xmlelement>div</xmlelement> element </dt>
+        <dd>This general grouping element allows for arbitrary organization and grouping of patterns
+          within grammar documents. Such grouping tends to make the grammar documents easier to work
+          with, especially in XML-aware editors. <ph rev="review-2">The use or non-use of the RELAX
+            NG <xmlelement>div</xmlelement> element does not affect the meaning of the patterns that
+            are defined in a RELAX NG schema.</ph></dd>
+      </dlentry>
+      <dlentry>
+        <dt>Capability of expressing precise restrictions</dt>
+        <dd>RELAX NG is capable of expressing constraints that are more precise than is possible
+          with either DTDs or XSDs. For example, RELAX NG patterns can be context specific such that
+          the same element type can allow different content or attributes in different
+          contexts.</dd>
+        <dd>If you plan to generate DTD- or XSD-based modules from RELAX NG modules, avoid RELAX NG
+          features that cannot be translated into DTD or XSD constructs. When RELAX NG is used
+          directly for DITA document validation, the document type shells for those documents can
+          integrate constraint modules that use the full power of RELAX NG to enforce constraints
+          that cannot be enforced by DTDs or XSDs.</dd>
+      </dlentry>
+    </dl>
+    <p>The DITA use of RELAX NG depends on the <cite>RELAX NG DTD Compatibility</cite>
+      specification, which provides a mechanism for defining default attribute values and embedded
+      documentation. Processors that use RELAX NG for DITA documents in which required attributes
+      (for example, the <xmlatt>domains</xmlatt> and <xmlatt>class</xmlatt> attributes)  are not
+      explicitly present must implement the DTD compatibility specification in order to get default
+      attribute values.</p>
+    <p><draft-comment author="robander" time="17 February 2015">Same issue as above. "The resulting
+        RNG might not contain the metadata that is necessary" ... it's only necessary for the
+        existing tool, which is not part of the standard. I like that we state that grammars may
+        omit this information, but maybe this whole thing could be rephrased a bit. "You can use
+        either RNC or RNG. They're conforming if they have the one-to-one thing. Note: OASIS uses a
+        tool to convert the normative RNG to RNC/DTD/XSD; this process relies on metadata and
+        annotations that may not be preserved when converting from one RELAX NG syntax to the other.
+        However, the metadata to enable such conversions is not required in order to create
+        conforming RNG </draft-comment>DITA practitioners can author DITA modules using one RELAX NG
+      syntax, and then use tools to generate modules in the other syntax. The resulting RELAX NG
+      modules are conforming if there is a one-to-one file correspondence. The resulting RELAX NG
+      XML might not contain the metadata that is necessary to generate corresponding modules that
+      are DTD- or XSD-based, as processors are not required to process the annotations and
+      information from foreign vocabularies. Conforming RELAX NG-based DITA modules, whether compact
+      or XML syntax, <term outputclass="RFC-2119" rev="terminology">MAY</term> omit the annotations
+      and foreign elements that are required to enable generation of other XML grammars, such as
+      DTDs and XML Schema.</p>
+    <!--<p>By definition, RELAX NG compact syntax modules generated from conforming RELAX NG XML syntax modules such that there is a one-to-one correspondence between XML files and compact syntax files are conforming. While the resulting compact syntax files are able to include the information from foreign vocabularies and annotations, there is no requirement to be able to process those annotations when generating XML-syntax RELAX NG declarations. Thus, generation of XML syntax modules from conforming compact syntax modules need only result in minimally-conforming XML syntax modules.</p>-->
+    <!--<draft-comment author="Kristen Eberlein" time="15 February 2014"><p>What is the point of the first sentence? It lacks a critical verb. In general, what points are you trying to make in this paragraph, and why do they need to be in the spec?</p><p>Eliot Kimber, review #1: There's a couple of things going on here that I was trying to get at but didn't succeed:</p><ol><li>While the compact syntax can be as informationally complete as the XML-syntax RNG files, there is no requirement that they in fact be that complete in order to be conforming. This is because there is no intent to enable generation of DTDs and XSDs from compact-syntax RELAX NG, so there's no point in requiring compact-syntax files to have all the annotations that the XML-syntax RNG files need in order to enable DTD and XSD generation.</li><li>When compact syntax RNG files that themselves conform to the coding requirements are used to generate the equivalent XML-syntax RNG files SUCH THAT there is a one-to-correspondence between the original RNC files and the generated RNG files, then, by definition, the resulting RNG files will also be conforming, even though they may not have all the annotations. That is, they will be minimally conforming because minimal conformance of RELAX NG grammars does not require any of the annotations, it only requires that you follow the naming and organization requirements. That is, you can have conforming RELAX NG modules that are not suitable for generating DTDs or XSDs.</li><li>The intent is to make it clear that we're not disenfranchising the compact syntax, that it can be valid and that you can use it as your primary source for developing RELAX NG grammars.</li><li> The off-the-shell tools that generate RNC from RNG will not produce conforming files as currently implemented. That's why the "such that" clause about the file-to-file correspondence is required: not all tools will do that today. Thus, it's not the case that any RNG-to-RNC conversion will result in conforming RNC files (and visa versa)</li></ol><p>Eberlein, based on Skype chat with Eliot: "So the one-to-one correspondence is a file-to-file correspondence. If a tool merges the content of files, the generated RNC or RNG is not conforming. For conformance, at a minimum, the file names and structures must be maintained. For maximum conformance, file names and structure AND preservation of annotations and foreign vocabularies.</p></draft-comment>-->
+    <p>The DITA coding requirements are defined for the RELAX NG XML syntax. Document type shells,
+      vocabulary modules, and constraint modules that use the RELAX NG compact syntax <term
+        outputclass="RFC-2119" rev="terminology">MUST</term> use the same file naming and
+      organization requirements as those defined for the RELAX NG XML syntax, substituting ".rnc"
+      for ".rng" as the file name extension. </p>
+    <draft-comment author="robander" time="16 February 2015">Reminder: should probably change the
+      previous paragraph as file naming rules move to appendix.</draft-comment>
+  <p>RELAX NG grammars for DITA document-type shells, vocabulary modules, and constraint modules
+        <term outputclass="RFC-2119" rev="terminology">MAY</term> do the following:</p>
+    <ul>
+      <li>Use the <xmlelement>a:documentation</xmlelement> element anywhere that foreign elements
+        are allowed by RELAX NG. The <xmlelement>a:documentation</xmlelement> element refers to the
+          <xmlelement>documentation</xmlelement> element type from the
+          <xmlnsname>http://relaxng.org/ns/compatibility/annotations/1.0</xmlnsname> as defined by
+        the DTD compatibility specification. The prefix "a" is used by convention.</li>
+      <li>Use <xmlelement>div</xmlelement> to group pattern declarations.</li>
+      <li>Include embedded Schematron rules or any other foreign vocabulary. Processors <term
+          outputclass="RFC-2119" rev="terminology">MAY</term> ignore any foreign vocabularies within
+        DITA grammars that are not in the
+          <xmlnsname>http://relaxng.org/ns/compatibility/annotations/1.0</xmlnsname> or
+          <xmlnsname>http://dita.oasis-open.org/architecture/2005/</xmlnsname> namespaces.</li>
+    </ul>
+    <p>DITA grammar documents <term outputclass="RFC-2119" rev="terminology">SHOULD</term> contain
+      the following:</p>
+    <draft-comment author="robander" time="16 February 2015">We agreed to remove the comment
+      requirements from the spec. Need to deterimne how much more of the following to
+      remove.</draft-comment>
+    <ul>
+      <li>An initial set of comments or a <xmlelement>moduleMetadata</xmlelement> element that
+        describes the grammar document and indicates the URNs or absolute URLs by which the grammar
+        should be referenced in RELAX NG grammar references. See <xref
+          href="relax-ng-module-descriptive-markup.dita"/>.</li>
+      <!--<li>Comments or <xmlelement>div</xmlelement> elements that identify each section of the grammar</li>-->
+      <li>Sections that occur in the order specified in these coding requirements</li>
+      <li>(For section titles that use <xmlelement>div</xmlelement> elements) The following
+        format:<codeblock>&lt;div>
+  &lt;a:documentation><i>SECTION TITLE</i>&lt;/a:documentation>
+ <!--...-->
+&lt;/div></codeblock></li>
+    </ul>
+ </conbody>
+</concept>

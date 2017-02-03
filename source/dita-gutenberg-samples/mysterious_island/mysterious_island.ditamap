@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>The Project Gutenberg eBook of <ph
+      outputclass="cite">The Mysterious Island</ph>, by Jules Verne</title>
+  <topichead
+    navtitle="License Statement">
+    <topicref
+      href="legalstuff/main-page.xml"/>
+  </topichead>
+  <topicref
+    navtitle="The Mysterious Island"
+    href="parts/title-page.xml"
+    collection-type="sequence"/>
+  <topicref
+    href="parts/part-01.ditamap"
+    format="ditamap"/>
+  <topicref
+    href="parts/part-02.ditamap"
+    format="ditamap"/>
+  <topicref
+    href="parts/part-03.ditamap"
+    format="ditamap"/>
+  <topichead
+    navtitle="end-of-book">
+    <topicref
+      href="legalstuff/end-of-book.xml"/>
+  </topichead>
+</map>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ditaspecialization" xml:lang="en-us">
+  <title>Overview of DITA extension facilities</title>
+  <shortdesc>DITA provides three extension facilities: configuration, constraint, and
+    specialization.</shortdesc>
+  <conbody>
+    <dl>
+      <dlentry>
+        <dt>Configuration</dt>
+        <dd>Configuration enables the definition of DITA document types that include only the
+          vocabulary modules that are required for a given set of documents. There is no need to
+          modify the vocabulary modules. Configurations are implemented as document type
+          shells.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Constraint</dt>
+        <dd>Constraint enables the <ph rev="review-2">restriction</ph> of content models and
+          attribute lists for individual elements. There is no need to modify the vocabulary
+          modules. Constraints are implemented as constraint modules, which are integrated into
+          document type shells.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Specialization</dt>
+        <dd><ph>Specialization enables the creation of new element types <ph rev="review-2">in a way
+              that preserves the ability to blindly interchange those new element types with
+              conforming DITA applications.</ph> Specializations are implemented as vocabulary
+            modules, which are integrated into document type shells.</ph><p>Specialization
+            hierarchies are implemented as sets of vocabulary modules, each of which declares the
+            markup and entities that are unique to a specialization. The separation of the markup
+            vocabulary and its implementing declarations into modules makes it easy to extend the
+            hierarchy, because new modules can be added without affecting existing document types.
+            It also makes it easy to assemble design elements from different sources into a single
+            document-type shell and to reuse specific parts of the specialization hierarchy in more
+            than one document-type shell.</p></dd>
+      </dlentry>
+      <dlentry>
+        <dt>Governing document-type declarations</dt>
+        <dd>
+          <draft-comment author="Kristen Eberlein" time="12 December 2014">
+            <p>Does this content ("Governing document-type declarations") belong in this topic? It
+              is not covered by the title or the short description. </p>
+          </draft-comment>
+          <draft-comment author="robander" time="17 February 2015">Responding to Kris: I wonder if
+            this would be better as the first sub-topic in this section? Essentially, this is
+            expanding upon the idea of "configuration". While configuration is defined as "making a
+            doctype shell to assemble modules", this portion just goes into more detail about the
+            doctype shell, and adds a couple more reminders, like the "DITA docs can be conforming
+            even if the doctype isn't". Related to Nancy's confusion, I think that specific issue
+            should probably be called out with a "for example".<p>Alternative - this content could
+              be moved (with an example) into the first subtopic on "recognized grammar
+              files"?</p><p>Other alternatively: maybe this content should make up the wrapper topic
+              for a consolidated "Coding practices" section. Condensing terribly, that would mean we
+              have a section that says "Here are the coding practices for modular / reusable grammar
+              files. You can have valid DITA topics even if you don't follow these rules [example],
+              but here is the advantage of the modular approach. [nested topics explain all the
+              coding rules.]</p></draft-comment>
+          <p>DITA documents are governed by DITA document types that represent the combination of
+            structural types (maps or topics), domain vocabularies, and constraint modules; such
+            document types define the set of element types and attributes that are available to a
+            specific document. DITA provides a <ph rev="review-2">mechanism</ph> by which XML
+            vocabulary and constraint modules can be combined in an infinite number of ways to
+            create specific document types, as well as a set of base modules that serve as the base
+            for further configuration, constraint, or specialization.</p>
+          <p>DITA documents typically are governed by a conforming DITA document-type shell.
+            However, the conformance of a DITA document is a function of the document instance, not
+            its governing grammar. Conforming DITA documents are not required to use a conforming
+            document-type shell.</p>
+          <p><ph rev="review-2">Conforming DITA documents are not required to have any governing
+              document type declaration or schema.</ph> There might be compelling or practical
+            reasons to use non-conforming document-type shells. For example, a document might use a
+            document type shell that does not conform to the DITA requirements for shells in order
+            to meet the needs of a specific application or tool. Such a non-conforming document-type
+            shell still might enable the creation of conforming DITA content.</p>
+        </dd>
+      </dlentry>
+    </dl>
+    <draft-comment author="Kristen Eberlein">
+      <p>Review #2 comment from Nancy Harrison:</p>
+      <p>"This discussion of conforming DITA documents is confusing. How would a DITA doctype shell
+        be conformant? non-conformant? How could a document instance be conformant if it's based on
+        a non-conforming shell?"</p>
+      <p>If this language is not clear to Nancy, we probably have a problem here.</p>
+    </draft-comment>
+  </conbody>
+</concept>

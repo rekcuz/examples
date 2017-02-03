@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="dita-module-impl" xml:lang="en-US">
+  <title>Implementation reference for DITA modules and document-type shells</title>
+  <shortdesc>(Non-normative) The DITA standard defines a set of base types and vocabulary modules
+    and a set of specialized map types, topic types, and domains. </shortdesc>
+  <conbody>
+    <p>A significant feature of the DITA implementation is that it places more importance on the
+      modules than on the actual document-type shell. All element and attribute-type declarations
+      are made in modules, which are then integrated into a document type using a document-type
+      shell. Implementers are free to create new document-type shells that introduce, constrain, or
+      remove modules; the new shells also can control whether -- and what kind of  -- topics can
+      nest.</p>
+  </conbody>
+</concept>

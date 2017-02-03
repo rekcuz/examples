@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="relax-ng-topic-module-coding-requirements">
+ <title>RELAX NG: Coding requirements for topic type modules</title>
+ <shortdesc><ph
+      conref="../../common/conref_file.dita#reuse_file/coding-req-topic-type-modules-shortdesc"
+    /></shortdesc>
+ <conbody>
+  <p>A topic type module <term outputclass="RFC-2119" rev="terminology">MUST</term> define a pattern
+      to specify default topic nesting. The pattern name <term outputclass="RFC-2119"
+        rev="terminology">MUST</term> be the topic element name plus the suffix
+        <codeph>-info-types</codeph>. For example, the info-types pattern for the concept topic type
+      is <codeph>concept-info-types</codeph>.</p>
+  <p>If the topic has <!--default subordinate topics--> default topic nesting, this pattern <term
+        outputclass="RFC-2119" rev="terminology">MAY</term> refer to a list of name patterns for
+      topic element types, as in this example:
+      <codeblock>&lt;div>
+  &lt;a:documentation>INFO TYPES PATTERNS&lt;/a:documentation>
+  &lt;define name="mytopic-info-types">
+    &lt;ref name="subtopictype-01.element"/>
+    &lt;ref name="subtopictype-02.element"/>
+  &lt;/define>
+  &lt;!-- ... -->
+&lt;/div></codeblock></p>
+  <p>If the topic does not permit nested topics, the pattern <term outputclass="RFC-2119" rev="terminology"
+    >SHOULD</term> refer to the <codeph>info-types</codeph> pattern as in the following example:</p>
+  <codeblock>&lt;div>
+  &lt;a:documentation>INFO TYPES PATTERNS&lt;/a:documentation>
+  &lt;define name="mytopic-info-types">
+    &lt;ref name="info-types"/>
+  &lt;/define>
+  &lt;!-- ... -->
+&lt;/div></codeblock>
+  <p>A document type shell then can control how topics are allowed to nest by redefining the
+    "<varname>topictype</varname>-info-types" pattern for each topic type, or it can efficiently
+   create common nesting rules by redefining the main info-types pattern.</p>
+  <p>In the declaration of the root element of a topic type, the last position in the content model
+    <term outputclass="RFC-2119" rev="terminology">MUST</term> be the "<varname>topictype</varname>-info-types"
+   pattern, as in the following example:</p>
+  <codeblock>&lt;div>
+  &lt;a:documentation>LONG NAME: Concept&lt;/a:documentation>
+  &lt;define name="concept.content">
+    &lt;ref name="title"/>
+    &lt;optional>
+      &lt;ref name="titlealts"/>
+    &lt;/optional>
+    &lt;optional>
+      &lt;choice>
+        &lt;ref name="abstract"/>
+        &lt;ref name="shortdesc"/>
+      &lt;/choice>
+    &lt;/optional>
+    &lt;optional>
+      &lt;ref name="prolog"/>
+    &lt;/optional>
+    &lt;optional>
+      &lt;ref name="conbody"/>
+    &lt;/optional>
+    &lt;optional>
+      &lt;ref name="related-links"/>
+    &lt;/optional>
+    &lt;zeroOrMore>
+      &lt;ref name="concept-info-types"/>
+    &lt;/zeroOrMore>
+  &lt;/define>
+  &lt;!-- ... -->
+&lt;/div></codeblock>
+ </conbody>
+</concept>

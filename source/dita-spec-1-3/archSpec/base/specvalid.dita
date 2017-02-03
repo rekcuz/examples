@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept
+  id="specvalid" xml:lang="en-us">
+  <title>Requirements for specialized element types and attributes</title>
+  <shortdesc>When you specialize one element from another, or a new attribute from
+      <xmlatt>props</xmlatt> or <xmlatt>base</xmlatt>, the new element or attribute <term
+      outputclass="RFC-2119" rev="terminology">MUST</term> obey certain rules in order to be a conforming
+    specialization.</shortdesc>
+  <conbody>
+    <p>A specialized element:</p>
+    <ul audience="">
+      <li><term outputclass="RFC-2119" rev="terminology">MUST</term> have a properly-formed
+          <xmlatt>class</xmlatt> attribute specifying inheritance from its parent.</li>
+      <li><term outputclass="RFC-2119" rev="terminology">MUST NOT</term> have a more inclusive
+        content model than its parent has.</li>
+      <li><term outputclass="RFC-2119" rev="terminology">MUST NOT</term> have attributes that its
+        parent lacks.</li>
+      <li><term outputclass="RFC-2119" rev="terminology">MUST NOT</term> have values or value ranges
+        of these attributes that are more extensive than those in the parent.</li>
+    </ul>
+    <p>An attribute specialized from the <xmlatt>props</xmlatt> or <xmlatt>base</xmlatt>
+      attribute:</p>
+    <ul>
+      <li><term outputclass="RFC-2119" rev="terminology">MUST</term> follow the rules for attribute domain
+        specialization.</li>
+      <li><term outputclass="RFC-2119" rev="terminology">MUST NOT</term> have values or value ranges that are more
+        extensive than those of the parent.</li>
+      <li><term outputclass="RFC-2119" rev="terminology">MUST</term> conform to the rules for conditional
+        processing values, that is, alphanumeric space-delimited values. In generalized form, the
+        values <term outputclass="RFC-2119" rev="terminology">MUST</term> conform to the rules for attribute
+        generalization.</li>
+      <li><term outputclass="RFC-2119" rev="terminology">MUST</term> be declared as a global attribute. Attribute
+        specializations cannot be limited to specific element types.</li>
+    </ul>
+    <p>DITA elements are never in a namespace. Only the <xmlatt>DITAArchVersion</xmlatt> attribute
+      is in a DITA-defined namespace. All other attributes, except for those defined by the XML
+      standard, are in no namespace.</p>
+    <p>This limitation is imposed by the details of the <xmlatt>class</xmlatt> attribute syntax,
+      which makes it impractical to have namespace-qualified names for either vocabulary modules or
+      individual element types or attributes. Elements included as descendants of the DITA
+        <xmlelement>foreign</xmlelement> element type may be in any namespace.<note>For this reason,
+        designers of domain modules that are intended for wide use should take care to define
+        element type and attribute names that are unlikely to conflict with names used in other
+        domains, for example, by using a domain-specific prefix on all names.</note></p>
+    <draft-comment author="Kristen Eberlein" time="21 February 2015">
+      <p>The following content relocated from the "DTD: Coding requirements for element type
+        declarations" topic:</p>
+      <p>The attributes of an element type <term outputclass="RFC-2119" rev="terminology"
+          >MUST</term> restrict or conserve those of the element type it specializes. Specialized
+        element types may not add new attributes. New global attributes may be defined via attribute
+        domain modules. Structural modules might require the use of attribute domain modules.</p>
+    </draft-comment>
+  </conbody>
+</concept>
+

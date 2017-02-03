@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="relax-ng-structural-module-coding-requirements">
+ <title>RELAX NG: Coding requirements for structural modules</title>
+ <shortdesc>A structural vocabulary module defines a new topic or map type as a specialization of a
+  base topic or map type.
+  <!--The purpose is usually to enhance the user's interaction by adapting the topic or map type to its particular purposes.--></shortdesc>
+ <conbody>
+  <p>A structural type module <term outputclass="RFC-2119" rev="terminology">MUST</term> conform to the following
+   coding requirements in addition to the general coding requirements for modules and the rules
+   defined in <xref href="using-relax-ng.dita"/>.</p>
+  <section>
+   <title>Architecture attributes</title>
+   <p>The topic or map element type <term outputclass="RFC-2119" rev="terminology">MUST</term> declare the
+     <xmlatt>DITAArchVersion</xmlatt> attribute and set its value to "1.3". This attribute gives
+    processors a reliable way to check the architecture version. In addition, because the
+     <xmlatt>DITAArchVersion</xmlatt> attribute is in a DITA-defined namespace, it serves as an
+    unambiguous signal that the element is a DITA element. </p>
+   <p>The architectural attributes pattern <term outputclass="RFC-2119" rev="terminology">MUST</term> have the name
+    "arch-atts" and <term outputclass="RFC-2119" rev="terminology">MUST</term> declare the
+     <xmlatt>DITAArchVersion</xmlatt> attribute in the DITA architecture namespace, which is by
+    convention bound to the prefix
+    "ditaarch":<codeblock>&lt;define name="arch-atts">
+  &lt;optional>
+    &lt;attribute name="ditaarch:DITAArchVersion" a:defaultValue="1.3"/>
+  &lt;/optional>
+&lt;/define></codeblock></p>
+  </section>
+ </conbody>
+</concept>

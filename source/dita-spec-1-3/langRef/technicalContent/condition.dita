@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<reference id="condition" xml:lang="en-us" rev="DITA1.3 proposal-13097">
+ <title><xmlelement>condition</xmlelement></title>
+ <shortdesc>The <xmlelement>condition</xmlelement> element describes a state that the
+  troubleshooting topic is intended to remedy. This information helps the user decide whether a
+  troubleshooting topic might contain an applicable remedy for a problem. This section should add to
+  or clarify information that is in the tile or short description of the troubleshooting topic. This
+  information should be brief.<draft-comment author="robander" time="14 April 2014"
+   disposition="open">Nancy's comment during the phase 1 review:<lq>Why should this piece of
+    information be brief? If the condition is complex, it might not be possible or advisable to make
+    it brief. </lq><p>Leaving it to the technical committee to change, if needed, but wonder if it
+    might be appropriate to change the last sentence to "This information should be brief; if it is
+    not possible to make the information brief, this may be a sign that a full troubleshooting topic
+    is needed."</p></draft-comment></shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm><xmlelement>condition</xmlelement></indexterm>
+    <indexterm>troubleshooting
+     elements<indexterm><xmlelement>condition</xmlelement></indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <refbody>
+  <section conref="../../common/commonNavLibraryTable.dita#contentmodel-condition/contains" id="contains" otherprops="contains"></section>
+  <section id="inheritance" otherprops="inheritance">
+   <title>Inheritance</title>
+   <p>- topic/section troubleshooting/condition </p>
+  </section>
+  <example id="example">
+   <title>Example</title>
+   <p>See <xref href="troubleshooting.dita"/>.</p>
+  </example>
+  <section id="attributes">
+   <title>Attributes</title>
+   <p conref="../../common/conref-attribute.dita#conref-attribute/universal-outputclass-spectitle"/>
+  </section>
+ </refbody>
+</reference>

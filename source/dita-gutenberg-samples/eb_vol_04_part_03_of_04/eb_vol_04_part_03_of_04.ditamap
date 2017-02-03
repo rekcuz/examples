@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+  <title>The Encyclopædia Britannica,Volume IV - Part 03 of 04</title>
+  <topicmeta>
+    <category>non-fiction</category>
+    <data
+      name="project-gutenberg-metadata">
+      <data
+        name="etext-no."
+        value="13600"/>
+      <data
+        name="release-date"
+        value="2004-10-08"/>
+      <data
+        name="base-directory"
+        value="	/files/13600/"/>
+      <data
+        name="language"
+        value="English"/>
+      <data
+        name="creator"
+        value="Various"/>
+      <data
+        name="copyright-status"
+        value="Not copyrighted in the United States. If you live elsewhere check the laws of your country before downloading this ebook."/>
+    </data>
+  </topicmeta>
+  <topicref
+    href="legalstuff/main-page.xml">
+    <topichead
+      navtitle="BREQUINGY to BULGARIA">
+      <topicref
+        href="entries/entry-d1e21.xml"
+        navtitle="BRÉQUIGNY, LOUIS GEORGE OUDARD FEUDRIX DE"/>
+      <topicref
+        href="entries/entry-d1e73.xml"
+        navtitle="BRESCIA"/>
+      <topicref
+        href="entries/entry-d1e118.xml"
+        navtitle="BRESLAU"/>
+      <topicref
+        href="entries/entry-d1e185.xml"
+        navtitle="BRESSANT, JEAN BAPTISTE PROSPER"/>
+      <topicref
+        href="entries/entry-d1e219.xml"
+        navtitle="BRESSE"/>
+      <topicref
+        href="entries/entry-d1e227.xml"
+        navtitle="BRESSUIRE"> </topicref>
+      <topicref
+        href="entries/entry-d1e237.xml"
+        navtitle="BREST"/>
+      <topicref
+        href="entries/entry-d1e248.xml"
+        navtitle="BREST-LITOVSK"> </topicref>
+      <topicref
+        href="entries/entry-d1e262.xml"
+        navtitle="BRETEUIL"> </topicref>
+      <topicref
+        href="entries/entry-d1e290.xml"
+        navtitle="BRÉTIGNY"> </topicref>
+      <topicref
+        href="entries/entry-d1e310.xml"
+        navtitle="BRETON, JULES ADOLPHE AIMÉ LOUIS"/>
+      <topicref
+        href="entries/entry-d1e336.xml"
+        navtitle="BRETON, BRITTON or BRITTAINE, NICHOLAS"/>
+      <topicref
+        href="entries/entry-d1e477.xml"
+        navtitle="BRETÓN DE LOS HERREROS, MANUEL"/>
+      <topicref
+        href="entries/entry-d1e516.xml"
+        navtitle="BRETSCHNEIDER, KARL GOTTLIEB"/>
+      <topicref
+        href="entries/entry-d1e587.xml"
+        navtitle="BRETTEN"/>
+      <topicref
+        href="entries/entry-d1e597.xml"
+        navtitle="BRETWALDA"> </topicref>
+      <topicref
+        href="entries/entry-d1e649.xml"
+        navtitle="BREUGHEL"> </topicref>
+      <topicref
+        href="entries/entry-d1e676.xml"
+        navtitle="BREVET"/>
+      <topicref
+        href="entries/entry-d1e687.xml"
+        navtitle="BREVIARY"> </topicref>
+      <topicref
+        href="entries/entry-d1e988.xml"
+        navtitle="BREVIARY OF ALARIC"> </topicref>
+      <topicref
+        href="entries/entry-d1e1030.xml"
+        navtitle="BREWER, JOHN SHERREN"/>
+      <topicref
+        href="entries/entry-d1e1056.xml"
+        navtitle="BREWING"> </topicref>
+      <topicref
+        href="entries/entry-d1e2771.xml"
+        navtitle="BREWSTER, SIR DAVID"> </topicref>
+      <topicref
+        href="entries/entry-d1e2852.xml"
+        navtitle="BREWSTER, WILLIAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e2866.xml"
+        navtitle="BRÉZÉ"/>
+      <topicref
+        href="entries/entry-d1e2902.xml"
+        navtitle="BRIALMONT, HENRI ALEXIS"/>
+      <topicref
+        href="entries/entry-d1e2938.xml"
+        navtitle="BRIAN"/>
+      <topicref
+        href="entries/entry-d1e2964.xml"
+        navtitle="BRIANÇON"> </topicref>
+      <topicref
+        href="entries/entry-d1e2982.xml"
+        navtitle="BRIAND, ARISTIDE"> </topicref>
+      <topicref
+        href="entries/entry-d1e3008.xml"
+        navtitle="BRIANZA"> </topicref>
+      <topicref
+        href="entries/entry-d1e3013.xml"
+        navtitle="BRIARE"/>
+      <topicref
+        href="entries/entry-d1e3021.xml"
+        navtitle="BRIAREUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e3046.xml"
+        navtitle="BRIBERY"> </topicref>
+      <topicref
+        href="entries/entry-d1e3089.xml"
+        navtitle="BRIC À BRAC"> </topicref>
+      <topicref
+        href="entries/entry-d1e3101.xml"
+        navtitle="BRICK"/>
+      <topicref
+        href="entries/entry-d1e3429.xml"
+        navtitle="BRICKFIELDER"> </topicref>
+      <topicref
+        href="entries/entry-d1e3434.xml"
+        navtitle="BRICKWORK"> </topicref>
+      <topicref
+        href="entries/entry-d1e3960.xml"
+        navtitle="BRICOLE"> </topicref>
+      <topicref
+        href="entries/entry-d1e3965.xml"
+        navtitle="BRIDAINE"> </topicref>
+      <topicref
+        href="entries/entry-d1e3988.xml"
+        navtitle="BRIDE"/>
+      <topicref
+        href="entries/entry-d1e4071.xml"
+        navtitle="BRIDEWELL"> </topicref>
+      <topicref
+        href="entries/entry-d1e4077.xml"
+        navtitle="BRIDGE"/>
+      <topicref
+        href="entries/entry-d1e4299.xml"
+        navtitle="BRIDGEBUILDING BROTHERHOOD"/>
+      <topicref
+        href="entries/entry-d1e4307.xml"
+        navtitle="BRIDGE-HEAD"> </topicref>
+      <topicref
+        href="entries/entry-d1e4320.xml"
+        navtitle="BRIDGEND"> </topicref>
+      <topicref
+        href="entries/entry-d1e4328.xml"
+        navtitle="BRIDGE OF ALLAN"> </topicref>
+      <topicref
+        href="entries/entry-d1e4333.xml"
+        navtitle="BRIDGEPORT"> </topicref>
+      <topicref
+        href="entries/entry-d1e4348.xml"
+        navtitle="BRIDGES, ROBERT"> </topicref>
+      <topicref
+        href="entries/entry-d1e4425.xml"
+        navtitle="BRIDGES."> </topicref>
+      <topicref
+        href="entries/entry-d1e11370.xml"
+        navtitle="BRIDGET"> </topicref>
+      <topicref
+        href="entries/entry-d1e11400.xml"
+        navtitle="BRIDGET"> </topicref>
+      <topicref
+        href="entries/entry-d1e11442.xml"
+        navtitle="BRIDGETON"> </topicref>
+      <topicref
+        href="entries/entry-d1e11447.xml"
+        navtitle="BRIDGETT, THOMAS EDWARD"/>
+      <topicref
+        href="entries/entry-d1e11476.xml"
+        navtitle="BRIDGEWATER, FRANCIS EGERTON"/>
+      <topicref
+        href="entries/entry-d1e11497.xml"
+        navtitle="BRIDGEWATER"> </topicref>
+      <topicref
+        href="entries/entry-d1e11533.xml"
+        navtitle="BRIDGITTINES"> </topicref>
+      <topicref
+        href="entries/entry-d1e11569.xml"
+        navtitle="BRIDGMAN, FREDERICK ARTHUR"/>
+      <topicref
+        href="entries/entry-d1e11574.xml"
+        navtitle="BRIDGMAN, LAURA DEWEY"/>
+      <topicref
+        href="entries/entry-d1e11600.xml"
+        navtitle="BRIDGNORTH"> </topicref>
+      <topicref
+        href="entries/entry-d1e11617.xml"
+        navtitle="BRIDGWATER"> </topicref>
+      <topicref
+        href="entries/entry-d1e11646.xml"
+        navtitle="BRIDLINGTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e11667.xml"
+        navtitle="BRIDPORT"> </topicref>
+      <topicref
+        href="entries/entry-d1e11692.xml"
+        navtitle="BRIDPORT"> </topicref>
+      <topicref
+        href="entries/entry-d1e11703.xml"
+        navtitle="BRIE"/>
+      <topicref
+        href="entries/entry-d1e11720.xml"
+        navtitle="BRIEF"/>
+      <topicref
+        href="entries/entry-d1e11749.xml"
+        navtitle="BRIEG"/>
+      <topicref
+        href="entries/entry-d1e11766.xml"
+        navtitle="BRIEG"/>
+      <topicref
+        href="entries/entry-d1e11790.xml"
+        navtitle="BRIELLE"> </topicref>
+      <topicref
+        href="entries/entry-d1e11810.xml"
+        navtitle="BRIENNE-LE-CHÂTEAU"> </topicref>
+      <topicref
+        href="entries/entry-d1e11827.xml"
+        navtitle="BRIENZ"> </topicref>
+      <topicref
+        href="entries/entry-d1e11840.xml"
+        navtitle="BRIERLEY, BENJAMIN"> </topicref>
+      <topicref
+        href="entries/entry-d1e11860.xml"
+        navtitle="BRIERLY, SIR OSWALD WALTERS"/>
+      <topicref
+        href="entries/entry-d1e11865.xml"
+        navtitle="BRIEUX, EUGÈNE"> </topicref>
+      <topicref
+        href="entries/entry-d1e11923.xml"
+        navtitle="BRIGADE"> </topicref>
+      <topicref
+        href="entries/entry-d1e11944.xml"
+        navtitle="BRIGANDAGE."> </topicref>
+      <topicref
+        href="entries/entry-d1e12083.xml"
+        navtitle="BRIGANDINE"> </topicref>
+      <topicref
+        href="entries/entry-d1e12095.xml"
+        navtitle="BRIGANTES"> </topicref>
+      <topicref
+        href="entries/entry-d1e12124.xml"
+        navtitle="BRIGG"/>
+      <topicref
+        href="entries/entry-d1e12129.xml"
+        navtitle="BRIGGS, CHARLES AUGUSTUS"/>
+      <topicref
+        href="entries/entry-d1e12184.xml"
+        navtitle="BRIGGS, HENRY"> </topicref>
+      <topicref
+        href="entries/entry-d1e12262.xml"
+        navtitle="BRIGHOUSE"> </topicref>
+      <topicref
+        href="entries/entry-d1e12267.xml"
+        navtitle="BRIGHT, SIR CHARLES TILSTON"/>
+      <topicref
+        href="entries/entry-d1e12281.xml"
+        navtitle="BRIGHT, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e12358.xml"
+        navtitle="BRIGHTLINGSEA"> </topicref>
+      <topicref
+        href="entries/entry-d1e12369.xml"
+        navtitle="BRIGHTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e12374.xml"
+        navtitle="BRIGHTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e12395.xml"
+        navtitle="BRIGHT'S DISEASE"> </topicref>
+      <topicref
+        href="entries/entry-d1e12417.xml"
+        navtitle="BRIGNOLES"> </topicref>
+      <topicref
+        href="entries/entry-d1e12432.xml"
+        navtitle="BRIHASPATI"> </topicref>
+      <topicref
+        href="entries/entry-d1e12446.xml"
+        navtitle="BRIL, PAUL"> </topicref>
+      <topicref
+        href="entries/entry-d1e12451.xml"
+        navtitle="BRILL"/>
+      <topicref
+        href="entries/entry-d1e12462.xml"
+        navtitle="BRILLAT-SAVARIN, ANTHELME"/>
+      <topicref
+        href="entries/entry-d1e12470.xml"
+        navtitle="BRIMSTONE"> </topicref>
+      <topicref
+        href="entries/entry-d1e12491.xml"
+        navtitle="BRIN, BENEDETTO"> </topicref>
+      <topicref
+        href="entries/entry-d1e12496.xml"
+        navtitle="BRINDABAN"> </topicref>
+      <topicref
+        href="entries/entry-d1e12501.xml"
+        navtitle="BRINDISI"> </topicref>
+      <topicref
+        href="entries/entry-d1e12529.xml"
+        navtitle="BRINDLEY, JAMES"> </topicref>
+      <topicref
+        href="entries/entry-d1e12535.xml"
+        navtitle="BRINTON, DANIEL GARRISON"/>
+      <topicref
+        href="entries/entry-d1e12571.xml"
+        navtitle="BRINVILLIERS"> </topicref>
+      <topicref
+        href="entries/entry-d1e12594.xml"
+        navtitle="BRIONIAN ISLANDS"> </topicref>
+      <topicref
+        href="entries/entry-d1e12604.xml"
+        navtitle="BRIOSCO, ANDREA"> </topicref>
+      <topicref
+        href="entries/entry-d1e12612.xml"
+        navtitle="BRIOUDE"> </topicref>
+      <topicref
+        href="entries/entry-d1e12624.xml"
+        navtitle="BRIQUEMAULT"> </topicref>
+      <topicref
+        href="entries/entry-d1e12650.xml"
+        navtitle="BRIQUETTE"> </topicref>
+      <topicref
+        href="entries/entry-d1e12658.xml"
+        navtitle="BRISBANE, SIR THOMAS MAKDOUGALL"/>
+      <topicref
+        href="entries/entry-d1e12674.xml"
+        navtitle="BRISBANE"> </topicref>
+      <topicref
+        href="entries/entry-d1e12683.xml"
+        navtitle="BRISEUX, CHARLES ÉTIENNE"/>
+      <topicref
+        href="entries/entry-d1e12702.xml"
+        navtitle="BRISSAC, DUKES OF."> </topicref>
+      <topicref
+        href="entries/entry-d1e12716.xml"
+        navtitle="BRISSON, EUGÈNE HENRI"/>
+      <topicref
+        href="entries/entry-d1e12721.xml"
+        navtitle="BRISSON, MATHURIN JACQUES"/>
+      <topicref
+        href="entries/entry-d1e12742.xml"
+        navtitle="BRISSOT, JACQUES PIERRE"/>
+      <topicref
+        href="entries/entry-d1e12796.xml"
+        navtitle="BRISTOL, EARLS AND MARQUESSES OF."/>
+      <topicref
+        href="entries/entry-d1e12859.xml"
+        navtitle="BRISTOL"> </topicref>
+      <topicref
+        href="entries/entry-d1e13028.xml"
+        navtitle="BRISTOL"> </topicref>
+      <topicref
+        href="entries/entry-d1e13163.xml"
+        navtitle="BRISTOL"> </topicref>
+      <topicref
+        href="entries/entry-d1e13168.xml"
+        navtitle="BRISTOL"> </topicref>
+      <topicref
+        href="entries/entry-d1e13297.xml"
+        navtitle="BRISTOL"> </topicref>
+      <topicref
+        href="entries/entry-d1e13302.xml"
+        navtitle="BRISTOL"> </topicref>
+      <topicref
+        href="entries/entry-d1e13307.xml"
+        navtitle="BRISTOL"> </topicref>
+      <topicref
+        href="entries/entry-d1e13312.xml"
+        navtitle="BRISTOW, BENJAMIN HELM"/>
+      <topicref
+        href="entries/entry-d1e13336.xml"
+        navtitle="BRISTOW, HENRY WILLIAM"/>
+      <topicref
+        href="entries/entry-d1e13350.xml"
+        navtitle="BRITAIN"> </topicref>
+      <topicref
+        href="entries/entry-d1e14804.xml"
+        navtitle="BRITANNICUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e14828.xml"
+        navtitle="BRITISH CENTRAL AFRICA"/>
+      <topicref
+        href="entries/entry-d1e15094.xml"
+        navtitle="BRITISH COLUMBIA"> </topicref>
+      <topicref
+        href="entries/entry-d1e15801.xml"
+        navtitle="BRITISH EAST AFRICA"/>
+      <topicref
+        href="entries/entry-d1e16323.xml"
+        navtitle="BRITISH EMPIRE"> </topicref>
+      <topicref
+        href="entries/entry-d1e19150.xml"
+        navtitle="BRITISH HONDURAS"> </topicref>
+      <topicref
+        href="entries/entry-d1e19256.xml"
+        navtitle="BRITOMARTIS"> </topicref>
+      <topicref
+        href="entries/entry-d1e19273.xml"
+        navtitle="BRITON-FERRY"> </topicref>
+      <topicref
+        href="entries/entry-d1e19281.xml"
+        navtitle="BRITTANY"> </topicref>
+      <topicref
+        href="entries/entry-d1e19441.xml"
+        navtitle="BRITTON, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e19490.xml"
+        navtitle="BRITTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e19515.xml"
+        navtitle="BRITZSKA"> </topicref>
+      <topicref
+        href="entries/entry-d1e19529.xml"
+        navtitle="BRIVE"/>
+      <topicref
+        href="entries/entry-d1e19552.xml"
+        navtitle="BRIXEN"> </topicref>
+      <topicref
+        href="entries/entry-d1e19566.xml"
+        navtitle="BRIXHAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e19595.xml"
+        navtitle="BRIXTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e19603.xml"
+        navtitle="BRIZEUX, JULIEN AUGUSTE PÉLAGE"/>
+      <topicref
+        href="entries/entry-d1e19645.xml"
+        navtitle="BRIZO"/>
+      <topicref
+        href="entries/entry-d1e19655.xml"
+        navtitle="BROACH"> </topicref>
+      <topicref
+        href="entries/entry-d1e19670.xml"
+        navtitle="BROACH"> </topicref>
+      <topicref
+        href="entries/entry-d1e19694.xml"
+        navtitle="BROADSIDE"> </topicref>
+      <topicref
+        href="entries/entry-d1e19702.xml"
+        navtitle="BROADSTAIRS"> </topicref>
+      <topicref
+        href="entries/entry-d1e19707.xml"
+        navtitle="BROCA, PAUL"> </topicref>
+      <topicref
+        href="entries/entry-d1e19718.xml"
+        navtitle="BROCADE"> </topicref>
+      <topicref
+        href="entries/entry-d1e19879.xml"
+        navtitle="BROCCHI, GIOVANNI BATTISTA"/>
+      <topicref
+        href="entries/entry-d1e19908.xml"
+        navtitle="BROCHANT DE VILLIERS, ANDRÉ JEAN FRANÇOIS MARIE"/>
+      <topicref
+        href="entries/entry-d1e19926.xml"
+        navtitle="BROCHANTITE"> </topicref>
+      <topicref
+        href="entries/entry-d1e19955.xml"
+        navtitle="BROCK, SIR ISAAC"> </topicref>
+      <topicref
+        href="entries/entry-d1e19970.xml"
+        navtitle="BROCK, THOMAS"> </topicref>
+      <topicref
+        href="entries/entry-d1e19975.xml"
+        navtitle="BROCKEN"> </topicref>
+      <topicref
+        href="entries/entry-d1e19997.xml"
+        navtitle="BROCKEN, SPECTRE OF THE"/>
+      <topicref
+        href="entries/entry-d1e20002.xml"
+        navtitle="BROCKES, BARTHOLD HEINRICH"/>
+      <topicref
+        href="entries/entry-d1e20041.xml"
+        navtitle="BROCKHAUS, FRIEDRICH ARNOLD"/>
+      <topicref
+        href="entries/entry-d1e20092.xml"
+        navtitle="BROCKLESBY, RICHARD"/>
+      <topicref
+        href="entries/entry-d1e20100.xml"
+        navtitle="BROCKTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e20111.xml"
+        navtitle="BROCKVILLE"> </topicref>
+      <topicref
+        href="entries/entry-d1e20119.xml"
+        navtitle="BROD"/>
+      <topicref
+        href="entries/entry-d1e20127.xml"
+        navtitle="BRODERIP, WILLIAM JOHN"/>
+      <topicref
+        href="entries/entry-d1e20144.xml"
+        navtitle="BRODHEAD, JOHN ROMEYN"/>
+      <topicref
+        href="entries/entry-d1e20155.xml"
+        navtitle="BRODIE, SIR BENJAMIN COLLINS"/>
+      <topicref
+        href="entries/entry-d1e20170.xml"
+        navtitle="BRODIE, PETER BELLINGER"/>
+      <topicref
+        href="entries/entry-d1e20192.xml"
+        navtitle="BRODY"/>
+      <topicref
+        href="entries/entry-d1e20197.xml"
+        navtitle="BROEKHUIZEN, JAN VAN"/>
+      <topicref
+        href="entries/entry-d1e20217.xml"
+        navtitle="BRÖGGER, WALDEMAR CHRISTOFER"/>
+      <topicref
+        href="entries/entry-d1e20222.xml"
+        navtitle="BROGLIE"> </topicref>
+      <topicref
+        href="entries/entry-d1e20394.xml"
+        navtitle="BROGUE"> </topicref>
+      <topicref
+        href="entries/entry-d1e20402.xml"
+        navtitle="BROHAN, AUGUSTINE SUSANNE"/>
+      <topicref
+        href="entries/entry-d1e20478.xml"
+        navtitle="BROKE"/>
+      <topicref
+        href="entries/entry-d1e20505.xml"
+        navtitle="BROKE"/>
+      <topicref
+        href="entries/entry-d1e20518.xml"
+        navtitle="BROKEN HILL"> </topicref>
+      <topicref
+        href="entries/entry-d1e20523.xml"
+        navtitle="BROKER"> </topicref>
+      <topicref
+        href="entries/entry-d1e20737.xml"
+        navtitle="BROMBERG"> </topicref>
+      <topicref
+        href="entries/entry-d1e20742.xml"
+        navtitle="BROME, ALEXANDER"> </topicref>
+      <topicref
+        href="entries/entry-d1e20756.xml"
+        navtitle="BROME, RICHARD"> </topicref>
+      <topicref
+        href="entries/entry-d1e20853.xml"
+        navtitle="BROMELIACEAE"> </topicref>
+      <topicref
+        href="entries/entry-d1e20870.xml"
+        navtitle="BROMINE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21012.xml"
+        navtitle="BROMLEY, SIR THOMAS"/>
+      <topicref
+        href="entries/entry-d1e21030.xml"
+        navtitle="BROMLEY"> </topicref>
+      <topicref
+        href="entries/entry-d1e21046.xml"
+        navtitle="BROMLITE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21060.xml"
+        navtitle="BROMPTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e21069.xml"
+        navtitle="BROMSGROVE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21074.xml"
+        navtitle="BRONCHIECTASIS"> </topicref>
+      <topicref
+        href="entries/entry-d1e21088.xml"
+        navtitle="BRONCHITIS"> </topicref>
+      <topicref
+        href="entries/entry-d1e21199.xml"
+        navtitle="BRONCHOTOMY"> </topicref>
+      <topicref
+        href="entries/entry-d1e21210.xml"
+        navtitle="BRONCO"> </topicref>
+      <topicref
+        href="entries/entry-d1e21218.xml"
+        navtitle="BRÖNDSTED, PETER OLUF"/>
+      <topicref
+        href="entries/entry-d1e21229.xml"
+        navtitle="BRONGNIART, ADOLPHE THÉODORE"/>
+      <topicref
+        href="entries/entry-d1e21305.xml"
+        navtitle="BRONGNIART, ALEXANDRE"/>
+      <topicref
+        href="entries/entry-d1e21344.xml"
+        navtitle="BRONN, HEINRICH GEORG"/>
+      <topicref
+        href="entries/entry-d1e21369.xml"
+        navtitle="BRONSART VON SCHELLENDORF, PAUL"/>
+      <topicref
+        href="entries/entry-d1e21386.xml"
+        navtitle="BRONTË, CHARLOTTE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21552.xml"
+        navtitle="BRONTE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21557.xml"
+        navtitle="BRONX"/>
+      <topicref
+        href="entries/entry-d1e21565.xml"
+        navtitle="BRONZE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21664.xml"
+        navtitle="BRONZE AGE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21698.xml"
+        navtitle="BRONZING"> </topicref>
+      <topicref
+        href="entries/entry-d1e21703.xml"
+        navtitle="BRONZINO"> </topicref>
+      <topicref
+        href="entries/entry-d1e21711.xml"
+        navtitle="BRONZITE"> </topicref>
+      <topicref
+        href="entries/entry-d1e21735.xml"
+        navtitle="BROOCH"> </topicref>
+      <topicref
+        href="entries/entry-d1e22025.xml"
+        navtitle="BROOKE, FRANCES"> </topicref>
+      <topicref
+        href="entries/entry-d1e22039.xml"
+        navtitle="BROOKE"> </topicref>
+      <topicref
+        href="entries/entry-d1e22117.xml"
+        navtitle="BROOKE, HENRY"> </topicref>
+      <topicref
+        href="entries/entry-d1e22172.xml"
+        navtitle="BROOKE, SIR JAMES"> </topicref>
+      <topicref
+        href="entries/entry-d1e22195.xml"
+        navtitle="BROOKE, STOPFORD AUGUSTUS"/>
+      <topicref
+        href="entries/entry-d1e22234.xml"
+        navtitle="BROOK FARM"> </topicref>
+      <topicref
+        href="entries/entry-d1e22287.xml"
+        navtitle="BROOKITE"> </topicref>
+      <topicref
+        href="entries/entry-d1e22332.xml"
+        navtitle="BROOKLIME"> </topicref>
+      <topicref
+        href="entries/entry-d1e22341.xml"
+        navtitle="BROOKLINE"> </topicref>
+      <topicref
+        href="entries/entry-d1e22363.xml"
+        navtitle="BROOKLYN"> </topicref>
+      <topicref
+        href="entries/entry-d1e22445.xml"
+        navtitle="BROOKS, CHARLES WILLIAM SHIRLEY"/>
+      <topicref
+        href="entries/entry-d1e22488.xml"
+        navtitle="BROOKS, PHILLIPS"> </topicref>
+      <topicref
+        href="entries/entry-d1e22508.xml"
+        navtitle="BROOKS'S"> </topicref>
+      <topicref
+        href="entries/entry-d1e22544.xml"
+        navtitle="BROOM"/>
+      <topicref
+        href="entries/entry-d1e22567.xml"
+        navtitle="BROOME, WILLIAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e22635.xml"
+        navtitle="BROOM-RAPE"> </topicref>
+      <topicref
+        href="entries/entry-d1e22646.xml"
+        navtitle="BROSCH, MORITZ"> </topicref>
+      <topicref
+        href="entries/entry-d1e22680.xml"
+        navtitle="BROSELEY"> </topicref>
+      <topicref
+        href="entries/entry-d1e22693.xml"
+        navtitle="BROSSES, CHARLES DE"/>
+      <topicref
+        href="entries/entry-d1e22748.xml"
+        navtitle="BROTHER"> </topicref>
+      <topicref
+        href="entries/entry-d1e22822.xml"
+        navtitle="BROTHERS, RICHARD"> </topicref>
+      <topicref
+        href="entries/entry-d1e22834.xml"
+        navtitle="BROTHERS OF COMMON LIFE"/>
+      <topicref
+        href="entries/entry-d1e22903.xml"
+        navtitle="BROUGH, ROBERT"> </topicref>
+      <topicref
+        href="entries/entry-d1e22911.xml"
+        navtitle="BROUGHAM, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e22941.xml"
+        navtitle="BROUGHAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e22946.xml"
+        navtitle="BROUGHAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e23098.xml"
+        navtitle="BROUGHTON, HUGH"> </topicref>
+      <topicref
+        href="entries/entry-d1e23109.xml"
+        navtitle="BROUGHTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e23173.xml"
+        navtitle="BROUGHTY FERRY"> </topicref>
+      <topicref
+        href="entries/entry-d1e23178.xml"
+        navtitle="BROUSSAIS, FRANÇOIS JOSEPH VICTOR"/>
+      <topicref
+        href="entries/entry-d1e23192.xml"
+        navtitle="BROUSSONET, PIERRE MARIE AUGUSTE"/>
+      <topicref
+        href="entries/entry-d1e23200.xml"
+        navtitle="BROUWER"> </topicref>
+      <topicref
+        href="entries/entry-d1e23217.xml"
+        navtitle="BROWN, CHARLES BROCKDEN"/>
+      <topicref
+        href="entries/entry-d1e23256.xml"
+        navtitle="BROWN, FORD MADOX"> </topicref>
+      <topicref
+        href="entries/entry-d1e23297.xml"
+        navtitle="BROWN, FRANCIS"> </topicref>
+      <topicref
+        href="entries/entry-d1e23323.xml"
+        navtitle="BROWN, SIR GEORGE"> </topicref>
+      <topicref
+        href="entries/entry-d1e23328.xml"
+        navtitle="BROWN, GEORGE"> </topicref>
+      <topicref
+        href="entries/entry-d1e23369.xml"
+        navtitle="BROWN, HENRY KIRKE"> </topicref>
+      <topicref
+        href="entries/entry-d1e23378.xml"
+        navtitle="BROWN, JACOB"> </topicref>
+      <topicref
+        href="entries/entry-d1e23383.xml"
+        navtitle="BROWN, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e23419.xml"
+        navtitle="BROWN, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e23436.xml"
+        navtitle="BROWN, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e23453.xml"
+        navtitle="BROWN, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e23486.xml"
+        navtitle="BROWN, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e23536.xml"
+        navtitle="BROWN, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e23571.xml"
+        navtitle="BROWN, SIR JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e23576.xml"
+        navtitle="BROWN, JOHN GEORGE"> </topicref>
+      <topicref
+        href="entries/entry-d1e23581.xml"
+        navtitle="BROWN, ROBERT"> </topicref>
+      <topicref
+        href="entries/entry-d1e23608.xml"
+        navtitle="BROWN, SAMUEL MORISON"/>
+      <topicref
+        href="entries/entry-d1e23631.xml"
+        navtitle="BROWN, THOMAS"> </topicref>
+      <topicref
+        href="entries/entry-d1e23651.xml"
+        navtitle="BROWN, THOMAS"> </topicref>
+      <topicref
+        href="entries/entry-d1e23728.xml"
+        navtitle="BROWN, THOMAS EDWARD"/>
+      <topicref
+        href="entries/entry-d1e23760.xml"
+        navtitle="BROWN"/>
+      <topicref
+        href="entries/entry-d1e23769.xml"
+        navtitle="BROWN, WILLIAM LAURENCE"/>
+      <topicref
+        href="entries/entry-d1e23783.xml"
+        navtitle="BROWN BESS"> </topicref>
+      <topicref
+        href="entries/entry-d1e23791.xml"
+        navtitle="BROWNE, EDWARD HAROLD"/>
+      <topicref
+        href="entries/entry-d1e23805.xml"
+        navtitle="BROWNE, HABLÔT KNIGHT"/>
+      <topicref
+        href="entries/entry-d1e23891.xml"
+        navtitle="BROWNE, ISAAC HAWKINS"/>
+      <topicref
+        href="entries/entry-d1e23908.xml"
+        navtitle="BROWNE, JAMES"> </topicref>
+      <topicref
+        href="entries/entry-d1e23935.xml"
+        navtitle="BROWNE, SIR JAMES"> </topicref>
+      <topicref
+        href="entries/entry-d1e23947.xml"
+        navtitle="BROWNE"> </topicref>
+      <topicref
+        href="entries/entry-d1e23985.xml"
+        navtitle="BROWNE, PETER"> </topicref>
+      <topicref
+        href="entries/entry-d1e24009.xml"
+        navtitle="BROWNE, ROBERT"> </topicref>
+      <topicref
+        href="entries/entry-d1e24072.xml"
+        navtitle="BROWNE, SIR THOMAS"> </topicref>
+      <topicref
+        href="entries/entry-d1e24181.xml"
+        navtitle="BROWNE, WILLIAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e24222.xml"
+        navtitle="BROWNE, WILLIAM GEORGE"/>
+      <topicref
+        href="entries/entry-d1e24240.xml"
+        navtitle="BROWNHILLS"> </topicref>
+      <topicref
+        href="entries/entry-d1e24250.xml"
+        navtitle="BROWNING, ELIZABETH BARRETT"/>
+      <topicref
+        href="entries/entry-d1e24495.xml"
+        navtitle="BROWNING, OSCAR"> </topicref>
+      <topicref
+        href="entries/entry-d1e24522.xml"
+        navtitle="BROWNING, ROBERT"> </topicref>
+      <topicref
+        href="entries/entry-d1e24884.xml"
+        navtitle="BROWN-SÉQUARD, CHARLES EDWARD"/>
+      <topicref
+        href="entries/entry-d1e24892.xml"
+        navtitle="BROWNSON, ORESTES AUGUSTUS"/>
+      <topicref
+        href="entries/entry-d1e24937.xml"
+        navtitle="BROWNSVILLE"> </topicref>
+      <topicref
+        href="entries/entry-d1e24942.xml"
+        navtitle="BRUAY"/>
+      <topicref
+        href="entries/entry-d1e24947.xml"
+        navtitle="BRUCE"/>
+      <topicref
+        href="entries/entry-d1e24955.xml"
+        navtitle="BRUCE, ALEXANDER BALMAIN"/>
+      <topicref
+        href="entries/entry-d1e25018.xml"
+        navtitle="BRUCE, JAMES"> </topicref>
+      <topicref
+        href="entries/entry-d1e25068.xml"
+        navtitle="BRUCE, MICHAEL"> </topicref>
+      <topicref
+        href="entries/entry-d1e25140.xml"
+        navtitle="BRUCH, MAX"> </topicref>
+      <topicref
+        href="entries/entry-d1e25160.xml"
+        navtitle="BRUCHSAL"> </topicref>
+      <topicref
+        href="entries/entry-d1e25180.xml"
+        navtitle="BRUCINE"> </topicref>
+      <topicref
+        href="entries/entry-d1e25201.xml"
+        navtitle="BRUCITE"> </topicref>
+      <topicref
+        href="entries/entry-d1e25218.xml"
+        navtitle="BRÜCKENAU"> </topicref>
+      <topicref
+        href="entries/entry-d1e25223.xml"
+        navtitle="BRUCKER, JOHANN JAKOB"/>
+      <topicref
+        href="entries/entry-d1e25265.xml"
+        navtitle="BRÜCKMANN, FRANZ ERNST"/>
+      <topicref
+        href="entries/entry-d1e25283.xml"
+        navtitle="BRUCKNER, ANTON"> </topicref>
+      <topicref
+        href="entries/entry-d1e25319.xml"
+        navtitle="BRUGES"> </topicref>
+      <topicref
+        href="entries/entry-d1e25342.xml"
+        navtitle="BRUGSCH, HEINRICH KARL"/>
+      <topicref
+        href="entries/entry-d1e25359.xml"
+        navtitle="BRÜHL"/>
+      <topicref
+        href="entries/entry-d1e25382.xml"
+        navtitle="BRÜHL"/>
+      <topicref
+        href="entries/entry-d1e25394.xml"
+        navtitle="BRUMAIRE"> </topicref>
+      <topicref
+        href="entries/entry-d1e25408.xml"
+        navtitle="BRUMATH"> </topicref>
+      <topicref
+        href="entries/entry-d1e25416.xml"
+        navtitle="BRUMMAGEM"> </topicref>
+      <topicref
+        href="entries/entry-d1e25421.xml"
+        navtitle="BRUMMELL, GEORGE BRYAN"/>
+      <topicref
+        href="entries/entry-d1e25445.xml"
+        navtitle="BRUNCK, RICHARD FRANÇOIS PHILIPPE"/>
+      <topicref
+        href="entries/entry-d1e25459.xml"
+        navtitle="BRUNDISIUM"> </topicref>
+      <topicref
+        href="entries/entry-d1e25510.xml"
+        navtitle="BRUNE, GUILLAUME MARIE ANNE"/>
+      <topicref
+        href="entries/entry-d1e25530.xml"
+        navtitle="BRUNEAU, ALFRED"> </topicref>
+      <topicref
+        href="entries/entry-d1e25579.xml"
+        navtitle="BRUNEI"> </topicref>
+      <topicref
+        href="entries/entry-d1e25602.xml"
+        navtitle="BRUNEL, ISAMBARD KINGDOM"/>
+      <topicref
+        href="entries/entry-d1e25623.xml"
+        navtitle="BRUNEL, SIR MARC ISAMBARD"/>
+      <topicref
+        href="entries/entry-d1e25645.xml"
+        navtitle="BRUNELLESCHI"> </topicref>
+      <topicref
+        href="entries/entry-d1e25668.xml"
+        navtitle="BRUNET, JACQUES CHARLES"/>
+      <topicref
+        href="entries/entry-d1e25692.xml"
+        navtitle="BRUNETIÈRE, FERDINAND"/>
+      <topicref
+        href="entries/entry-d1e25752.xml"
+        navtitle="BRUNHILD"> </topicref>
+      <topicref
+        href="entries/entry-d1e25813.xml"
+        navtitle="BRUNHILDA"> </topicref>
+      <topicref
+        href="entries/entry-d1e25851.xml"
+        navtitle="BRUNI, LEONARDO"> </topicref>
+      <topicref
+        href="entries/entry-d1e25862.xml"
+        navtitle="BRÜNN"/>
+      <topicref
+        href="entries/entry-d1e25885.xml"
+        navtitle="BRUNNER, HENRY"> </topicref>
+      <topicref
+        href="entries/entry-d1e25928.xml"
+        navtitle="BRÜNNOW, FRANZ FRIEDRICH ERNST"/>
+      <topicref
+        href="entries/entry-d1e25967.xml"
+        navtitle="BRUNO"/>
+      <topicref
+        href="entries/entry-d1e25991.xml"
+        navtitle="BRUNO"/>
+      <topicref
+        href="entries/entry-d1e26019.xml"
+        navtitle="BRUNO, GIORDANO"> </topicref>
+      <topicref
+        href="entries/entry-d1e26247.xml"
+        navtitle="BRUNO"/>
+      <topicref
+        href="entries/entry-d1e26277.xml"
+        navtitle="BRUNSBÜTTEL"> </topicref>
+      <topicref
+        href="entries/entry-d1e26282.xml"
+        navtitle="BRUNSWICK"> </topicref>
+      <topicref
+        href="entries/entry-d1e26323.xml"
+        navtitle="BRUNSWICK"> </topicref>
+      <topicref
+        href="entries/entry-d1e26328.xml"
+        navtitle="BRUNSWICK"> </topicref>
+      <topicref
+        href="entries/entry-d1e26411.xml"
+        navtitle="BRUNSWICK"> </topicref>
+      <topicref
+        href="entries/entry-d1e26447.xml"
+        navtitle="BRUNSWICK"> </topicref>
+      <topicref
+        href="entries/entry-d1e26455.xml"
+        navtitle="BRUNSWICK-BEVERN"> </topicref>
+      <topicref
+        href="entries/entry-d1e26463.xml"
+        navtitle="BRUNTON, MARY"> </topicref>
+      <topicref
+        href="entries/entry-d1e26477.xml"
+        navtitle="BRUSA"/>
+      <topicref
+        href="entries/entry-d1e26512.xml"
+        navtitle="BRUSH, GEORGE DE FOREST"/>
+      <topicref
+        href="entries/entry-d1e26522.xml"
+        navtitle="BRUSH"/>
+      <topicref
+        href="entries/entry-d1e26549.xml"
+        navtitle="BRUSSELS"> </topicref>
+      <topicref
+        href="entries/entry-d1e26616.xml"
+        navtitle="BRUT"/>
+      <topicref
+        href="entries/entry-d1e26641.xml"
+        navtitle="BRUTÉ, SIMON WILLIAM GABRIEL"/>
+      <topicref
+        href="entries/entry-d1e26655.xml"
+        navtitle="BRUTTII"> </topicref>
+      <topicref
+        href="entries/entry-d1e26831.xml"
+        navtitle="BRUTUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e26971.xml"
+        navtitle="BRÜX"/>
+      <topicref
+        href="entries/entry-d1e26982.xml"
+        navtitle="BRY, THEODORUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e27012.xml"
+        navtitle="BRYAN, WILLIAM JENNINGS"/>
+      <topicref
+        href="entries/entry-d1e27029.xml"
+        navtitle="BRYANSK"> </topicref>
+      <topicref
+        href="entries/entry-d1e27034.xml"
+        navtitle="BRYANT, JACOB"> </topicref>
+      <topicref
+        href="entries/entry-d1e27085.xml"
+        navtitle="BRYANT, WILLIAM CULLEN"/>
+      <topicref
+        href="entries/entry-d1e27164.xml"
+        navtitle="BRYAXIS"> </topicref>
+      <topicref
+        href="entries/entry-d1e27175.xml"
+        navtitle="BRYCE, JAMES"> </topicref>
+      <topicref
+        href="entries/entry-d1e27199.xml"
+        navtitle="BRYDGES, SIR SAMUEL EGERTON"/>
+      <topicref
+        href="entries/entry-d1e27235.xml"
+        navtitle="BRYENNIUS, NICEPHORUS"/>
+      <topicref
+        href="entries/entry-d1e27267.xml"
+        navtitle="BRYNMAWR"> </topicref>
+      <topicref
+        href="entries/entry-d1e27272.xml"
+        navtitle="BRYN MAWR COLLEGE"> </topicref>
+      <topicref
+        href="entries/entry-d1e27277.xml"
+        navtitle="BRYOPHYTA"> </topicref>
+      <topicref
+        href="entries/entry-d1e28567.xml"
+        navtitle="BRZOZOWSKI, THADDEUS"/>
+      <topicref
+        href="entries/entry-d1e28587.xml"
+        navtitle="BUBASTIS"> </topicref>
+      <topicref
+        href="entries/entry-d1e28616.xml"
+        navtitle="BUCARAMANGA"> </topicref>
+      <topicref
+        href="entries/entry-d1e28621.xml"
+        navtitle="BUCCANEERS"> </topicref>
+      <topicref
+        href="entries/entry-d1e28740.xml"
+        navtitle="BUCCARI"> </topicref>
+      <topicref
+        href="entries/entry-d1e28760.xml"
+        navtitle="BUCCINA"> </topicref>
+      <topicref
+        href="entries/entry-d1e28970.xml"
+        navtitle="BUCCLEUCH, DUKES OF."/>
+      <topicref
+        href="entries/entry-d1e28987.xml"
+        navtitle="BUCENTAUR"> </topicref>
+      <topicref
+        href="entries/entry-d1e29050.xml"
+        navtitle="BUCEPHALUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e29071.xml"
+        navtitle="BUCER"/>
+      <topicref
+        href="entries/entry-d1e29106.xml"
+        navtitle="BUCH"/>
+      <topicref
+        href="entries/entry-d1e29141.xml"
+        navtitle="BUCHAN, EARLS OF."> </topicref>
+      <topicref
+        href="entries/entry-d1e29177.xml"
+        navtitle="BUCHAN, ELSPETH"> </topicref>
+      <topicref
+        href="entries/entry-d1e29188.xml"
+        navtitle="BUCHAN, PETER"> </topicref>
+      <topicref
+        href="entries/entry-d1e29199.xml"
+        navtitle="BUCHANAN, CLAUDIUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e29210.xml"
+        navtitle="BUCHANAN, GEORGE"> </topicref>
+      <topicref
+        href="entries/entry-d1e29397.xml"
+        navtitle="BUCHANAN, JAMES"> </topicref>
+      <topicref
+        href="entries/entry-d1e29452.xml"
+        navtitle="BUCHANAN, ROBERT WILLIAMS"/>
+      <topicref
+        href="entries/entry-d1e29557.xml"
+        navtitle="BUCHAREST"> </topicref>
+      <topicref
+        href="entries/entry-d1e29626.xml"
+        navtitle="BÜCHELER, FRANZ"> </topicref>
+      <topicref
+        href="entries/entry-d1e29662.xml"
+        navtitle="BUCHER, LOTHAR"> </topicref>
+      <topicref
+        href="entries/entry-d1e29694.xml"
+        navtitle="BUCHEZ, PHILIPPE JOSEPH BENJAMIN"/>
+      <topicref
+        href="entries/entry-d1e29742.xml"
+        navtitle="BUCHHOLZ"> </topicref>
+      <topicref
+        href="entries/entry-d1e29747.xml"
+        navtitle="BÜCHNER, FRIEDRICH KARL CHRISTIAN LUDWIG"/>
+      <topicref
+        href="entries/entry-d1e29784.xml"
+        navtitle="BUCHON, JEAN ALEXANDRE"/>
+      <topicref
+        href="entries/entry-d1e29835.xml"
+        navtitle="BUCHU"/>
+      <topicref
+        href="entries/entry-d1e29855.xml"
+        navtitle="BUCK, CARL DARLING"> </topicref>
+      <topicref
+        href="entries/entry-d1e29882.xml"
+        navtitle="BUCK, DUDLEY"> </topicref>
+      <topicref
+        href="entries/entry-d1e29906.xml"
+        navtitle="BUCK"/>
+      <topicref
+        href="entries/entry-d1e29934.xml"
+        navtitle="BUCK-BEAN"> </topicref>
+      <topicref
+        href="entries/entry-d1e29945.xml"
+        navtitle="BÜCKEBURG"> </topicref>
+      <topicref
+        href="entries/entry-d1e29953.xml"
+        navtitle="BUCKERIDGE, JOHN"> </topicref>
+      <topicref
+        href="entries/entry-d1e29958.xml"
+        navtitle="BUCKETSHOP"> </topicref>
+      <topicref
+        href="entries/entry-d1e29971.xml"
+        navtitle="BUCKHOLDT"> </topicref>
+      <topicref
+        href="entries/entry-d1e30020.xml"
+        navtitle="BUCKIE"> </topicref>
+      <topicref
+        href="entries/entry-d1e30025.xml"
+        navtitle="BUCKINGHAM, EARLS, MARQUESSES AND DUKES OF."/>
+      <topicref
+        href="entries/entry-d1e30100.xml"
+        navtitle="BUCKINGHAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e30282.xml"
+        navtitle="BUCKINGHAM, GEORGE VILLIERS"/>
+      <topicref
+        href="entries/entry-d1e30555.xml"
+        navtitle="BUCKINGHAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e30607.xml"
+        navtitle="BUCKINGHAM, JAMES SILK"/>
+      <topicref
+        href="entries/entry-d1e30624.xml"
+        navtitle="BUCKINGHAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e30632.xml"
+        navtitle="BUCKINGHAM AND NORMANBY"/>
+      <topicref
+        href="entries/entry-d1e30677.xml"
+        navtitle="BUCKINGHAMSHIRE, EARLS OF."/>
+      <topicref
+        href="entries/entry-d1e30713.xml"
+        navtitle="BUCKINGHAMSHIRE"> </topicref>
+      <topicref
+        href="entries/entry-d1e30841.xml"
+        navtitle="BUCKLAND, FRANCIS TREVELYAN"/>
+      <topicref
+        href="entries/entry-d1e30872.xml"
+        navtitle="BUCKLAND, WILLIAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e30922.xml"
+        navtitle="BUCKLE, HENRY THOMAS"/>
+      <topicref
+        href="entries/entry-d1e30971.xml"
+        navtitle="BUCKNER, SIMON BOLIVAR"/>
+      <topicref
+        href="entries/entry-d1e30981.xml"
+        navtitle="BUCKRAM"> </topicref>
+      <topicref
+        href="entries/entry-d1e30995.xml"
+        navtitle="BUCKSTONE, JOHN BALDWIN"/>
+      <topicref
+        href="entries/entry-d1e31015.xml"
+        navtitle="BUCKTHORN"> </topicref>
+      <topicref
+        href="entries/entry-d1e31070.xml"
+        navtitle="BUCKWHEAT"> </topicref>
+      <topicref
+        href="entries/entry-d1e31087.xml"
+        navtitle="BUCOLICS"> </topicref>
+      <topicref
+        href="entries/entry-d1e31102.xml"
+        navtitle="BUCYRUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e31112.xml"
+        navtitle="BUDAPEST"> </topicref>
+      <topicref
+        href="entries/entry-d1e31251.xml"
+        navtitle="BUDAUN"> </topicref>
+      <topicref
+        href="entries/entry-d1e31265.xml"
+        navtitle="BUDDEUS, JOHANN FRANZ"/>
+      <topicref
+        href="entries/entry-d1e31290.xml"
+        navtitle="BUDDHA."> </topicref>
+      <topicref
+        href="entries/entry-d1e31720.xml"
+        navtitle="BUDDHAGHOSA"> </topicref>
+      <topicref
+        chunk=""
+        href="entries/entry-d1e31765.xml"
+        navtitle="BUDDHISM">
+        <topicref
+          chunk=""
+          href="entries/entry-d1e32322.xml"
+          navtitle="Texts."> </topicref>
+        <topicref
+          href="entries/entry-d1e32352.xml"
+          navtitle="Translations."> </topicref>
+        <topicref
+          href="entries/entry-d1e32404.xml"
+          navtitle="Manuals, Monographs, &amp;c."/>
+      </topicref>
+      <topicref
+        href="entries/entry-d1e32706.xml"
+        navtitle="BUDÉ"/>
+      <topicref
+        href="entries/entry-d1e32760.xml"
+        navtitle="BUDE"/>
+      <topicref
+        href="entries/entry-d1e32765.xml"
+        navtitle="BUDGELL, EUSTACE"> </topicref>
+      <topicref
+        href="entries/entry-d1e32834.xml"
+        navtitle="BUDGET"> </topicref>
+      <topicref
+        href="entries/entry-d1e32902.xml"
+        navtitle="BUDINI"> </topicref>
+      <topicref
+        href="entries/entry-d1e32916.xml"
+        navtitle="BUDWEIS"> </topicref>
+      <topicref
+        href="entries/entry-d1e32927.xml"
+        navtitle="BUELL, DON CARLOS"> </topicref>
+      <topicref
+        href="entries/entry-d1e32936.xml"
+        navtitle="BUENAVENTURA"> </topicref>
+      <topicref
+        href="entries/entry-d1e32946.xml"
+        navtitle="BUENOS AIRES"> </topicref>
+      <topicref
+        href="entries/entry-d1e32976.xml"
+        navtitle="BUENOS AIRES"> </topicref>
+      <topicref
+        href="entries/entry-d1e33061.xml"
+        navtitle="BUFF"/>
+      <topicref
+        href="entries/entry-d1e33069.xml"
+        navtitle="BUFFALO"> </topicref>
+      <topicref
+        href="entries/entry-d1e33167.xml"
+        navtitle="BUFFALO"> </topicref>
+      <topicref
+        href="entries/entry-d1e33235.xml"
+        navtitle="BUFFET, LOUIS JOSEPH"/>
+      <topicref
+        href="entries/entry-d1e33243.xml"
+        navtitle="BUFFET"> </topicref>
+      <topicref
+        href="entries/entry-d1e33248.xml"
+        navtitle="BUFFIER, CLAUDE"> </topicref>
+      <topicref
+        href="entries/entry-d1e33269.xml"
+        navtitle="BUFFON"> </topicref>
+      <topicref
+        href="entries/entry-d1e33325.xml"
+        navtitle="BUG"/>
+      <topicref
+        href="entries/entry-d1e33334.xml"
+        navtitle="BUG"/>
+      <topicref
+        href="entries/entry-d1e33348.xml"
+        navtitle="BUGEAUD DE LA PICONNERIE"/>
+      <topicref
+        href="entries/entry-d1e33389.xml"
+        navtitle="BUGENHAGEN, JOHANN"> </topicref>
+      <topicref
+        href="entries/entry-d1e33413.xml"
+        navtitle="BUGGE, SOPHUS"> </topicref>
+      <topicref
+        href="entries/entry-d1e33446.xml"
+        navtitle="BUGGY"/>
+      <topicref
+        href="entries/entry-d1e33457.xml"
+        navtitle="BUGIS"/>
+      <topicref
+        href="entries/entry-d1e33484.xml"
+        navtitle="BUGLE"/>
+      <topicref
+        href="entries/entry-d1e33857.xml"
+        navtitle="BUGTI"/>
+      <topicref
+        href="entries/entry-d1e33862.xml"
+        navtitle="BUHLE, JOHANN GOTTLIEB"/>
+      <topicref
+        href="entries/entry-d1e33878.xml"
+        navtitle="BUHTURĪ"> </topicref>
+      <topicref
+        href="entries/entry-d1e33908.xml"
+        navtitle="BUILDERS' RITES."> </topicref>
+      <topicref
+        href="entries/entry-d1e33952.xml"
+        navtitle="BUILDING."> </topicref>
+      <topicref
+        href="entries/entry-d1e34204.xml"
+        navtitle="BUILDING SOCIETIES"> </topicref>
+      <topicref
+        href="entries/entry-d1e34358.xml"
+        navtitle="BUILTH"> </topicref>
+      <topicref
+        href="entries/entry-d1e34369.xml"
+        navtitle="BUISSON, FERDINAND"> </topicref>
+      <topicref
+        href="entries/entry-d1e34377.xml"
+        navtitle="BUITENZORG"> </topicref>
+      <topicref
+        href="entries/entry-d1e34388.xml"
+        navtitle="BUJNŪRD"> </topicref>
+      <topicref
+        href="entries/entry-d1e34394.xml"
+        navtitle="BUKHĀRĪ"> </topicref>
+      <topicref
+        href="entries/entry-d1e34452.xml"
+        navtitle="BUKOVINA"> </topicref>
+      <topicref
+        href="entries/entry-d1e34470.xml"
+        navtitle="BULACÁN"> </topicref>
+      <topicref
+        href="entries/entry-d1e34475.xml"
+        navtitle="BULANDSHAHR"> </topicref>
+      <topicref
+        href="entries/entry-d1e34501.xml"
+        navtitle="BULAWAYO"> </topicref>
+      <topicref
+        href="entries/entry-d1e34518.xml"
+        navtitle="BULDANA"> </topicref>
+      <topicref
+        href="entries/entry-d1e34523.xml"
+        navtitle="BULDUR"> </topicref>
+      <topicref
+        href="entries/entry-d1e34537.xml"
+        navtitle="BULFINCH, CHARLES"> </topicref>
+      <topicref
+        href="entries/entry-d1e34551.xml"
+        navtitle="BULGARIA"> </topicref>
+    </topichead>
+    <topichead
+      navtitle="UNICORN to UXLEY">
+      <topichead
+        navtitle="UNICORN"/>
+      <topichead
+        navtitle="UXLEY"/>
+    </topichead>
+  </topicref>
+  <reltable
+    title="My Links">
+    <relheader>
+      <relcolspec
+        type="other"/>
+      <relcolspec
+        type="other"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <!--<topicref format="dita" href="entries/entry-d2e0001.xml" navtitle="United States"
+          scope="local" type="topic"/>-->
+      </relcell>
+      <relcell>
+        <topicref
+          href="entries/entry-d1e31070.xml"
+          navtitle="BUCKWHEAT"> </topicref>
+        <?Pub Caret?>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

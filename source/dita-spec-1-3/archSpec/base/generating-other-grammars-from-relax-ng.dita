@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="generating-other-grammars-from-relax-ng" rev="DITA1.3 proposal-13112">
+ <title>Generating DTD and XSD modules from RELAX NG</title>
+ <shortdesc>RELAX NG grammars for DITA document-type shells, vocabulary modules, and constraint
+  modules can be used to generate DTD- and XSD-based document-type shells and vocabulary modules.
+  This requires that the RELAX NG grammar documents contain DITA-specific metadata that defines the
+  module type, module header comment, namespace prefixes, and public identifiers for the components
+  to be generated. All RELAX NG grammars defined by the DITA specification include this
+  metadata.</shortdesc>
+ <conbody>
+  <p>RELAX NG provides the simplest syntax for creating document type shells. This makes RELAX NG
+   ideally suited as the base format for defining DITA vocabulary. However, <ph rev="review-2"
+    >as</ph> many DITA-aware tools require the use of DTDs or XSD schemas, there is a practical
+   requirement to generate DTDs and XSD schemas from RELAX NG.</p>
+  <p>The generation of DTD and XSD modules from RELAX NG requires additional metadata that is not
+   inherent in the grammar definition:<ul>
+    <li>The module type (document type shell, vocabulary module, or constraint module)</li>
+    <li rev="review-2">The header comments for the modules</li>
+    <li>The short name for vocabulary and constraint modules</li>
+    <li>The public identifiers to use for each component file to be generated</li>
+    <li>The <xmlatt>domains</xmlatt> attribute contribution for vocabulary and constraint
+     modules</li>
+    <li>(For foreign vocabularies) The DTD and XSD files to include</li>
+    <li>(For foreign vocabularies) The namespace prefix to use for DTD declarations</li>
+   </ul></p>
+  <p>This DITA-required metadata can be defined using the following mechanisms:</p>
+  <ul>
+   <li>A <xmlelement>moduleDesc</xmlelement> element within the RELAX NG
+     <xmlelement>grammar</xmlelement> element</li>
+   <li>Attributes in the DITA architecture namespace on specific declarations</li>
+  </ul>
+ </conbody>
+</concept>

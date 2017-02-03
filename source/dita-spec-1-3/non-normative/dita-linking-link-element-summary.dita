@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="dita-linking-link-element-summary" xml:lang="en-us">
+ <title>Summary of addressing elements</title>
+ <shortdesc>This topic summarizes DITA elements that can be used to link to or address other items.
+  The table describes how and why each element uses the addressing mechanism, rather than defining
+  the element itself.</shortdesc>
+ <conbody>
+    <draft-comment author="robander" time="30 July 2014">This is non-normative information - it is
+      just an informative list that contains no new information. It repeats information that is
+      defined everywhere (mostly restating or partially rewording information from short
+      descriptions in the language reference). It often describes what elements "might" do, when we
+      would be better of referring to the language ref for a more complete description of what it
+      *does* do.<p>I've moved this from the "DITA Addressing" section of the base architectural
+        spec, where it sat oddly after the key definition section. I'm a little nervous about
+        continuing to maintain this going forward but for the moment I've just shifted it to the
+        "non-normative" section.</p></draft-comment>
+    <table frame="all">
+      <title>DITA addressing elements</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1"/>
+        <colspec colname="c2" colnum="2"/>
+        <thead>
+          <row>
+            <entry>Element</entry>
+            <entry>Description and notes</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry><xmlelement>topicref</xmlelement></entry>
+            <entry>Establishes a relationship between the containing map and another map, DITA
+              topic, or non-DITA resource when the <xmlatt>href</xmlatt> or <xmlatt>keyref</xmlatt>
+              attribute is specified. When <xmlatt>processing-role</xmlatt> is set to
+              "resource-only", it establishes a dependency on the target resource but does not
+              contribute to the navigation tree. Might establish additional relationships between
+              the referenced resource and other resources in the navigation hierarchy as determined
+              by the values of the <xmlatt>collection-type</xmlatt> attribute. By default, these
+              additional relationships are bi-directional. The directionality of additional
+              relationships can be controlled using the <xmlatt>linking</xmlatt> attribute. </entry>
+          </row>
+          <row>
+            <entry><xmlelement>reltable</xmlelement></entry>
+            <entry>Establishes relations of a specific type (as defined by the relationship table)
+              among topicref-linked resources where each row in the table establishes a single set
+              of relationships among the topicref-linked resources in each cell of the row.
+              Relationships defined in relationship tables are outside of any navigation structure
+              defined by the map.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>navref</xmlelement></entry>
+            <entry>Establishes a map-to-map relationship where the integration of the referenced
+              map's navigation structure is deferred. The referenced map is processed independently
+              from the referencing map and does not contribute to the key space of the referencing
+              map.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>link</xmlelement></entry>
+            <entry>Establishes a link from its containing topic to another resource. Any
+                <xmlelement>link</xmlelement> element within a topic can be functionally replaced by
+              the equivalent link defined in a relationship table. Likewise, topic-to-topic links
+              defined by relationship tables can be replaced by the equivalent set of
+                <xmlelement>link</xmlelement> elements in the topics involved.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>xref</xmlelement></entry>
+            <entry>Establishes a navigation link from a topic abstract or body to another DITA
+              element or non-DITA resource.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>image</xmlelement></entry>
+            <entry>Links to an image that should be displayed at the point of reference.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>object</xmlelement></entry>
+            <entry>Links to a media object that should be displayed at the point of
+              reference.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>longdescref</xmlelement></entry>
+            <entry>Links to a long description for an image or object. Can be used in place of the
+                <xmlatt>longdescref</xmlatt> attribute on the parent image or object
+              element.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>longquoteref</xmlelement></entry>
+            <entry>Links to the source of a long quotation. Used in place of the
+                <xmlatt>href</xmlatt> or <xmlatt>keyref</xmlatt> attribute on the
+                <xmlelement>lq</xmlelement> element. Enables use of all the normal link-controlling
+              attributes.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>data-about</xmlelement></entry>
+            <entry>Establishes an explicit relationship between one or more
+                <xmlelement>data</xmlelement> elements and the DITA element or non-DITA resource to
+              which the data applies.</entry>
+          </row>
+          <row>
+            <entry>Elements that take <xmlatt>keyref</xmlatt> but not <xmlatt>href</xmlatt></entry>
+            <entry>Establishes navigation links to the referenced DITA element or non-DITA resource
+              when <xmlatt>keyref</xmlatt> is specified and the key is bound to a topic, map, or
+              non-DITA resource. If the linking element has empty content and the key definition has
+              a matching subelement in its <xmlelement>topicmeta</xmlelement>, establishes a
+              use-by-reference relationship to the matching element in the key definition. Includes
+                <xmlelement>ph</xmlelement>, <xmlelement>cite</xmlelement>,
+                <xmlelement>keyword</xmlelement>, and <xmlelement>term</xmlelement>.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>imagemap</xmlelement> (utilities domain)</entry>
+            <entry>Enables linking from defined areas that are overlaid on a graphic. Modeled on the
+              HTML image map.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>author</xmlelement></entry>
+            <entry>Might link to a resource that represents the author, for example, a biographical
+              topic or image.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>data</xmlelement></entry>
+            <entry>Might link to a resource that represents the metadata value.</entry>
+          </row>
+          <row product="technicalContent">
+            <entry><xmlelement>fragref</xmlelement> (programming domain)</entry>
+            <entry>Links to a syntax definition fragment.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>lq</xmlelement></entry>
+            <entry>Might link to the source of the quotation.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>publisher</xmlelement></entry>
+            <entry>Might link to a resource that represents the publisher, for example, the
+              publisher Web site or a descriptive topic.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>source</xmlelement></entry>
+            <entry>Might link to a description of the source for the topic.</entry>
+          </row>
+          <row product="technicalContent">
+            <entry><xmlelement>synnoteref</xmlelement> (programming domain)</entry>
+            <entry>Might link to a syntax note.</entry>
+          </row>
+          <row>
+            <entry><xmlelement>fn</xmlelement></entry>
+            <entry>Establishes a relationship between the content within which the footnote appears
+              and the note itself, such that the footnote is an annotation of the content.</entry>
+          </row>
+          <row rev="DITA1.3 proposal-13111" product="technicalContent">
+            <entry><xmlelement>mathmlref</xmlelement> (MathML domain)</entry>
+            <entry>References a MathML <xmlelement>math</xmlelement> element that is stored in a
+              non-DITA document.</entry>
+          </row>
+          <row rev="DITA1.3 proposal-13119" product="technicalContent">
+            <entry><xmlelement>svgref</xmlelement> (SVG domain)</entry>
+            <entry>References an SVG <xmlelement>svg</xmlelement> element that stored in a non-DITA
+              document .</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

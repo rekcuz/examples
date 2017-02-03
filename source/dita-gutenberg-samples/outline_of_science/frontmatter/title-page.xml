@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
+<topic id="title-page">
+  <title>Title Page</title>
+  <body>
+    <fig>
+      <desc>
+        <p class="wide">THE GREAT SCARLET SOLAR PROMINENCES, WHICH ARE SUCH A
+          NOTABLE FEATURE OF THE SOLAR PHENOMENA, ARE IMMENSE OUTBURSTS OF FLAMING
+          HYDROGEN RISING SOMETIMES TO A HEIGHT OF 500,000 MILES</p>
+      </desc>
+      <image href="../chapters/images/image001_sm.jpg"><alt>THE GREAT SCARLET SOLAR PROMINENCES</alt></image>
+    </fig>
+    <p outputclass="h1">THE</p>
+    <p outputclass="h1">OUTLINE OF SCIENCE</p>
+    
+    <p outputclass="h3">A PLAIN STORY SIMPLY TOLD</p>
+    
+    <p outputclass="h3">EDITED BY
+      </p><p outputclass="h3">
+      J. ARTHUR THOMSON
+      </p><p outputclass="h3">
+      REGIUS PROFESSOR OF NATURAL HISTORY IN THE
+      </p><p outputclass="h3">
+      UNIVERSITY OF ABERDEEN</p>
+    
+    <lines outputclass="center">WITH OVER 800 ILLUSTRATIONS
+      OF WHICH ABOUT 40 ARE IN COLOUR</lines>
+    
+    <p outputclass="h4">IN FOUR VOLUMES</p>
+    
+    <p outputclass="h4">G. P. PUTNAM&#39;S SONS
+    </p><p outputclass="h4">
+      NEW YORK AND LONDON
+    </p><p outputclass="h4">
+      The Knickerbocker press</p>
+    
+    <lines outputclass="center">Copyright, 1922
+      by
+      G. P. Putnam&#39;s Sons</lines>
+    
+    <lines outputclass="center"><i>First Printing April, 1922
+      Second Printing April, 1922
+      Third Printing April, 1922
+      Fourth Printing April, 1922
+      Fifth Printing June, 1922
+      Sixth Printing June, 1922
+      Seventh Printing June, 1922
+      Eighth Printing June, 1922
+      Ninth Printing August, 1922
+      Tenth Printing September, 1922
+      Eleventh Printing Sept., 1922
+      Twelfth Printing, May</i>, 1924</lines>
+    
+    <lines outputclass="center">Made in the United States of America<ph outputclass=
+      'pagenum'>[Pg iii]</ph></lines>
+    
+  </body>
+</topic>

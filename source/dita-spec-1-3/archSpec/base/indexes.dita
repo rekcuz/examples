@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="indexes">
+ <title>Indexes</title>
+ <shortdesc>An index can be generated from index entries that occur in topic bodies, topic prologs,
+  or DITA maps. </shortdesc>
+ <conbody>
+  <p>For more information, see <xref href="../../langRef/base/indexterm.dita"/>.</p>
+  <draft-comment author="Kristen Eberlein" time=" 8 February 2014" disposition="open">We need more
+   information here, at the least an overview of the indexing domain. There is content in the
+   related Language Reference topics that should examined; we should decided whether some of that
+   content should be migrated to here or repeated here.</draft-comment>
+ </conbody>
+</concept>

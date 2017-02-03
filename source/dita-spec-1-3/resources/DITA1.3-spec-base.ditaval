@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+    <prop att="otherprops" val="containedby" action="include" />
+    <prop att="otherprops" val="contains" action="include" />
+    <prop att="otherprops" val="inheritance" action="include" />
+    <prop att="otherprops" val="frontmatter" action="include" />
+    <prop att="product" val="base" action="include" />
+    <prop att="product" val="learningTraining" action="exclude" />
+    <prop att="product" val="technicalContent" action="exclude" />
+    <!--<revprop action="flag" changebar="style:solid;width:1pt;offset:5pt" val="DITA1.2-errata"/>
+    <revprop action="flag" changebar="style:solid;width:1pt;offset:5pt" val="DITA1.3"/>-->
+    <!--<prop action="flag" att="rev" color="red" val="DITA1.3"/>-->
+    <!--<revprop action="flag" val="DITA1.3" color="black" backcolor="#ffffcc"/>-->
+</val>

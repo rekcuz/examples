@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<reference id="simpletable-atts" xml:lang="en-us">
+ <title>Simpletable attribute group</title>
+ <shortdesc>The simpletable attribute group includes several attributes that are defined on the
+      <xmlelement>simpletable</xmlelement> element and <xmlelement>simpletable</xmlelement>
+    specializations. These attributes are not defined for the OASIS exchange table
+      (<xmlelement>table</xmlelement>).</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>Simpletable attribute group</indexterm>
+    <indexterm>Commonly referenced attribute descriptions<indexterm>Simpletable
+      attributes</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <refbody>
+  <section>
+   <dl>
+        <!--<dlhead conref="../../common/conref_file.dita#reuse_file/attributeDlhead"><dthd/><ddhd/></dlhead>-->
+    <dlentry id="keycol">
+     <dt><xmlatt>keycol</xmlatt></dt>
+     <dd><indexterm>keycol
+              attribute</indexterm><indexterm>Attributes<indexterm>keycol</indexterm></indexterm>Defines
+            the column that can contains headings for each row. No value indicates no key column.
+            When present, the numerical value causes the specified column to be treated as a
+            vertical header.
+            <!--<ph conref="../../common/conref-attribute.dita#conref-attribute/define-NMTOKEN"/>--><?datatype NMTOKEN?><?default #IMPLIED?></dd>
+    </dlentry>
+    <dlentry id="relcolwidth">
+     <dt><xmlatt>relcolwidth</xmlatt></dt>
+     <dd><indexterm>relcolwidth
+                attribute</indexterm><indexterm>Attributes<indexterm>relcolwidth</indexterm></indexterm>A
+            relative value to specify the width of each column in relationship to the width of the
+            other columns. The values are totaled and make a percent. For example:
+            <codeblock>relcolwidth="1* 2* 3*"</codeblock> causes widths of 16.7%, 33.3%, and <ph
+              rev="DITA1.2-errata">50%</ph>. <codeblock>relcolwidth="90* 150*"</codeblock> causes
+            width of 37.5% and 62.5%.<?datatype CDATA?><?default #IMPLIED?>
+            <!--<ph conref="../../common/conref-attribute.dita#conref-attribute/define-CDATA"/>--></dd>
+    </dlentry>
+    <dlentry id="refcols">
+     <dt><xmlatt>refcols</xmlatt></dt>
+     <dd><indexterm>refcols
+              attribute</indexterm><indexterm>Attributes<indexterm>refcols</indexterm></indexterm>The
+              <xmlatt>refcols</xmlatt> attribute is currently undefined, and is reserved for future
+            use.
+            <!--<ph conref="../../common/conref-attribute.dita#conref-attribute/define-NMTOKENS"/>--></dd>
+    </dlentry>
+   </dl>
+  </section>
+ </refbody>
+</reference>
+

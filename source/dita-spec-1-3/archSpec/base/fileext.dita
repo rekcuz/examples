@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="fileext" xml:lang="en-us">
+  <title>File naming conventions</title>
+  <shortdesc>DITA uses certain naming conventions and file extensions for topics, maps, modules, and
+    document type shells.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>constraint modules<indexterm>file names</indexterm></indexterm>
+        <indexterm>conventions<indexterm>file extensions</indexterm><indexterm>file
+            names</indexterm></indexterm>
+        <indexterm>document type shells<indexterm>file names</indexterm></indexterm>
+        <indexterm>domain modules<indexterm>file names</indexterm></indexterm>
+        <indexterm>file extensions<indexterm>conditional processing
+            profiles</indexterm><indexterm>DITAVAL</indexterm><indexterm>maps</indexterm><indexterm>topics</indexterm></indexterm>
+        <indexterm>file names<indexterm>conventions</indexterm></indexterm>
+        <indexterm>structural modules<indexterm>file names</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <draft-comment author="Kristen Eberlein" time="28 November 2014">
+      <p>This is a problematic topic. We are repeating information covered elsewhere in the spec --
+        primarily in the "Configuration, specialization, and constraints" section -- and we are
+        covering it in substantially less detail. For example, in the "Constraints" topics, we give
+        much further guidance about distinguishing between domain and structural contraints.</p>
+    </draft-comment>
+    <p>Files that contain DITA content <term outputclass="RFC-2119" rev="terminology">SHOULD</term>
+      use the following naming conventions <ph rev="DITA1.3">and file extensions</ph>:</p>
+    <dl>
+      <dlentry>
+        <dt>DITA topics</dt>
+        <dd>
+          <ul base="">
+            <li>*.dita (preferred)</li>
+            <li>*.xml </li>
+          </ul>
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>DITA maps</dt>
+        <dd>*.ditamap</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Conditional processing profiles</dt>
+        <dd><filepath>*.ditaval</filepath></dd>
+      </dlentry>
+    </dl>
+    <p id="doctype-naming-conventions">Files that define DITA document-type components <term
+        outputclass="RFC-2119" rev="terminology">SHOULD</term> use the following naming conventions:<dl>
+        <dlentry>
+          <dt>Document-type shell files</dt>
+          <dd>
+            <ul>
+              <li><varname>typename</varname>.dtd</li>
+              <li><varname>typename</varname>.xsd</li>
+              <li><varname>typename</varname>.rnc</li>
+              <li><varname>typename</varname>.rng</li>
+            </ul>
+            <p>where <varname>typename</varname> is the name of the root topic or map type that is
+              defined by the document type shell. <ph rev="review-2">In certain circumstances,
+                  <varname>typename</varname> might also contain a modifier to distinguish the
+                document-type shell from other document-type shells for the same root type.</ph></p>
+            <p>For example, the OASIS-provided document-type shells for technical content include
+              two different document-type shells for the task topic type:
+                <filepath>task.dtd</filepath> and <filepath>generalTask.dtd</filepath>. <ph
+                rev="review-2">The root element for both document-type shells is the same --
+                  <xmlelement>task</xmlelement> -- but the DTDs require unique file names because
+                they represent different sets of vocabulary and constraint modules.</ph></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>DTD structural module files</dt>
+          <dd>
+            <ul>
+              <li><filepath><varname>typename</varname>.mod</filepath></li>
+              <li><filepath><varname>typename</varname>.ent</filepath>
+              </li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>DTD domain module files</dt>
+          <dd>
+            <ul>
+              <li><filepath><varname>typename</varname>Domain.mod</filepath></li>
+              <li><filepath><varname>typename</varname>Domain.ent</filepath></li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>DTD constraint module files</dt>
+          <dd>
+            <p><filepath><varname>constraintname</varname>Constraint.mod</filepath></p>
+            <draft-comment author="Kristen Eberlein">
+              <p>In review #2, Nancy Harrison suggested adding
+                    <filepath><varname>constraintname</varname>Constraint.ent</filepath></p>
+              <p>We need to ensure that everything we state here agrees with content in the
+                "Configuration, specialization, and constraints" section.</p>
+            </draft-comment>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Schema structural module files</dt>
+          <dd>
+            <ul>
+              <li><filepath><varname>typename</varname>Mod.xsd</filepath></li>
+              <li><filepath><varname>typename</varname>Grp.xsd</filepath></li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Schema domain module files</dt>
+          <dd><filepath><varname>typename</varname>Domain.xsd</filepath>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Schema constraint module files</dt>
+          <dd>
+            <ul>
+              <li><filepath><varname>constraintname</varname>ConstraintMod.xsd</filepath></li>
+              <li><filepath><varname>constraintname</varname>ConstraintIntMod.xsd</filepath></li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry rev="DITA1.3 proposal-13112">
+          <dt>RELAX NG structural module files</dt>
+          <dd>
+            <ul>
+              <li><varname>typename</varname>Mod.rnc</li>
+              <li><varname>typename</varname>Mod.rng</li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry rev="DITA1.3 proposal-13112">
+          <dt>RELAX NG domain module files</dt>
+          <dd>
+            <ul>
+              <li><varname>typename</varname>Domain.rnc</li>
+              <li><varname>typename</varname>Domain.rng</li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry rev="DITA1.3 proposal-13112">
+          <dt>RELAX NG constraint module files</dt>
+          <dd>
+            <ul>
+              <li><varname>constraintname</varname>ConstraintMod.rnc</li>
+              <li><varname>constraintname</varname>ConstraintMod.rng</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl></p>
+  </conbody>
+</concept>

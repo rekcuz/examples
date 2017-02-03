@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="using_keys_to_address_dita_elements">
+    <title>Using keys to address DITA elements</title>
+    <shortdesc>For topic references, image references, and navigation link relationships, resources
+        can be addressed by key using the <xmlatt>keyref</xmlatt> attribute. For content reference
+        relationships, resources can be addressed by key using the <xmlatt>conkeyref</xmlatt>
+        attribute.</shortdesc>
+    <conbody>
+        <section id="syntax">
+            <title>Syntax</title>
+            <p>For references to topics, maps, and non-DITA resources, the value of the
+                    <xmlatt>keyref</xmlatt> attribute is simply a key name (for example,
+                    <codeph>keyref="topic-key"</codeph>). </p>
+            <p>For references to non-topic elements within topics and non-topicref elements within
+                maps, the value of the <xmlatt>keyref</xmlatt> attribute is a key name, a <ph
+                    rev="DITA1.2-errata">slash</ph> ("/"), and the ID of the target element (for
+                example, <codeph>keyref="topic-key/some-element-id"</codeph>.)</p>
+            <p>If both <xmlatt>keyref</xmlatt> and <xmlatt>href</xmlatt> attributes are specified on
+                an element, the <xmlatt>href</xmlatt> value <term outputclass="RFC-2119"
+                    rev="terminology">MUST</term> be used as a fallback address when the key name is
+                undefined. If both <xmlatt>conkeyref</xmlatt> and <xmlatt>conref</xmlatt> attributes
+                are specified on an element, the <xmlatt>conref</xmlatt> value <term
+                    outputclass="RFC-2119" rev="terminology">MUST</term> be used as a fallback
+                address when the key name is undefined.</p>
+            <!--<draft-comment author="robander" time="September 16, 2014" disposition="informational">After discussing with Chris Nitchie, I've removed 2 copies of a clause from the previous paragraph, highlighted below in the original version:<p>If both <xmlatt>keyref</xmlatt> and <xmlatt>href</xmlatt> attributes are specified on an element, the <xmlatt>href</xmlatt> value <term outputclass="RFC-2119" rev="terminology">MUST</term> be used as a fallback address when the key name is undefined<b><i>, and <term outputclass="RFC-2119" rev="terminology">SHOULD</term> be used as a fallback address when the key name is defined but the key reference cannot be resolved to a resource</i></b>. If both <xmlatt>conkeyref</xmlatt> and <xmlatt>conref</xmlatt> attributes are specified on an element, the <xmlatt>conref</xmlatt> value <term outputclass="RFC-2119" rev="terminology">MUST</term> be used as a fallback address when the key name is undefined<b><i>, and <term outputclass="RFC-2119" rev="terminology">SHOULD</term> be used as a fallback address when the key name is defined but the key reference cannot be resolved to a resource</i></b>.</p><p>In our reading, the portion about a key being defined but not resolved conflicts with other language about processing, which for example states that key definitions without a link target or with linking="none" result in no link. That language is clear and conflicts with the removed language here, which suggested that given a valid key definition with no link target, processors should use the local @href as fallback.</p><p>The language could also have been interpreted as "If the resource referenced by a key definition does not exist, @href SHOULD be used as fallback", which does not seem like something we can or should enforce. If the key definition points to example.com, but that server is down, an application would seemingly have to 1) know this, 2) assume it does not exist, and 3) switch to using @href.</p><p>[Eliot Kimber, 7 December 2014] I agree with this analysis.</p></draft-comment>-->
+        </section>
+        <section>
+            <title>Example</title>
+            <p>For example, consider this topic in the document <filepath>file.dita</filepath>:
+                <codeblock>&lt;topic id="topicid"&gt;
+ &lt;title&gt;Example referenced topic&lt;/title&gt;
+ &lt;body&gt;
+  &lt;p id="para-01"&gt;Some content.&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/topic&gt;</codeblock>and
+                this key
+                definition:<codeblock>&lt;map&gt;
+  &lt;topicref keys="myexample"
+    href="file.dita"
+  /&gt;
+&lt;/map&gt;</codeblock></p>
+            <p>A keyref of the form <codeph>"myexample/para-01</codeph> resolves to the
+                    <xmlelement>p</xmlelement> element in the topic. The key reference is
+                equivalent, in the context of this map, to the URI reference
+                    <codeph>file.dita#topicid/para-01</codeph>.</p>
+            <p>A key reference to a <xmlelement>topicref</xmlelement> element where the linking
+                element specifies a format value of "ditamap" addresses the
+                    <xmlelement>topicref</xmlelement> element itself as though the
+                    <xmlelement>topicref</xmlelement> element had been addressed by ID. In
+                particular, a <xmlelement>topicref</xmlelement> with a key reference to another
+                    <xmlelement>topicref</xmlelement> and a format value of "ditamap" is a use of
+                the map branch that is rooted at the referenced <xmlelement>topicref</xmlelement>. </p>
+            <draft-comment author="Kristen Eberlein" time="7 December 2014" disposition="open">
+                <p>I think this last paragraph could be clearer. Also, does it belong in the
+                    non-normative example?</p>
+            </draft-comment>
+        </section>
+    </conbody>
+</concept>

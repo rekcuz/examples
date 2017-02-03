@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_msv_ztv_fq">
+ <title>Overview of linking</title>
+ <shortdesc>A link establishes a relationship among two or more objects. In DITA, relationships are
+  among DITA topics, elements within topics, and non-DITA resources. Relationships can be explicitly
+  typed (consider relationship tables and subject scheme maps, for example), but this typing is not
+  always
+  present.<!--<draft-comment>Anderson, March 10 2010: changed "are generally not associated" to "are not always associated" - I think the wording was unclear, and in particular, navigation links are quote often created and typed by the role attribute as parent/child/next/previous/etc. I'm not sure if that is considered "typed" by this definition, but to me "are generally not" means most are not, while a large percentage of relationships I encounter are typed in this way.</draft-comment>--></shortdesc>
+ <conbody>
+  <!--<note othertype="non-normative">For example, a <xmlelement>keyword</xmlelement> element that uses a key reference to link to the definition of the keyword can be considered to be establishing a "mention-of" relationship from the <xmlelement>keyword</xmlelement> element to the definition and a "definition-of" relationship from the definition to the <xmlelement>keyword</xmlelement> element. But those link types are not formally defined either in the DITA definition of <xmlelement>keyword</xmlelement> or in the markup for the <xmlelement>keyword</xmlelement> element itself. While DITA enables the formal definition of typed relationships for some types of link elements, it does not require that all links be formally typed and does not provide a general mechanism for associating explicit link types with links. </note>-->
+  <!--<p>In the abstract, link relationships may be explicit, defined directly by some type of markup in the source data, or implicit, implied by properties of the content that a processor uses to infer relationships (for example, matching the content of a <xmlelement>keyword</xmlelement> element to the title of a topic of a specific topic type). DITA formally defines only explicit links, although processors <term outputclass="RFC-2119" rev="terminology">MAY</term> implement implicit links.</p>-->
+  <draft-comment author="Kristen Eberlein" time="9 March 2015">
+   <p>What value does this topic provide? Is the difference between navigation relationship and
+    use-by-reference relationship necessary? Why? "Navigation relationship" is a term used only
+    twice in the spec, both times in this topic</p>
+   <p>Are these types of relationships defined in this particular way elsewhere? Is this duplicating
+    content simply using new terms?</p>
+   <p>Do we need definitions for link-defining elements and link text? Do we use these terms
+    consistently elsewhere?</p>
+  </draft-comment>
+  <p>A link can establish either a navigation relationship or a use-by-reference relationship (for
+   example, content reference). Navigation relationships primarily are used to enable navigation
+   from one element to another, although they also can be used for such purposes as classification
+   and association of metadata. Use-by-reference relationships establish the effective structure and
+   content of the information set.</p>
+  <p>An element that establishes one or more such relationships is a <term>link-defining
+    element</term>. Some element types, such as <xmlelement>link</xmlelement> and
+    <xmlelement>xref</xmlelement>, always are link-defining elements. Other element types become
+   link-defining elements only when they specify specific link-defining attributes. <draft-comment
+    author="robander" time="March 9 2015">Question about the previous paragraph. Are &lt;link> and
+    &lt;xref> "always link-defining elements" simply because they <i>can</i> take href/keyref? Or
+    are they only link defining elements when one or both of the attributes are specified? If the
+    latter, then the statement we make today is technically incorrect. We seem to be saying the
+    former (these are always link-defining elements even with no attributes), but I would not have
+    considered these to be link defining
+     elements:<codeblock>&lt;link>&lt;linktext>Link with no href&lt;/linktext>&lt;/link>
+&lt;xref otherprops="ho-hum">Widgets&lt;/xref></codeblock><p>Same
+     applies to the "In general" paragraph that follows just below. Note that in the next paragraph
+     about conref, it's the <b>use</b> of @conref, not the fact that it can be there, which turns an
+     element into a use-by-reference link.</p><p>Looking at this paragraph and the two that follow,
+     I've got a few questions:<ul>
+      <li>Here we describe "link-defining elements" as elements that establish a navigation
+       relationship, a use-by-reference relationship, or both. I think this would apply to only
+       specific instances (&lt;p> is only a link-defining element when using @conref). Are we saying
+       something different with the follow-up about link and xref?</li>
+      <li>In the last of the three, we say that elements that take both @href and @keyref
+         <b><i>always</i></b> act as elements that define a navigation link. But what about the
+       following? Or are we implying "The source element always acts as an element that defines a
+       navigation link, even if specific instances do
+       not"?<codeblock>&lt;source>My Overactive Imagination&lt;/source></codeblock></li>
+      <li>More generally, this topic seems to focus on defining links that are "navigation
+       relationships" versus "use-by-reference" relationships. The term "navigation relationship" is
+       only ever used in this topic, though "navigation link" is used elsewhere. The term
+       "use-by-reference" is primarily used in this topic and a couple of other linking topics. It's
+       also used in the langRef topics for &lt;fn> and &lt;anchor>, though it does not have the same
+       meaning in the &lt;fn> topic. It feels a little like we are creating new terms for this
+       section, to describe linking concepts that are covered elsewhere.</li>
+     </ul></p></draft-comment></p>
+  <p>Most elements become a use-by-reference link by specifying the <xmlatt>conref</xmlatt> or
+    <xmlatt>conkeyref</xmlatt> attribute. Elements such as <xmlelement>term</xmlelement> and
+    <xmlelement>keyword</xmlelement> can become navigation links by using the
+    <xmlatt>keyref</xmlatt> attribute to establish a relationship to another DITA topic or non-DITA
+   resource. </p>
+  <p>In general, elements within topics that take both the <xmlatt>href</xmlatt> and
+    <xmlatt>keyref</xmlatt> attributes always act as elements that define a navigation link, while
+   elements that take <xmlatt>keyref</xmlatt> but not <xmlatt>href</xmlatt> act as elements that
+   define a navigation link only when they specify the <xmlatt>keyref</xmlatt> attribute.</p>
+  <p>A link-defining element can establish more than one relationship. For example, an element can
+   establish both a content reference link and a navigation link. A single row in a relationship
+   table can establish a number of distinct relationships among the topics referenced in the
+   different cells of the relationship table. A topic reference within a hierarchy of topic
+   references establishes not only a use-by-reference relationship from the map to the topic, but
+   also hierarchical relationships from the referenced topic to other topics in the navigation
+   hierarchy (parents, siblings, and children). </p>
+  <p>The nature of the linking relationships established is independent of the form of address used.
+   For example, a cross reference that uses a key reference to address the target of the cross
+   reference is functionally equivalent to having addressed the same target by URI reference.
+   However, the two forms of address have different practical and intermediate processing
+   implications.
+   <!--See <xref format="dita" href="ditaaddressing.dita#id">DITA addressing</xref>.--></p>
+  <draft-comment author="Kris Eberlein" time="March 9 2015">
+   <p>If we are going to use the term "map tree", then we need to define it properly.</p>
+  </draft-comment>
+  <p>Links from maps to other maps, topics, or non-DITA resources establish explicit dependencies
+   from the map that contains the links to the associated resources. Links from maps to maps create
+   a "map tree". The set of dependencies for a root map is the union of the dependencies of all the
+   maps in the map tree.</p>
+  <draft-comment author="robander" time="March 9 2015">I'm unclear what we're getting from the
+   following paragraph that begins "Links from a topic to other topics, maps, ..."<p>My
+    interpretation of the paragraph is that it says: "When you link from one thing to another, that
+    creates a dependency. If you want to collect the dependencies from a map tree, collect
+    everything referenced from the map tree. If a topic in that map tree references something
+    outside of the map tree, you don't have to include it, but you can. Also, that's a bad idea, you
+    should include it in your map with processing-role="resource-only", and even better, you should
+    use keys."</p><p>This seems to be essentially a list of optional behaviors for processors, none
+    of which is really normative, followed by a push to use keys instead of URIs. Or am I missing
+    something?</p></draft-comment>
+  <p>Links from a topic to other topics, maps, or non-DITA resources establish explicit dependencies
+   from the topic that contains the links to the associated resources, and implicit dependencies
+   from any maps that use that linking topic to its dependencies. For the purposes of determining
+   the set of dependencies for a map tree, processors may ignore any implicit dependencies created
+   by links within topics that are not also established by explicit dependencies. In the case where
+   a map includes a topic that includes a topic-to-topic link, where the linked topic is not
+   explicitly included in the map, and the processor considers only dependencies that are explicitly
+   defined in the map, the processor may fail to resolve the topic-to-topic link. This case can be
+   avoided by using a resource-only topic reference in the map tree to establish the dependency
+   explicitly. If the resource-only topicref also defines a key, the link within the topic can then
+   be changed to use a key reference (<xmlatt>keyref</xmlatt> or <xmlatt>conkeyref</xmlatt>) instead
+   of a URI reference (<xmlatt>href</xmlatt> or <xmlatt>conref</xmlatt>).
+   <!--See <xref href="key-based_addressing.dita" format="dita">Key-based addressing</xref>.--></p>
+  <p>Navigation links have an associated scope that indicates the closeness of the relationship of
+   the linking element to associated
+   resources.<!-- See <xref format="dita" href="../../langRef/attributes/thescopeattribute.dita"/>.--></p>
+  <p>Most navigation links have associated <term>link text</term>, which is the text used to render
+   the link. For all elements that allow or require link text, the link text can be specified as
+   part of the linking element. If the link text is unspecified, it should be taken from the
+   referenced resource. How the link text for an element should or may be generated is defined for
+   that element type; it also can be determined entirely by processors.</p>
+  <p>In the case of cross references created using <xmlelement>xref</xmlelement> and related links
+   using <xmlelement>link</xmlelement>, the set of rules for constructing link text is unbounded.
+   For example, processors <term outputclass="RFC-2119" rev="terminology">MAY</term> define
+   conventions for the value of <xmlatt>outputclass</xmlatt> by which authors can indicate the
+   details of how the link text should be constructed. Processors also <term outputclass="RFC-2119"
+    rev="terminology">MAY</term> provide configuration options for controlling the construction of
+   link text.</p>
+ </conbody>
+</concept>

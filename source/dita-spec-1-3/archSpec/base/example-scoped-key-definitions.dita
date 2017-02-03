@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_yfp_251_mp">
+ <title>Example: Scoped key definitions</title>
+ <shortdesc>Scoped key definitions can be used to create omnibus publications that include multiple
+  submaps. If the submaps contain common topics, the key scopes can ensure different effective keys
+  for each submap. </shortdesc>
+ <conbody>
+  <p>The following root map creates an omnibus publication that contains the content for three
+   different training courses.</p>
+  <codeblock>&lt;map xml:lang="en">
+  &lt;title>Training Courses&lt;/title>
+  &lt;mapref href="course-1.ditamap" keyscope="course-1"/>
+  &lt;mapref href="course-2.ditamap" keyscope="course-2"/>
+  &lt;mapref href="course-3.ditamap" keyscope="course-3"/>
+  &lt;topicref keys="summary" href="omnibus-summary.dita"/>
+&lt;/map></codeblock>
+  <p>Each submap contains its own key definitions, including that key definitions for keys used in
+   all three training courses: "prereqs" and "objectives".</p>
+  <p>When the submaps are processed, different effective key definitions are used for each submap.
+   The <xmlatt>keyscope</xmlatt> attribute specified on the<xmlelement> mapref</xmlelement> elements
+   in the root map acts to establish different key spaces for the topics referenced in each of the
+   three submaps.</p>
+  <p>Since the key definition for "summary" is located in the root map, that is the effective
+   definition for all three submaps. Even if all submaps contain different key definitions for
+   "summary", the key definition set in the root map is effective, since key definitions in parent
+   key scopes override key definitions set in child scopes.</p>
+ </conbody>
+</concept>

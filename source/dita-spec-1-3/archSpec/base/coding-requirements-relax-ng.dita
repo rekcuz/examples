@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="coding-requirements-relax-ng" rev="DITA1.3 proposal-13112">
+ <title><ph rev="review-2">RELAX NG: Coding requirements for specialization modules</ph></title>
+ <shortdesc>To be extensible and backward compatible, DITA requires that RELAX NG-based structural
+  and domain specialization modules conform to well-defined coding requirements.</shortdesc>
+ <conbody>
+  <p>These coding requirements implement the specialization architecture with the capabilities and
+   within the limitations of the RELAX NG grammar. Structural specializations, element domain
+   specializations, and attribute domain specializations <term outputclass="RFC-2119" rev="terminology">MUST</term>
+   conform to these requirements, as well as the requirements defined in <xref
+    href="using-relax-ng.dita"/>.</p>
+  <p>Unlike DTD and XSD-based specialization modules, RELAX NG modules are self integrating. This
+   means that document type shells only need to include the module, include the contribution to the
+   default value for the <xmlatt>domains</xmlatt> attribute, and list the element types that define
+   the <xmlatt>id</xmlatt> attribute as type "ID" in the override of the "any" pattern.</p>
+  <p>All vocabulary and constraint modules <term outputclass="RFC-2119" rev="terminology">MUST</term>  document their
+    <xmlatt>domains</xmlatt> attribute contribution. This <term outputclass="RFC-2119" rev="terminology">MAY</term> be
+   done by using the <xmlelement>domainsContribution</xmlelement> element within a
+    <xmlelement>moduleDesc</xmlelement> element or by using a normal XML comment or
+    <xmlelement>a:documentation</xmlelement> element. Grammars that are intended to be used for
+   automatic generation of DTD- and XSD-based modules <term outputclass="RFC-2119" rev="terminology">MUST</term> use
+   the <xmlelement>domainsContribution</xmlelement> element.</p>
+ </conbody>
+</concept>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="schemaorganization" xml:lang="en-us">
+<title>XML schema organization</title>
+<shortdesc>(Non-normative) The OASIS DITA document types are implemented
+with a set of schema     modules. Some of these modules are used by
+every DITA schema document, others are     only used by topics or
+by maps, and some are only used in specific specializations.</shortdesc>
+<conbody>
+<section>       <title>XML schemas versus modules</title>     </section>
+<section conref="../archSpec/base/dita_modules.dita#ditamods/modules"></section>
+</conbody>
+</concept>
+

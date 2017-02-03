@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us">
+  <title>Specialization, configuration, and extension</title>
+  <topicref href="configuration-specialization-and-constraints.dita">
+    <topicref href="ditaspecialization.dita">
+      <topicref href="recognizedconstraintmechanisms.dita"/>
+      <topicref href="using-relax-ng.dita" rev="DITA1.3 proposal-13112 review-1"/>
+      <topicref href="generating-other-grammars-from-relax-ng.dita" rev="DITA1.3 proposal-13112"/>
+      <topicref href="relax-ng-module-descriptive-markup.dita" rev="DITA1.3 proposal-13112"/>
+    </topicref>
+    <topicref href="createCustomDocType.dita">
+      <topicref href="shell-dtd-coding-reqs.dita"/>
+      <topicref href="xsdShellDoctypeCodeReq.dita"/>
+      <topicref href="relax-ng-doctyp-shell-coding-requirements.dita" rev="DITA1.3 proposal-13112"/>
+      <topicref href="dtd-public-identifiers.dita"/>
+      <topicref href="xml-schema-catalog-identifiers.dita"/>
+    </topicref>
+    <topicref href="specialize.dita">
+      <topicref href="vocabularymodules.dita"/>
+      <topicref href="specvalid.dita"/>
+      <topicref href="classatt.dita"/>
+      <topicref href="domainsatt.dita"/>
+      <!--<topicref href="domain-attribute-syntax-cross-specialization-dependencies.dita" rev="DITA1.3 proposal-13121"/>-->
+      <topicref href="generalize.dita"/>
+      <topicref href="generalization-w-cross-specialization-dependencies.dita"
+        rev="DITA1.3 proposal-13121"/>
+      <topicref href="sharing-elements-across-modules.dita" rev="DITA1.3 proposal-13121"/>
+      <topicref href="attributegeneralize.dita"/>
+      <topicref href="foreigncontentspec.dita"/>
+      <mapref href="specialization.ditamap" format="ditamap"/>
+    </topicref>
+    <mapref href="constraints.ditamap"/>
+  </topicref>
+</map>

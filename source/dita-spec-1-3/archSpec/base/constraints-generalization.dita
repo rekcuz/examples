@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="constraintsGeneralize" xml:lang="en-us">
+       <title>Generalization for constraint modules</title>
+       <!--<shortdesc rev="targeted-review">When documents use different constraints, processors can examine the <xmlatt>domains</xmlatt> attribute to verify whether the document instances are compatible.</shortdesc>-->
+       <prolog>
+              <metadata>
+                     <keywords>
+                            <indexterm>constraints<indexterm>conref and
+                                   generalization</indexterm></indexterm>
+                            <indexterm>generalization<indexterm>conref and
+                                   constraints</indexterm></indexterm>
+                     </keywords>
+              </metadata>
+       </prolog>
+       <conbody>
+              <draft-comment author="Kristen Eberlein" time="17 February 2014" disposition="open"
+                     >Comment from Michael Priestley in e-mail to TC, 14 January 2014: "Says that
+                     constraints MAY be checked for validity during conref. Should be updated to
+                     explicitly set default as loose validation, with processor option to turn on
+                     strict, and make it clear that the rest of the topic only applies if strict
+                     validation is turned on."</draft-comment>
+              <!--<section rev="targeted-review"><title>Weak and strong constraints</title><p>Differences due to constraints typically do not become apparent until a point during processing where validation no longer matters. However, some implementations must assure validation throughout the entire processing chain. Processors can perform constraint compatibility checking by examining the value of the <xmlatt>domains</xmlatt> attribute on the root element of the document; the value of the <xmlatt>domains</xmlatt> attribute includes the contribution of the constraint module. </p><p>An information architect can designate a constraint as <term>strong</term> by prefixing the letter "s" to the contribution to the <xmlatt>domains</xmlatt> attribute. A strong constraint indicates to processors that constraint compatibility checking should be performed. By default, constraints are defined as <term>weak</term>, indicating that processors do not need to check constraints for validity.</p></section>-->
+              <section>
+                     <!--<title>Generalization and constraints</title>-->
+                     <p>Similarly, to determine compatibility between a document instance and a
+                            target document type, a generalization processor can use the
+                                   <xmlatt>domains</xmlatt> and <xmlatt>class</xmlatt> attributes
+                            for the document instance and the <xmlatt>domains</xmlatt> attribute for
+                            the target document type to determine how to rename elements in the
+                            document instance. For each element instance, the generalization
+                            processor:</p>
+                     <ul>
+                            <li>
+                                   <p>Iterates over the <xmlatt>class</xmlatt> attribute on the
+                                          element instance from specific to general, inspecting the
+                                          vocabulary modules.</p>
+                            </li>
+                            <li>
+                                   <p>Looks for the first vocabulary module that is both present in
+                                          the target document type and that has a subset of the
+                                          constraints in the document instance.</p>
+                                   <p>If a module is found in the target document type, that module
+                                          becomes the minimum threshold for the generalization of
+                                          contained element instances.</p>
+                                   <p>If a module is not found, the document instance cannot be
+                                          generalized to the target document type and, instead, can
+                                          only be generalized to a less constrained document
+                                          type.</p>
+                            </li>
+                     </ul>
+                     <p>Note that a document instance can always be converted from a constrained
+                            document type to an unconstrained document type merely by switching the
+                            binding of the document instance to the less restricted schema (which
+                            would also have a different <xmlatt>domains</xmlatt> attribute
+                            declaration). No renaming of elements is needed to remove
+                            constraints.</p>
+              </section>
+       </conbody>
+</concept>
+

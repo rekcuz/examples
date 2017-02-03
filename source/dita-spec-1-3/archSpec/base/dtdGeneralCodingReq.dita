@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="general-coding-requirements" xml:lang="en-us">
+  <title>DTD: Coding requirements for element type declarations</title>
+  <shortdesc>This topic covers general coding requirements for both structural and element-domain
+    vocabulary modules.</shortdesc>
+  <conbody>
+    <p>A vocabulary module that defines a structural or element domain specialization is composed of
+      two files:</p>
+    <ul outputclass="example">
+      <li>An entity declaration (.ent) file, which declares the text entities that are used to
+        integrate the vocabulary module into a document type shell</li>
+      <li>A definition module (.mod) files, which declares the content models and attribute lists
+        for the element types that are defined in the vocabulary module</li>
+    </ul>
+    <section>
+      <title>Domain declaration entity</title>
+      <p>The domain declaration entity is used to construct the effective value of the
+          <xmlatt>domains</xmlatt> attribute for a map or topic type</p>
+      <dl>
+        <dlentry>
+          <dt>Text entity name</dt>
+          <dd>
+            <p>The name of the text entity is the structural type name or the domain abbreviation,
+              followed by a hyphen ("-") and the literal <codeph>att</codeph>.</p>
+            <p>For example, <codeph>concept-att</codeph> or <codeph>hi-d-att</codeph>.</p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Text entity values</dt>
+          <dd>
+            <p>The value of the text entity is the specialization hierarchy of the vocabulary
+              modules. This lists the dependencies of the vocabulary module in order of dependency
+              from left to right, enclosed in parentheses. Domain abbreviations are used in the
+              list.</p>
+            <p outputclass="example">For example, <codeph>&lt;!ENTITY concept-att "(topic concept)"
+                ></codeph> or <codeph>&lt;!ENTITY hi-d-att "(topic hi-d)" &gt;</codeph>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section>
+      <title>Element definitions</title>
+      <p>A structural or domain vocabulary module <term outputclass="RFC-2119" rev="terminology"
+          >MUST</term> contain a declaration for each element type that is named by the module.
+        While the XML standard allows content models to refer to undeclared element types, the DITA
+        standard does not permit this. All element types or attribute lists that are named within a
+        vocabulary module must be declared in one of the following objects:</p>
+      <ul>
+        <li>The vocabulary module</li>
+        <li>A base module of which the vocabulary module is a direct or indirect specialization</li>
+        <li>(If the vocabulary module is a structural module)A required domain module</li>
+      </ul>
+      <p>The following items are declared in the .mod file for the vocabulary module:</p>
+      <dl>
+        <dlentry>
+          <dt>Element name entities</dt>
+          <dd>
+            <p>For each element type, there must be a parameter entity.</p>
+            <p>The name of the parameter entity is the element type name, and the default value is
+              the element type name.</p>
+            <p outputclass="example">For
+              example:<codeblock><![CDATA[<!ENTITY % conbody "conbody">]]></codeblock></p>
+            <p>The parameter entity provides a layer of abstraction that facilitates redefinition. A
+              document type shell can redefine an element entity to add domain-specialized elements
+              or replace a base element type with one or more specializations of that type. Because
+              declarations use the parameter entity rather than the element type name to include the
+              element in a content model, the redefinition given in a document type shell is
+              propagated to every context in which the base element occurs.</p>
+            <p>The parameter entities must be grouped together at the top of the vocabulary module.
+              This ensures that they are declared before they are referenced in the parameter
+              entities that define the content models for the elements The parameter declarations
+              can occur in any order.</p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Element name declarations</dt>
+          <dd>
+            <p>Intro to definition list needed here.</p>
+            <dl>
+              <dlentry>
+                <dt>Name and value for the content-model parameter entity</dt>
+                <dd>
+                  <p>For each element type, there must be a parameter entity that defines the
+                    content model. The name of the parameter entity is
+                        <codeph><varname>tagname</varname>.content</codeph>, and the value is the
+                    content model definition.</p>
+                  <p outputclass="example">For
+                    example:<codeblock>&lt;!ENTITY % topichead.content
+  "((%topicmeta;)?, 
+    (%anchor; | 
+     %data.elements.incl; | 
+     %navref; | 
+     %topicref;)*)
+"></codeblock></p>
+                  <p>The content-model parameter entity can be overridden in document type shells or
+                    constraint modules in order to further constrain the content model for the
+                    element type.</p>
+                </dd>
+              </dlentry>
+              <dlentry>
+                <dt>Name and value for the attribute-list parameter entity</dt>
+                <dd>
+                  <p>For each element type, there must be a parameter entity that declares the
+                    attributes that are available on the element. The name of the parameter entity
+                    is <codeph><varname>tagname</varname>.attributes</codeph>, and the value is a
+                    list of the attributes that are used by the element type (except for the
+                    attributes provided by the <parameterentity>global-atts</parameterentity>
+                    parameter
+                    entity.<!--, which is always referenced as part of the attribute list declaration for an element's class attribute). .--></p>
+                  <p outputclass="example">For
+                    example:<codeblock>&lt;!ENTITY % topichead.attributes
+ "navtitle CDATA #IMPLIED
+  outputclass CDATA #IMPLIED
+  keys CDATA #IMPLIED
+  %topicref-atts;
+  %univ-atts;"
+></codeblock></p>
+                </dd>
+              </dlentry>
+              <dlentry>
+                <dt>Element declaration</dt>
+                <dd>
+                  <p>For each element type, there must be an element declaration that consists of a
+                    reference to the content-model parameter entity.</p>
+                  <p outputclass="example">For
+                    example:<codeblock>&lt;!ELEMENT topichead    %topichead.content;></codeblock></p>
+                </dd>
+              </dlentry>
+              <dlentry>
+                <dt>Attribute list declaration</dt>
+                <dd>
+                  <p>For each element type, there must be an attribute list declaration that
+                    consists of a reference to the attribute-list parameter entity.</p>
+                  <p outputclass="example">For
+                    example:<codeblock>&lt;!ATTLIST topichead    %topichead.attributes;></codeblock></p>
+                </dd>
+              </dlentry>
+            </dl>
+            <p>The content model parameter entity, attribute list parameter entity, ELEMENT
+              declaration, and ATTLIST declaration <term outputclass="RFC-2119" rev="terminology"
+                >SHOULD</term> be grouped together. Each group of declarations can occur in any
+              order within the module.</p>
+            <p outputclass="example">For
+              example:<codeblock>&lt;!--                    LONG NAME: Topic Head                      -->
+&lt;!ENTITY % topichead.content
+  "((%topicmeta;)?, 
+    (%anchor; | 
+     %data.elements.incl; | 
+     %navref; | 
+     %topicref;)* )
+">
+&lt;!ENTITY % topichead.attributes
+  "navtitle 
+      CDATA 
+          #IMPLIED
+   outputclass 
+      CDATA 
+           #IMPLIED
+   keys 
+      CDATA 
+          #IMPLIED
+   %topicref-atts;
+   %univ-atts;"
+>
+&lt;!ELEMENT topichead    %topichead.content;>
+&lt;!ATTLIST topichead    %topichead.attributes;></codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Specialization attribute declarations</dt>
+          <dd>
+            <p>A vocabulary module <term outputclass="RFC-2119" rev="terminology">MUST</term> define
+              a <xmlatt>class</xmlatt> attribute for every specialized element declared in the
+              module. The <xmlatt>class</xmlatt> attribute <term outputclass="RFC-2119"
+                rev="terminology">MUST</term> include the value of the <xmlatt>class</xmlatt>
+              attribute of the base element, and append to it the element name qualified by the
+              topic element name with at least one leading and trailing space. The
+                <xmlatt>class</xmlatt> attribute for an element introduced by a structural
+              specialization <term outputclass="RFC-2119" rev="terminology">MUST</term> start with a
+              minus sign ("-"). The <xmlatt>class</xmlatt> attribute for a domain specialization
+                <term outputclass="RFC-2119" rev="terminology">MUST</term> start with a plus sign
+              ("+"). The initial minus or plus sign <term outputclass="RFC-2119" rev="terminology"
+                >MUST</term> be followed by one or more spaces. The attribute value <term
+                outputclass="RFC-2119" rev="terminology">MUST</term> end with one or more trailing
+              spaces. </p>
+            <p>The ATTLIST declaration for the <xmlatt>class</xmlatt> attribute <term
+                outputclass="RFC-2119" rev="terminology">MUST</term> also include a reference to the
+                <parameterentity>global-atts</parameterentity> parameter entity.</p>
+            <p outputclass="example">For example, the ATTLIST definition for the
+                <xmlelement>conbody</xmlelement> element (a specialization of the
+                <xmlelement>body</xmlelement> element in the <xmlelement>topic</xmlelement> base
+              type) includes global attributes with an entity, then the definition of the
+                <xmlatt>class</xmlatt> attribute, as
+              follows:<codeblock>&lt;!ATTLIST conbody     %global-atts;  class CDATA "- topic/body  concept/conbody "&gt;</codeblock></p>
+            <p>The <xmlatt>class</xmlatt> attribute declarations for a module <term
+                outputclass="RFC-2119" rev="terminology">MUST</term> be grouped together at the end
+              of the module after any other declarations. The declarations can occur in any
+              order.<!-- By convention they are often ordered alphabetically or grouped logically.--></p>
+            <p>See <xref href="classatt.dita#classatt" format="dita"/> for complete details on the
+                <xmlatt>class</xmlatt> attribute.</p>
+            <draft-comment author="sethpark" id="commentf6" disposition="open">[RDAnderson, 4 Jan
+              2010] We should provide a pointer to the topic in the specialization section, "Element
+              type class hierarchy declaration (the class attribute)". This section as written
+              leaves out some details, without mentioning that more is required; we should indicate
+              that complete details of constructing the <xmlatt>class</xmlatt> attribute are in the
+              other topic.</draft-comment>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+  </conbody>
+</concept>
+

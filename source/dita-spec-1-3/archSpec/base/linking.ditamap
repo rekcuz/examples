@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>DITA linking</title>
+ <topicref href="ditalinking.dita">
+  <topicref href="linking-overview.dita" rev="review-2"/>
+  <topicref href="dita-linking-links-within-topics.dita"/>
+  <topicref href="dita-linking-links-within-maps.dita"/>
+  <topicref href="links-between-maps.dita" rev="DITA1.3 proposal-13041"/>
+  <!--<topicref href="temp-linking.dita"/>-->
+ </topicref>
+</map>

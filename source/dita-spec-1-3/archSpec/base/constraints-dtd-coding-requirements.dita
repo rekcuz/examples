@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="constraintsDomainDesignPattern-dtd" xml:lang="en-us" rev="DITA1.3">
+  <title>DTD: Coding requirements for constraint modules</title>
+  <shortdesc>A structural constraint module defines the constraints for a map or topic element type.
+    A domain constraint module defines the constraints for an element or attribute
+    domain.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>coding
+          requirements<indexterm>DTD<indexterm>constraints</indexterm></indexterm></indexterm>
+        <indexterm>constraints<indexterm>DTD<indexterm>coding
+              requirements</indexterm><indexterm>integrating into document type
+            shells</indexterm></indexterm></indexterm>
+        <indexterm>domain constraint modules<indexterm>DTD<indexterm>coding
+            requirements</indexterm></indexterm></indexterm>
+        <indexterm>file names<indexterm>DTD<indexterm>domain constraint
+              modules</indexterm><indexterm>structural constraint
+          modules</indexterm></indexterm></indexterm>
+        <indexterm>structural constraint modules<indexterm>DTD<indexterm>coding
+              requirements</indexterm></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <section>
+      <title>Structural constraint modules</title>
+      <p>Structural constraint modules have the following requirements:</p>
+      <dl>
+        <dlentry>
+          <dt>File names</dt>
+          <dd>
+            <p conref="../../common/conref_file.dita#reuse_file/see-file-naming-conventions"/>
+            <!--<draft-comment author="Kristen Eberlein" time="24 January 2015"><p>I changed the <term outputclass="RFC-2119" rev="terminology">SHOULD</term> to "should". File naming conventions are best practices; they are not normative. The <varname>qualifier</varname> variable is completely arbitrary and cannot be enforced. I suggest that we move this content to a non-normative appendix.</p></draft-comment>-->
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Entity name and value</dt>
+          <dd>
+            <p>The constraint module <term outputclass="RFC-2119" rev="terminology targeted-review">SHOULD</term>
+              contain a declaration for a text entity with the following name:</p>
+            <codeblock rev="review-2"><varname>tagname</varname>-constraints</codeblock>
+            <p>where <varname>tagname</varname> is the name of the element type to which the
+              constraints apply.</p>
+            <p>The value of the text entity <term outputclass="RFC-2119"
+                rev="terminology targeted-review">SHOULD</term> use the following format:</p>
+            <codeblock>"(<varname>inheritance-hierarchy</varname> <varname>qualifier</varname><varname>Tagname</varname>-c)"</codeblock>
+            <p>where:</p>
+            <ul conref="../../common/conref_file.dita#reuse_file/dtd-domains-contribution">
+              <li/>
+            </ul>
+            <p rev="review-2">The value of the text entity contains the contribution to the
+                <xmlatt>domains</xmlatt> attribute for the constraint module. </p>
+            <p outputclass="example">For example, the following text entity provides the declaration
+              for the strict task constraint that is shipped with the DITA
+              standard.<codeblock>&lt;!ENTITY taskbody-constraints     
+  "(topic task strictTaskbody-c)"
+></codeblock></p>
+            <p conref="../../common/conref_file.dita#reuse_file/indicating-strong-constraint"/>
+          </dd>
+        </dlentry>
+        <dlentry rev="targeted-review">
+          <dt>The <parameterentity>tagname.attributes</parameterentity> parameter entity</dt>
+          <dd>
+            <p>When the attributes for an element are restricted, there <ph rev="targeted-review"
+                >must</ph> be a declaration of the
+                <parameterentity>tagname.attributes</parameterentity> parameter entity that defines
+              the constrained attributes.</p>
+            <p outputclass="example">For example, the following parameter entity defines a more
+              restricted set of attributes for the <xmlelement>note</xmlelement> element:</p>
+            <draft-comment author="Kristen Eberlein" time="12 January 2015">
+              <codeblock>Content needed here</codeblock>
+            </draft-comment>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>The <parameterentity>tagname.content</parameterentity> parameter entity</dt>
+          <dd>
+            <p><ph rev="targeted-review">When the content model is constrained,</ph> there also <ph
+                rev="targeted-review">must</ph> be a declaration of the
+                <parameterentity>tagname.content</parameterentity> parameter entity that defines the
+              constrained content model.</p>
+            <p outputclass="example">For example, the following parameter entity defines a more
+              restricted content model for <xmlelement>topic</xmlelement>, in which either the
+                <xmlelement>abstract</xmlelement> or <xmlelement>shortdesc</xmlelement> element is
+              required.<codeblock>&lt;!ENTITY % topic.content 
+
+  "((%title;), 
+    (%titlealts;)?, 
+    (%shortdesc;|
+     %abstract;), 
+    (%prolog;)?, 
+    (%body;)?, 
+    (%topic-info-types;)*)"
+></codeblock></p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section>
+      <title>Domain constraint modules</title>
+      <p>Domain constraint modules have the following requirements:</p>
+      <dl>
+        <dlentry>
+          <dt>File names</dt>
+          <dd>
+            <p conref="../../common/conref_file.dita#reuse_file/see-file-naming-conventions"/>
+            <!--<draft-comment author="Kristen Eberlein" time="24 January 2015"><p>I changed the <term outputclass="RFC-2119" rev="terminology">SHOULD</term> to "should". File naming conventions are best practices; they are not normative. The <varname>qualifier</varname> variable is completely arbitrary and cannot be enforced. I suggest that we move this content to a non-normative appendix.</p></draft-comment>-->
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Entity name and value</dt>
+          <dd>
+            <p>The constraint module <term outputclass="RFC-2119" rev="terminology targeted-review"
+                >SHOULD</term> contain a declaration for a text entity with the following name:</p>
+            <codeblock rev="review-2"> <varname>domain</varname>Domain-constraints</codeblock>
+            <p>where <ph conref="../../common/conref_file.dita#reuse_file/domain-variable-ph"/></p>
+            <p>The value of the text entity <term outputclass="RFC-2119"
+                rev="terminology targeted-review">SHOULD</term> use the following format:</p>
+            <codeblock>"(<varname>inheritance-hierachy</varname> <varname>qualifier</varname><varname>domain</varname>Domain-c)"</codeblock>
+            <p>where:</p>
+            <ul
+              conref="../../common/conref_file.dita#reuse_file/dtd-domains-contribution-domain-constraint">
+              <li/>
+            </ul>
+            <p outputclass="example" rev="review-2">For example, the following text entity provides
+              the declaration for a constraint module that restricts the highlighting domain:</p>
+            <codeblock rev="review-2">&lt;!ENTITY HighlightingDomain-constraints     
+  "(topic hi-d basic-HighlightingDomain-c)"
+></codeblock>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Parameter entity</dt>
+          <dd>
+            <p><ph rev="targeted-review">When the set of extension elements are restricted, there
+                must</ph> be a parameter entity that defines the constrained content model.</p>
+            <p outputclass="example" rev="review-2">For example, the following parameter entity
+              restricts the highlighting domain to <xmlelement>b</xmlelement> and
+                <xmlelement>i</xmlelement>:</p>
+            <codeblock rev="review-2">
+&lt;!ENTITY % HighlightingDomain-c-ph     "b | i"                 ></codeblock>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section rev="review-2">
+      <title>Integrating constraint modules into document type shells </title>
+      <p>For information about how to integrate constraint modules into DTD-based, document type
+        shells, see <xref href="shell-dtd-coding-reqs.dita"/>.</p>
+    </section>
+  </conbody>
+</concept>
+

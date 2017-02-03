@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="constraint-module-examples" xml:lang="en-us">
+<title>Examples of constraint declaration modules</title>
+<shortdesc>This section provides examples of constraint declaration
+modules.</shortdesc>
+<conbody>
+<example id="constrain-content">
+      <title>Constraining element content in a topic vocabulary module</title>
+      <p>A constraint module named <codeph>shortdescReq</codeph> redefines the content model of the
+          <xmlelement>topic</xmlelement> element so that the <xmlelement>shortdesc</xmlelement>
+        element is required, and the <xmlelement>abstract</xmlelement> element is disallowed. The
+        DTD declarations for this module would
+        be:<codeblock>&lt;!ENTITY shortdescReq.constraint 
+  "(topic shortdescReq-c)"
+>
+
+&lt;!ENTITY % title         "title">
+&lt;!ENTITY % titlealts     "titlealts">
+&lt;!ENTITY % shortdesc     "shortdesc">
+&lt;!ENTITY % prolog        "prolog">
+&lt;!ENTITY % body          "body">
+&lt;!ENTITY % related-links "related-links">
+
+&lt;!ENTITY % topic.content  
+   "((%title;), 
+     (%titlealts;)?, 
+     <b>(%shortdesc;)</b>,
+     (%prolog;)?, 
+     (%body;)?, 
+     (%related-links;)?, 
+     (%topic-info-types;)*)"
+>
+</codeblock></p>
+      <draft-comment author="jelovirta" disposition="open"><p>&lt;!ENTITY shortdescReq
+          </p>.-<p>constraint "(topic shortdescReq-c)" &gt; &lt;!ENTITY % title "title"&gt;
+          &lt;!ENTITY % titlealts "titlealts"&gt; &lt;!ENTITY % shortdesc "shortdesc"&gt;
+          &lt;!ENTITY % prolog "prolog"&gt; &lt;!ENTITY % body "body"&gt; &lt;!ENTITY %
+          related-links "related-links"&gt; &lt;!ENTITY % topic.content "((%title;), (%titlealts;)?,
+          (%shortdesc;) , (%prolog;)?, (%body;)?, (%related-links;)?, (%topic-info-types;)*)" &gt;
+        </p></draft-comment>
+    </example>
+    <example id="constraint-attribute">
+      <title>Constraining attributes in a topic vocabulary module</title>
+      <p>A constraint module named <codeph>sectionAttributes</codeph> redefines and restricts the
+        attribute list for the <xmlelement>section</xmlelement> element so that the
+          <xmlatt>id</xmlatt> attribute is required and the <xmlelement>spectitle</xmlelement>
+        attribute is removed. The DTD declarations for this module would
+        be:<codeblock>&lt;!ENTITY sectionAttributes.constraint 
+  "(topic sectionAttributes-c)"
+>
+
+&lt;!-- Original definition includes %univ-atts;, spectitle, and outputclass -->
+&lt;!-- Include individual pieces of univ-atts, to make ID required -->
+&lt;!ENTITY % section.attributes 
+          "id          CDATA   #REQUIRED
+           %conref-atts;
+           %select-atts;
+           %localization-atts;
+           outputclass CDATA   #IMPLIED">
+</codeblock></p>
+      <draft-comment author="jelovirta" disposition="open"><p>&lt;!ENTITY sectionAttributes
+          </p>.-<p>constraint "(topic sectionAttributes-c)" &gt; &lt;!-- Original definition
+          includes %univ-atts;, spectitle, and outputclass --&gt; &lt;!-- Include individual pieces
+          of univ-atts, to make ID required --&gt; &lt;! ENTITY % section.attributes "id CDATA
+          #REQUIRED %conref-atts; %select-atts; %localization-atts; outputclass CDATA #IMPLIED"&gt;
+        </p></draft-comment>
+      <draft-comment disposition="informational">[Anderson 17 May 2010] The following section about
+        domain vocabulary modules was commented out until a sample can be completed. </draft-comment>
+    </example>
+    <!--<section><title>Constraining element content in a domain vocabulary module</title><p>A constraint module named noNestedHighlight redefines the content models of the highlight elements to prevent self-nesting. For example, the constrained content model for the &lt;b&gt; element replaces the nested &lt;ph&gt; element with the &lt;i&gt;, &lt;u&gt;, &lt;sub&gt;, and &lt;sup&gt; elements. The DTD declarations for this module would be:<codeblock/></p></section>-->
+<example>
+      <title>Integrating a subset of the extension elements from a domain module</title>
+      <p>A constraint module named basicHighlight includes the <xmlelement>b</xmlelement> and
+          <xmlelement>i</xmlelement> elements but not the <ph rev="DITA1.3 proposal-13031"
+            ><xmlelement>line-through</xmlelement>, <xmlelement>overline</xmlelement>,</ph>
+        <xmlelement>u</xmlelement>, <xmlelement>sub</xmlelement>, <xmlelement>sup</xmlelement>, and
+          <xmlelement>tt</xmlelement> elements from the highlighting domain. The DTD declarations
+        for this module would
+        be:<codeblock>&lt;!ENTITY   basicHighlight-c-att   
+   "(topic hi-d basicHighlight-c)"
+>
+
+&lt;!ENTITY % basicHighlight-c-ph  "b | i"></codeblock></p>
+      <p>The XSD declarations for this module would
+        be:<codeblock>&lt;xs:group name="basicHighlight-c-ph">
+  &lt;xs:choice>
+    &lt;xs:element ref="b"/>
+    &lt;xs:element ref="i"/>
+  &lt;/xs:choice>
+&lt;/xs:group></codeblock></p>
+      <draft-comment disposition="informational">[Anderson, 17 May 2010: Previous content was as
+        follows. I&apos;ve replaced it below while commenting out the noNestedHighlight sample
+        above. Ideally this can be reintroduced when the noNestedHighlight sample is
+          completed.<p>Note that because the noNestedHighlight constraint module shown above
+          redefines content models and the basicHighlight constraint module subsets extension, these
+          constraints don't conflict in attempting to revise the same content model and thus can be
+          combined in the same shell document type. The effective value of the @domains attribute
+          will include the contributions from both constraint modules, as well as any other modules
+          integrated by the shell,
+          e.g.:<codeblock>...
+(topic hi-d noNestedHighlight-c)
+(topic hi-d basicHighlight-c)
+...</codeblock></p></draft-comment>
+      <p>Note that the basicHighlight constraint module subsets extension, but does not redefine any
+        content models. If another constraint is created to restrict the content model of the
+          <xmlelement>b</xmlelement> element, it will not conflict with the basicHighlight domain,
+        because they do not attempt to revise the same content model. This means that the two can be
+        combined in the same document type shell. The effective value of the
+          <xmlatt>domains</xmlatt> attribute will include the contributions from both constraint
+        modules, as well as any other modules integrated by the shell, for
+        example.:<codeblock>...
+(topic hi-d noNestedHighlight-c)
+(topic hi-d basicHighlight-c)
+...</codeblock></p>
+    </example>
+<example>
+      <title>Applying multiple constraints to a single vocabulary module</title>
+      <p>A constraint module named simpleSection redefines the content models of the
+          <xmlelement>section</xmlelement> and <xmlelement>example</xmlelement> elements to allow a
+        single initial <xmlelement>title</xmlelement> element and to remove text and phrase
+        elements. Because this constraint module redefines different elements than the shortdescReq
+        constraint module shown above, both modules can apply to the topic module. The order in
+        which the constraint modules are listed is not significant. The DTD declarations for this
+        module would
+        be:<codeblock>&lt;!ENTITY simpleSection.constraints
+  "(topic simpleSection-c)"
+>
+
+&lt;!ENTITY % section.content
+  "((<ph rev="DITA1.2-errata">%title;</ph>),
+    (%basic.block; | 
+     %data.elements.incl; | 
+     %foreign.unknown.incl; |
+     <ph rev="DITA1.3 proposal-13023">%div; |</ph>
+     %sectiondiv;)*)
+
+  "
+></codeblock></p>
+      <p>Note that this constraint module and the shortdescReq constraint module both constrain task
+        but because they constrain different element types they do not conflict and can be used
+        together. Each constraint module provides its own contribution to the
+          <xmlatt>domains</xmlatt> attribute, so that when integrated the effective value of the
+          <xmlatt>domains</xmlatt> attribute will include the declarations for both constraint
+        modules, as well as the declarations for the other modules that are integrated by the shell
+        document type, for example.:</p>
+      <codeblock>&lt;!-- ... -->
+(topic shortdescReq-c)
+(topic simpleSection-c)
+&lt;!-- ... --></codeblock>
+    </example>
+<example>
+      <title>A topic with elements replaced by domain extensions</title>
+      <p>A document type shell replaces the <xmlelement>ph</xmlelement> element with extension
+        elements from the highlighting and programming domains. Because the highlighting and
+        programming domains cannot be generalized to a topic without the <xmlelement>ph</xmlelement>
+        element, the removal constraint must be declared on the topic module with a separate
+        parenthetical expression. </p>
+      <p>The <xmlatt>domains</xmlatt> attribute declaration:</p>
+      <codeblock>(topic noBasePhrase-c)
+(topic hi-d)
+(topic pr-d)</codeblock>
+    </example>
+</conbody>
+</concept>
+

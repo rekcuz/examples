@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="speclimits" xml:lang="en-us">
+  <title>Specialization design, customization, and the limits of specialization</title>
+  <shortdesc>(Non-normative) DITA specialization imposes certain restrictions. An inherent challenge
+    in designing DITA vocabulary modules and document types is understanding how to satisfy markup
+    requirements within those restrictions and, when the requirements cannot be met by a design that
+    fully conforms to the DITA architecture, how to create customized document types that diverge
+    from the DITA standard as little as possible.</shortdesc>
+  <conbody>
+    <p>DITA imposes the following structural restrictions:<ul>
+        <li>All topics must have titles.</li>
+        <li>Topic body content must be contained within a body element.</li>
+        <li>Section elements cannot nest.</li>
+        <li>Metadata specific to an element type must be represented using elements, not
+          attributes.</li>
+      </ul>
+    </p>
+    <p>When markup requirements cannot be met within the DITA architecture, there still might be an
+      interest in using DITA features and technology, or a business need for interoperability with
+      conforming DITA documents and processors. In this case, the solution is to create
+        <term>customized document types</term>. Customized document types are document types that do
+      not conform to the DITA standard. To reduce the cost of producing conforming documents from
+      non-conforming documents, custom document types should minimize the extent to which they
+      diverge from the DITA standard.</p>
+    <p>Typical reasons for considering custom document types include the following:<ul>
+        <li>Optimizing markup for authoring by excluding unwanted elements and attributes that
+          are included in the OASIS-provided vocabulary modules</li>
+        <li>Supporting legacy markup structures that are not consistent with DITA structural rules,
+          for example, footnotes within titles or nested sections within topic bodies</li>
+        <li>Defining different forms of existing structures, such as lists, where the DITA-defined
+          structures are too constrained</li>
+        <li>Providing attributes required by specific processors, such as CMS-defined attributes for
+          maintaining management metadata</li>
+        <li>Embedding tool-imposed markup in places that do not allow the
+            <xmlelement>foreign</xmlelement> or <xmlelement>unknown</xmlelement> elements</li>
+      </ul></p>
+    <p>In many of these cases, it is possible to define document types that conform to the DITA
+      standard. Explore this fully before developing customized document types.</p>
+    <section>
+      <title>Optimizing document types for authoring</title>
+      <p>The base DITA element types provide relaxed content models in order to avoid imposing
+        unnecessary limits on specializers. However, these relaxed content models are often
+        inappropriately open for authoring purposes, where authors are better served by more
+        restrictive content models. To address this requirement, DITA provides two configuration
+        mechanisms for defining and configuring document types: document type shells and constraint
+        modules.</p>
+      <p>Document type shells pull together sets of vocabulary and constraint modules in order to
+        define a working document type. The OASIS-provided document-type shells typically include
+        all available vocabulary modules, which often is not what is needed or desired. When the
+        requirement is to eliminate unneeded domain modules or topic types, simply define new
+        document-type shells that omit unneeded domains or structural types and include any
+        locally-defined or third-party modules that users might need. See <xref
+          href="../archSpec/base/createCustomDocType.dita#createCustomDocType" format="dita"/> for
+        details.</p>
+      <p>The DITA constraint mechanism, introduced with DITA 1.2, makes it possible to configure the
+        content models of individual elements from document type shells. This means you can optimize
+        content models to meet authoring requirements without directly modifying the base vocabulary
+        modules, as long as you only need to add constraints or eliminate optional elements.</p>
+      <p>Most authoring optimization requirements can be met with a combination of document type
+        shells and constraint modules, when the markup requirements are satisfied by available
+        vocabulary modules. When markup requirements are not satisfied by existing vocabulary
+        modules, you can specialize new vocabulary modules and integrate them into your
+        document-type shells.</p>
+      <p>If the markup requirements include content models that are <i>less</i> constrained than
+        those defined by DITA, you have no choice but to define custom document types.</p>
+      <p>Where interchange and interoperation with other DITA systems and information sets are
+        required, you must first transform non-conforming documents into conforming documents.  See
+          <xref href="#speclimits/customized-type-to-dita" format="dita"/>.</p>
+    </section>
+    <section>
+      <title>Specialization design considerations</title>
+      <p>Requirements for new markup often appear to be inconsistent or incompatible with DITA
+        architectural rules or existing markup, especially when mapping existing non-DITA markup
+        practice to DITA, where the existing markup may have used structures that cannot be directly
+        expressed in DITA. For example, you might need markup for a specialized form of list where
+        the details are not consistent with the base model for DITA lists.</p>
+      <p>In this case you have two alternatives, one that conforms to DITA and one that does
+        not.</p>
+      <ul>
+        <li>Specialize from more generic base elements or attributes.</li>
+        <li>Define non-conforming structures and map them to conforming DITA structures as necessary
+          for processing by DITA-aware processors or for interchange as conforming DITA
+          documents.</li>
+      </ul>
+      <p>Specializing from more generic base elements, such as defining a list using specializations
+        of <xmlelement>ph</xmlelement> or <xmlelement>p</xmlelement>, while technically conforming,
+        might still impede interchange of such documents. Generic DITA processors will have
+        no way of knowing that what they see as a sequence of phrases or paragraphs is
+        really a list and should be rendered in a manner similar to standard DITA lists. However, your documents will be
+        reliably interchangeable with conforming DITA systems.</p>
+      <p>Defining non-conforming markup structures means that the documents that use those
+        structures cannot be conforming DITA documents as authored and therefore cannot be reliably
+        processed by generic DITA-aware processors or interchanged with other DITA systems. However,
+        as long as the documents can be transformed into conforming DITA documents without undue
+        effort, interchange and interoperation requirements can be satisfied as needed. This approach
+        might be needed when using content management systems to manage what is nominally DITA
+        content where the content management system imposes requirements onto the content,
+        such as to add its own markup for management metadata.</p>
+      <p>In addition, non-conforming document types can use the basic specialization mechanism used
+        by the DITA document types, with the same re-use and interoperation benefits, only
+        restricted to the specific domain within which the new document types apply. Such document
+        types are not conforming DITA document types but may be quite useful because of the general
+        benefits of specialization as an enabling technology.</p>
+      <p>Note that even if one uses the DITA-defined types as a starting point, any change to those
+        base types not accomplished through specialization or the constraint feature defines a
+        completely new document type that has no normative relationship to the DITA document types,
+        and cannot be considered in any way to be a conforming DITA application. In particular, the
+        use of DITA specialization from non-DITA base types does not produce DITA-conforming
+        vocabularies.</p>
+    </section>
+    <section>
+      <title>Specialize from generic elements or attributes</title>
+      <p>Most DITA element types have relaxed content models that are specifically designed to allow
+        a wide set of options when specializing from them. However, some DITA element types do
+        impose limits that might not be acceptable or appropriate for a specific markup
+        application. In this case, consider specializing from a more generic base element or
+        attribute. </p>
+      <p>Generic elements are available in DITA at every level of detail, from whole topics down to
+        individual keywords, and the generic <xmlatt>base</xmlatt> attribute is available for
+        attribute domain specialization.</p>
+      <p>For example, if you want to create a new kind of list but cannot usefully do so
+        specializing from <xmlelement>ul</xmlelement>, <xmlelement>ol</xmlelement>,
+          <xmlelement>sl</xmlelement>, or <xmlelement>dl</xmlelement>, you can create a new set of
+        list elements by specializing nested <xmlelement>ph</xmlelement> elements. This new list
+        structure will require specialized processing to generate appropriate output styling,
+        because it is not semantically tied to the other lists by ancestry. Nevertheless, it will
+        remain a valid DITA specialization, with the standard support for generalization, content
+        referencing, conditional processing, and more.</p>
+      <p>The following base elements in <xmlelement>topic</xmlelement> are generic enough to support
+        almost any structurally-valid DITA specialization:<dl>
+          <dlentry>
+            <dt><xmlelement>topic</xmlelement></dt>
+            <dd>Any content unit that has a title and associated content</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>section</xmlelement></dt>
+            <dd>Any non-nesting division of content within a topic, titled or not</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>p</xmlelement></dt>
+            <dd>Any non-titled block of content below the section level</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>fig</xmlelement></dt>
+            <dd>Any titled block of content below the section level</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>ul</xmlelement>, <xmlelement>ol</xmlelement>,
+                <xmlelement>dl</xmlelement>, <xmlelement>sl</xmlelement>,
+                <xmlelement>simpletable</xmlelement></dt>
+            <dd>Any structured block of content that consists of listed items in one or more
+              columns</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>ph</xmlelement></dt>
+            <dd>Any division of content below the paragraph level</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>text</xmlelement></dt>
+            <dd>Text within a phrase</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>keyword</xmlelement></dt>
+            <dd>Any non-nesting division of content below the paragraph level</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>data</xmlelement></dt>
+            <dd><ph>Any content that acts as metadata rather than core topic or map
+              content</ph></dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>foreign</xmlelement></dt>
+            <dd>Any content that already has a non-DITA markup standard, but still needs to be
+              authored as part of the DITA document. Processors should attempt to render this
+              element, if at all possible. </dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>unknown</xmlelement></dt>
+            <dd>Any non-standard markup that does not fit the DITA model, but needs to be managed as
+              part of a DITA document. Processors should not attempt to render this element.</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>bodydiv</xmlelement></dt>
+            <dd>A generic, untitled, nestable container for content within topic bodies</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlelement>sectiondiv</xmlelement></dt>
+            <dd>A generic, untitled, nestable container for content within sections</dd>
+          </dlentry>
+          <dlentry rev="DITA1.3 proposal-13023">
+            <dt><xmlelement>div</xmlelement></dt>
+            <dd>A generic, untitled, nestable container for content within topic bodies or sections
+            </dd>
+          </dlentry>
+        </dl></p>
+      <p>The following attributes in topic are suitable for domain specialization to provide new
+        attributes that are required throughout a document type:<dl>
+          <dlentry>
+            <dt><xmlatt>props</xmlatt></dt>
+            <dd>Any new conditional processing attribute</dd>
+          </dlentry>
+          <dlentry>
+            <dt><xmlatt>base</xmlatt></dt>
+            <dd>Any new attribute that is universally available, has a simple syntax
+              (space-delimited alphanumeric values), and does not already have a semantic
+              equivalent</dd>
+          </dlentry>
+        </dl></p>
+      <p>Whenever possible, specialize from the element or attribute that is the closest semantic
+        match.</p>
+    </section>
+    <section id="customized-type-to-dita">
+      <title>Map from a customized document type to DITA during preprocessing</title>
+      <p>Specializations of elements or attributes might not be sufficient for some authoring
+        requirements. In particular, specialization cannot split or rename attributes, and an
+        element cannot be renamed without also specializing its containing element. In such cases,
+        it might be possible to transform a customized document type to a standard-DITA document
+        type during the publishing process. </p>
+      <p>For example, if an authoring group requires the <xmlelement>p</xmlelement> element to be
+        spelled out as <xmlelement>paragraph</xmlelement>, the document type could be customized to
+        change <xmlelement>p</xmlelement> to <xmlelement>paragraph</xmlelement> for authoring
+        purposes. Such documents then could be preprocessed to rename
+          <xmlelement>paragraph</xmlelement> back to <xmlelement>p</xmlelement> before then are fed
+        into a standard DITA publishing process.</p>
+      <p>The structural modules should not be edited to create a customized document type. Instead,
+        a customized document-type shell can provide new definitions of DITA entities, including
+        entities for attributes and content models. The new definitions override the entity
+        definitions in the module files before they are imported.</p>
+      <p>Customized document types do not conform to the DITA standard. Preprocessing can ensure
+        compatibility with existing publishing processes, but it does not ensure compatibility with
+        DITA-supporting authoring tools or content management systems. However, when an
+        implementation is being heavily customized, a customized document type can help isolate and
+        control the consequences of non-standard design.</p>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="change-item" xml:lang="en-us" rev="DITA1.3 proposal-13102">
+  <title><xmlelement>change-item</xmlelement></title>
+  <shortdesc>Use the <xmlelement>change-item</xmlelement> element to represent a record of a single
+    change to a DITA topic or map.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>change-item</xmlelement></indexterm>
+        <indexterm>release-management domain
+            elements<indexterm><xmlelement>change-item</xmlelement></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section conref="../../common/commonNavLibraryTable.dita#contentmodel-change-item/contains" id="contains" otherprops="contains"></section>
+    <section id="inheritance" otherprops="inheritance">
+      <title>Inheritance</title>
+      <p>- topic/data relmgmt-d/change-item </p>
+    </section>
+    <example conref="../../common/conref-examples.dita#conref-examples/release-management" id="example"/>
+    <section id="attributes">
+      <title>Attributes</title>
+      <p conref="../../common/conref-attribute.dita#conref-attribute/universal-outputclass-name"/>
+      <!--<table frame="all" id="data_attributes"><tgroup cols="5"><colspec colsep="1" colwidth="4*"/><colspec colsep="1" colwidth="7*"/><colspec colsep="1" colwidth="3*"/><colspec colsep="1" colwidth="2*"/><colspec colsep="1" colwidth="1*"/><thead><row rowsep="1"><entry>Name</entry><entry>Description</entry><entry>Data Type</entry><entry>Default Value</entry><entry>Required?</entry></row></thead><tbody><row rowsep="1"><entry>name</entry><entry>Defines a unique name for the object.</entry><entry>CDATA</entry><entry>#IMPLIED</entry><entry>No</entry></row><row rowsep="1"><entry>univ-atts attribute group (includes select-atts, id-atts, and localization-atts groups)</entry><entry>A set of related attributes, described in <xref format="html" href="../common/univ-atts.html">univ-atts attribute group</xref></entry><entry> </entry><entry> </entry><entry> </entry></row><row rowsep="1"><entry>global-atts attribute group (xtrf, xtrc)</entry><entry>A set of related attributes, described in <xref format="html" href="../common/global-atts.html">global-atts attribute group</xref></entry><entry> </entry><entry> </entry><entry> </entry></row><row rowsep="1"><entry>class, outputclass</entry><entry>Common attributes described in <xref format="html" href="../common/othercommon.html">Other common DITA attributes</xref></entry><entry> </entry><entry> </entry><entry> </entry></row></tbody></tgroup></table>-->
+    </section>
+  </refbody>
+</reference>

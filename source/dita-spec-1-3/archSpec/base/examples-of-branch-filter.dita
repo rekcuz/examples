@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="examples-of-branch-filter">
+    <title>Examples of branch filtering</title>
+    <shortdesc rev="review-2">The branch filtering examples illustrate the processing expectations
+        for various scenarios involving <xmlelement>ditavalref</xmlelement> references. Processing
+        examples use either before and after markup samples or expanded syntax that shows equivalent
+        markup without the <xmlelement>ditavalref</xmlelement> elements.</shortdesc>
+</concept>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="processing_key_references">
+    <title>Processing key references</title>
+    <shortdesc>Key references can resolve as links, as text, or as both. Within a map, they can also
+        be used to create or supplement information on a topic reference. This topic covers
+        information that is common to all key processing, regardless of how the key is
+        used.</shortdesc>
+    <conbody>
+        <section id="keys-and-condproc">
+            <title>Keys and conditional processing</title>
+            <p rev="review-2">The effective key definitions for a key space might be affected by
+                conditional processing (filtering). Processors <term outputclass="RFC-2119"
+                    rev="terminology">SHOULD</term> perform conditional processing before
+                determining the effective key definitions. However, processors might determine
+                effective key definitions before filtering. Consequently, different processors might
+                produce different effective bindings for the same map when there are key definitions
+                that might be filtered out based on their filtering attributes.</p>
+            <note rev="review-2">In order to retain backwards compatibility with DITA 1.0 and 1.1,
+                the specification does not mandate a processing order for different DITA features.
+                This makes it technically possible to determine an effective key definition, resolve
+                references to that key definition, and then filter out the definition. However, the
+                preferred approach is to take conditional processing into account when resolving
+                keys, so that key definitions which are excluded by processing are not used in
+                resolving key references.</note>
+        </section>
+        <section id="reusing-topic-across-scopes">
+            <title>Reusing a topic in multiple key scopes</title>
+            <p>If a topic that contains key references is reused in multiple key scopes within a
+                given root map such that its references resolve differently <ph rev="review-2"
+                    >in</ph> each use context, processors <term outputclass="RFC-2119"
+                    rev="terminology">MUST</term> produce multiple copies of the source topic in
+                resolved output for each distinct set of effective key definitions that are
+                referenced by the topic. In such cases, authors can use the <xmlatt>copy-to</xmlatt>
+                attribute <ph rev="review-2">to specify different source URIs for each reference to
+                    a topic.</ph></p>
+        </section>
+        <section id="keys-in-peer-root-maps">
+            <title>Keys in peer root maps</title>
+            <p rev="DITA1.3 proposal-13041">For references to keys in peer root maps, if the peer
+                map is unavailable for processing or the key reference cannot otherwise be resolved,
+                the key reference is processed as though there was no key reference. If the peer map
+                is available, the key reference is processed normally.</p>
+        </section>
+        <section id="error-conditions">
+            <title>Error conditions</title>
+            <p rev="review-2">If a referencing element contains a key reference with an undefined
+                key, it is processed as if there were no key reference, and the value of the
+                    <xmlatt>href</xmlatt> attribute is used as the reference. If the
+                    <xmlatt>href</xmlatt> attribute is not specified, the element is not treated as
+                a navigation link. If it is an error for the element to be empty, an implementation
+                    <term outputclass="RFC-2119" rev="terminology">MAY</term> give an error message;
+                it also <term outputclass="RFC-2119" rev="terminology">MAY</term> recover from this
+                error condition by leaving the key reference element empty.</p>
+        </section>
+    </conbody>
+</concept>

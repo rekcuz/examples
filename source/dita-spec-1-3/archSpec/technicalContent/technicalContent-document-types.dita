@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_djr_5qt_rn">
+  <title>Technical-content document-type modules</title>
+  <shortdesc/>
+  <refbody>
+    <table frame="all">
+      <title/>
+      <tgroup cols="3">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="2.0*"/>
+        <colspec colname="c3" colnum="3" colwidth="2.0*"/>
+        <thead>
+          <row>
+            <entry>Name</entry>
+            <entry>Description</entry>
+            <entry>Files</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Bookmap</entry>
+            <entry/>
+            <entry>
+              <sl>
+                <sli><filepath>bookmap.dtd</filepath>, <filepath>bookmap.ent</filepath>,
+                    <filepath>bookmap.mod</filepath> (DTD)</sli>
+                <sli><filepath>bookmap.xsd,</filepath>
+                  <filepath>bookmapGrp.xsd</filepath>, <filepath>bookmapMod.xsd</filepath> (XML
+                  Schema)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>bookmap.rng</filepath>,
+                    <filepath>bookmapMod.rng</filepath> (RELAX NG)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>bookmap.rnc</filepath>,
+                    <filepath>bookmapMod.rnc</filepath> (RELAX NG compact)</sli>
+              </sl>
+            </entry>
+          </row>
+          <row>
+            <entry>Concept</entry>
+            <entry>The concept document type provides conceptual information designed to support the
+              performance of tasks. Concepts might include extended definitions of terms,
+              expositions of background information, descriptions of systems and objects, and other
+              content that helps to build the users' understanding of the tasks to be
+              perform.</entry>
+            <entry>
+              <sl>
+                <sli><filepath>concept.mod</filepath>, <filepath>concept.ent</filepath> (DTD) </sli>
+                <sli><filepath>conceptMod.xsd</filepath>, <filepath>conceptGrp.xsd</filepath> (XML
+                  Schema) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>conceptMod.rng</filepath> (RELAX NG) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>conceptMod.rnc</filepath> (RELAX NG
+                  compact) </sli>
+              </sl>
+            </entry>
+          </row>
+          <row>
+            <entry>General task</entry>
+            <entry>The general-task document type provides a less strict task model for
+              task-oriented information than that provided in the strict task. Some organizations
+              might prefer the general task model; it can facilitate the migration of legacy task
+              content that does not follow the strict task topic model. The general-task document
+              type serves as the base for the strict task and machine-industry-task document types. </entry>
+            <entry>
+              <sl>
+                <sli><filepath>task.mod</filepath>, <filepath>task.ent</filepath> (DTD) </sli>
+                <sli><filepath>taskMod.xsd</filepath>, <filepath>taskGrp.xsd</filepath> (XML Schema) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>taskMod.rng</filepath> (RELAX NG) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>taskMod.rnc</filepath> (RELAX NG
+                  compact) </sli>
+              </sl>
+            </entry>
+          </row>
+          <row>
+            <entry>Glossary entry</entry>
+            <entry>The glossary-entry document type enables authors to develop glossary topics that
+              define terms, acronyms, and abbreviations. It also can contain terminology
+              information. </entry>
+            <entry>
+              <sl>
+                <sli><filepath>glossentry.dtd</filepath>, <filepath>glossentry.ent</filepath>,
+                    <filepath>glossentry.mod</filepath> (DTD)</sli>
+                <sli><filepath>glossentryMod.xsd</filepath>, <filepath>glossentryGrp.xsd</filepath>
+                  (XML Schema)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>glossentry.rng</filepath>,
+                    <filepath>glossentryMod.rng</filepath> (RELAX NG)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>glossentry.rnc</filepath>,
+                    <foreign>glossentryMod.rnc</foreign> (RELAX NG compact)</sli>
+              </sl>
+              <note>The <filepath>glossary.dtd</filepath>, <filepath>glossary.ent</filepath>, and
+                  <filepath>glossary.mod</filepath> file are deprecated versions of the
+                  <filepath>glossentry.dtd</filepath>., <filepath>glossentry.ent</filepath>, and
+                  <filepath>glossentry.mod</filepath> files. The deprecated files are included to
+                provide backward compatibility with DITA 1.0 and 1.1.</note>
+            </entry>
+          </row>
+          <row>
+            <entry>Glossary group</entry>
+            <entry>The glossary-group document type enables authors to incorporate multiple glossary
+              entries in a single collection tile. </entry>
+            <entry>
+              <sl>
+                <sli><filepath>glossgroup.dtd</filepath>, <filepath>glossgroup.ent</filepath>,
+                    <filepath>glossgroup.mod</filepath> (DTD) </sli>
+                <sli><filepath>glossgroup.xsd</filepath> (XML Schema)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>glossgroup.rng</filepath>,
+                    <filepath>glossgroupMod.rng</filepath> (RELAX NG)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>glossgroup.rnc</filepath>,
+                    <filepath>glossgroupMod.rnc</filepath> (RELAX NG compact)</sli>
+              </sl>
+            </entry>
+          </row>
+          <row>
+            <entry>Machinery task</entry>
+            <entry>The machinery-task document type provides procedural information, similar to
+              other task types; it has a well-defined semantic structure to meet the special
+              requirements of organizations that develop instructional material for industrial
+              equipment, such as trucks, mining machinery, and automobiles. The machine-industry
+              task requirements domain adds several descriptive elements in the preliminary
+              requirements (<xmlelement>prelreqs</xmlelement>) and closing requirements
+                (<xmlelement>closereqs</xmlelement>) sections. The machinery-task document type is
+              built by combining the general-task document type with the task requirements domain
+              and the machinery <xmlelement>taskbody</xmlelement> constraint. </entry>
+            <entry>
+              <sl>
+                <sli><filepath>machineryTask.dtd</filepath>,
+                    <filepath>machineryTaskbodyConstraint.mod</filepath> (DTD)</sli>
+                <sli><filepath>machineryTask.xsd</filepath>,
+                    <filepath>machineryTaskbodyConstraintMod.xsd</filepath>,
+                    <filepath>machineryTaskbodyConstraintIntMod.xsd</filepath> (XML Schema)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>machineryTask.rng</filepath>,
+                    <filepath>machineryTaskbodyConstraint.rng</filepath> (RELAX NG)</sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>machineryTask.rnc</filepath>,
+                    <filepath>machineryTaskbodyConstraint.rnc</filepath> (RELAX NG compact)</sli>
+              </sl>
+            </entry>
+          </row>
+          <row>
+            <entry>Reference</entry>
+            <entry>The reference document type provides for the separation of fact-based information
+              from concepts and tasks. Factual information might include tables and lists of
+              specifications, parameters, parts, commands, and other information that the users are
+              likely to look up. The reference document type enables fact-based content to be
+              maintained by those responsible for its accuracy and consistency. </entry>
+            <entry>
+              <sl>
+                <sli><filepath>reference.mod</filepath>, <filepath>reference.ent</filepath> (DTD) </sli>
+                <sli><filepath>referenceMod.xsd</filepath>, <filepath>referenceGrp.xsd</filepath>
+                  (XML Schema) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>referenceMod.rng</filepath> (RELAX NG) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>referenceMod.rnc</filepath> (RELAX NG
+                  compact) </sli>
+              </sl>
+            </entry>
+          </row>
+          <row>
+            <entry>Task (strict)</entry>
+            <entry>The task document type provides procedural information to support the performance
+              of a task. The task document type is built by combining the general-task document type
+              and the strict <xmlelement>taskbody</xmlelement> constraint. This information model
+              provides detailed semantics to encourage authors to label standard parts of the task,
+              including prerequisites, sufficient conceptual information required to perform the
+              task, the commands that introduce each step in a procedure, additional support
+              information required to understand a step, the result of performing the task, and
+              examples that demonstrate the performance of the task. </entry>
+            <entry>
+              <sl>
+                <sli><filepath>task.mod</filepath>, <filepath>task.ent</filepath>,
+                    <filepath>strictTaskbodyConstraint.mod</filepath> (DTD) </sli>
+                <sli><filepath>taskMod.xsd</filepath>, <filepath>taskGrp.xsd</filepath>,
+                    <filepath>strictTaskbodyConstraintMod.xsd</filepath> (XML Schema) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>taskMod.rng</filepath>,
+                    <filepath>strictTaskbodyConstraint.rng</filepath> (RELAX NG) </sli>
+                <sli rev="DITA1.3 proposal-13112"><filepath>taskMod.rnc</filepath>,
+                    <filepath>strictTaskbodyConstraint.rnc</filepath> (RELAX NG compact) </sli>
+              </sl>
+            </entry>
+          </row>
+          <row>
+            <entry>Troubleshooting</entry>
+            <entry>The troubleshooting document type provides markup for corrective action
+              information such as troubleshooting and alarm clearing. The troubleshooting
+              information type describes a condition or a symptom, after which it provides one or
+              more possible causes and their associated remedies. Each remedy is a series of steps,
+              associated with a cause, that attempts to resolve the condition or symptom. </entry>
+            <entry>
+              <sl>
+                <sli><filepath>troubleshooting.mod</filepath>,
+                    <filepath>troubleshooting.ent</filepath> (DTD)</sli>
+                <sli><filepath>troubleshootingMod.xsd</filepath>,
+                    <filepath>troubleshootingGrp.xsd</filepath> (XML Schema)</sli>
+                <sli>(RELAX NG)</sli>
+                <sli>(RELAX NG compact)</sli>
+              </sl>
+            </entry>
+          </row>
+         
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

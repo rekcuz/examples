@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_zms_tw1_mp">
+ <title>Example: <ph rev="review-2">References to scoped keys</ph></title>
+ <shortdesc>You can address scoped keys definitions from outside the key scope <ph rev="review-2">in
+   which the keys are defined</ph>.</shortdesc>
+ <conbody>
+  <draft-comment author="Kristen Eberlein" time="7 December 2014">
+   <p>Exchange from review #2:</p>
+   <p>[Jarno Elovirta] Referencing a key with the dot notation (scope dot name) is only defined
+    here. This should be described in the actual specification prose, not just hidden into an
+    example. </p>
+   <p>[Jarno Elovirta] The topic for keyscope defines the syntax for referencing keys in child
+    scopes, but it should still be at least referenced in non-example topics that describe key
+    processing.</p>
+   <p>[Eliot Kimber] I made a similar comment in the main discussion of keys: there's a missing
+    topic that defines key scopes in more complete detail.</p>
+  </draft-comment>
+  <codeblock>&lt;map xml:lang="en">
+  &lt;title>Examples of scoped key references&lt;/title>
+
+  &lt;!-- Key scope #1 -->
+  &lt;topicgroup keyscope="scope-1">
+    <b>&lt;keydef keys="key-1" href="topic-1.dita"/></b>
+    &lt;topicref keyref="key-1"/>
+    &lt;topicref keyref="scope-1.key-1"/>
+    &lt;topicref keyref="scope-2.key-1"/>
+  &lt;/topicgroup>
+
+  &lt;!-- Key scope #2 -->
+  &lt;topicgroup keyscope="scope-2">
+    <b>&lt;keydef keys="key-1" href="topic-2.dita"/></b>
+    &lt;topicref keyref="key-1"/>
+    &lt;topicref keyref="scope-1.key-1"/>
+    &lt;topicref keyref="scope-2.key-1" />
+  &lt;/topicgroup>
+
+  &lt;topicref keyref="key-1" />
+  &lt;topicref keyref="scope-1.key-1" />
+  &lt;topicref keyref="scope-2.key-1" />
+
+&lt;/map></codeblock>
+  <p>For this example, the effective key definitions are listed in the following tables.</p>
+  <table frame="all" rowsep="1" colsep="1">
+   <title>Effective key definitions for scope #1</title>
+   <tgroup cols="2">
+    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+    <thead>
+     <row>
+      <entry>Key reference</entry>
+      <entry>Resource</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>key-1</entry>
+      <entry><filepath>topic-1.dita</filepath></entry>
+     </row>
+     <row>
+      <entry>scope-1.key-1</entry>
+      <entry><filepath>topic-1.dita</filepath></entry>
+     </row>
+     <row>
+      <entry>scope-2.key-1</entry>
+      <entry><filepath>topic-2.dita</filepath></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <table frame="all" rowsep="1" colsep="1">
+   <title>Effective key definitions for scope #2</title>
+   <tgroup cols="2">
+    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+    <thead>
+     <row>
+      <entry>Key reference</entry>
+      <entry>Resource</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>key-1</entry>
+      <entry><filepath>topic-2.dita</filepath></entry>
+     </row>
+     <row>
+      <entry>scope-1.key-1</entry>
+      <entry><filepath>topic-1.dita</filepath></entry>
+     </row>
+     <row>
+      <entry>scope-2.key-1</entry>
+      <entry><filepath>topic-2.dita</filepath></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <table frame="all" rowsep="1" colsep="1">
+   <title><ph rev="review-2">Effective key definitions for the key scope associated with the root
+     map</ph></title>
+   <tgroup cols="2">
+    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+    <thead>
+     <row>
+      <entry>Key reference</entry>
+      <entry>Resource</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>key-1</entry>
+      <entry>Undefined</entry>
+     </row>
+     <row>
+      <entry>scope-1.key-1</entry>
+      <entry><filepath>topic-1.dita</filepath></entry>
+     </row>
+     <row>
+      <entry>scope-2.key-1</entry>
+      <entry><filepath>topic-2.dita</filepath></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <draft-comment author="Kristen Eberlein" disposition="open">
+   <p>The comments in the original code block includes the following: "Keys defined in a scope
+    become a part of the parent scope, prefixed with the scope name and a period." Do they really
+    become part of the parent scope? Or is it just that they can be addressed from within the parent
+    scope? </p>
+   <p>[Eliot Kimber, 25 October 2014, review #2] Yes, the key space for a parent scope includes all
+    the keys, qualified by scope name, defined in all descendant scopes. Using this rule, it becomes
+    clear that the root key space always reflects all keys from all scopes, qualified by scope name. </p>
+   <p>We've use the terminology "parent scope" and "child scope". Do we need "peer scope"?</p>
+   <p>[Eliot Kimber, 25 October 2014, review #2] The term "peer scope" comes up in the discussion of
+    key definition precedence. Probably needs to be formally defined somewhere. </p>
+  </draft-comment>
+ </conbody>
+</concept>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept
+  id="modSchema" xml:lang="en-us">
+  <title>XML Schema: Coding requirements for specialization modules</title>
+  <shortdesc>To be extensible and backward compatible, DITA requires that an XSD implementation of
+    structural and domain specialization modules conform to well-defined implementation (coding)
+    requirements.</shortdesc>
+  <conbody>
+    <p>These design patterns implement the specialization architecture with the capabilities and
+      within the limitations of the XML Schema grammar. They are the coding requirements for
+      structural specializations, domain specializations, and attribute domain specializations.</p>
+  </conbody>
+</concept>

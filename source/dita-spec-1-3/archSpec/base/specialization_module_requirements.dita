@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept
+  id="specialization_module_requirements"
+  xml:lang="en-us">
+  <title>Coding requirements for specialization modules</title>
+  <shortdesc>The base DITA element and attribute types may be extended through the creation of new vocabulary modules that define specializations of more-general types.</shortdesc>
+  <conbody>
+    <draft-comment author="robander" time="16 February 2015">Should make sure the shortdescs for
+      nested topics are consistent. 2 use "implementation (coding) requirements" and one uses
+      "coding requirements". Also, I don't think this ensures backwards compatibility, at least with
+      regards to non-OASIS specializations, or am I missing something?</draft-comment>
+  </conbody>
+</concept>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="configuration-specialization-and-constraints" xml:lang="en-US">
+  <title>Configuration, specialization, and constraints </title>
+  <shortdesc rev="review-2">The extension facilities of DITA allow existing vocabulary and
+    constraint modules to be combined to create specific DITA document types. Vocabulary modules
+    also can be specialized to meet requirements that are not satisfied by existing markup. </shortdesc>
+  <conbody>
+    <p>If you want to create a specialization or constraint using the DITA XSD schema, you need to
+      use the XSD redefine facility. However, this facility does not allow sequence groups to be
+      directly constrained. Thus, to support specialization and constraints, it might be necessary
+      to refactor content models into named groups that can be redefined. In order to keep the XSD,
+      RELAX NG, and DTD implementations as consistent as possible, the DITA Technical Committee only
+      refactored those content models that were required for OASIS-provided <ph rev="review-2"
+        >grammars, the strict task body and machinery-industry task</ph>. The other DITA content
+      models distributed by OASIS have not been refactored.</p>
+    <p>You <term outputclass="RFC-2119" rev="terminology">MAY</term> modify OASIS-provided XSD
+      modules to refactor content models if required by your constraint. You either can modify the
+      OASIS-provided XSD module or extend the RELAX NG-to-XSD generation process to add your special
+      case. You <term outputclass="RFC-2119" rev="terminology">SHOULD</term> notify the DITA
+      Technical Committee (TC) of your constraint requirements, so the TC can consider adding the
+      required refactoring to the OASIS-provided XSDs.</p>
+    <draft-comment author="Kristen Eberlein" time="7 October 2014" disposition="open">
+      <p>This is not the correct place for this information. I added it here so that we do not
+        forget to include it in the spec.</p>
+    </draft-comment>
+  </conbody>
+</concept>

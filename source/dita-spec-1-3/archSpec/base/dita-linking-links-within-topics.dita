@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="dita-linking-links-within-topics" xml:lang="en-us">
+ <title>Links within topics</title>
+ <shortdesc>A topic can contain several types of links.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>linking<indexterm>within DITA topics</indexterm></indexterm>
+        <indexterm>reuse<indexterm>restriction of<indexterm>linking within DITA
+            topics</indexterm></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+ <conbody>
+    <draft-comment author="robander" time="March 9 2015">The following definition list seems to
+      repeat information covered elsewhere, either in the linking overview topic, or in element
+      definitions, or elsewhere. It does not seem like normative material. I have been asked in the
+      past what elements in DITA can create links; if this is a summary intended to answer that
+      question, then maybe it would be a nice thing to have in an appendix? But if so, I'm still not
+      sure of the utility - it's a high level "These are a few things that can be links", rather
+      than an exhaustive guide of "here is how you would figure out the linking elements in a
+        topic."<p>Somewhat related - I think that related information links are by their nature also
+        navigation links, so I'm not sure why they have a separate section.</p>
+    </draft-comment>
+    <dl>
+      <dlentry>
+        <dt>Content reference links</dt>
+        <dd>These links are from elements in the topic that specify the <xmlatt>conref</xmlatt> or
+            <xmlatt>conkeyref</xmlatt> attribute.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Navigation links</dt>
+        <dd>
+          <p>There are several types of navigation links, including the following:</p>
+          <ul>
+            <li>Navigation links created using <xmlelement>xref</xmlelement> elements. For output
+              media that support hyperlinking, the <xmlelement>xref</xmlelement> should result in a
+              hyperlink.</li>
+            <li>Navigation links created using <xmlatt>keyref</xmlatt> on elements that allow
+                <xmlatt>keyref</xmlatt> but not <xmlatt>href</xmlatt> (for example.,
+                <xmlelement>ph</xmlelement>, <xmlelement>cite</xmlelement>,
+                <xmlelement>keyword</xmlelement>, and <xmlelement>term</xmlelement>).</li>
+            <li>Navigation links from long quotes to the source of the quote using a
+                <xmlelement>longquoteref</xmlelement> element.</li>
+          </ul>
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Image or object links</dt>
+        <dd>The links are created using the <xmlelement>image</xmlelement> or
+            <xmlelement>object</xmlelement> elements. The <xmlelement>longdescref</xmlelement>
+          element can be used to link to a long description that supplements the description that is
+          provided by the <xmlelement>alt</xmlelement> element.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Metadata associations</dt>
+        <dd>Metadata associations created using <xmlelement>data-about</xmlelement> elements in
+          contexts where <xmlelement>data</xmlelement> is allowed.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Related information links</dt>
+        <dd>These links are from the <xmlelement>related-links</xmlelement> element that follows the
+          topic body. The related links usually are rendered at the end of the topic.</dd>
+      </dlentry>
+    </dl>
+    <!--<ul><li>Content reference links from elements in the topic that allow <xmlatt>conref</xmlatt> or <xmlatt>conkeyref</xmlatt>.</li><li>Related information links, within a <xmlelement>related-links</xmlelement> element that follows the topic body. The related links usually are rendered at the end of the topic.</li><li>Image links created using the <xmlelement>image</xmlelement> element. Image elements can use <xmlelement>longdescref</xmlelement> to link to a long description for the image; this supplements the description provided by the <xmlelement>alt</xmlelement> element.</li><li>Object links created using the <xmlelement>object</xmlelement> element. Object elements can use <xmlelement>longdescref</xmlelement> to link to a long description for the object; this supplements the description provided by the <xmlelement>alt</xmlelement> element.</li><li>Navigation links created using <xmlelement>xref</xmlelement> elements. For output media that support hyperlinking, the <xmlelement>xref</xmlelement> should result in a hyperlink.</li><li>Navigation links created using <xmlatt>keyref</xmlatt> on elements that allow <xmlatt>keyref</xmlatt> but not <xmlatt>href</xmlatt> (for example., <xmlelement>ph</xmlelement>, <xmlelement>cite</xmlelement>, <xmlelement>keyword</xmlelement>, and <xmlelement>term</xmlelement>).</li><li>Metadata associations created using <xmlelement>data-about</xmlelement> elements in contexts where <xmlelement>data</xmlelement> is allowed.</li><li>Navigation links from long quotes to the source of the quote using a <xmlelement>longquoteref</xmlelement> element.</li></ul>-->
+    <draft-comment author="Kris Eberlein" time="March 9 2015">
+      <p>Is the following content appropriate for the spec? It seems more like "best" practices
+        content. As a whole, the topic might not be needed.</p>
+    </draft-comment>
+  <p>Links that use direct, URI-based resources and point to resources outside of the XML document
+      that contains the topic establish topic-to-resource dependencies. Such dependencies can impede reuse:<ul>
+        <li>The topic that contains the link cannot be used in a map unless the dependent resource
+          also is used.<draft-comment author="robander" time="March 9 2015">This statement would not
+            seem to apply to some (or all) external links, which are not typically "used" by the
+            map. For example I may have a topic all about how HTML5 is used in my product,
+            containing this
+              link:<codeblock>&lt;xref href="http://www.w3.org/TR/html5/" scope="external">HTML5 at W3&lt;/xref></codeblock><p>I
+              would not expect that that dependent resource to be used / defined / referenced by my
+              map.</p></draft-comment></li>
+        <li>The linked resource cannot be dynamically changed based on the map context in which the
+          linking topic is used.</li>
+      </ul></p>
+  <p>These issues can be avoided by using key-based addressing. Because keys are defined in maps,
+      each map that uses the link-containing topic can bind the key to the most appropriate
+      resource.</p>
+ </conbody>
+</concept>
+

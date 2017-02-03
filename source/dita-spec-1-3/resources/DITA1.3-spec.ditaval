@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+    <prop att="otherprops" val="containedby" action="include"/>
+    <prop att="otherprops" val="contains" action="include"/>
+    <prop att="otherprops" val="inheritance" action="include"/>
+    <prop att="otherprops" val="frontmatter" action="include"/>
+    <prop att="product" val="base" action="include"/>
+    <prop att="product" val="learningTraining" action="include"/>
+    <prop att="product" val="technicalContent" action="include"/>
+    <prop action="flag" att="rev" color="blue" val="DITA1.2-errata"/>
+    <revprop action="flag" val="DITA1.3" color="black" backcolor="#ffffdd">
+        <startflag>
+            <alt-text>[1.3 content]</alt-text>
+        </startflag>
+        <endflag>
+            <alt-text>[/1.3 content]</alt-text>
+        </endflag>
+    </revprop>
+    <revprop action="flag" val="DITA1.2-errata" color="black" backcolor="#d8ffdf">
+        <startflag>
+            <alt-text>[1.2 errata]</alt-text>
+        </startflag>
+        <endflag>
+            <alt-text>[/1.2 errata]</alt-text>
+        </endflag>
+    </revprop>
+</val>

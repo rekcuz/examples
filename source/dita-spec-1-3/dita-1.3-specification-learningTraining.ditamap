@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN"
+ "..\..\dita\dtd\bookmap.dtd">
+<bookmap outputclass="specification" xml:lang="en-us">
+<booktitle outputclass="specificationTitles">
+<mainbooktitle outputclass="specificationTitle">Darwin Information Typing Architecture (DITA)
+   Version 1.3</mainbooktitle>
+<booktitlealt outputclass="specificationLevel">OASIS Standard</booktitlealt>
+<booktitlealt outputclass="specificationApproved">TBD</booktitlealt>
+<booktitlealt outputclass="specificationShorttitle">DITA Version 1.3 Specification</booktitlealt></booktitle>
+ <bookmeta>
+  <bookrights>
+   <copyrfirst>
+    <year>2005</year>
+   </copyrfirst>
+   <copyrlast>
+    <year>2014</year>
+   </copyrlast>
+   <bookowner>
+    <organization>OASIS</organization>
+   </bookowner>
+  </bookrights>
+ </bookmeta>
+<frontmatter>
+  <mapref href="langRef/contains-contained-by-keydefs.ditamap" format="ditamap"/>
+  <mapref href="DITA-1.3-specification-subjectScheme.ditamap" type="subjectScheme" format="ditamap"/>
+  <mapref href="base-relationship-tables.ditamap" format="ditamap"/>
+  <mapref href="learningTraining-relationship-tables.ditamap" format="ditamap"/>
+  <notices>
+   <topicref href="resources/oasis_cover.dita" linking="none" toc="no"/>
+   <topicref href="resources/oasis_notices.dita" linking="none" toc="no"/>
+  </notices>
+<booklists>
+<toc/></booklists>
+</frontmatter>
+<chapter format="ditamap" href="introduction/introduction.ditamap"/>
+ <chapter href="archSpec/archSpec-learningTraining.dita">
+  <mapref href="archSpec/archSpec-base.ditamap"/>
+  <mapref href="archSpec/archSpec-technicalContent.ditamap"/>
+  <mapref href="archSpec/archSpec-learningTraining.ditamap"/>
+ </chapter>
+ <chapter href="langRef/langRef-learningTraining.dita">
+  <topicref href="langRef/containers/element-quick-reference.dita">
+   <topicref href="langRef/quick-reference/base-elements-a-to-z.dita"/>
+   <topicref href="langRef/quick-reference/technicalContent-elements-a-to-z.dita"/>
+   <topicref href="langRef/quick-reference/learningTraining-elements-a-to-z.dita"/>
+   <topicref href="langRef/quick-reference/all-elements-a-to-z.dita"/>
+  </topicref>
+  <mapref href="langRef/base-elements.ditamap"/>
+  <topicref href="langRef/containers/technical-content-elements.dita">
+   <mapref href="langRef/technicalContent-elements.ditamap"/>
+  </topicref>
+  <topicref href="langRef/containers/learningTraining-elements.dita">
+   <mapref href="langRef/learningTraining-elements.ditamap"/>
+  </topicref>
+  <mapref href="langRef/attributes/ditaref-attributes.ditamap"/>
+ </chapter>
+<chapter href="conformance/conformance.dita"/>
+<appendix href="acknowledgments/acknowledgments.dita"/>
+<appendix format="ditamap" href="non-normative/non-normative-information.ditamap"/>
+<appendix href="contentmodels/contentmodels-lt.ditamap" format="ditamap" otherprops="contains containedby"/>
+<backmatter>
+<booklists>
+<indexlist/>
+</booklists>
+</backmatter>
+</bookmap>

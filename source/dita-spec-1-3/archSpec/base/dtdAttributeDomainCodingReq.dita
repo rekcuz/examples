@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="attdomain" xml:lang="en-us">
+  <title>DTD: Coding requirements for attribute domain modules</title>
+  <!--<shortdesc>An attribute domain vocabulary module declares a new attribute specialized from either the <xmlatt>props</xmlatt> or <xmlatt>base</xmlatt> attribute. An attribute domain module defines exactly one new attribute type.</shortdesc>-->
+  <shortdesc>The vocabulary modules that define attribute domains have additional coding
+    requirements. The entity declaration (.ent) file must include a parameter entity for the new
+    attribute, which can be referenced in document type shells, as well as a text entity that
+    specifies the contribution to the <xmlatt>domains</xmlatt> attribute for the attribute
+    domain.</shortdesc>
+  <conbody>
+    <!--<p>An attribute domain <term>must</term> consist of one file, which is used to define the following entities. Attribute domains do not have domain module declaration (.mod) files.</p>-->
+    <p>
+      <dl>
+        <dlentry>
+          <dt>Attribute domain name</dt>
+          <dd>
+            <p>The name of the attribute domain is the name of the attribute plus the literal "Att".
+              The attribute domain name is used to construct file names and entity names.</p>
+            <p outputclass="example">For example, the name for the domain that defines the
+                <xmlatt>deliveryTarget</xmlatt> attribute is "deliveryTargetAtt".</p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Parameter entity name</dt>
+          <dd>
+            <p>The name of the parameter entity is the attribute name, followed by a hyphen ("-"),
+              and the literal "d-attribute".</p>
+            <p outputclass="example">For example, the name of the parameter entity for the
+                <xmlatt>deliveryTarget</xmlatt> domain is
+                <codeph>deliveryTarget-d-attribute</codeph>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </p>
+    <p>
+      <dl>
+        <dlentry>
+          <dt>Parameter entity value</dt>
+          <dd>
+            <p>The value of the parameter entity is X.</p>
+            <p outputclass="example">For example, X</p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Text entity name and value</dt>
+          <dd>
+            <p>The text entity name is the attribute domain name, followed by a hyphen ("-") and the
+              literal <codeph>d-Att</codeph>.</p>
+            <p>The value of the text entity is the letter a, followed by parentheses that enclose
+              the specialization hierarchy for the attribute. </p>
+            <p outputclass="example">For example, the following text entity specifies the
+              contribution to the domains attribute for the deliveryTarget attribute domain:</p>
+            <codeblock>&lt;!ENTITY deliveryTargetAtt-d-att "a(props deliveryTarget)" ></codeblock>
+          </dd>
+        </dlentry>
+      </dl>
+    </p>
+  </conbody>
+</concept>
+

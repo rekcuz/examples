@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="domainsatt" xml:lang="en-us">
+<title><xmlatt>domains</xmlatt> attribute</title>
+<shortdesc rev="DITA1.3 proposal-13121">Structural types <term outputclass="RFC-2119"
+      rev="terminology">MUST</term> declare the domain vocabulary modules and constraint modules
+    that they use, as well as any dependencies that they have on elements from other (non-ancestor)
+    structural modules. This is done using a <xmlatt>domains</xmlatt> attribute value that is a
+    sequence of parenthesized module ancestry specifications. The <xmlatt>domains</xmlatt> attribute
+    is declared on the root element for each topic or map type. Structural modules <term
+      outputclass="RFC-2119" rev="terminology">SHOULD</term> declare their structural ancestry, and
+    structural modules <term outputclass="RFC-2119" rev="terminology">MUST</term> do so when they
+    have dependencies on structural modules other than their ancestors.</shortdesc>
+<conbody>
+<p
+      >Each structural, element, and attribute domain defines its module ancestry as a parenthesized sequence of space-separated module names from root module to provided module. </p>
+    <p>For element domains, the group syntax
+      is:<codeblock> '(', <varname>modulename</varname>, (' ', <varname>module-plus-optional-dependency-list</varname>)+, ')'</codeblock></p>
+    <p>For attribute domains, the group syntax
+      is:<codeblock> 'a(', <varname>attname</varname>, (' ', <varname>attname</varname>)+, ')'</codeblock></p>
+    <p>The module ancestry specifications are added to the effective value of the
+        <xmlatt>domains</xmlatt> attribute to form a set of specifications, one for each domain that
+      is used by the topic or map type.</p>
+    <p>The <xmlatt>domains</xmlatt> values for the different module types are as follows:<dl>
+        <dlentry rev="DITA1.3 proposal-13121">
+          <dt>structural modules</dt>
+          <dd>
+            <p>The structural type ancestry. For example: <codeph>(topic concept
+                glossentry)</codeph>. </p>
+            <p>When a structural module has elements that directly reference or specialize elements
+              from another structural, domain, or attribute module, the structural module's
+                <xmlatt>domains</xmlatt> specification <term outputclass="RFC-2119"
+                rev="terminology">MUST</term> include the names of the other modules as dependencies
+              following the name of the <ph rev="review-2">reusing structural module</ph>.</p>
+            <p>Dependencies on domain or attribute specialization modules are appended to the
+              reusing module's value, or to previous dependencies, separated by "+". Dependencies on
+              structural specialization modules are appended to the reusing module's value, or to
+              previous dependencies, separated by "++".</p>
+            <p>A dependency exists on an element domain module, or a structural module, whenever a
+              specialization uses one or more elements from such a module. A dependency exists on an
+              attribute domain module whenever a specialization binds one or more of its element
+              attribute definitions to definitions in the attribute domain module.</p>
+            <p> For example, a cppAPIRef specialization that has a dependency on the cpp-d element
+              domain and compilerTypeAtt-d attribute domain would need to include a domain value
+              that showed the dependencies as follows: <codeph>(topic reference
+                cppApiRef+cpp-d+compilerTypeAtt-d)</codeph>. A codeChecklist specialization that has
+              a dependency on the pr-d domain and the task structural specialization would show
+              dependencies as follows: <codeph>(topic reference
+              codeChecklist+pr-d++task)</codeph></p>
+          </dd>
+        </dlentry>
+        <dlentry rev="DITA1.3 proposal-13121">
+          <dt>structural module dependencies</dt>
+          <dd>
+            <p>The structural type ancestry of the structural type whose elements are being reused.
+              For example, if a troubleshooting module reuses elements from the task structural
+              module, then it must include both a dependency on task in the troubleshooting ancestry
+              value, and the ancestry of task in a separate value: <codeph>(topic
+                troubleshooting++task) (topic task)</codeph></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>constraint modules</dt>
+          <dd>The structural type ancestry followed by the name of the constraint domain. For
+            example: <codeph>(topic task strictTaskbody-c)</codeph>. </dd>
+        </dlentry>
+        <dlentry>
+          <dt>element domains</dt>
+          <dd>The structural type ancestry and, if applicable, the domain module ancestry from which
+            the domain is specialized. For example: <codeph>(topic hi-d)</codeph>
+            <codeph>(topic pr-d cpp-d)</codeph>.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attribute domains</dt>
+          <dd>The attribute specialization hierarchy. For example: <codeph>a(props
+              mySelectAttribute)</codeph>. </dd>
+        </dlentry>
+      </dl></p>
+<p>The <xmlatt>domains</xmlatt> attribute allows processors to determine whether two elements use
+      compatible domains. For example, when pasting content from one topic into another topic within
+      an editor, the editor can use the <xmlatt>domains</xmlatt> attribute to determine if the topic
+      domains of the paste target are compatible with the topic domains of the paste source, and
+      therefore whether the pasted content needs to be generalized before it can be pasted.
+      Likewise, processors can use the value of the <xmlatt>domains</xmlatt> attribute to determine
+      if they have whatever may be necessary to support a particular domain.</p>
+    <p>Another example is when an element <ph rev="DITA1.3 review-2">uses <xmlatt>conref</xmlatt> to
+        reference</ph> an element that is a more specialized version of the element, for example, a
+        <xmlelement>li</xmlelement> element in a concept topic references a
+        <xmlelement>step</xmlelement> element in a task topic. During processing, the
+        <xmlelement>step</xmlelement> element will be generalized back to a
+        <xmlelement>li</xmlelement> element.</p>
+    <!--<draft-comment>there was an example at the end of this topic that had the previous two paragraphs. One of them was a duplicate of the paragraph starting "The @domains attribute allows..." so I just moved the "Another example.." paragraph up here and deleted the example section, which was redundant</draft-comment>-->
+<p>The effective value of the <xmlatt>domains</xmlatt> attribute is constructed using integration
+      mechanisms that are specific to each XMLgrammar. Each domain and constraint module <term
+        outputclass="RFC-2119" rev="terminology">MUST</term> provide a
+      <xmlatt>domains</xmlatt>-attribute value fragment that can be used by DITA document types to
+      construct the effective value of the <xmlatt>domains</xmlatt> attribute. Each structural
+      vocabulary module <term outputclass="RFC-2119" rev="terminology">SHOULD</term> provide a
+        <xmlatt>domains</xmlatt>-attribute value fragment. See <xref format="dita"
+        href="createCustomDocType.dita#createCustomDocType"/>.</p>
+<example id="example">
+      <title>Example: Task with multiple domains</title>
+      <p>In this example, the task topic integrates the domains for describing user interfaces
+        (ui-d), software (sw-d), and programming (pr-d).</p>
+      <codeblock>&lt;task id="mytask" class="- topic/topic task/task " 
+	<b>domains="(topic ui-d) (topic sw-d) (topic pr-d)"></b>
+&lt;!-- ... -->
+&lt;/task></codeblock>
+      <p>If the document also used a specialization of the programming domain to describe C++
+        programming, the new domain would need a separate entry in the <xmlatt>domains</xmlatt>
+        attribute, for example:</p>
+      <codeblock>&lt;task id="mytask" class="- topic/topic task/task " 
+	domains="(topic ui-d) (topic sw-d) (topic pr-d)<b> (topic pr-d cpp-d)</b>">
+...
+&lt;/task></codeblock>
+    </example>
+    <example rev="DITA1.3 proposal-13121 review-2" id="example-dependency">
+      <title>Example: Dependency on multiple specializations</title>
+      <p>In this example, a <xmlelement>codeChecklist</xmlelement> specialization specializes from
+          <xmlelement>reference</xmlelement> and includes elements from both
+          <xmlelement>task</xmlelement> and the programming domain. The domain token for this module
+        must declare its own ancestry and dependencies; when this module is used, the
+          <xmlatt>domains</xmlatt> attribute must also include declarations for the domain and
+        structural dependencies. For example:</p>
+      <codeblock>domains="...(topic reference checklist++task+pr-d) (topic task) (topic pr-d)"</codeblock>
+    </example>
+</conbody>
+</concept>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="coding-practices">
+ <title>Coding practices for DITA grammar files</title>
+ <shortdesc>This section collects all of the rules for creating modular DTD, Relax NG, or XML Schema
+  grammar files to represent DITA document types, specializations, and constraints.</shortdesc>
+ <conbody>
+  <draft-comment author="Kristen Eberlein" time="22 February 2015">
+   <p>Content moved from the <b>Vocabulary modules</b> topic:</p>
+   <p>Vocabulary modules <term outputclass="RFC-2119" rev="terminology">MUST</term> reflect the
+    coding requirements that are defined in this specification. These requirements ensure that
+    vocabulary modules follow the same coding patterns for how their components are named and
+    organized.</p>
+  </draft-comment>
+  <draft-comment author="robander">That's a first rough draft at shortdesc, and I don't know if we
+   need more content in here.</draft-comment>
+  <draft-comment author="robander" time="16 February 2015">For the "specialization" sections -
+   should make sure the shortdescs for nested topics are consistent. 2 use "implementation (coding)
+   requirements" and one uses "coding requirements". Also, I don't think this ensures backwards
+   compatibility, at least with regards to non-OASIS specializations, or am I missing
+   something?</draft-comment>
+ </conbody>
+</concept>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="archspec-learningTraining" xml:lang="en-us">
+  <title>Architectural specification: Learning and training </title>
+  <shortdesc>DITA 1.2 introduces the learning and training specializations, which are designed for
+    developing instructional materials. They <ph rev="DITA1.2-errata">use</ph> all of base DITA and
+    some (but not all) parts of the Technical Content package.</shortdesc>
+  <conbody>
+    <draft-comment author="Kristen Eberlein">
+      <p>I'm confused as to why learning and training is the overarching title at this point. What
+        follows is an introduction to DITA in general, and not just learning and training
+        specialization. rhamilton updated comment 14/3/2014 00:50:35 1</p>
+      <p> If you're crazy, then so am I. I see a similar effect on the LangRef section -- it has
+        "Learning and training" in the title and there's verbiage there about L&amp;T, not about the
+        DITA lang ref. Is there a high-level problem with the publication at large, or with
+        DITAweb's presentation of it? I don't see anything obviously awry in the DITA maps in SVN.
+        tmagliery new comment 14/3/2014 23:35:16 1 </p>
+      <p>Good point. This is an artifact of early packaging prototyping that keberlein new comment
+        24/3/2014 22:42:17 1</p>
+    </draft-comment>
+  </conbody>
+</concept>
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="learningGroup" xml:lang="en-us">
+	<title><xmlelement>learningGroup</xmlelement></title>
+	<shortdesc>Use a <xmlelement>learningGroup</xmlelement> to structure learning objects into higher-level organizations, such as course-level, module-level, or lesson-level. </shortdesc>
+	<prolog>
+		<metadata>
+			<keywords>
+				<indexterm>learningGroup</indexterm><indexterm>learning and training elements<indexterm>learningGroup</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<refbody>
+<section>
+<p>In addition to organizing <xmlelement>learningObject</xmlelement> elements, a
+          <xmlelement>learningGroup</xmlelement> may include topic references to
+          <xmlelement>learningPlan</xmlelement>, <xmlelement>learningOverview</xmlelement>. and
+          <xmlelement>learningSummary</xmlelement> topics, and may also include references to
+          <xmlelement>learningAssessment</xmlelement> topics. A
+          <xmlelement>learningGroup</xmlelement> can also contain other
+          <xmlelement>learningGroup</xmlelement> elements, allowing you to organize learning content
+        at course, module, or other higher levels of hierarchy.</p>
+</section>
+		<section id="contains" conref="../../common/commonNavLibraryTable.dita#contentmodel-learningGroup/contains" otherprops="contains"></section>
+		
+		<section id="inheritance" otherprops="inheritance">
+			<title>Inheritance</title>
+<p>+ map/topicref learningmap-d/learningGroup</p>
+</section>
+<example id="example">
+      <title>Example</title>
+      <codeblock>
+&lt;map id="learningGroup_example">
+&lt;!-- a learningGroup can appear anywhere in a map hierarchy but always
+     follows a consistent information pattern  -->
+&lt;!-- ************************************************************* -->
+&lt;!-- a course=level learning group -->
+&lt;learningGroup href="course_top_Overview.dita" type="learningOverview">
+&lt;!-- ************************************************************* -->
+  &lt;learningPlanRef href="course_Plan_topic.dita" type="learningPlan" />
+  &lt;learningOverviewRef href="course_Overview.dita" type="learningOverview"/>
+  &lt;!-- ************************************************************* -->
+  &lt;!-- module-level learning groups -->
+  &lt;learningGroup href="module1_Overview.dita" type="learningOverview">
+  &lt;!-- ************************************************************* -->
+    &lt;learningOverviewRef href="module1_Overview.dita" type="learningOverview"/>
+      &lt;!-- ************************************************************* -->
+      &lt;!-- This module has two lesson-level groups of learning objects -->
+      &lt;learningGroup href="lesson1_Overview.dita" type="learningOverview">
+      &lt;!-- ************************************************************* -->
+        &lt;learningOverviewRef href="lesson1_Overview.dita" type="learningOverview"/>
+        &lt;!-- learning objects in lesson1 -->
+        &lt;learningObject collection-type="sequence" href="lo1_Overview.dita" type="learningOverview">
+          &lt;!-- . . . -->
+        &lt;/learningObject>
+        &lt;learningObject collection-type="sequence" href="lo2_Overview.dita" type="learningOverview">
+          &lt;!-- . . . -->
+        &lt;/learningObject>
+        &lt;learningAssessmentRef href="lesson1_Assessment.dita" type="learningAssessment"/>
+        &lt;learningSummaryRef href="lesson1_Summary.dita" type="learningSummary"/>
+      &lt;/learningGroup>
+    &lt;!-- ************************************************************* -->
+    &lt;learningGroup href="lesson2_Overview.dita" type="learningOverview">
+    &lt;!-- ************************************************************* -->
+      &lt;learningOverviewRef href="lesson1_Overview.dita" type="learningOverview"/>
+        &lt;!-- learning objects in lesson2 -->
+        &lt;learningObject collection-type="sequence" href="lo3_Overview.dita" type="learningOverview">
+          &lt;!-- . . . -->
+        &lt;/learningObject>
+        &lt;learningObject collection-type="sequence" href="lo4_Overview.dita" type="learningOverview">
+          &lt;!-- . . . -->
+        &lt;/learningObject>
+        &lt;learningAssessmentRef href="lesson2_Assessment.dita" type="learningAssessment"/>
+        &lt;learningSummaryRef href="lesson2_Summary.dita" type="learningSummary"/>
+      &lt;/learningGroup>
+  &lt;/learningGroup>
+  &lt;!-- ************************************************************* -->
+  &lt;learningGroup href="module2_Overview.dita" type="learningOverview">
+  &lt;!-- ************************************************************* -->
+    &lt;learningOverviewRef href="module1_Overview.dita" type="learningOverview"/>
+      &lt;!-- learning objects in module 2 (no lesson-level groups) -->
+      &lt;learningObject collection-type="sequence" href="loA_Overview.dita" type="learningOverview">
+        &lt;!-- . . . -->
+      &lt;/learningObject>
+      &lt;learningObject collection-type="sequence" href="loB_Overview.dita" type="learningOverview">
+      &lt;/learningObject>
+        &lt;!-- . . . -->
+      &lt;learningObject collection-type="sequence" href="loC_Overview.dita" type="learningOverview">
+      &lt;/learningObject>
+    &lt;learningAssessmentRef href="module2_Assessment.dita" type="learningAssessment"/>
+    &lt;learningSummaryRef href="module2_Summary.dita" type="learningSummary"/>
+  &lt;/learningGroup>
+&lt;!-- ************************************************************* -->
+&lt;learningAssessmentRef href="course_Assessment.dita" type="learningAssessment"/>
+  &lt;learningSummaryRef href="course_Summary.dita" type="learningSummary"/>
+&lt;/learningGroup>
+&lt;!-- ************************************************************* -->
+&lt;/map>
+</codeblock>
+    </example>
+<section id="attributes"><title>Attributes</title><sectiondiv
+        conref="../../common/conref-attribute.dita#conref-attribute/learningdomain-basic-topicref"
+      /></section>
+</refbody>
+</reference>

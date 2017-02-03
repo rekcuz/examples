@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap
+  PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+  <part
+    href="part-01.xml"
+    id="part-1">
+    <chapter
+      href="part1/chapter-1.xml"/>
+    <chapter
+      href="part1/chapter-2.xml"/>
+    <chapter
+      href="part1/chapter-3.xml"/>
+    <chapter
+      href="part1/chapter-4.xml"/>
+    <chapter
+      href="part1/chapter-5.xml"/>
+    <chapter
+      href="part1/chapter-6.xml"/>
+    <chapter
+      href="part1/chapter-7.xml"/>
+    <chapter
+      href="part1/chapter-8.xml"/>
+    <chapter
+      href="part1/chapter-9.xml"/>
+    <chapter
+      href="part1/chapter-10.xml"/>
+    <chapter
+      href="part1/chapter-11.xml"/>
+    <chapter
+      href="part1/chapter-12.xml"/>
+    <chapter
+      href="part1/chapter-13.xml"/>
+    <chapter
+      href="part1/chapter-14.xml"/>
+    <chapter
+      href="part1/chapter-15.xml"/>
+    <chapter
+      href="part1/chapter-16.xml"/>
+    <chapter
+      href="part1/chapter-17.xml"/>
+    <chapter
+      href="part1/chapter-18.xml"/>
+    <chapter
+      href="part1/chapter-19.xml"/>
+    <chapter
+      href="part1/chapter-20.xml"/>
+    <chapter
+      href="part1/chapter-21.xml"/>
+    <chapter
+      href="part1/chapter-22.xml"/>
+  </part>
+</bookmap>

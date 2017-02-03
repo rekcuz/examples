@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="schemaattdomain" xml:lang="en-us">
+  <title>XML Schema: Coding requirements for attribute domain modules</title>
+  <shortdesc>An attribute domain vocabulary module declares a new attribute specialized from either
+    the <xmlatt>props</xmlatt> or <xmlatt>base</xmlatt> attribute. An attribute domain module
+    defines exactly one new attribute type.</shortdesc>
+  <conbody>
+    <section id="section_0223BE7C47334E7DAA29C8381A39547F">
+      <p>An attribute domain <term>must</term> consist of one file. The file must have a single
+        attribute group definition that contains the definition of the attribute itself, where the
+        attribute group is named <codeph><varname>attname</varname>Att-d-attribute</codeph>. </p>
+      <p
+        >For example, for an attribute named "new":<codeblock>&lt;xs:attributeGroup name="newAtt-d-attribute"&gt;
+  &lt;xs:attribute name="new" type="xs:string"/&gt;
+&lt;/xs:attributeGroup&gt;</codeblock></p>
+      <p
+        >The attribute domain must be reflected in a shell document type XSD that integrates it. See <xref
+        href="domainsatt.dita#domainsatt"
+        format="dita"/> for details of attribute domain <xmlatt>domains</xmlatt> values. </p>
+      <p
+        >For example, if the attribute named "new" is a specialization of the <xmlatt>props</xmlatt> attribute, the <xmlatt>domains</xmlatt> value would be "<codeph>a(props new)</codeph>".</p>
+    </section>
+  </conbody>
+</concept>
+

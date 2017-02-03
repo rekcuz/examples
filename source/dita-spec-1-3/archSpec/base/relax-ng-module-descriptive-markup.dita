@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="relax-ng-module-descriptive-markup" rev="DITA1.3 proposal-13112">
+ <title>Module description markup for use in DITA-specific RELAX NG grammars</title>
+ <shortdesc>The <xmlelement>moduleDesc</xmlelement> element enables specification of the metadata
+  that is required in order to generate conforming DTD- and XSD-based modules from the RELAX NG
+  grammars.</shortdesc>
+ <conbody>
+    <draft-comment author="robander" time="16 February 2015">This topic makes many normative
+      references to markup that is not part of the DITA standard. It also references files that will
+      not be part of the DITA 1.3 standard. It is very unclear as I read what this is -- official
+      DITA markup? A convention that should used by RNG->XSD/DTD tools? Maybe it should be an
+      appendix -- "these conventions are established for use in RNG files to allow reliable
+      conversion to DTD/XSD"?  I'm uncomfortable with the current version of this topic - its
+      purpose needs to be clearer, and it should be clear that these elements are not XML markup
+      defined by the TC as one of the shipped DITA 1.3 specializations. <p>Related: I did a quick
+        scan of the doctypes directory in SVN to see how this is used. The DTD files for this
+        specialization are not currently valid, containing lines like the
+        following:<codeblock>  259 71:&lt;!ATTLIST  {unknown}    %global-atts;  class CDATA "- topic/shortdesc moduleDesc/headerComment "&gt;
+</codeblock></p><p>The
+        {unknown} portion is invalid - @class is defined the same for all elements. This
+        headerComment element can appear multiple times (not true for base shortdesc); it also uses
+        xml:space="preserve", which (at least in the DTD version) means it is not a valid
+        specialization of shortdesc.</p></draft-comment>
+  <p>The use of <xmlelement>moduleDesc</xmlelement> is not required. However, when it is used, the
+        <xmlelement>moduleDesc</xmlelement> element <term outputclass="RFC-2119" rev="terminology"
+        >MUST</term> be specified as a direct child of the RELAX NG <xmlelement>grammar</xmlelement>
+      element and <term outputclass="RFC-2119" rev="terminology">SHOULD</term> be the first child of
+        <xmlelement>grammar</xmlelement>. The <xmlelement>moduleDesc</xmlelement> element functions
+      as a foreign element as defined in the RELAX NG specification. The
+        <xmlelement>moduleDesc</xmlelement> element is defined as a specialization of
+        <xmlelement>topic</xmlelement>. Because it is in a namespace, it cannot be a
+      strictly-conforming DITA topic as DITA elements may not be in a namespace. However, if the
+        <xmlelement>moduleDesc</xmlelement> element is processed in terms of the
+        <xmlatt>class</xmlatt> attributes, it will be recognized as a DITA topic and otherwise
+      conforms to all rules for conforming topic specializations.<draft-comment author="ekimber"
+        disposition="opne">The <xmlelement>moduleDesc</xmlelement> element does not absolutely have
+        to be in a namespace--it could specify the no namespace (xml:ns="") but it just seems like
+        better practice to have it be in the DITA namespace for use within grammar documents. It's
+        also not strictly speaking required that the markup also be a topic but it seemed
+        appropriate to have it be a topic so that everything is within the DITA world. I also wanted
+        to avoid creating another completely standalone vocabulary like DITAVAL that had no relation
+        to anything else in DITA.</draft-comment></p>
+  <p>The <xmlelement>moduleDesc</xmlelement> element type is defined in the
+    <filepath>vocabularyModuleDescMod.rng</filepath> vocabulary module file.</p>
+  <section>
+   <title>Namespace</title>
+   <p>The <xmlelement>moduleDesc</xmlelement> element is in the DITA architecture namespace:
+     <xmlnsname>http://dita.oasis-open.org/architecture/2005/</xmlnsname>.</p>
+  </section>
+  <section>
+   <title><xmlelement>moduleDesc</xmlelement> element type</title>
+   <dl>
+    <dlentry>
+     <dt><xmlelement>moduleDesc</xmlelement></dt>
+     <dd>Contains the module description metadata. It contains the following sub-elements:<dl>
+       <dlentry>
+        <dt><xmlelement>moduleTitle</xmlelement></dt>
+        <dd>Provides a descriptive title for the module or document type shell. It contains
+         text.</dd>
+       </dlentry>
+       <dlentry>
+        <dt><xmlelement>headerComment</xmlelement></dt>
+        <dd>Contains the header comment for the module. The content is text with whitespace
+         preserved (<xmlatt>xml:space</xmlatt> value of "preserve"). The header comment is used as
+         the header for all generated components.</dd>
+       </dlentry>
+       <dlentry>
+        <dt><xmlelement>moduleMetadata</xmlelement></dt>
+        <dd>Contains additional metadata for the module or document type shell. It contain the
+         following sub-elements:<dl>
+          <dlentry>
+           <dt><xmlelement>moduleType</xmlelement></dt>
+           <dd>Indicates the module type. It contains one of the following keywords:<dl>
+             <dlentry>
+              <dt>attributedomain</dt>
+              <dd>The grammar defines an attribute domain.</dd>
+             </dlentry>
+             <dlentry>
+              <dt>base</dt>
+              <dd>The grammar is one of the DITA base modules. Base modules can only be defined by
+                              the DITA Technical Committee. Examples of base modules are the
+                                <filepath>commonElementsMod.rng</filepath> and
+                                <filepath>metaDeclMod.rng</filepath> modules.</dd>
+             </dlentry>
+             <dlentry>
+              <dt>constraint</dt>
+              <dd>The grammar defines a constraint module.</dd>
+             </dlentry>
+             <dlentry>
+              <dt>elementdomain</dt>
+              <dd>The grammar defines an element domain.</dd>
+             </dlentry>
+             <dlentry>
+              <dt>map</dt>
+              <dd>The grammar defines a map type.</dd>
+             </dlentry>
+             <dlentry>
+              <dt>mapshell</dt>
+              <dd>The grammar is a document type shell for a map type.</dd>
+             </dlentry>
+             <dlentry>
+              <dt>topic</dt>
+              <dd>The grammar defines a topic type.</dd>
+             </dlentry>
+             <dlentry>
+              <dt>topicshell</dt>
+              <dd>The grammar is a document type shell for a topic type.</dd>
+             </dlentry>
+            </dl></dd>
+          </dlentry>
+          <dlentry>
+           <dt><xmlelement>modulePublicIds</xmlelement></dt>
+           <dd>For vocabulary and constraint modules, defines the public IDs for the files that are
+            generated from the grammar. Each sub-element specifies the public identifier to use for
+            a specific generated file. It contains the following sub-elements:<dl>
+             <dlentry>
+              <dt><xmlelement>dtdMod</xmlelement></dt>
+              <dd>The public identifier for the DTD-syntax <filepath>.mod</filepath> file to be
+               generated from the grammar.</dd>
+             </dlentry>
+             <dlentry>
+              <dt><xmlelement>dtdEnt</xmlelement></dt>
+              <dd>The public identifier for the DTD-syntax <filepath>.ent</filepath> file to be
+               generated from the grammar. This element is equired for element domain modules; it is
+               not used for attribute domain modules.</dd>
+             </dlentry>
+             <dlentry>
+              <dt><xmlelement>rncMod</xmlelement></dt>
+              <dd>The public identifier for the RELAX NG compact syntax (RNC) module file to be
+               generated from the grammar.</dd>
+             </dlentry>
+             <dlentry>
+              <dt><xmlelement>rngMod</xmlelement></dt>
+              <dd>The public identifier for the RELAX NG XML syntax (RNG) module file (the file that
+               contains the <xmlelement>moduleMetadata</xmlelement> element).</dd>
+             </dlentry>
+             <dlentry>
+              <dt><xmlelement>xsdMod</xmlelement></dt>
+              <dd>The public identifier for the XSD schema module file to be generated from the
+               grammar.</dd>
+             </dlentry>
+            </dl></dd>
+          </dlentry>
+          <dlentry>
+           <dt><xmlelement>domainsContribution</xmlelement></dt>
+           <dd>Required for modules, not used for shells. Defines the <xmlatt>domains</xmlatt>
+            attribute contribution for the module, for example, "(topic hi-d)". This is the value
+            that <term outputclass="RFC-2119" rev="terminology">MUST</term> be added to the <xmlatt>domains</xmlatt>
+            value for root map or topic types that integrate the module.</dd>
+          </dlentry>
+          <dlentry>
+           <dt><xmlelement>shellPublicIds</xmlelement></dt>
+           <dd>For document type shells, defines the public IDs for the files that are generated
+            from the grammar. Each sub-element specifies the public identifier to use for a specific
+            generated file. It contains the following sub-elements:<dl>
+             <dlentry>
+              <dt><xmlelement>dtdShell</xmlelement></dt>
+              <dd>The public identifier for the DTD document type shell to be generated from the
+               grammar.</dd>
+             </dlentry>
+             <dlentry>
+              <dt><xmlelement>rncShell</xmlelement></dt>
+              <dd>The public identifier for the RELAX NG compact syntax (RNC) document type shell to
+               be generated from the grammar.</dd>
+             </dlentry>
+             <dlentry>
+              <dt><xmlelement>rngShell</xmlelement></dt>
+              <dd>The public identifier for the RNG document type shell (the file that contains the
+                <xmlelement>moduleMetadata</xmlelement> element).</dd>
+             </dlentry>
+             <dlentry>
+              <dt><xmlelement>xsdShell</xmlelement></dt>
+              <dd>The public identifier for the XSD schema document type shell to be generated from
+               the grammar.</dd>
+             </dlentry>
+            </dl></dd>
+          </dlentry>
+         </dl></dd>
+       </dlentry>
+      </dl></dd>
+    </dlentry>
+   </dl>
+  </section>
+  <example>
+   <title>Example: RELAX NG grammars with module metadata</title>
+   <p>The following code provides the descriptive metadata for a vocabulary module for a topic
+        type:<codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;?xml-model href="vocabularyModuleDesc.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+&lt;grammar xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  >
+ &lt;moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+   &lt;moduleTitle>DITA Module Description Module&lt;/moduleTitle>
+   &lt;headerComment>&lt;![CDATA[
+============================================================= 
+                    HEADER                                     
+ ============================================================= 
+  MODULE:    DITA Module Description                             
+  VERSION:   1.3                                               
+  DATE:      September 2013                                     
+
+  &lt;!-- ... -->
+]]&gt;&lt;/headerComment>
+   &lt;moduleMetadata>
+     &lt;moduleType>topic&lt;/moduleType>
+     &lt;moduleShortName>vocabularyModule&lt;/moduleShortName>
+     &lt;modulePublicIds>
+       &lt;dtdMod>-//OASIS//ELEMENTS DITA Vocabulary Module Description//EN&lt;/dtdMod>
+       &lt;dtdEnt>-//OASIS//ENTITIES DITA Vocabulary Module Description//EN&lt;/dtdEnt>
+       &lt;xsdMod>urn:oasis:names:tc:dita:xsd:vocabularyModuleDescMod.xsd&lt;/xsdMod>
+       &lt;rncMod>urn:oasis:names:tc:dita:rnc:vocabularyModuleDescMod.rnc&lt;/rncMod>
+       &lt;rngMod>urn:oasis:names:tc:dita:rng:vocabularyModuleDescMod.rng&lt;/rngMod>
+     &lt;/modulePublicIds>
+     &lt;domainsContribution>(topic myTopicType)&lt;/domainsContribution>
+   &lt;/moduleMetadata>
+ &lt;/moduleDesc>
+ 
+ &lt;!-- ... -->
+
+&lt;/grammar></codeblock></p>
+   <p>The following code provides the descriptive metadata for a document type shell for a topic
+        type:<codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;?xml-model href="vocabularyModuleDesc.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+&lt;grammar xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  &lt;moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+   &lt;moduleTitle>DITA Module Description Module&lt;/moduleTitle>
+   &lt;headerComment>&lt;![CDATA[
+============================================================= 
+                    HEADER                                     
+ ============================================================= 
+  MODULE:    DITA Module Description Topic Type Shell                           
+  VERSION:   1.3                                               
+  DATE:      September 2013                                     
+
+  &lt;!-- ... -->
+
+]]&gt;&lt;/headerComment>
+   &lt;moduleMetadata>
+     &lt;moduleType>topicshell&lt;/moduleType>
+     &lt;moduleShortName>vocabularyModule&lt;/moduleShortName>
+     &lt;shellPublicIds>
+       &lt;dtdShell>-//OASIS//DTD DITA Vocabulary Module Description//EN&lt;/dtdShell>
+       &lt;xsdShell>urn:oasis:names:tc:dita:xsd:vocabularyModuleDesc.xsd&lt;/xsdShell>
+       &lt;rncShell>urn:oasis:names:tc:dita:rnc:vocabularyModuleDesc.rnc&lt;/rncShell>
+       &lt;rngShell>urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng&lt;/rngShell>
+     &lt;/shellPublicIds>
+   &lt;/moduleMetadata>
+ &lt;/moduleDesc>
+
+ &lt;!-- ... -->
+
+&lt;/grammar></codeblock></p>
+  </example>
+ </conbody>
+</concept>

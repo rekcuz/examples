@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="processing-keyref-on-topicref">
+    <title>Processing key references on <xmlelement>topicref</xmlelement> elements</title>
+    <shortdesc>While <xmlelement>topicref</xmlelement> elements are used to define keys, they also
+        can reference keys defined elsewhere. This topic explains how to evaluate key references on
+            <xmlelement>topicref</xmlelement> and its specializations.</shortdesc>
+    <conbody>
+        <p>For topic references that use the <xmlatt>keyref</xmlatt> attribute, the effective value
+            of the <xmlelement>topicref</xmlelement> element is determined in the following way:</p>
+        <draft-comment author="Kristen Eberlein" disposition="open">Might want to change the &lt;ul>
+            to &lt;dl>, with appropriate headers. The first list item pertains to "Determining the
+            effective resource," while the latter two list items pertain to combining
+            metadata.</draft-comment>
+        <ul id="ul_CF2B3DB7B65B42CB825E4A77367C7759">
+            <li id="li_8C2182B15AAA403FA6BE0200EFB2EB9E">
+                <p>The effective resource bound to the <xmlelement>topicref</xmlelement> element is
+                    determined by resolving all intermediate key references. Each key reference is
+                    resolved either to a resource addressed directly by URI reference in an
+                        <xmlatt>href</xmlatt> attribute, or to no resource. Processors <term
+                        outputclass="RFC-2119" rev="terminology">MAY</term> impose reasonable limits
+                    on the number of intermediate key references that they will resolve. Processors
+                        <term outputclass="RFC-2119" rev="terminology">SHOULD</term> support at
+                    least three levels of key references.</p>
+                <!-- 
+              WEK: I added these last two may and should statements as DITA provides no
+              explicit way to indicate any sort of maximum "hop count". We want to make it clear
+              processors don't have to support infinite recursion but can't arbitrarily disallow all
+              indirection either.-->
+                <note>This rule applies to all topic references, including those that define keys.
+                    The effective bound resource for a key definition that uses the
+                        <xmlatt>keyref</xmlatt> attribute cannot be determined until the key space
+                    has been constructed.</note>
+                <p>The attributes that are common to a key definition element and a key reference
+                    element using that key, other than the <xmlatt>keys</xmlatt>,<ph>
+                        <xmlatt>processing-role</xmlatt>,</ph> and <xmlatt>id</xmlatt> attributes,
+                    are combined as for content references, including the special processing for the
+                        <xmlatt>xml:lang</xmlatt>, <xmlatt>dir</xmlatt>, and
+                        <xmlatt>translate</xmlatt> attributes. There is no special processing
+                    associated with either the <xmlatt>locktitle</xmlatt> or the
+                        <xmlatt>lockmeta</xmlatt> attributes when attributes are combined.</p>
+            </li>
+            <li id="li_DFBE0534F51646B0B05BB73B9E9B9636">Content from a key-defining element
+                cascades to the key reference element following the rules for combining metadata
+                between maps and other maps and between maps and topics. The
+                    <xmlatt>lockmeta</xmlatt> attribute is honored when metadata content is
+                    combined.<draft-comment author="Kristen Eberlein" time="7 December 2014">
+                    <p>What is the correct term? "Key reference element" or "key-referencing
+                        element"?</p>
+                    <p>[Eliot Kimber] Suggest rewording sentence as "Content from a key-referencing
+                            <xmlelement>topicref</xmlelement> and a key-defining
+                            <xmlelement>topicref</xmlelement>" -- The only elements involved are
+                            <xmlelement>topicref</xmlelement> elements</p>
+                    <p>[Kris Eberlein, 8 December 2014] Leaving sentence alone until 1) We make an
+                        editorial decision about "key-reference element" versus "key-referencing
+                        element", and 2) TC review of this topic cluster.</p>
+                </draft-comment></li>
+            <li id="li_A7CB6EAC9293478886B1E03824DE8BB7">The combined attributes and content cascade
+                from one map to another or from a map to a topic, but this is controlled by existing
+                rules for cascading, which are not affected by the use of key references.</li>
+        </ul>
+        <p> If, in addition to the <xmlatt>keys</xmlatt> attribute, a key definition specifies a
+                <xmlatt>keyref</xmlatt> attribute that can be resolved after the key resolution
+            context for the key definition has been determined, the resources bound to the
+            referenced key definition take precedence.<draft-comment author="robander"
+                disposition="accepted">NEEDS EXAMPLE OF THIS PARAGRAPH<p>Comments from review
+                    #2</p><p>[Eliot Kimber] What is the point of this paragraph? I'm not sure why it
+                    needs to be stated since I think the rule stated is implicit in the foregoing
+                    discussion, namely that you resolve all intermediate key references to determine
+                    the effective resource for a key key definition. This paragraph is not in the
+                    1.2 spec. I think it can be removed.</p><p>[Robert Anderson] I think this rule
+                    was hinted at / implied in DITA 1.2 but we're trying to be more explicit here.
+                    Paragraph needs editing so that we're clear based on our explicit 1.3
+                    terminology. What wins here, in terms of @audience? The audience on this keydef,
+                    or one from the key definition for "final"? &lt;keydef keys="middle"
+                    keyref="final" audience="george"/></p><p>[Robert Anderson] Marking "accepted". I
+                    think we need an example of this (see draft comment below). I'll come up with an
+                    example, run it by Eliot to make sure we're on the same page.
+                </p></draft-comment></p>
+        <!--<p>Key references on elements that also appear in topics, such as <xmlelement>keyword</xmlelement>, are evaluated using the same rules as in a topic.</p>-->
+    </conbody>
+</concept>

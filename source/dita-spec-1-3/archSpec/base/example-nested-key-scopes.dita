@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_myc_r2g_mp" rev="DITA1.3 proposal-13004">
+ <title>Example: Key definitions in nested key scopes</title>
+ <shortdesc>A root map might contain nested key scopes, each of which might contain duplicate key
+  definitions. Which key definition is effective depends on key-scope precedence rules.</shortdesc>
+ <conbody>
+    <draft-comment author="Kristen Eberlein" time="7 December 2014">
+      <p>Comments from review #2:</p>
+      <p>[Jarno Elovirta, 20 October 2014] Key scope precedence rules should not be hidden into an
+        example topic, it should be part of the actual key specification prose. </p>
+      <p>[Eliot Kimber, 25 October 2014] This example is the essential example that explains key
+        scopes in general. It should be part of the missing topic that formally defines key scopes.
+      </p>
+    </draft-comment>
+  <p>Consider the following DITA map:</p>
+  <codeblock>&lt;map>
+  &lt;title>Root map&lt;/title>
+  &lt;!-- Root scope -->
+  &lt;keydef keys="a"/>
+  
+  &lt;!-- Key scope A -->
+  &lt;topicgroup keyscope="A">
+    &lt;keydef keys="b"/>
+    
+     &lt;!-- Key scope A-1 -->
+    &lt;topicgroup keyscope="A-1">
+      &lt;keydef keys="c"/>
+    &lt;/topicgroup>
+
+     &lt;!-- Key scope A-2 -->    
+    &lt;topicgroup keyscope="A-2">
+      &lt;keydef keys="d"/>
+    &lt;/topicgroup>
+  &lt;/topicgroup> 
+
+  &lt;!-- Key scope B -->  
+  &lt;topicgroup keyscope="B">
+    &lt;keydef keys="a"/>
+    &lt;keydef keys="e"/>
+
+  &lt;!-- Key scope B-1 -->     
+    &lt;topicgroup keyscope="B-1">
+      &lt;keydef keys="f"/>
+    &lt;/topicgroup>
+
+  &lt;!-- Key scope B-1 -->
+    &lt;topicgroup keyscope="B-2">
+      &lt;keydef keys="g"/>
+    &lt;/topicgroup>
+  &lt;/topicgroup>
+&lt;/map></codeblock>
+  <p>The key scopes in this map form a tree structure.</p>
+  <fig>
+   <title>Graphical representation of the key scopes</title>
+   <image href="../../images/Keyscopes-Illustrated.png"/>
+  </fig>
+  <p>Each box in the diagram represents a key scope; the name of the key scope is indicated in bold
+   with upper-case letters. Below the name of the key scope, the key definitions that are present in
+   the scope are listed. Different typographic conventions are used to indicate where the key
+   definition occurs:</p>
+  <dl>
+   <dlentry>
+    <dt>No styling</dt>
+    <dd>The key definition occurs in the immediate key scope and is not overriden by a key
+     definition in a parent scope. For example, key "a" in the root map.</dd>
+   </dlentry>
+   <dlentry>
+    <dt>Parentheses</dt>
+    <dd>The key definition occurs in a child scope. For example, keys "A-1.c" and "A-2.d" in key
+     scope A.</dd>
+   </dlentry>
+   <dlentry>
+    <dt>Brackets</dt>
+    <dd>The key definition occurs in the immediate key scope, but it is override by a key definition
+     in a parent scope. For example, key "a" in key scope B.</dd>
+   </dlentry>
+  </dl>
+  <p>Arrows points from child to parent scopes.</p>
+  <p>Assume that each key scope contains numerous key references. For this example, effective key
+      definitions for certain key scopes are listed in the following tables. <ph rev="review-2">The
+        first column shows the value used in key references; the second column shows the resource
+        that the key resolves to in that scope.</ph></p>
+  <table frame="all" rowsep="1" colsep="1">
+   <title>Key scope A-2</title>
+   <tgroup cols="2">
+    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+    <thead>
+     <row>
+      <entry>Key reference</entry>
+      <entry rev="review-2">Resource to which the key resolves</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>a</entry>
+      <entry>"a", defined in the root map</entry>
+     </row>
+     <row>
+      <entry>d</entry>
+      <entry>"d", as defined in the immediate key scope </entry>
+     </row>
+     <row>
+      <entry>A-2.d</entry>
+      <entry>"d", as defined in the immediate key scope </entry>
+     </row>
+     <row>
+      <entry>c</entry>
+      <entry>Undefined</entry>
+     </row>
+     <row>
+      <entry>A-1.c</entry>
+      <entry>"A-1.c", as defined in key scope A-1. This key name is available because it exists in
+       the parent scope, key scope A.</entry>
+     </row>
+     <row>
+      <entry>A.A-1.c</entry>
+      <entry>"A-1.c", as defined in key scope A-1. This key name is available because it exists in
+       the root key scope.</entry>
+     </row>
+
+    </tbody>
+   </tgroup>
+  </table>
+  <table frame="all" rowsep="1" colsep="1">
+   <title>Key scope B</title>
+   <tgroup cols="2">
+    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+    <thead>
+     <row>
+      <entry>Key reference</entry>
+            <entry rev="review-2">Resource to which the key resolves</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>e</entry>
+      <entry>"e", defined in the immediate key scope</entry>
+     </row>
+     <row>
+      <entry>a</entry>
+      <entry>"a", as defined in the <i>root key scope</i>. (While a key definition for "a" exists in
+              the immediate key scope, it is overriden by the key definition that occurs in the
+              parent key scope.)</entry>
+     </row>
+     <row>
+      <entry>B.a</entry>
+      <entry>
+              <p>"a", as defined in the <i>immediate key scope</i>. However, since a key definition
+                for "a" exists in the parent key scope, the effective value for "a" in the immediate
+                key scope still is overriden by the key definition that occurs in the parent key
+                scope.</p>
+              <draft-comment author="Kristen Eberlein" time="7 December 2014">
+                <p>Comment by Eliot Kimber in review #2 -- Need review and confirmation by Chris
+                  Nitchie.</p>
+                <p>"a", as defined in the immediate key scope. This reference uses the binding for
+                  key name "a" in scope B because the reference is qualified with the scope name.
+                </p>
+              </draft-comment>
+            </entry>
+     </row>
+     <row>
+      <entry>g</entry>
+      <entry>Undefined. <ph rev="review-2">The key "g" is defined only in key scope B-2, so no
+                unqualified key named "g" is defined in scope B.</ph></entry>
+     </row>
+     <row>
+      <entry>B-2.g</entry>
+      <entry>"g", as defined in key scope B-2.</entry>
+     </row>
+     
+    </tbody>
+   </tgroup>
+  </table>
+ </conbody>
+</concept>

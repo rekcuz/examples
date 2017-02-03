@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="dtdorganization" xml:lang="en-us">
+<title>DTD organization</title>
+<shortdesc>(Non-normative) The OASIS DITA document types are implemented
+with a set of DTD     modules. Some of these modules are used by every
+DITA document type, others are only used by     topics or by maps,
+and some are only used in specific specializations.</shortdesc>
+<conbody>
+  <section conref="../common/conref_file.dita#reuse_file/dita-modules"/>
+</conbody>
+</concept>
+

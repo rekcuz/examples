@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_rp3_nt5_qp">
+ <title>Example: Simple DITA map that defines keys</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>The following example illustrates how keys can be defined:</p>
+  <codeblock>&lt;map>
+  &lt;keydef keys="dita-tc" href="dita_technical_committee.dita"/>
+  &lt;keydef keys="dita-adoption" href="dita_adoption_technical_committee.dita"/>
+  &lt;!-- ... -->
+&lt;/map></codeblock>
+  <p>The map also could be tagged in either of the following ways:</p>
+  <dl>
+   <dlentry>
+    <dt><xmlelement>topicref</xmlelement> element with <xmlatt>processing-role</xmlatt> attribute
+     set to "resource-only"</dt>
+    <dd>
+     <codeblock>&lt;map>
+  &lt;topicref keys="dita-tc" href="dita_technical_committee.dita" processing-role="resource-only"/>
+  &lt;topicref keys="dita-adoption" href="dita_adoption_technical_committee.dita" processing-role="resource-only"/>
+  &lt;!-- ... -->
+&lt;/map></codeblock>
+    </dd>
+   </dlentry>
+   <dlentry>
+    <dt><xmlelement>topicref</xmlelement> element with <xmlatt>toc</xmlatt>,
+      <xmlatt>linking</xmlatt>, and <xmlatt>search</xmlatt> attributes set to "no"</dt>
+    <dd>
+     <codeblock>&lt;map>
+  &lt;topicref keys="dita-tc" href="dita_technical_committee.dita" toc="no" linking="no" search="no"/>
+  &lt;topicref keys="dita-adoption" href="dita_adoption_technical_committee.dita" toc="no" linking="no" search="no"/>
+  &lt;!-- ... -->
+&lt;/map></codeblock>
+    </dd>
+   </dlentry>
+  </dl>
+  <draft-comment author="Kristen James Eberlein" time="24 August 2009" disposition="deferred"
+      >Example added based on review #1 comment from Elliot Kimber. Exactly what do we want to
+      communicate in this example?<ul>
+        <li>Best practices for key definitions: Using a separate map, defining keys at beginning of
+          map, etc.?</li>
+        <li>First key encountered is used?</li>
+        <li>That <xmlelement>keydef</xmlelement> is equivalent to <codeph>&lt;topicref
+            processing-role="resource-only"></codeph> or setting @toc, @linking, and @search
+          attributes to "no"?</li>
+      </ul>Should the example include more information about why the keys are defined and how they
+      would be resolved?</draft-comment>
+ </conbody>
+</concept>

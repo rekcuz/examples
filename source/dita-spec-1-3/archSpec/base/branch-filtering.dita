@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ywq_qyq_bn">
+ <title>Branch filtering</title>
+  <shortdesc>The branch filtering mechanism allows map authors to set different filtering conditions
+    for different branches of a map, enabling the production of single deliverables that reflect
+    different values for the same conditional attribute.</shortdesc>
+ <conbody>
+    <p>DITAVAL documents provide a way to specify a set of conditions that are used to conditionally
+      process DITA content. While these conditions are often stored outside of the content and
+      applied globally by a processor, the <xmlelement>ditavalref</xmlelement> element can be used
+      to reference a DITAVAL document in order to filter only a subset of content within or
+      referenced by a map. This also provides the ability to process a single branch of content
+      multiple times, applying unique conditions to each instance of the branch.</p>
+    <p>In addition to filtering, applications <term outputclass="RFC-2119"
+        rev="terminology review-2">MAY</term> support flagging at the branch level based on
+      conditions in referenced DITAVAL documents.</p>
+  </conbody>
+</concept>

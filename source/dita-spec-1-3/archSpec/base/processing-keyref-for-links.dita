@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="processing_key_references">
+    <title><ph rev="review-2">Processing key references for navigation links</ph></title>
+    <shortdesc>Keys can be used to create or redirect links and cross references. This topic
+        explains how to evaluate key references on links and cross references to determine a link
+        target. </shortdesc>
+    <conbody>
+        <p>When a key definition is bound to a resource that is addressed by the
+                <xmlatt>href</xmlatt> or <xmlatt>keyref</xmlatt> attributes (and does not specify
+            "none" for the <xmlatt>linking</xmlatt> attribute), all references to that key
+            definition become navigation links to the bound resource. When a key definition is not
+            bound to a resource or specifies "none" for the <xmlatt>linking</xmlatt> attribute,
+            references to that key definition do not become navigation links.</p>
+        <draft-comment author="Kristen Eberlein" time="7 December 2014">
+            <p>Comments from review #2</p>
+            <p>[Jarno Elovirta] This also applies to image element, thus term "navigation link"
+                should be replaced with something that includes both hyperlinks and media
+                embedding.</p>
+            <p>[Jarno Elovirta] What if the key definition @keyref resolves to a key definition that
+                has no @href? The current text suggests the referencing element will become a
+                navigation link just because the key definition had a @keyref.  </p>
+            <p>[Robert Anderson] I think we need to edit the paragraph to make sure this is
+                covered.</p>
+            <p>[Eliot Kimber] That's a good point. I'm not sure we fully considered image and media
+                references when writing the 1.2 versions of these topics. However, this section is
+                specifically about elements that are sometimes or always navigation links, e.g.,
+                xref, keyword, etc. In the case of image and object references, if a key can't be
+                resolved it's the same as if a direct URI reference couldn't be resolved: it's an
+                error and the processor recovers however. So that may already be covered. </p>
+            <p>[Kris Eberlein] We need to ensure that we are using terminology consistently
+                throughout this topic and the topics about linking. I don't think that the linking
+                topics were considered when this content was rewritten for DITA 1.3.</p>
+            <p>[Eliot Kimber] Suggest rewording as "When a key definition is bound to a
+                URI-addressed resource and does not ..."</p>
+        </draft-comment>
+        <p>When a key definition has no <xmlatt>href</xmlatt> value and no <xmlatt>keyref</xmlatt>
+            value, references to that key will not result in a link, even if they do contain an
+                <xmlatt>href</xmlatt> attribute of their own. If the key definition also does not
+            contain a <xmlelement>topicmeta</xmlelement> subelement, empty elements that refer to
+            the key (such as <codeph>&lt;link keyref="a"/></codeph> or <codeph>&lt;xref keyref="a"
+                href="fallback.dita"/></codeph>) are <ph rev="review-2">ignored</ph>.</p>
+        <p>If a referencing element specifies a key reference to an undefined key, it is processed
+            as if there were no key reference, and the value of the <xmlatt>href</xmlatt> attribute
+            is used as the reference. If the <xmlatt>href</xmlatt> attribute is not specified
+            either, the element is not treated as a navigation link.</p>
+        <draft-comment author="Kristen Eberlein" time="7 December 2014">
+            <p>Comments from review #2:</p>
+            <p>[Eliot Kimber] The original 1.2 version included this:"If it is an error for the
+                element to be empty, an implementation may give an error message, and may recover
+                from this error condition by leaving the key reference element empty."Why was this
+                clause removed?</p>
+            <p>[Robert Anderson] That's the languagein the generic "Processing key references" topic
+                which got additional comments. Not sure how to resolve. I'll resolve those in
+                combination with this one.</p>
+        </draft-comment>
+        <draft-comment author="Kristen Eberlein" time="7 December 2014">
+            <p>Comments from review #2:</p>
+            <p>[Jarno Elovirta] The object element has multiple @*keyref attributes that are not
+                covered here. This same processing rule apply to @archive and @archivekeyrefs, and
+                other attribute combos too?</p>
+            <p>[Robert Anderson] Yes, and I think those should be covered here with an extra
+                note.</p>
+        </draft-comment>
+        <!--<p>For key references to undefined keys, if there is an @href attribute
+on         the referencing element, the value of the @href attribute
+is used as the         reference and the key reference element is
+processed as if there were no key reference. If         the key reference
+element does not specify @href, the element is not
+        treated as a navigation link. It is an error for the element
+to be empty, and an         implementation <keyword>may</keyword> give
+an error message, and <keyword>may</keyword>         recover from
+this error condition by leaving the key reference element empty. </p>-->
+    </conbody>
+</concept>

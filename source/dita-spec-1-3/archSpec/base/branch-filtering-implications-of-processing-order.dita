@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="branch-filtering-implications-of-processing-order">
+ <title>Branch filtering: Implications of processing order</title>
+ <shortdesc>Because the branch filtering process may result in new or renamed keys, key scopes, or
+    URIs, the full effects of the branch filtering process <term outputclass="RFC-2119"
+      rev="terminology">MUST</term> be calculated by processors before they can construct the
+    effective map and key scope structure.</shortdesc>
+ <conbody>
+    <p>The <xmlatt>keyref</xmlatt> attribute and related attributes are explicitly disallowed on
+        <xmlelement>ditavalref</xmlelement> for the same reason; otherwise, usage of those
+      attributes on <xmlelement>ditavalref</xmlelement> would require that <xmlatt>keyref</xmlatt>
+      be resolved on all <xmlelement>ditavalref</xmlelement> elements before keys and key scopes
+      could be established for the map as a whole.</p>
+    <!--<draft-comment author="Kristen Eberlein" time="8 February 2014" disposition="open">Jarno Elvirta suggests that we simply state "branch filtering <term outputclass="RFC-2119" rev="terminology">MUST</term> be processed before the effective map and key space are constructed."<p>Jarno also suggests: "You could have a note in the spec that the spec does not mandate a given processing order or style of processing. In cases where the spec defines something using a given processing order, implementations may implement this in any way they want, but the results must match."</p></draft-comment><draft-comment author="Kristen Eberlein" time="8 February 2014" disposition="accepted">Another suggestion from Jarno Elvirta:<p>"Hmm... could you phrase that shortdesc so that effective map and key space construction has a dependency on branch filtering results, and that may impose processing order requirements on implementations?"</p></draft-comment>-->
+  <p>In general, the DITA specification shies away from mandating processing order, and so
+   publication results can vary slightly depending on the order in which processes are run. In this
+   case, any DITAVAL conditions that are specified external to the map, such as a parameter to a
+   publishing process, take precedence over conditions referenced with the
+    <xmlelement>ditavalref</xmlelement> element. For example, if the value
+    <codeph>audience="admin"</codeph> is globally excluded by the publication process, that content
+   will be excluded even from a branch where a <xmlelement>ditavalref</xmlelement> reference
+   attempts to set <codeph>audience="admin"</codeph> to "include".</p>
+  <p rev="review-2">There is explicitly <i>no requirement</i> that global filters and filters
+      specified with <xmlelement>ditavalref</xmlelement> be applied at the same time in a publishing
+      process. For example, a processor might apply global filtering to maps before determining the
+      effective branches implied by <xmlelement>ditavalref</xmlelement> elements and then apply
+      filtering based on <xmlelement>ditavalref</xmlelement> elements later in the process. Because
+      global "exclude" conditions always take precedence over branch-specific conditions, applying
+      global filtering first cannot change the ultimate effect of any filters provided by
+        <xmlelement>ditavalref</xmlelement>.</p>
+  <p>Processors should consider the following points when determining a processing order:<ul>
+    <li>If links are generated based on the map hierarchy, those links should be created using the
+     renamed keys and URIs that result from evaluating <xmlelement>ditavalref</xmlelement>, to
+     ensure that the links are consistent within the modified branches.</li>
+    <li>If conrefs are resolved in topics before the <xmlelement>ditavalref</xmlelement> filter
+          conditions are evaluated, content that applies to multiple audiences can be brought in; it
+          later can be selectively filtered by branch. For example, if a set of installation steps
+          is pulled in with conref (from outside the branch), it might contain information that is
+          later filtered by platform during the <xmlelement>ditavalref</xmlelement> evaluation; this
+          results in a copy of the steps that specific to each operating system. If conref is
+          processed after the <xmlelement>ditavalref</xmlelement>, content might be pulled in that
+          has not been appropriately filtered for the new context.</li>
+    <li>The same scenario applies to conref values that push content into the branch; pushing
+     content prior to resolving the <xmlelement>ditavalref</xmlelement> conditions allows content
+     for multiple conditions to be pushed into the branch, and then filtered by branch based on the
+      <xmlelement>ditavalref</xmlelement> conditions. If the branch using
+      <xmlelement>ditavalref</xmlelement> pushes content elsewhere, resolving
+      <xmlelement>ditavalref</xmlelement> first could result in multiple copies of the content to be
+     pushed (one for each branch), resulting in multiple potentially conflicting copies pushed to
+     the new destination.</li>
+   </ul></p>
+ </conbody>
+</concept>

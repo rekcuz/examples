@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<reference id="glossStatus" xml:lang="en-us">
+<title><xmlelement>glossStatus</xmlelement></title>
+<shortdesc>The <xmlelement>glossStatus</xmlelement> element identifies the usage status of a
+preferred or alternate term. If the status isn't specified, the <xmlelement>glossterm</xmlelement> provides a preferred
+term and an alternate term provides an allowed term.</shortdesc>
+<prolog><metadata>
+<keywords>
+            <indexterm>glossaries<indexterm>usage status</indexterm></indexterm>
+            <indexterm>glossentry
+                  elements<indexterm><xmlelement>glossStatus</xmlelement></indexterm></indexterm><indexterm><xmlelement>glossStatus</xmlelement></indexterm></keywords>
+</metadata></prolog>
+<refbody>
+<section><note>The values provided by the <xmlelement>glossStatus</xmlelement> element are extensible using
+            DITA's Controlled Values mechanism. If validation is required, they should be validated
+            using that mechanism rather than by encoding values directly within the XML
+               declaration.<draft-comment author="UNKNOWN" disposition="open">Should this include a
+               link to the controlled values information?</draft-comment><draft-comment
+               author="Kristen Eberlein" time="21 December 2014" disposition="open">
+               <p>This is normative information (as currently written), and so should not be in a
+                     <xmlelement>note</xmlelement> element.</p>
+               <p>However, I don't think that we have any mechanisms for providing enumerations for
+                  elements.</p>
+            </draft-comment></note></section>
+<section
+conref="../../common/commonNavLibraryTable.dita#contentmodel-glossStatus/contains"
+id="contains" otherprops="contains"></section>
+
+
+
+<section id="inheritance" otherprops="inheritance"><title>Inheritance</title><p>-
+topic/data concept/data glossentry/glossStatus </p></section>
+<example id="example">
+<title>Example</title>
+<p>See the example in <xref href="glossentry.dita#glossentry/example"
+><xmlelement>glossentry</xmlelement>.</xref></p></example>
+<section id="attributes"><title>Attributes</title>
+   <p conref="../../common/conref-attribute.dita#conref-attribute/data-link-universal-outputclass"/>
+   </section>
+</refbody>
+</reference>
+

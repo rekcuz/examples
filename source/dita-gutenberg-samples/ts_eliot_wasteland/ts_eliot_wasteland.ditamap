@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" []>
+<map>
+  <title>The Waste Land</title>
+  <topicmeta>
+    <category>fiction</category>
+    <category>poetry</category>
+    <data name="project-gutenberg-metadata">
+      <data name="etext-no." value="1321"/>
+      <data name="release-date" value="1998-05-01"/>
+      <data name="loc-class" value="PR: Language and Literatures: English literature"/>
+      <data name="subject" value="poetry"/>
+      <data name="base-directory" value=" /files/13600/"/>
+      <data name="language" value="English"/>
+      <data name="creator" value="T. S. Eliot"/>
+      <data name="copyright-status"
+        value="Not copyrighted in the United States. If you live
+        elsewhere check the laws of your country before downloading this ebook."
+      />
+    </data>
+  </topicmeta>
+  <topichead navtitle="Notices">
+    <topicref href="legalstuff/main-page.xml"/>
+  </topichead>
+  <topicref href="ts_eliot_wasteland.xml"/>
+  <topichead navtitle="End of Book Notices">
+    <topicref href="legalstuff/end-of-book.xml"/>
+  </topichead>
+</map>

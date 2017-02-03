@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="createCustomDocType" xml:lang="en-us">
+  <title>Configuration (Document type shells)</title>
+  <shortdesc><ph conref="../../common/conref_file.dita#reuse_file/configuration-shortdesc"
+    /></shortdesc>
+  <conbody>
+    <p>A DITA document type is defined by the following:</p>
+    <ul>
+      <li>The set of modules that are declared in the <xmlatt>domains</xmlatt> attribute on the root
+        element of the document</li>
+      <li>The values of the <xmlatt>class</xmlatt> attributes of all the elements in the
+        document</li>
+    </ul>
+    <draft-comment author="robander" time="February 16 2015">From the following paragraph: "If the
+        <xmlatt>domains</xmlatt> attribute declares both structural and domain vocabulary modules,
+      then the <xmlatt>domains</xmlatt> attribute alone can serve to define the DITA document
+        type."<p>Strictly speaking, that is false. Topic nesting is not and cannot be determined by
+        the <xmlatt>domains</xmlatt> attribute. You could have three documents where
+          <xmlatt>domains</xmlatt> exactly matches that of OASIS task, and all have different
+        document types. In the first, task nests only task (just as delivered today); in the second
+        the <xmlelement>no-topic-nesting</xmlelement> element is used to turn off nesting; and in
+        the third, task nests topic and topic nests task.</p></draft-comment>
+    <p>If the <xmlatt>domains</xmlatt> attribute declares both structural and domain vocabulary
+      modules, then the <xmlatt>domains</xmlatt> attribute alone can serve to define the DITA
+      document type. The information on the <xmlatt>domains</xmlatt> and <xmlatt>class</xmlatt>
+      attributes is sufficient to implement all DITA-defined processing and constraint checking on
+      documents (for example, determining if a referenced element in a content reference has a set
+      of modules that are compatible with the modules that are used by the referencing element's
+      document).</p>
+    <p>Thus, DITA does not require that conforming DITA documents have an associated document-type
+      definition as long as all required attributes are explicit in the document instances. However,
+      most DITA documents have an associated XML-schema document. Such documents enable validation
+      using normal XML processors; they also can provide default values for the
+        <xmlatt>domains</xmlatt> and <xmlatt>class</xmlatt> attributes. While the DITA specification
+      only defines coding requirements for DTD, <ph rev="DITA1.3 proposal-13112">RELAX NG,</ph> and
+      XML Schema documents, conforming DITA documents <term outputclass="RFC-2119" rev="terminology"
+        >MAY</term> use other document-type constraint languages, such as Schematron.</p>
+    <p>According to the coding requirements for DITA document types, a document type shell always is
+      implemented as a top-level file that only includes and configures vocabulary modules; a
+      document type shell never directly defines new element or attribute types.<draft-comment
+        author="robander" time="February 16, 2015">Maybe: change the previous sentence to "... a
+          <i>conforming</i> document type shell..."? Or maybe rephrase entirely. If you follow the
+        rules here, you will have a shell that just includes/configures stuff (apart from the
+        &lt;dita> element as noted elsewhere). Maybe...<p>Document type shells that conform to the
+          coding requirements only includes and configures vocabulary modules; except for the
+          optional <xmlelement>dita</xmlelement> element, shells never directly define new element
+          or attribute types.</p></draft-comment><draft-comment author="robander"
+        time="February 16, 2015">Also worth noting that the "doesn't declare new elements or
+        attributes" comment is repeated in the DTD/XSD/RNG topics, including an exception for both
+        XSD and RNG where @domains is declared. Copying the current language in that DTD/XSD/RNG
+        order, from those topics: <ul>
+          <li>With the exception of the composite document type, DTD document type shells MUST NOT
+            directly declare element types or attributes. A DTD document type shell MUST conform to
+            the following coding requirements.</li>
+          <li>An XSD document type shell MUST conform to the following coding requirements. XSD
+            document type shells MUST NOT directly declare element types or attributes (except for
+            the @domains attribute, which always reflects the details of the domains and structural
+            types integrated by the shell).</li>
+          <li>RELAX NG document-type shells MUST NOT directly declare element types or attributes. A
+            RELAX NG document-type shell MUST conform to the following coding requirements, as well
+            as the requirements defined in <xref href="using-relax-ng.html">Using RELAX NG for
+              document type shells, vocabulary modules, and constraint modules</xref>.<p>[next para]
+              ...  However, the default value for the @domains attribute cannot automatically be
+              constructed using RELAX NG facilities. Thus, the @domains attribute value has to be
+              directly specified in the document type shell.</p></li>
+        </ul></draft-comment></p>
+    <draft-comment author="robander" time="February 16, 2015">Same problem as above - first sentence
+      in the following paragrah does not account for topic nesting rules when making this claim:
+      "Two document type shells define the same DITA document type if they integrate the same set of
+      vocabulary and constraint modules."</draft-comment>
+    <p>Two document type shells define the same DITA document type if they integrate the same set of
+      vocabulary and constraint modules. For example, a document type shell that is an unmodified
+      copy of the OASIS-provided, document type shell for topic (<filepath>topic.dtd</filepath>,
+        <filepath>topic.xsd</filepath><ph rev="DITA1.3 proposal-13112">,
+          <filepath>topic.rng</filepath>, or <filepath>topic.rnc</filepath></ph>) defines the same
+      DITA document type as the original document-type shell. However, the new document type shell
+      has the following differences:<ul>
+        <li>It is a distinct file that is stored in a different location.</li>
+        <li>It has a distinct system identifier.</li>
+        <li>(If it has a public identifier) It has a unique public identifier.</li>
+      </ul></p>
+    <p>Document type shells that are not provided by OASIS <term outputclass="RFC-2119"
+        rev="terminology">MUST</term> have a unique public identifier, if public identifiers are
+      used. Document type shells that are not provided by OASIS <term outputclass="RFC-2119"
+        rev="terminology">MUST NOT</term> indicate OASIS as the owner; the public identifier or URN
+      for such document type shells <term outputclass="RFC-2119" rev="terminology">SHOULD</term>
+      reflect the owner or creator of the document type shell. For example, if example.com creates a
+      copy of the document type shell for topic, an appropriate public identifier would be
+      "-//example.com//DTD DITA Topic//EN", where "example.com" is the owner identifier component of
+      the public identifier. An appropriate URN would be
+      "urn:example.com:names:dita:rng:topic.rng".</p>
+    <note>The public or system identifier that is associated with a given document-type shell is
+      not, by itself, necessarily distinguishing. <ph rev="review-2">This is because two different
+        people or groups might use the same modules and constraints to assemble equivalent document
+        type shells, while giving them different names or public identifiers.</ph>
+    </note>
+    <p>While the DITA specification includes a starter set of document type shells, these document
+      type shells are not mandatory. <ph rev="review-2">All of the shells provided by OASIS include
+        comments to introduce each section, even with that section does not include any
+        declarations. For example, a shell that does not make use of constraints will still contain
+        a comment where a constraint section might be added. This makes it easier to use the
+        OASIS-provided shells as templates for creating custom document type shells.</ph></p>
+    <note>Even if an initial implementation does not require configuration, constraint, or
+      specialization, it can be useful to create new document-type shells. That way, if modification
+      is required in the future, documents will not need to be modified to point to a new
+      document-type shell.</note>
+    <p>DITA document-type shells <term outputclass="RFC-2119" rev="terminology">MUST</term> follow the coding
+      requirements that are defined in this specification. This ensures consistency of
+      implementation.</p>
+  </conbody>
+</concept>
+

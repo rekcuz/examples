@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept
+  id="concept_0a4c9c5d-a953-4738-be55-8d3b6c228968"
+  xml:lang="en-us">
+  <title>DTD: Coding requirements for topic type modules</title>
+  <shortdesc><!--<ph conref="../../common/conref_file.dita#reuse_file/coding-req-topic-type-modules-shortdesc"/>-->The
+    vocabulary modules that define topic types have an additional coding requirement. They need to
+    define whether topics are permitted to nest and what topic types are permitted to nest. These
+    rules for topic nesting are specified by a parameter entity.</shortdesc>
+  <conbody>
+    <draft-comment author="robander" time="March 3 2015">Suggestion: change the title to "Setting up
+      topic nesting in a topic module" or similar. Currently it is not at all clear from the title
+      what we're using this topic for. Or maybe this topic should just be part of the topic module
+        section?<p>All of this content applies ONLY if a module is defined in a way that allows
+        nesting, AND that allows the nesting to change. That is certainly the typical case but is
+        not required. You could define a topic module that simply cannot ever nest another topic;
+        you can define a topic module that only ever allows one specific topic (also defined in this
+        module) as a child. In either case the entity is meaningless.</p><p>This gets into the
+        discussion at today's TC: this is a SHOULD, not a MUST, and we should explain the edge
+        cases. </p></draft-comment>
+    <dl>
+      <dlentry>
+        <dt>Parameter entity name</dt>
+        <dd>
+          <p>The name of the parameter entity <term outputclass="RFC-2119" rev="terminology"
+              >MUST</term> be the root element name plus the <codeph>-info-types</codeph>
+            suffix.</p>
+          <p outputclass="example">For example, the name of the parameter entity for the concept
+            topic is <codeph>concept-info-types</codeph>. </p>
+        </dd>
+      </dlentry>
+    </dl>
+    <dl>
+      <dlentry>
+        <dt>Parameter entity value</dt>
+        <dd outputclass="example">
+          <p>To enable topic nesting, set the parameter entity to X [" a list of element
+            entities"]</p>
+          <p>To disallow topic nesting, set the parameter entity to Y ["the value of the
+              <parameterentity>info-types</parameterentity> parameter entity"]. </p>
+          <p>For example, the following parameter entity does Z:</p>
+          <codeblock><![CDATA[<!ENTITY % concept-info-types "%info-types;">]]></codeblock>
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Content model of the root element</dt>
+        <dd>
+          <p>The last position in the content model defined for the root element <term
+              outputclass="RFC-2119" rev="terminology">SHOULD</term> be the
+                <codeph><varname>topictype</varname>-info-types</codeph> parameter entity.</p>
+          <p outputclass="example">For example, consider the content model defined for
+              <xmlelement>concept</xmlelement>:<codeblock>&lt;!ENTITY % concept.content
+  "((%title;), 
+    (%titlealts;)?,
+    (%abstract; | 
+     %shortdesc;)?, 
+    (%prolog;)?, 
+    (%conbody;)?, 
+    (%related-links;)?,
+    <b>(%concept-info-types;)*</b>)"
+></codeblock></p>
+        </dd>
+      </dlentry>
+    </dl>
+    <!--<p>A topic type module <term outputclass="RFC-2119" rev="terminology">MUST</term> define a parameter entity to specify default topic nesting. The entity name <term outputclass="RFC-2119" rev="terminology">MUST</term> be the topic element name plus the <codeph>-info-types</codeph> suffix. If the topic has default topic nesting, this entity can default to. If not, the entity can default to the value of the <parameterentity>info-types</parameterentity> entity as in the following example:</p>-->
+    <p>A document type shell then can control how topics are allowed to nest by redefining the
+          <codeph><varname>topictype</varname>-info-types</codeph> entity for each topic type, or it
+      can efficiently create common nesting rules by redefining the main
+        <parameterentity>info-types</parameterentity> entity.</p>
+  </conbody>
+</concept>
+

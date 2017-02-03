@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Coding requirements for specialization modules</title>
+ <topicref href="specialization_module_requirements.dita">
+  <topicref href="dtdmod.dita">
+   <topicref href="dtdGeneralCodingReq.dita"/>
+   <topicref href="dtdStructuralCodingReq.dita"/>
+   <topicref href="dtdTopicTypeCodingReq.dita"/>
+   <topicref href="dtdElementDomainCodingReq.dita"/>
+   <topicref href="dtdAttributeDomainCodingReq.dita"/>
+  </topicref>
+  <topicref href="schemamod.dita">
+   <topicref href="xsdGeneralCodingReq.dita"/>
+   <topicref href="xsdStructuralSpecializationReqs.dita"/>
+   <topicref href="xsdAttributeDomainSpecializationCodeReq.dita"/>
+  </topicref>
+  <topicref href="coding-requirements-relax-ng.dita" rev="DITA1.3 proposal-13112">
+   <topicref href="relax-ng-element-type-coding-requirements.dita" rev="DITA1.3 proposal-13112"/>
+   <topicref href="relax-ng-structural-module-coding-requirements.dita" rev="DITA1.3 proposal-13112"/>
+   <topicref href="relax-ng-topic-module-coding-requirements.dita" rev="DITA1.3 proposal-13112"/>
+   <topicref href="relax-ng-element-domain-module-coding-requirements.dita"
+    rev="DITA1.3 proposal-13112"/>
+   <topicref href="relax-ng-attribute-domain-module-coding-requirements.dita"
+    rev="DITA1.3 proposal-13112"/>
+  </topicref>
+ </topicref>
+</map>

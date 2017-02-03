@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="relax-ng-constraint-module-coding-requirements" rev="DITA1.3 proposal-13112">
+ <title>RELAX NG: Coding requirements for constraint modules</title>
+ <shortdesc>A structural constraint module defines the constraints for a map or topic element type.
+  A domain constraint module defines the constraints for an element or attribute domain.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>coding requirements<indexterm>RELAX
+     NG<indexterm>constraints</indexterm></indexterm></indexterm>
+    <indexterm>constraints<indexterm>RELAX NG<indexterm>coding
+       requirements</indexterm><indexterm>integrating into document type
+      shells</indexterm></indexterm></indexterm>
+    <indexterm>domain constraint modules<indexterm>RELAX NG<indexterm>coding
+       requirements</indexterm></indexterm></indexterm>
+    <indexterm>file names<indexterm>RELAX NG<indexterm>domain constraint
+       modules</indexterm><indexterm>structural constraint
+     modules</indexterm></indexterm></indexterm>
+    <indexterm>structural constraint modules<indexterm>RELAX NG<indexterm>coding
+       requirements</indexterm></indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <draft-comment author="Kristen Eberlein" time="15 February 2014" disposition="open">The short
+   description is very generic. If this is a unique topic about coding requirements for constraint
+   modules that are implemented using RELAX NG, then the short description should say
+   so.</draft-comment>
+  <section>
+   <title>Structural constraint modules</title>
+   <p>Structural constraint modules have the following requirements:</p>
+   <dl>
+    <dlentry>
+     <dt>File names</dt>
+     <dd>
+      <p conref="../../common/conref_file.dita#reuse_file/see-file-naming-conventions"/>
+      <!--<draft-comment author="Kristen Eberlein" time="24 January 2015"><p>I changed the <term outputclass="RFC-2119" rev="terminology">SHOULD</term> to "should". File naming conventions are best practices; they are not normative. The <varname>qualifier</varname> variable is completely arbitrary and cannot be enforced. I suggest that we move this content to a non-normative appendix.</p></draft-comment>-->
+     </dd>
+    </dlentry>
+    <dlentry>
+     <dt rev="review-2">Contribution to the <xmlatt>domains</xmlatt> attribute</dt>
+     <dd>The contribution to the <xmlatt>domains</xmlatt> attribute <term outputclass="RFC-2119"
+       rev="terminology targeted-review">SHOULD</term> take the following form:<codeblock>(<varname>inheritance-hierarchy</varname> <varname>qualifier</varname><varname>Tagname</varname>-c)</codeblock>where:<ul>
+       <li conref="../../common/conref_file.dita#reuse_file/inheritance-hierarchy-li"/>
+       <li conref="../../common/conref_file.dita#reuse_file/qualifier-li"/>
+       <li conref="../../common/conref_file.dita#reuse_file/Tagname-li"/>
+      </ul></dd>
+     <dd outputclass="example">For example, the following code fragment specifies the contribution
+      to the <xmlatt>domains</xmlatt> attribute as <codeph>(topic task
+      strictTaskbody-c)</codeph>:<codeblock>&lt;moduleDesc>
+  &lt;!-- ... -->
+  &lt;moduleMetadata>
+    &lt;!-- ... -->  
+    &lt;domainsContribution>(topic task strictTaskbody-c)&lt;/domainsContribution>
+  &lt;/moduleMetadata>
+&lt;/moduleDesc></codeblock></dd>
+     <dd rev="targeted-review"
+      ><!--<p>The <xmlelement>domainsContribution</xmlelement> element contains the contribution to the <xmlatt>domains</xmlatt> attribute for the constraint module. This contribution is added to the value of the <xmlatt>domains</xmlatt> attribute for document type shells that integrate the constraint module. The element also be used to automate the declaration of the <xmlatt>domains</xmlatt> attribute in document type shells. </p>--></dd>
+     <dd>
+      <p rev="targeted-review" id="indicating-strong-constraint">Optionally, a domains contribution
+       can indicate a strong constraint by preceding the domains contribution with the letter "s".
+       For example, <codeph>"s(topic task strictTaskbody-c)"</codeph> indicates a strong
+       constraint.</p>
+     </dd>
+    </dlentry>
+   </dl>
+  </section>
+  <section>
+   <title>Domain constraint modules</title>
+   <p>A domain constraint module defines the constraints for exactly one element or attribute domain
+    module. Domain constraint modules have the following requirements:</p>
+   <dl>
+    <dlentry>
+     <dt>File names</dt>
+     <dd>
+      <p conref="../../common/conref_file.dita#reuse_file/see-file-naming-conventions"/>
+     </dd>
+    </dlentry>
+    <dlentry>
+     <dt rev="targeted-review">Contribution to the <xmlatt>domains</xmlatt> attribute</dt>
+     <dd><ph rev="targeted-review">The contribution to the <xmlatt>domains</xmlatt> attribute</ph>
+      <term outputclass="RFC-2119" rev="terminology targeted-review">SHOULD</term> take the
+      following form:<codeblock>(<varname>domain</varname> <varname>qualifier</varname><varname>DomainName</varname>-c)</codeblock>where:<ul>
+       <li><varname>domain</varname> is the short name of the domain to which the constraints apply
+        (for example, hi-d", "pr-d", "mydomain-d", or "deliveryTargetAtt-d"), preceded by the topic
+        or map type specialization hierarchy to which the domain applies (for example, "topic
+        task").</li>
+       <li><varname>qualifier</varname> is a string that is specific to the constraints module and
+        characterizes it, for example, strict" or "required" or "requiredReqconds".</li>
+       <li><varname>DomainName</varname> is the domain name with an initial capital, for example,
+        "Taskreq".</li>
+      </ul></dd>
+     <dd outputclass="example">The following code fragment illustrates the domains contribution for
+      a constraint module <ph rev="targeted-review">that restricts the task requirements
+       domain:</ph><codeblock>&lt;moduleDesc>
+  &lt;!-- ... -->
+  &lt;moduleMetadata>
+    &lt;!-- ... -->   
+    &lt;domainsContribution>(topic task taskreq-d requiredReqcondsTaskreq-c)&lt;/domainsContribution>
+  &lt;/moduleMetadata>
+&lt;/moduleDesc></codeblock></dd>
+     <!--<dd rev="targeted-review"><p>The <xmlelement>domainsContribution</xmlelement> element contains the contribution to the <xmlatt>domains</xmlatt> attribute for the constraint module. This contribution is added to the value of the <xmlatt>domains</xmlatt> attribute for document type shells that integrate the constraint module. The element also be used to automate the declaration of the <xmlatt>domains</xmlatt> attribute in document type shells. </p></dd>-->
+    </dlentry>
+   </dl>
+  </section>
+  <section rev="review-2">
+   <title>Integrating constraint modules into document type shells </title>
+   <p>For information about how to integrate constraint modules into RELAX NG-based, document type
+    shells, see <xref href="relax-ng-doctyp-shell-coding-requirements.dita"
+    />.<!-- The <xmlatt>domains</xmlatt> contribution of the constraint module <term outputclass="RFC-2119" rev="terminology">MUST</term> be reflected in the <xmlatt>domains</xmlatt> value for the root map or topic type that is configured by the document type shell.--></p>
+  </section>
+ </conbody>
+</concept>

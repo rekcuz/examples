@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_b2w_vt5_qp">
+ <title>Example: DITA maps that use <xmlelement>anchor</xmlelement> and
+      <xmlelement>anchorref</xmlelement> elements</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p conref="../../common/conref_file.dita#reuse_file/anchor"/>
+  <p conref="../../common/conref_file.dita#reuse_file/anchoref"/>
+ </conbody>
+</concept>

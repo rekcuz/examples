@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_e5c_3t5_qp">
+ <title>Example: Simple DITA map with a relationship table</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <draft-comment author="Kristen James Eberlein" time="21 April 2009" disposition="deferred">This
+      section contains content untouched from the 1.1 arch spec. Is this example helpful and
+      appropriate? The reltable topic in the lang spec 1.2 contains a different and more developed
+      example of a reltable, using the bat topics. Do we want to ensure that we conref and use the
+      same material in both specifications?</draft-comment>
+  <p>The following example contains the markup for a simple relationship table:</p>
+  <codeblock>&lt;map>
+&lt;!-- ... -->
+&lt;reltable>
+  &lt;relheader>
+    &lt;relcolspec type="concept"/>
+    &lt;relcolspec type="task"/>
+    &lt;relcolspec type="reference"/>
+  &lt;/relheader>
+  &lt;relrow>
+    &lt;relcell>
+      &lt;topicref href="A.dita"/>
+    &lt;/relcell>
+    &lt;relcell>
+      &lt;topicref href="B.dita"/>
+    &lt;/relcell>
+    &lt;relcell>
+      &lt;topicref href="C1.dita"/>
+      &lt;topicref href="C2.dita"/>
+    &lt;/relcell>
+  &lt;/relrow>
+&lt;/reltable>
+&lt;/map></codeblock>
+  <p>A DITA-aware tool might represent the relationship table graphically:<simpletable>
+    <sthead>
+     <stentry>type="concept"</stentry>
+     <stentry>type="task"</stentry>
+     <stentry>type="reference"</stentry>
+    </sthead>
+    <strow>
+     <stentry>A</stentry>
+     <stentry>B</stentry>
+     <stentry>
+      <lines>C1
+C2</lines>
+     </stentry>
+    </strow>
+   </simpletable></p>
+  <p>When the output is generated, the topics contain the following linkage:</p>
+  <dl>
+   <dlentry>
+    <dt>A</dt>
+    <dd>Links to B, C1, and C2</dd>
+   </dlentry>
+   <dlentry>
+    <dt>B</dt>
+    <dd>Links to A, C1, and C2</dd>
+   </dlentry>
+   <dlentry>
+    <dt>C1, C2</dt>
+    <dd>Links to A and B</dd>
+   </dlentry>
+  </dl>
+ </conbody>
+</concept>

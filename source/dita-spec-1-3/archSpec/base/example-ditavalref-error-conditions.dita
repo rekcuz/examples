@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example-ditavalref-error-conditions">
+  <title>Example: <xmlelement>ditavalref</xmlelement> error conditions</title>
+  <shortdesc>It is an error condition when multiple non-equivalent copies of the same file are
+    created with the same resource name.</shortdesc>
+  <conbody>
+    <example id="ditavalref-error-conditions">
+      <p>The following map fragment contains several error conditions that result in name
+        clashes:</p>
+      <codeblock>&lt;topicref href="a.dita" keys="a">
+  &lt;ditavalref href="one.ditaval"/>
+  &lt;ditavalref href="two.ditaval"/>
+  &lt;topicref href="b.dita" keys="b"/>
+&lt;/topicref>
+&lt;topicref href="a.dita"/>
+&lt;topicref href="c.dita" keys="c">
+  &lt;ditavalref href="one.ditaval">
+    &lt;ditavalmeta>
+      &lt;dvrResourceSuffix>-token&lt;/dvrResourceSuffix>
+    &lt;/ditavalmeta>
+  &lt;/ditavalref>
+  &lt;ditavalref href="two.ditaval">
+    &lt;ditavalmeta>
+      &lt;dvrResourceSuffix>-token&lt;/dvrResourceSuffix>
+    &lt;/ditavalmeta>
+  &lt;/ditavalref>
+&lt;/topicref>
+</codeblock>
+      <p>In this sample, the effective map that results from evaluating the branch filter conditions
+        will have several clashes. In some cases the same file must be processed with conflicting
+        conditions, using the same URI. In addition, because no key scope is added or modified, keys
+        in the branch are duplicated in such a way that only one version is available for use.
+        Evaluating the filtered branches in this sample will result in the following equivalent
+        map:<codeblock>&lt;topicref href="a.dita" keys="a"> &lt;!-- a.dita to be filtered by one.ditaval -->
+  &lt;topicref href="b.dita" keys="b"/>  &lt;!-- b.dita to be filtered by one.ditaval -->
+&lt;/topicref>
+&lt;topicref href="a.dita" keys="a"> &lt;!-- a.dita to be filtered by two.ditaval; key "a" ignored -->
+  &lt;topicref href="b.dita" keys="b"/>  &lt;!-- b.dita to be filtered by two.ditaval; key "b" ignored -->
+&lt;/topicref>
+&lt;topicref href="a.dita"/>
+&lt;topicref href="c-token.dita" keys="c"> 
+  &lt;!-- c-token.ditaval to be filtered by one.ditaval -->
+&lt;/topicref>
+&lt;topicref href="c-token.dita" keys="c"> 
+  &lt;!-- c-token.ditaval to be filtered by two.ditaval, key "c" ignored -->
+&lt;/topicref></codeblock>
+      </p>
+      <p>As an additional example, in a situation where resource file names map directly to
+        generated XHTML file names, this map results in the following conflicts:<ol>
+          <li><filepath>a.dita</filepath> generates <filepath>a.html</filepath> using three
+            alternate set of conditions -- from <filepath>one.ditaval</filepath>,
+              <filepath>two.ditaval</filepath>, and no ditaval.</li>
+          <li><filepath>b.dita</filepath> generates <filepath>b.html</filepath> using two alternate
+            set of conditions -- from <filepath>one.ditaval</filepath> and
+              <filepath>two.ditaval</filepath>.</li>
+          <li><filepath>c.dita</filepath> generates <filepath>c-token.html</filepath> using both
+            extra sets of conditions.</li>
+        </ol></p>
+    </example>
+  </conbody>
+</concept>
