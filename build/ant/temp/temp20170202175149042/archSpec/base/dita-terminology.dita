@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="terminology" xml:lang="en-us" xtrc="concept:1;4:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<title class="- topic/title " xtrc="title:1;5:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA terminology and notation</title>
+<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The DITA specification uses specific notation and terms to define the components of the
+    DITA standard. </shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;8:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+    <author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author><metadata class="- topic/metadata " xtrc="metadata:1;9:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+      <keywords class="- topic/keywords " xtrc="keywords:1;10:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+        <indexterm class="- topic/indexterm " xtrc="indexterm:1;11:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">notation<indexterm class="- topic/indexterm " xtrc="indexterm:2;11:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">attribute types</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:3;11:77" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">element
+            types</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:4;13:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">terminology<indexterm class="- topic/indexterm " xtrc="indexterm:5;13:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">addressing and linking</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:6;13:87" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">basic
+            concepts</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:7;14:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">modules</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:8;14:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">non-normative
+            information</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:9;15:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">normative
+            information</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:10;16:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">specialization</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+<conbody class="- topic/body  concept/conbody " xtrc="conbody:1;20:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<section class="- topic/section " xtrc="section:1;21:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">                <title class="- topic/title " xtrc="title:2;21:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Notation</title>
+      <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " disposition="open" time="24 March 2014" translate="no" xtrc="draft-comment:1;22:88" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+        <p class="- topic/p " xtrc="p:1;23:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Stan Doherty made the following comment in review #1 concerning the "Cascading of
+          attributes and metadata in a DITA map" topic; do we need to add the term cascading to our
+          terminology that is explicated in this topic?</p>
+        <p class="- topic/p " xtrc="p:2;26:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The explicit distinction here between containment hierarchy (mentioned several times
+          elsewhere in the spec) and element type hierarchy is very nice . . . might be worth
+          promoting to our list of key concepts.</p>
+      </draft-comment>
+      <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " disposition="open" time="19 January 2015" translate="no" xtrc="draft-comment:2;30:90" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+        <p class="- topic/p " xtrc="p:3;31:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Consider whether we need to add "same-topic fragment identifier" to this topic.</p>
+      </draft-comment>                <p class="- topic/p " xtrc="p:4;32:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><ph class="- topic/ph " xtrc="ph:1;32:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The
+following conventions are used throughout the                    
+     specification:</ph><dl class="- topic/dl " xtrc="dl:1;34:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><dlentry class="- topic/dlentry " xtrc="dlentry:1;34:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:1;35:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">attribute types</dt>
+<dd class="- topic/dd " xtrc="dd:1;36:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Attribute names are preceded by @ to distinguish them from elements or surrounding text, for
+              example, the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;37:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">props</xmlatt> or the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;37:66" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">class</xmlatt> attribute.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:2;38:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:2;39:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">element types</dt>
+<dd class="- topic/dd " xtrc="dd:2;40:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Element names are delimited with angle brackets (&lt; and &gt;) to distinguish them from
+              surrounding text, for example, the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;41:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">keyword</xmlelement> and the
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;42:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">prolog</xmlelement> element.</dd>
+</dlentry></dl></p>                <p class="- topic/p " xtrc="p:5;43:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">In general, the unqualified use of the term <term class="- topic/term " xtrc="term:1;43:89" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map</term> or
+          <term class="- topic/term " xtrc="term:2;44:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic</term> can be interpreted to mean "a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;44:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map</xmlelement> element and
+        any specialization of a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;45:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map</xmlelement> element " or "a
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;46:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic</xmlelement> element or any specialization of a
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;47:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic</xmlelement> element." <ph class="- topic/ph " rev="review-2" xtrc="ph:2;47:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Similarly, the unqualified use
+          of an element type name (for example, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;48:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">p</xmlelement>) can be interpreted to
+          mean the element type or any specialization of the element type.</ph></p> 
+         </section>
+<section class="- topic/section " xtrc="section:2;51:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">                <title class="- topic/title " xtrc="title:3;51:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><ph class="- topic/ph " xtrc="ph:3;51:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Normative and non-normative information</ph></title> 
+              <p class="- topic/p " xtrc="p:6;52:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The DITA specification contains normative and non-normative
+information:<dl class="- topic/dl " xtrc="dl:2;53:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><dlentry class="- topic/dlentry " xtrc="dlentry:3;53:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:3;54:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Normative information</dt>
+<dd class="- topic/dd " xtrc="dd:3;55:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Normative information is the formal portion of the specification
+                                   that describes the rules and requirements
+that make up the DITA                                    standard
+and which must be followed.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:4;59:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:4;60:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Non-normative information</dt>
+<dd class="- topic/dd " xtrc="dd:4;61:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Non-normative information includes descriptions that provide background, examples, and other
+              useful information that are not formal requirements or rules that must be followed.
+              The terms non-normative and informative are used interchangeably.</dd>
+</dlentry></dl></p>                <p class="- topic/p " xtrc="p:7;64:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">All information in the specification
+should be considered normative                     unless it is an
+example, an appendix, or is explicitly labeled as informative or 
+                   non-normative. Appendices are always non-normative,
+unless explicitly stated                     otherwise. The DITA specification
+contains examples to help clarify or                     illustrate
+specific aspects of the specification. Because examples are specific
+                    rather than general, they may not illustrate all
+aspects or be the only way to                     accomplish or implement
+an aspect of the specification. Therefore all examples           
+         are non-normative, unless explicitly stated otherwise.</p> 
+         </section>
+<section class="- topic/section " xtrc="section:3;76:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">                <title class="- topic/title " xtrc="title:4;76:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Basic DITA terminology</title>   
+            <p class="- topic/p " xtrc="p:8;77:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The following terminology is used to discuss basic
+DITA concepts:</p>                <dl class="- topic/dl " xtrc="dl:3;78:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><dlentry class="- topic/dlentry " xtrc="dlentry:5;78:48" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:5;79:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA attribute type</dt>
+<dd class="- topic/dd " xtrc="dd:5;80:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An attribute type that is one of the following:<ul class="- topic/ul " xtrc="ul:1;80:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<li class="- topic/li " xtrc="li:1;81:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">One of the base attribute types that are defined by the DITA 
+                                       specification</li>
+<li class="- topic/li " xtrc="li:2;83:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A specialization of either the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;83:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">base</xmlatt> or <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;83:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">props</xmlatt> attribute</li>
+</ul></dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:6;85:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:6;86:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA document</dt>
+<dd class="- topic/dd " xtrc="dd:6;87:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An XML document that conforms to the requirements of this specification. A DITA document <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:3;88:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">MUST</term> have as its root element one of the following elements:<ul class="- topic/ul " xtrc="ul:2;88:127" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+              <li class="- topic/li " xtrc="li:3;89:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;89:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map</xmlelement> or a specialization of the
+                  <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:9;90:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map</xmlelement> element</li>
+              <li class="- topic/li " xtrc="li:4;91:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:10;91:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic</xmlelement> or a specialization of the
+                  <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:11;92:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic</xmlelement> element</li>
+              <li class="- topic/li " xtrc="li:5;93:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:12;93:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">dita</xmlelement>, which cannot be specialized, but which allows
+                documents with multiple sibling topics</li>
+            </ul></dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:7;96:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:7;97:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA document type</dt>
+<dd class="- topic/dd " xtrc="dd:7;98:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A unique set of structural modules, domain modules, and constraint modules that taken together
+            provide the XML element and attribute declarations that define the structure of DITA
+            documents. DITA document types normally are implemented using DITA document-type
+            shells.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:8;102:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:8;103:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA document-type shell</dt>
+<dd class="- topic/dd " xtrc="dd:8;104:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A set of <ph class="- topic/ph " rev="DITA1.3 proposal-13112" xtrc="ph:4;104:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DTD, XSD, or RELAX NG</ph> declarations that implement
+            a DITA document type by using the rules and design patterns that are included in the
+            DITA specification. A DITA document-type shell includes and configures one or more
+            structural modules, zero or more domain modules, and zero or more constraint modules.
+            With the exception of the optional declarations for the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:13;108:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">dita</xmlelement>
+            element and its attributes, DITA document-type shells do not declare any element or
+            attribute types directly.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:9;111:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:9;112:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA element</dt>
+<dd class="- topic/dd " xtrc="dd:9;113:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An XML element instance whose type is a DITA element type. DITA elements must exhibit a
+              <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;114:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">class</xmlatt> attribute that has a value that conforms to the rules for
+            specialization hierarchy specifications.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:10;116:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:10;117:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA element type</dt>
+<dd class="- topic/dd " xtrc="dd:10;118:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element type that is one of the following:<ul class="- topic/ul " xtrc="ul:3;118:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<li class="- topic/li " xtrc="li:6;119:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">One of the base element types that are defined by the DITA   
+                                     specification</li>
+<li class="- topic/li " xtrc="li:7;121:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A specialization of one of the base element types</li>
+</ul>A DITA element type is declared in exactly one vocabulary module.
+                              DITA element types may only exhibit
+attributes that are DITA attribute                               types.</dd>
+</dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:11;126:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+          <dt class="- topic/dt " xtrc="dt:11;127:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map branch</dt>
+          <dd class="- topic/dd " rev="review-2" xtrc="dd:11;128:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A map branch consists of a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:14;128:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicref</xmlelement> element,
+            along with any child elements and all resources that are referenced by the original
+            element or its children.</dd>
+          <dd class="- topic/dd " xtrc="dd:12;131:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+            <draft-comment author="robander" class="- topic/draft-comment " disposition="open" time="21 April 2014" translate="no" xtrc="draft-comment:3;132:86" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Wondering if we
+              should add "Also referred to simply as 'branch' when used in a map context", or
+              perhaps change the term to "map branch or branch" - I do like having it sorted with
+              the other map terms, and using "map branch" does that while keeping our current
+              alphabetical order.</draft-comment>
+          </dd>
+        </dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:12;138:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:12;139:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map instance </dt>
+<dd class="- topic/dd " xtrc="dd:13;140:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An occurrence of a map type in a document.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:13;141:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:13;142:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map type</dt>
+<dd class="- topic/dd " xtrc="dd:14;143:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element type that defines a set of relationships among topic
+                              instances. The map type provides the
+root element and, through the                               contained
+element types, the substructure for the map instances. The       
+                       map substructure provides hierarchy, group,
+and matrix organization of                               references
+to topic instances.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:14;150:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:14;151:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">structural type instance</dt>
+<dd class="- topic/dd " xtrc="dd:15;152:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An occurrence of a topic type or a map type in a document.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:15;153:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:15;154:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic instance </dt>
+<dd class="- topic/dd " xtrc="dd:16;155:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An occurrence of a topic type in a document.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:16;156:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:16;157:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic type</dt>
+<dd class="- topic/dd " xtrc="dd:17;158:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element type that defines a complete unit of content. The topic type provides the root
+            element for the topic and, through the contained element types, the substructure for the
+            topic instances. The root element of the topic type is not necessarily the same as the
+            root element of a document type; document types can nest multiple topic types and might
+            also declare non-DITA wrapper elements as the root element for compatibility with other
+            processes.</dd>
+</dlentry></dl>           </section>
+<section class="- topic/section " xtrc="section:4;165:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">                <title class="- topic/title " xtrc="title:5;165:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Specialization terminology</title> 
+              <p class="- topic/p " xtrc="p:9;166:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The following terminology is used to discuss DITA
+specialization:</p>                <dl class="- topic/dl " xtrc="dl:4;167:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><dlentry class="- topic/dlentry " xtrc="dlentry:17;167:49" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:17;168:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">base content model</dt>
+<dd class="- topic/dd " xtrc="dd:18;169:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The content model of a DITA element before specialization or the
+                              application of constraints or extensions.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:18;171:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:18;172:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">base type</dt>
+<dd class="- topic/dd " xtrc="dd:19;173:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element or attribute type that is not a specialization. All
+base                               types are defined by the DITA specification.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:19;175:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:19;176:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">extension element</dt>
+<dd class="- topic/dd " xtrc="dd:20;177:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Within a vocabulary module, an element type that can be extended,
+                              replaced, or constrained for use in
+a DITA document type.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:20;180:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:20;181:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">generalization</dt>
+<dd class="- topic/dd " xtrc="dd:21;182:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The process by which a specialized element is transformed into
+a                               less-specialized ancestor element
+or a specialized attribute is                               transformed
+into a less-specialized ancestor attribute. The original         
+                     specialization-hierarchy information may be preserved
+in the                               generalized instance, thus allowing
+the original specialized type to                               be
+recreated from the generalized instance.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:21;190:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:21;191:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">restricted content model</dt>
+<dd class="- topic/dd " xtrc="dd:22;192:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">For a DITA element type, a content model that has been restricted from the base content model
+            for the element type by one or more of the following mechanisms:<ul class="- topic/ul " xtrc="ul:4;193:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+              <li class="- topic/li " xtrc="li:8;194:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Removing optional elements</li>
+              <li class="- topic/li " xtrc="li:9;195:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Requiring optional elements</li>
+              <li class="- topic/li " xtrc="li:10;196:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Ordering of unordered elements</li>
+              <li class="- topic/li " xtrc="li:11;197:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Restricting repeatable (but optional) elements from repeating</li>
+            </ul>Content models can be restricted through the use of constraint modules or through
+            specialization.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:22;200:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:22;201:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">selective domain extension</dt>
+<dd class="- topic/dd " xtrc="dd:23;202:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An extension that replaces an extension element with element types
+that                               are defined in an domain module,
+thus making the base type unavailable                            
+  in the DITA document-type shell that configures the extension.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:23;206:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:23;207:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">specialization</dt>
+<dd class="- topic/dd " xtrc="dd:24;208:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">(1) The act of defining new element or attribute types as a semantic
+                              refinement of existing element or attribute
+types</dd>
+<dd class="- topic/dd " xtrc="dd:25;211:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">(2) An element or attribute type that is a specialization of a
+base                               type</dd>
+<dd class="- topic/dd " xtrc="dd:26;213:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">(3) A process by which a generalized element is transformed into
+one of                               its more specialized element
+types or a generalized attribute is                              
+transformed into a more specialized attribute.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:24;217:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:24;218:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">specialization hierarchy</dt>
+<dd class="- topic/dd " xtrc="dd:27;219:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The sequence of element or attribute types, from the most general
+to                               most specialized, from which a given
+element or attribute type is                               specialized.
+The specialization hierarchy for a DITA element is               
+               formally declared through its <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:6;223:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">class</xmlatt> attribute.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:25;224:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:25;225:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">specialization parent</dt>
+<dd class="- topic/dd " xtrc="dd:28;226:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">For a given DITA element type, the most specialized of its ancestors
+in                               its specialization hierarchy.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:26;228:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:26;229:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">specialized attribute type</dt>
+<dd class="- topic/dd " xtrc="dd:29;230:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An attribute type that is defined as a semantic refinement of another attribute type. The
+            attribute type must be specialized from either the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:7;231:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">base</xmlatt> or
+              <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:8;232:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">props</xmlatt> attribute, and its range of permissible values must be a subset
+            of or identical to the values allowed by the original attribute type.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:27;234:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:27;235:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">specialized element type</dt>
+<dd class="- topic/dd " xtrc="dd:30;236:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element type that is defined as a semantic refinement of an existing element type. The
+            content allowed by the specialized element type must be a subset of or identical to the
+            content allowed by the original element type. Within a DITA document, all specialized
+            element types must be refinements of one of the base element types, with the exception
+            of elements that are used in the context of <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:15;240:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">foreign</xmlelement> or
+              <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:16;241:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">unknown</xmlelement> elements.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:28;242:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:28;243:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">structural type</dt>
+<dd class="- topic/dd " xtrc="dd:31;244:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A topic type or map type.</dd>
+</dlentry></dl>           </section>
+<section class="- topic/section " xtrc="section:5;246:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">                <title class="- topic/title " xtrc="title:6;246:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">DITA modules</title>             
+  <p class="- topic/p " xtrc="p:10;247:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The following terminology is used to discuss DITA modules:</p> 
+              <dl class="- topic/dl " xtrc="dl:5;248:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><dlentry class="- topic/dlentry " xtrc="dlentry:29;248:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:29;249:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">attribute domain module</dt>
+<dd class="- topic/dd " xtrc="dd:32;250:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A domain module that defines exactly one specialization of either the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:9;250:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">base</xmlatt> or
+              <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:10;251:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">props</xmlatt> attribute.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:30;252:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:30;253:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">constraint module</dt>
+<dd class="- topic/dd " xtrc="dd:33;254:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A set of declarations that imposes additional constraints onto
+the                               element or attribute types that
+are defined in a specific vocabulary                             
+ module.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:31;258:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:31;259:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">domain module</dt>
+<dd class="- topic/dd " xtrc="dd:34;260:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A set of element types or an attribute type that supports a specific subject or functional area.
+            Element types or attribute types in a domain can be integrated with topic types or map
+            types to enhance semantic support for particular kinds of content. For example, the
+            structural type <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:17;263:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic</xmlelement> declares the
+              <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:18;264:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">keyword</xmlelement> element; when integrated with a domain for describing
+            user interfaces, new keyword specializations (such as <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:19;265:79" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">wintitle</xmlelement>)
+            become available wherever <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:20;266:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">keyword</xmlelement> was allowed in the original
+            structural type.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:32;268:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:32;269:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">element domain module</dt>
+<dd class="- topic/dd " xtrc="dd:35;270:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A domain module that defines one or more element types for use
+within                               maps or topics.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:33;272:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:33;273:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">map module</dt>
+<dd class="- topic/dd " xtrc="dd:36;274:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A structural module that defines a map type.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:34;275:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:34;276:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">structural module</dt>
+<dd class="- topic/dd " xtrc="dd:37;277:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A vocabulary module that defines a top-level map type or topic type. Structural modules also can
+            define specializations of elements from domain modules or other structural modules.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:35;279:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:35;280:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topic module</dt>
+<dd class="- topic/dd " xtrc="dd:38;281:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A structural module that defines a top-level topic type.</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:36;282:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:36;283:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">vocabulary module</dt>
+<dd class="- topic/dd " xtrc="dd:39;284:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A uniquely-named unit of element type or attribute type declaration.
+                              There are two types of vocabulary modules:
+structural modules and                               domain modules.
+For a given map type, topic type, or domain, there is            
+                  exactly one vocabulary module that defines it.</dd>
+</dlentry></dl>                <p class="- topic/p " xtrc="p:11;289:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The following figure illustrates the relationship between a DTD-based DITA
+        document, its DITA document-type shell, and the various vocabulary modules that it uses. <ph class="- topic/ph " rev="xml-grammars" xtrc="ph:5;291:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A similar structure applies to DITA documents that use other XML
+          grammars.</ph><fig class="- topic/fig " xtrc="fig:1;292:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+          <title class="- topic/title " xtrc="title:7;293:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Instances, modules, and declarations</title>
+          <image class="- topic/image " href="../../images/instances-modules-declarations-01.jpg" placement="inline" width="5in" xtrc="image:1;294:88" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita" dita-ot:image-width="581" dita-ot:image-height="430" dita-ot:horizontal-dpi="96" dita-ot:vertical-dpi="96">
+            <alt class="- topic/alt " xtrc="alt:1;295:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Shows the relationship between a DITA document, its DITA document-type shell, and
+              the various document-type modules that it uses.</alt>
+          </image>
+        </fig></p>           </section>
+<section class="- topic/section " xtrc="section:6;299:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">                <title class="- topic/title " xtrc="title:8;299:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Linking and addressing terms</title>
+      <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="28 November 2014" translate="no" xtrc="draft-comment:4;300:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+        <p class="- topic/p " xtrc="p:12;301:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Moving comments from DITAweb:</p>
+        <p class="- topic/p " xtrc="p:13;302:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">[Robert Anderson:] Just realized, after all that work on cleaning up the terms in the
+          keys section, that we also define key terms here. Some terms overlap (key definition, key
+          scope, key space), the rest do not. Those that overlap do not use the same definition. I'm
+          on the fence about whether the terms should be in both spots. But if they are repeated, we
+          should use conref, and use the definitions from the new keys section. We should also
+          decide if the key terms that only appear here should appear in the other key topic: key
+          resolution context, key name.</p>
+        <p class="- topic/p " xtrc="p:14;309:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">[Robert Anderson] Current plan: use conref for the &lt;dl&gt; of keys concepts so that
+          they are consistent here and in the keys section.</p>
+        <p class="- topic/p " xtrc="p:15;311:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">[Eliot Kimber] All formal definitions should be here and should not be repeated elsewhere
+          in the spec. </p>
+        <p class="- topic/p " xtrc="p:16;313:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">[Robert Anderson] I don't think I could understand the keys topics without having that
+          list of concepts available together with the content. I don't think most people read this
+          topic in general when approaching the specification, and if we put keys definitions here
+          (and only here) they will get lost. </p>
+        <p class="- topic/p " xtrc="p:17;317:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">[Kris Eberlein] We must have the key definitions in the keys topics. Otherwise, no one
+          will read them or understand the material. Obviously, we must ensure that definitions are
+          properly implemented using a reuse mechanism. </p>
+      </draft-comment> 
+              <p class="- topic/p " xtrc="p:18;321:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The following terminology is used to discuss linking
+and addressing terms:</p>                <dl class="- topic/dl " xtrc="dl:6;322:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><dlentry class="- topic/dlentry " xtrc="dlentry:37;322:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:37;323:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">key name</dt>
+<dd class="- topic/dd " xtrc="dd:40;324:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An identifier defined by a value of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:11;324:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">keys</xmlatt> attribute. A key is bound to one
+            or more of the following items:<ul class="- topic/ul " xtrc="ul:5;325:48" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+              <li class="- topic/li " xtrc="li:12;326:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A resource addressed by the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:21;326:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicref</xmlelement> element or a
+                specialization of the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:22;327:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicref</xmlelement> element</li>
+              <li class="- topic/li " xtrc="li:13;328:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element contained within the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:23;328:63" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicmeta</xmlelement> element of the
+                  <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:24;329:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicref</xmlelement> element or a specialization of the
+                  <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:25;330:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicref</xmlelement> element</li>
+            </ul></dd>
+</dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:38;333:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+          <dt class="- topic/dt " xtrc="dt:38;334:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">key definition</dt>
+          <dd class="- topic/dd " xtrc="dd:41;335:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:26;335:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicref</xmlelement> element or specialization of a
+              <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:27;336:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">topicref</xmlelement> element that specifies the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:12;336:84" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">keys</xmlatt>
+            attribute and defines one or more key names.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13004" xtrc="dlentry:39;339:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+          <dt class="- topic/dt " xtrc="dt:39;340:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">key scope</dt>
+          <dd class="- topic/dd " xtrc="dd:42;341:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">A root map <ph class="- topic/ph " rev="review-2" xtrc="ph:6;341:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">or map branch that is</ph> associated with a unique key
+            space for purposes of key reference resolution.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:40;344:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+          <dt class="- topic/dt " xtrc="dt:40;345:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">key space</dt>
+          <dd class="- topic/dd " rev="DITA1.3 proposal-13004" xtrc="dd:43;346:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The set of unique key names that are defined for a given
+            key scope. Within a given key scope, a key name has at most one <ph class="- topic/ph " rev="review-2" xtrc="ph:7;348:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">effective</ph> definition, as determined by the key definition precedence rules.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:41;350:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+          <dt class="- topic/dt " xtrc="dt:41;351:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">key resolution context</dt>
+          <dd class="- topic/dd " rev="DITA1.3 proposal-13004" xtrc="dd:44;352:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The key scope that establishes the context for resolving key
+            references. For a given key-resolution instance, there is at most one key scope that
+            defines the effective key space, which in turn provides the effective key
+            definition.</dd>
+        </dlentry><dlentry class="- topic/dlentry " id="referenced-element" xtrc="dlentry:42;356:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:42;357:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">referenced element</dt>
+<dd class="- topic/dd " xtrc="dd:45;358:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element that is referenced by another DITA element. See also <term class="- topic/term " xtrc="term:4;358:75" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">referencing
+element</term>.</dd>
+<dd class="- topic/dd " xtrc="dd:46;360:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><b class="+ topic/ph hi-d/b " xtrc="b:1;360:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Example</b><p class="- topic/p " xtrc="p:19;360:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Consider the following code sample from a
+                <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;361:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">installation-reuse.dita</filepath> topic. The
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:28;362:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">step</xmlelement> element that it contains is a referenced element;
+              other DITA topics reference the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:29;363:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">step</xmlelement> element by using the
+                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:13;364:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">conref</xmlatt>
+              attribute.<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;365:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">&lt;step id="run-startcmd-script"&gt;
+	&lt;cmd&gt;Run the startcmd script that is applicable to your operating-system environment.&lt;/cmd&gt;
+&lt;/step&gt;</codeblock></p></dd>
+</dlentry><dlentry class="- topic/dlentry " id="referencing-element" xtrc="dlentry:43;368:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:43;369:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">referencing element</dt>
+<dd class="- topic/dd " xtrc="dd:47;370:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An element that references another DITA element by specifying
+an                               addressing attribute. See also <term class="- topic/term " xtrc="term:5;371:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">referenced
+element</term> and <term class="- topic/term " xtrc="term:6;372:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">addressing attribute</term></dd>
+<dd class="- topic/dd " xtrc="dd:48;373:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita"><b class="+ topic/ph hi-d/b " xtrc="b:2;373:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">Example</b><p class="- topic/p " xtrc="p:20;373:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">The following <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:30;373:48" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">step</xmlelement> element is a referencing element.
+              It uses the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:14;374:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">conref</xmlatt> attribute to reference a
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:31;375:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">step</xmlelement> element in the
+                <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;376:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">installation-reuse.dita</filepath>
+              topic.<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;377:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">&lt;step conref="installation-reuse.dita#reuse/run-startcmd-script"&gt;
+	&lt;cmd/&gt;
+&lt;/step&gt;</codeblock></p></dd>
+</dlentry><dlentry class="- topic/dlentry " id="addressing-attribute" xtrc="dlentry:44;380:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">
+<dt class="- topic/dt " xtrc="dt:44;381:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">addressing attribute</dt>
+<dd class="- topic/dd " xtrc="dd:49;382:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">An attribute, such as <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:15;382:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">conref</xmlatt>, <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:16;382:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">conkeyref</xmlatt>,
+              <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:17;383:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">keyref</xmlatt>, and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:18;383:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dita-terminology.dita">href</xmlatt>, that specifies an address.</dd>
+</dlentry></dl>           </section>
+</conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:2;6:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/introduction-to-dita.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/introduction-to-dita.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:1;5:78" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/introduction-to-dita.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Introduction to DITA</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The Darwin Information Typing Architecture (DITA) is an XML-based architecture for         authoring, producing, and delivering topic-oriented, information-typed content that can be         reused and single-sourced in a variety of ways. While DITA historically has been driven by         the requirements of large-scale technical documentation authoring, management, and delivery,         it is a standard that is applicable to any kind of publication or information that might be         presented to readers, including interactive training and educational materials, standards,         reports, business documents, trade books, travel and nature guides, and more. </desc></link></linkpool></related-links></concept>

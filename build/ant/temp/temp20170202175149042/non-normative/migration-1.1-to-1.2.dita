@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="migrating_from_1.1_to_1.2" xml:lang="en-us" xtrc="concept:1;4:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+ <title class="- topic/title " xtrc="title:1;5:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Migrating from DITA 1.1 to 1.2</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">(Non-normative) DITA 1.2 is compatible with prior versions of the DITA specification in
+  that all valid DITA 1.0 and 1.1 documents are valid DITA 1.2 documents. However, some changes to
+  existing document type shells and specializations might be needed in order to maintain the same
+  behavior under DITA 1.2 or to take full advantage of new DITA 1.2 features.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;10:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+  <section class="- topic/section " xtrc="section:1;11:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+   <title class="- topic/title " xtrc="title:2;12:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Migration of task specializations</title>
+   <p class="- topic/p " xtrc="p:1;13:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">DITA 1.2 relaxes the content model for the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;13:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">taskbody</xmlelement> element in the base <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;13:116" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">task</xmlelement> topic
+    type. Specializations of <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;14:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">task</xmlelement> that use the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;14:85" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">taskbody</xmlelement> element unchanged or use the
+    content-model parameter entities for task body will use the more general DITA 1.2 task model
+    when used with the DITA 1.2 task module.</p>
+   <p class="- topic/p " xtrc="p:2;17:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">If a document should use the strict task model instead of the new general task model:<ul class="- topic/ul " xtrc="ul:1;17:96" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+     <li class="- topic/li " xtrc="li:1;18:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Documents that use the task topic type included with the OASIS DITA 1.2 specification
+       <b class="+ topic/ph hi-d/b " xtrc="b:1;19:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">will not</b> need to migrate. This includes documents that use task inside of the ditabase
+      document type included with the DITA 1.2 specification.</li>
+     <li class="- topic/li " xtrc="li:2;21:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Documents that use the standard task module inside of a new document type shell, or in a
+      local ditabase document type, <b class="+ topic/ph hi-d/b " xtrc="b:2;22:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">will</b> need to migrate in order to preserve the
+      module.</li>
+     <li class="- topic/li " xtrc="li:3;24:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Documents that use a specialization of task with a specialized element to replace
+      <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;25:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">taskbody</xmlelement> <b class="+ topic/ph hi-d/b " xtrc="b:3;25:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">will not</b> need to migrate. Documents that specialize task but reuse the
+      <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;26:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">taskbody</xmlelement> element <b class="+ topic/ph hi-d/b " xtrc="b:4;26:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">will</b> need to migrate.</li>
+    </ul></p>
+   <p class="- topic/p " xtrc="p:3;28:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">For documents that do not use the standard OASIS DITA doctypes for which the strict task model
+    from DITA 1.0 and 1.1 is desired, the strict task model can be restored by using the strict
+    Taskbody Constraint module, by creating and integrating a constraint module similar to the
+    strict Taskbody Constraint, or by adjusting the specialization's content models to impose the
+    appropriate constraints.</p>
+   <p class="- topic/p " xtrc="p:4;33:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">To integrate the strict Taskbody Constraint module in a DTD, add the following content
+    immediately before the section that imports the "topic.mod" file. The
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;35:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">strictTaskbodyConstraint.mod</filepath> file must be defined in any catalog used to
+    locate DTD modules. See the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;36:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">task.dtd</filepath> file in the OASIS DITA 1.2 DTD package
+    for a
+    sample:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;38:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">&lt;!ENTITY % strictTaskbody-c-def  
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.2 Strict Taskbody Constraint//EN" 
+  "strictTaskbodyConstraint.mod"&gt;
+%strictTaskbody-c-def;</codeblock></p>
+   <p class="- topic/p " xtrc="p:5;42:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">To do the same thing for a schema, the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:3;42:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">strictTaskbodyConstraintMod.xsd</filepath>
+    file must be defined in the catalog used to resolve the schema using the following URN. The
+    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;44:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">xs:include</xmlelement> element should be placed immediately before the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;44:101" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">xs:include</xmlelement> for
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:4;45:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">topicMod.xsd</filepath>:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;45:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">&lt;xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd:1.2" /&gt;</codeblock></p>
+   <p class="- topic/p " xtrc="p:6;46:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Documents which use the task document type from OASIS and wish to make use of the general
+    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:9;47:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">taskbody</xmlelement> model must also be migrated. In this case, the documents must be updated to
+    reference the General Task document type instead of the traditional Task document type. For
+    DTD-based documents, this means that the document type declaration must change as follows within
+    each task
+    document:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;51:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">DITA 1.1:
+&lt;!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd"&gt;
+
+DITA 1.2:
+&lt;!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN"
+ "generalTask.dtd"&gt;</codeblock></p>
+   
+   <p class="- topic/p " xtrc="p:7;59:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">For Schema based documents, the xsi:noNamespaceSchemaLocation attribute must change on each
+    task element:
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;61:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">DITA 1.1:
+&lt;task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:task.xsd"
+
+DITA 1.2:
+&lt;task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd"</codeblock></p>
+  </section>
+  <section class="- topic/section " xtrc="section:2;69:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+   <title class="- topic/title " xtrc="title:3;70:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Use of glossary document type shell and module files</title>
+   <p class="- topic/p " xtrc="p:8;71:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">The files named <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:5;71:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary.dtd</filepath>, <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:6;71:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary.mod</filepath>, and
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:7;72:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary.ent</filepath> in DITA 1.1 have been renamed to
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:8;73:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentry.dtd</filepath>, <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:9;73:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentry.mod</filepath>, and
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:10;74:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentry.ent</filepath> in order to follow the file naming requirements for
+    vocabulary modules. The XML Schema files <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:11;75:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary.xsd</filepath>,
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:12;76:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossaryGrp.xsd</filepath>, and <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:13;76:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossaryMod.xsd</filepath> have been
+    renamed to <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:14;77:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentry.xsd</filepath>, <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:15;77:63" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentryGrp.xsd</filepath>, and
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:16;78:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentryMod.xsd</filepath>.The DITA 1.2 entity resolution catalogs map the public
+    identifiers for the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:17;79:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary.*</filepath> files to the corresponding
+     <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:18;80:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentry.*</filepath> files and URNs for the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:19;80:73" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary*.xsd</filepath>
+    files to the corresponding <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:20;81:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentry*.xsd</filepath> files, meaning that existing
+    documents and shell document types that refer to the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:21;82:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary.*</filepath> files will
+    continue to work with DITA 1.2.</p>
+   <p class="- topic/p " xtrc="p:9;84:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">However, shell document types that refer to the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:22;84:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossary.*</filepath> files should
+    be updated to refer to the corresponding <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:23;85:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">glossentry.*</filepath> files as it is
+    convenient to do so.</p>
+  </section>
+  <section class="- topic/section " xtrc="section:3;88:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+   <title class="- topic/title " xtrc="title:4;89:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Migration of specializations to reflect new implementation patterns</title>
+   <p class="- topic/p " xtrc="p:10;90:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">DITA 1.2 defines new implementation patterns for specializations. It is not necessary to
+    update existing specialization modules to reflect these new patterns. However, specializations
+    that want to enable the use of constraint modules must be updated to provide per-element-type
+    content model and attribute list parameter entities.</p>
+   <p class="- topic/p " xtrc="p:11;94:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Existing specializations may benefit from the new DITA 1.2 ability to have structural modules
+    that depend on and specialize elements from domains.</p>
+  </section>
+  <section class="- topic/section " xtrc="section:4;97:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+   <title class="- topic/title " xtrc="title:5;98:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Update of domains attributes for specializations</title>
+   <p class="- topic/p " xtrc="p:12;99:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">In DITA 1.1 the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;99:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">domains</xmlatt> attribute only listed the domains on which a given map or topic type
+    depended. In DITA 1.2 the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;100:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">domains</xmlatt> attribute should also list structural modules and constraint
+    modules, providing a complete list of the vocabulary modules that a given map or topic type
+    depends on in the context of a given DITA document type.</p>
+   <p class="- topic/p " xtrc="p:13;103:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">Existing structural specializations should be updated to include the structural module names
+    in their domains attribute configuration entities. Having a complete declaration of all
+    structural and domains modules in the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;105:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">domains</xmlatt> attribute allows processors to determine the set
+    of required modules for a given topic or map document without also examining all the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;106:98" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">class</xmlatt>
+    attributes of all the elements in the document.</p>
+  </section>
+  <section class="- topic/section " xtrc="section:5;109:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">
+   <title class="- topic/title " xtrc="title:6;110:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">XML Schema declaration of domains attribute</title>
+   <p class="- topic/p " xtrc="p:14;111:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">For XML schema shell document types, the way the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;111:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">domains</xmlatt> attribute is
+        declared has changed. In DITA 1.1 the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:6;112:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">domains</xmlatt> attribute was defined using
+        an <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:10;113:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">xs:redefine</xmlelement> element. For DITA 1.2 the attribute is defined in
+        document type shells and referenced from modules, like
+        so:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:5;115:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">&lt;xs:attributeGroup name="domains-att"&gt;
+    &lt;xs:attribute name="domains" type="xs:string" 
+     default="(topic ui-d) 
+              (topic hi-d) 
+              (topic sw-d) 
+              (topic pr-d) 
+              (topic ut-d) 
+              (topic indexing-d) 
+              (topic hazard-d) 
+              (topic abbrev-d)"
+     /&gt;
+&lt;/xs:attributeGroup&gt;</codeblock></p>
+   <p class="- topic/p " xtrc="p:15;127:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/migration-1.1-to-1.2.dita">XML Schema document type shells must be updated to use the new declaration mechanism in order
+    to continue to be valid XSD schemas.</p>
+  </section>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:7;11:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><link class="- topic/link " format="dita" href="../non-normative/non-normative-information.dita" mapclass="- map/topicref bookmap/appendix " role="parent" scope="local" type="concept" xtrc="topicref:1;4:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Non-normative information</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">This section contains non-normative information, including topics about new features         in DITA 1.2 and migrating from DITA 1.1 to DITA 1.2. </desc></link></linkpool></related-links></concept>

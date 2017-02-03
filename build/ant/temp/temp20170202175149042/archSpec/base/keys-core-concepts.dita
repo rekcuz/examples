@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="concept_igf_3c4_kn" xtrc="concept:1;3:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Core concepts for working with keys</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita"> The concepts described below are critical for a full understanding of keys and key
+  processing.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;7:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+  <section class="- topic/section " xtrc="section:1;8:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+   <title class="- topic/title " xtrc="title:2;9:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Core definitions related to keys</title>
+   <dl class="- topic/dl " xtrc="dl:1;10:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <dlentry class="- topic/dlentry " rev="review-2" xtrc="dlentry:1;11:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <dt class="- topic/dt " xtrc="dt:1;12:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">resource</dt>
+     <dd class="- topic/dd " xtrc="dd:1;13:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">For the purposes of keys and key resolution, resource can mean an object addressed by URI,
+            text, metadata, etc.</dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:2;16:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <dt class="- topic/dt " xtrc="dt:2;17:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">key</dt>
+     <dd class="- topic/dd " xtrc="dd:2;18:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A name for a resource. <ph class="- topic/ph " rev="review-2" xtrc="ph:1;18:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">See <xref class="- topic/xref " href="using_keys_to_address_dita_elements.dita#using_keys_to_address_dita_elements/syntax" xtrc="xref:1;19:101" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita" type="section"><?ditaot gentext?>Syntax</xref>
+       for more information.</ph></dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:3;22:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <dt class="- topic/dt " xtrc="dt:3;23:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">key definition</dt>
+     <dd class="- topic/dd " xtrc="dd:3;24:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;24:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">topicref</xmlelement> element or specialization that binds one or more key
+      names to resources.</dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:4;27:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <dt class="- topic/dt " xtrc="dt:4;28:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">key reference</dt>
+     <dd class="- topic/dd " xtrc="dd:4;29:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">An attribute that references a key, such as <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;29:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyref</xmlatt> or
+       <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;30:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">conkeyref</xmlatt>.<draft-comment author="chris.nitchie" class="- topic/draft-comment " disposition="accepted" translate="no" xtrc="draft-comment:1;30:96" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Look
+       for places where we talk about elements as key references to make sure we're being
+       consistent.</draft-comment></dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:5;34:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <dt class="- topic/dt " xtrc="dt:5;35:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">key space</dt>
+     <dd class="- topic/dd " xtrc="dd:5;36:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A list of key definitions that are used to resolve key references.</dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:6;38:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <dt class="- topic/dt " xtrc="dt:6;39:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">effective key definition</dt>
+     <dd class="- topic/dd " xtrc="dd:6;40:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">The definition for a key within a key space that is used to resolve references to that key.
+      A key might have multiple definitions within a key space, but only one of those definitions is
+      effective.</dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:7;44:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <dt class="- topic/dt " xtrc="dt:7;45:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">key scope</dt>
+     <dd class="- topic/dd " xtrc="dd:7;46:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A map or section of a map that defines its own key space and serves as the resolution
+      context for its key references.</dd>
+    </dlentry>
+   </dl>
+  </section>
+  <section class="- topic/section " xtrc="section:2;51:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+   <title class="- topic/title " xtrc="title:3;52:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Key definitions</title>
+   <p class="- topic/p " xtrc="p:1;53:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita"><ph class="- topic/ph " rev="review-2" xtrc="ph:2;53:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A key definition binds one or more keys to zero or more resources:</ph></p>
+   <ul class="- topic/ul " xtrc="ul:1;54:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <li class="- topic/li " xtrc="li:1;55:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Any <ph class="- topic/ph " rev="review-2" xtrc="ph:3;55:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">URI-addressed resource</ph> that is referenced directly by the
+            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;56:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">href</xmlatt> attribute or indirectly by the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;56:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyref</xmlatt> attribute.
+          References to the key are considered references to <ph class="- topic/ph " rev="review-2" xtrc="ph:4;57:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">the URI-addressed
+            resource</ph>.</li>
+    <li class="- topic/li " xtrc="li:2;59:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita"><ph class="- topic/ph " rev="review-2" xtrc="ph:5;59:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">The child elements of any <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;59:66" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">topicmeta</xmlelement>
+            elements.</ph> The content of those elements can be used to populate the content of
+          elements that reference the definition.</li>
+   </ul>
+   <p class="- topic/p " xtrc="p:2;63:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">If a key definition does not contain a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;63:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">topicmeta</xmlelement> element and does not
+     <ph class="- topic/ph " rev="review-2" xtrc="ph:6;64:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">refer to</ph> a resource by <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;64:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">href</xmlatt> or
+    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:6;65:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyref</xmlatt>, it is nonetheless a valid key definition. References to the key
+    definition are considered resolvable, but no linking or content population occurs.</p>
+  </section>
+  <section class="- topic/section " xtrc="section:3;68:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+   <title class="- topic/title " xtrc="title:4;69:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Key scopes</title>
+   <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="7 December 2014" translate="no" xtrc="draft-comment:2;70:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <p class="- topic/p " xtrc="p:3;71:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">[Eliot Kimber] I expected to see a complete topic on key scopes but there doesn't seem to be
+     one. I think there needs to be one. Or else all of these sections need to be promoted to
+     topics.</p>
+   </draft-comment>
+   <p class="- topic/p " xtrc="p:4;75:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">All key definitions and key references exist within a key scope. Within a map hierarchy,  key
+    scopes are bounded by</p>
+   <ul class="- topic/ul " id="ul_nfz_hjp_kn" xtrc="ul:2;77:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <li class="- topic/li " xtrc="li:3;78:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">The root map.</li>
+    <li class="- topic/li " xtrc="li:4;79:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">The root element of submaps whose root elements specify the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:7;79:77" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyscope</xmlatt>
+     attribute.</li>
+    <li class="- topic/li " xtrc="li:5;81:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Any <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;81:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">topicref</xmlelement> elements or <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;81:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">topicref</xmlelement>
+     specializations that specify the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:8;82:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyscope</xmlatt> attribute.</li>
+   </ul>
+   <p class="- topic/p " xtrc="p:5;84:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:9;84:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyscope</xmlatt> attribute specifies a name or names for the scope. If
+          <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:10;85:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyscope</xmlatt> is specified both on the root element in a map and on a
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;86:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">topicref</xmlelement> element that references that map, only one scope is
+        introduced; its names are the union of the names that are specified by both
+          <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:11;88:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keyscope</xmlatt> attributes.</p>
+  </section>
+  <section class="- topic/section " xtrc="section:4;90:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+   <title class="- topic/title " xtrc="title:5;91:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Key spaces</title>
+   <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " disposition="open" translate="no" xtrc="draft-comment:3;92:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <p class="- topic/p " xtrc="p:6;93:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">I hate the following phrases:</p>
+    <ul class="- topic/ul " xtrc="ul:3;94:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+     <li class="- topic/li " xtrc="li:6;95:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">key scope's key space</li>
+     <li class="- topic/li " xtrc="li:7;96:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">parent scope's key space</li>
+    </ul>
+   </draft-comment>
+   <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="7 December 2014" translate="no" xtrc="draft-comment:4;99:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <p class="- topic/p " xtrc="p:7;100:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">[Eliot Kimber] This section refers to scope-qualified key names but scope-qualification of
+     key names has not actually been defined or explained. Need to have a section that clearly
+     defines how scope-qualified key names are constructed. This is needed in part to make the
+     discussion of key definition precedence possible for the example shown in the comment about
+     what the precedence rules should be. </p>
+   </draft-comment>
+   <p class="- topic/p " xtrc="p:8;106:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A key scope is associated with exactly one key space. That key space contains all key
+    definitions that are located directly within the scope; it may also contain definitions that
+    exist in other scopes. Specifically, a key scope's key space is comprised of the following key
+    definitions, in order of precedence:</p>
+   <ol class="- topic/ol " id="ol_w41_rjp_kn" xtrc="ol:1;110:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <li class="- topic/li " xtrc="li:8;111:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">All key definitions from the parent key scope's key space, if any.</li>
+    <li class="- topic/li " xtrc="li:9;112:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Key definitions within the scope-defining element, including those defined in
+     directly-addressed, locally-scoped submaps, but excluding those defined in child scopes.</li>
+    <li class="- topic/li " xtrc="li:10;114:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">The key definitions from child scopes, with each key prepended by the child scope name
+     followed by a period. If a child scope has multiple names, the keys in that scope are
+     addressable from the parent scope using any of the scope names as a prefix.<draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="7 December 2014" translate="no" xtrc="draft-comment:5;117:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+      <p class="- topic/p " xtrc="p:9;118:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">[Eliot Kimber] As far as I can tell, this is the only place that the construction of
+       scope-qualified key names is specified. The general effect of key scopes for creating
+       scope-qualified names needs to be explained more generally, e.g., under the preceding key
+       scopes section. I wouldn't have even noticed this if I wasn't doing a very close reading and
+       if I didn't already know how key scopes are supposed to work. </p>
+     </draft-comment></li>
+   </ol>
+   <note class="- topic/note " xtrc="note:1;125:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Because of rules 1 and 3, the key space associated with a child scope includes the
+    scope-qualified copies of its own keys that are inherited from the parent scope's key space, as
+    well as those from other "sibling" scopes.</note>
+   <p class="- topic/p " xtrc="p:10;128:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">The key space associated with a key scope is used to resolve all key references that occur
+    immediately within that scope. Key references in child scopes are resolved using the key spaces
+    that are associated with those child scopes.</p>
+  </section>
+  <section class="- topic/section " xtrc="section:5;132:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+   <title class="- topic/title " xtrc="title:6;133:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Effective key definitions</title>
+   <p class="- topic/p " xtrc="p:11;134:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A key space can contain many definitions for a given key, but only one definition is effective
+    for the purpose of resolving key references.</p>
+   <p class="- topic/p " xtrc="p:12;136:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">When a key has a definition in a parent scope's key space, that definition is effective.
+        Otherwise, a key definition is effective if it is first in a breadth-first traversal of the
+        locally-scoped submaps beneath the scope-defining element. Put another way, a key definition
+        is effective if it is the first definition in the shallowest map for that key. This allows
+        higher-level map authors to override keys defined in referenced submaps.</p>
+   <note class="- topic/note " xtrc="note:2;141:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">A key definition that specifies more than one key name in its <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:12;141:80" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">keys</xmlatt>
+    attribute may be the effective definition for some of its keys but not for others.</note>
+   <p class="- topic/p " xtrc="p:13;143:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Within a key scope, keys do not have to be defined before they are referenced. The key space
+    is effective for the entire scope, so the order of key definitions and key references relative
+    to one another is not significant. This means that all key spaces for a root map must be
+    determined before any key reference processing can be performed, and that maps referenced solely
+    by key reference have no bearing on key space contents.</p>
+   <p class="- topic/p " xtrc="p:14;148:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">For purposes of key definition precedence, the scope-qualified key definitions from a child
+    scope are considered to occur at the location of the scope-defining element within the parent
+    scope.</p>
+   <draft-comment author="chris.nitchie" class="- topic/draft-comment " disposition="open" time="7/25/14" translate="no" xtrc="draft-comment:6;151:76" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">This is controversial and
+    needs more thought.
+     <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;153:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">map
+   sub-map scope="scopeA"
+      sub-map scope="scopeB"
+         keydef="MYKEY"
+   sub-map scope="scopeA.scopeB"
+     keydef MYKEY
+
+key scopeA.scopeB.MYKEY=?</codeblock><p class="- topic/p " xtrc="p:15;160:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Per
+     traditional rules, the snwer is the second definition; per this sentence, it's the first,
+     violating existing stuff.</p></draft-comment>
+   <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="7 December" translate="no" xtrc="draft-comment:7;163:63" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">
+    <p class="- topic/p " xtrc="p:16;164:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">Review #2 comments:</p>
+    <p class="- topic/p " xtrc="p:17;165:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">[Eliot Kimber] I think the rule is best stated as: "When a map has two peer scope-defining
+     topicrefs that define scopes with the same effective scope name, all the keys defined in the
+     first scope and its descendants take precedence over any keys defined in the second scope and
+     its descendants." Then include the example. Although, having written that, I'm wondering if
+     it's the case in this example that the scopes have the same name (scopeA.scopeB) or that the
+     key has the same fully-qualified name (scopeA.scopeB.MYKEY)? In this example there are three
+     scopes: scopeA, scopeB, and scopeA.scopeB but there can be only one key "scopeA.scopeB.MYKEY".
+     I need to come back to this comment after more review of key scopes generally.</p>
+    <p class="- topic/p " xtrc="p:18;173:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/keys-core-concepts.dita">[Robert Anderson] I think the rule is "When a map has two peer scope-defining topicrefs... I
+     did not understand the suggested rule, and I'm not sure it covers the example Chris created. In
+     this case none of the maps have two peer scope-defining topicrefs with the same effective scope
+     name. None of the maps define more than one scope; each nested map defines only one scope. </p>
+   </draft-comment>
+  </section>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:2;6:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/key-based-addressing.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/key-based_addressing.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:1;5:48" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/key-based-addressing.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Indirect key-based addressing</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">DITA allows references to be made indirectly by referencing a name for a link target,         instead of referencing the location of that target. This name is called a key. The DITA         key<?oxy_insert_start author="Kristen Eberlein" timestamp="20140917T112314-0400"?>-<?oxy_insert_end?><?oxy_delete author="Kristen Eberlein" timestamp="20140917T112313-0400" content=" "?>reference         mechanism provides a layer of abstraction so that resource locations can be defined globally         at the DITA map level instead of locally in each topic.</desc></link></linkpool></related-links></concept>

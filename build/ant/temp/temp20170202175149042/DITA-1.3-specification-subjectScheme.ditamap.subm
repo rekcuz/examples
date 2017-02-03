@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?><subjectScheme xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map subjectScheme/subjectScheme " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (map subjectScheme)                            a(props deliveryTarget)                            (topic hazard-d)                            (topic hi-d)                            (topic ut-d)   " processing-role="resource-only" toc="no">
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="revisions">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="action-item-14">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">AI 14: Coverage of constraints, conref, and compatibility</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="terminology">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">RFC-2119 terminology</navtitle>
+                <shortdesc class="- map/shortdesc "/>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="xml-grammars">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">XML grammars</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="DITA1.2-errata">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">DITA 1.2 errata</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="DITA1.3">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">DITA 1.3</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="review-1">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">Review #1</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="review-2">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">Review #2</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="targeted-review">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">Targeted review</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-62">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">62: table accessibility</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13001">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13001: Same topic URI reference syntax </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13004">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13004: Scoped keys</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13008">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13008: Add @appid to resourceid element </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13010">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13010: sort-as element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13023">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13023: div element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13027">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13027: draft-comment in more places</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13029">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13029: Allow text in more places</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13031">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13031: Additions to highlighting domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13035">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13035: XML-mention and markup domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13041">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13041:  Facility for key-based, cross-deliverable referencing </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13044">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13044: Extend content model of data</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13056">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13056: Expanded syntax for filtering attributes</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13059">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13059: Mechanism for overriding default cascading rules for metadata </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13059a">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13059a: Branch filtering</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13060">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13060: Enhancements to resourceid element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13061">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13061: ux-window element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13078">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13078: orient and rotate attributes</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13086">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13086: steptroubleshooting element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13089">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13089: learningObjectMap and learningGroupMap </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13090">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13090: Change the @style attribute in DITAVAL files to NMTOKENS</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13092">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13092: Allow ph in indexterm</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13096">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13096: tasktroubleshooting element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13097">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13097: Troubleshooting topic</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13098">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13098: trouble value for @type attribute</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13102">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13102: Release management domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13103">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13103: deliveryTarget attribute</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13104">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13104: @keyref for &lt;object&gt; and &lt;param&gt;</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13105">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13105: Allow &lt;data&gt; within lists</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13106">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13106: New base domain and specializations for question/answer
+                    interactions </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13107">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13107:  Default values for format, type, and scope attributes </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13111">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13111: MathML and equation domains</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13112">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13112: RelaxNG support</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13114">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13114: Add @rev to title element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13116">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13116: Add &lt;cite&gt; to &lt;title&gt; and other elements</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13117">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13117: Add &lt;xref&gt; to &lt;shortdesc&gt;</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13119">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13119: SVG domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13121">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle class="- topic/navtitle ">13121: Reuse a structural specialization as a domain </navtitle>
+            </topicmeta>
+        </subjectdef>
+    </subjectdef>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="outputclass-values">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="cover"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="example"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="no-indent"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="no-space-before"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="notices"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="RFC-2119"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specification"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationApproved"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationLevel"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationShorttitle"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationTitle"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationTitles"/>
+    </subjectdef>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="packages">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="base"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="learningTraining"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="technicalContent"/>
+    </subjectdef>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="disposition">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="accepted"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="deferred"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="informational"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="open"/>
+    </subjectdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef ">
+        <attributedef class="- topic/data subjectScheme/attributedef " name="rev" translate="no"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="revisions"/>
+    </enumerationdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef ">
+        <attributedef class="- topic/data subjectScheme/attributedef " name="outputclass" translate="no"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="outputclass-values"/>
+    </enumerationdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef ">
+        <attributedef class="- topic/data subjectScheme/attributedef " name="product" translate="no"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="packages"/>
+    </enumerationdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef ">
+        <attributedef class="- topic/data subjectScheme/attributedef " name="disposition" translate="no"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="disposition"/>
+    </enumerationdef>
+</subjectScheme>

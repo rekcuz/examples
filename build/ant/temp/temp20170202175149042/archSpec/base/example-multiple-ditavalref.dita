@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="example-multiple-ditavalref" xtrc="concept:1;3:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+  <title class="- topic/title " xtrc="title:1;4:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">Example: Multiple <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;4:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">ditavalref</xmlelement> on a branch</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">Multiple <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;5:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">ditavalref</xmlelement> elements may be used on a single map
+    branch to create multiple distinct copies of the branch.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;7:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+    <example class="- topic/example " id="mutltiple-ditavalref-create-multiple-branches" xtrc="example:1;8:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+      <p class="- topic/p " xtrc="p:1;9:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">Consider the following DITA map that contains a branch with three peer
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;10:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">ditavalref</xmlelement> elements; two of the
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;11:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">ditavalref</xmlelement> elements contain sub-elements that specify how
+        effective resource names are constructed:</p>
+      <fig class="- topic/fig " id="fig_gmm_phj_ln" xtrc="fig:1;13:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+        <title class="- topic/title " xtrc="title:2;14:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;14:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">input.ditamap</filepath></title>
+        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;15:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+&lt;map&gt;
+  &lt;topicref href="intro.dita"/&gt;
+  <b class="+ topic/ph hi-d/b " xtrc="b:1;18:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;!-- Begining of installing branch --&gt;</b>
+  &lt;topicref href="install.dita"&gt;
+    &lt;ditavalref href="win.ditaval"/&gt;
+    &lt;ditavalref href="mac.ditaval"&gt;
+      &lt;ditavalmeta&gt;&lt;dvrResourceSuffix&gt;-apple&lt;/dvrResourceSuffix&gt;&lt;/ditavalmeta&gt;
+    &lt;/ditavalref&gt;
+    &lt;ditavalref href="linux.ditaval"&gt;
+      &lt;ditavalmeta&gt;&lt;dvrResourceSuffix&gt;-linux&lt;/dvrResourceSuffix&gt;&lt;/ditavalmeta&gt;
+    &lt;/ditavalref&gt;
+    &lt;topicref href="do-stuff.dita"&gt;
+      &lt;topicref href="mac-specific-stuff.dita" platform="mac"/&gt;
+    &lt;/topicref&gt;
+    <b class="+ topic/ph hi-d/b " xtrc="b:2;30:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;!-- End of installing branch --&gt;</b>
+    &lt;topicref href="cleanup.dita"/&gt;
+  &lt;/topicref&gt;
+&lt;/map&gt;
+</codeblock>
+      </fig>
+      <fig class="- topic/fig " id="fig_fsm_phj_ln" xtrc="fig:2;36:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+        <title class="- topic/title " xtrc="title:3;37:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">Contents of <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;37:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">win.ditaval</filepath></title>
+        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;38:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;val&gt;
+  &lt;prop att="platform" val="win" action="include"/&gt;
+  &lt;prop att="platform" action="exclude"/&gt;
+&lt;/val&gt;</codeblock>
+      </fig>
+      
+      <fig class="- topic/fig " id="fig_dym_phj_ln" xtrc="fig:3;47:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+        <title class="- topic/title " xtrc="title:4;48:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">Contents of <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:3;48:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">mac.ditaval</filepath></title>
+        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;49:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;val&gt;
+  &lt;prop att="platform" val="mac" action="include"/&gt;
+  &lt;prop att="platform" action="exclude"/&gt;
+&lt;/val&gt;</codeblock>
+      </fig>
+      <fig class="- topic/fig " id="fig_d2n_phj_ln" xtrc="fig:4;54:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+        <title class="- topic/title " xtrc="title:5;55:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">Contents of <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:4;55:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">linux.ditaval</filepath></title>
+        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;56:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;val&gt;
+  &lt;prop att="platform" val="linux" action="include"/&gt;
+  &lt;prop att="platform" action="exclude"/&gt;
+&lt;/val&gt;</codeblock>
+      </fig>
+      <p class="- topic/p " xtrc="p:2;61:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">When a processor evaluates this markup, it results in three copies of the installing
+        branch. The following processing takes place:<ul class="- topic/ul " xtrc="ul:1;62:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+          <li class="- topic/li " xtrc="li:1;63:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">The first topic (<filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:5;63:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">intro.dita</filepath>) is published normally, potentially
+            using other DITAVAL conditions that are specified externally.</li>
+          <li class="- topic/li " xtrc="li:2;65:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">The installing branch appears three times, once for each DITAVAL. The branches are
+            created as follows:<ul class="- topic/ul " xtrc="ul:2;66:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+              <li class="- topic/li " xtrc="li:3;67:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">The first branch uses the first DITAVAL file (<filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:6;67:75" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">win.ditaval</filepath>).
+                Resources use their original names as specified in the map. The
+                  <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:7;69:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">mac-specific-stuff.dita</filepath> topic is removed. The resulting
+                branch, with indenting to show the hierarchy, matches the original without the mac
+                topic:
+                <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:5;72:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">install.dita
+   do-stuff.dita
+     ...more topics and nested branches...
+   cleanup.dita
+</codeblock></li>
+              <li class="- topic/li " xtrc="li:4;77:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">The second branch uses the second DITAVAL file (<filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:8;77:77" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">mac.ditaval</filepath>).
+                Resources are renamed based on the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;78:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">dvrResourceSuffix</xmlelement>
+                element. The <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:9;79:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">mac-specific-stuff.dita</filepath> topic is included. The
+                resulting branch, with indenting to show the hierarchy, is as follows:
+                <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:6;81:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">install-apple.dita
+   do-stuff-apple.dita
+      mac-specific-stuff-apple.dita
+      ...more topics and nested branches...
+   cleanup-apple.dita
+</codeblock></li>
+              <li class="- topic/li " xtrc="li:5;87:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">The third branch uses the last DITAVAL file (<filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:10;87:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">linux.ditaval</filepath>).
+                Resources are renamed based on the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;88:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">dvrResourceSuffix</xmlelement>
+                element. The <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:11;89:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">mac-specific-stuff.dita</filepath> topic is removed. The
+                resulting branch, with indenting to show the hierarchy, is as follows:
+                <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:7;91:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">install-linux.dita
+   do-stuff-linux.dita
+     ...more topics and nested branches...
+   cleanup-linux.dita
+</codeblock></li>
+            </ul></li>
+        </ul></p>
+      <p class="- topic/p " xtrc="p:3;98:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">The example used three DITAVAL files to avoid triple maintenance of the installing branch
+        in a map; the following map is functionally equivalent, but it requires parallel maintenance
+        of each branch.</p>
+      <fig class="- topic/fig " id="fig_akn_phj_ln" xtrc="fig:5;101:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+        <title class="- topic/title " xtrc="title:6;102:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:12;102:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">input.ditamap</filepath></title>
+        
+        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:8;104:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">
+&lt;map&gt;
+  &lt;topicref href="intro.dita"/&gt;
+  <b class="+ topic/ph hi-d/b " xtrc="b:3;107:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;!-- Windows installing branch --&gt;</b>
+  &lt;topicref href="install.dita"&gt;
+    &lt;ditavalref href="win.ditaval"/&gt;
+    &lt;topicref href="do-stuff.dita"&gt;
+      &lt;!-- more topics and nested branches --&gt;
+    &lt;/topicref&gt;
+    &lt;topicref href="cleanup.dita"/&gt;
+  &lt;/topicref&gt;
+  <b class="+ topic/ph hi-d/b " xtrc="b:4;115:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;!-- Mac installing branch --&gt;</b>
+  &lt;topicref href="install.dita"&gt;
+    &lt;ditavalref href="mac.ditaval"&gt;
+      &lt;ditavalmeta&gt;&lt;dvrResourceSuffix&gt;-apple&lt;/dvrResourceSuffix&gt;&lt;/ditavalmeta&gt;
+    &lt;/ditavalref&gt;
+    &lt;topicref href="do-stuff.dita"&gt;
+      &lt;topicref href="mac-specific-stuff.dita" platform="mac"/&gt;
+      &lt;!-- more topics and nested branches --&gt;
+    &lt;/topicref&gt;
+    &lt;topicref href="cleanup.dita"/&gt;
+  &lt;/topicref&gt;
+  <b class="+ topic/ph hi-d/b " xtrc="b:5;126:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-multiple-ditavalref.dita">&lt;!-- Linux installing branch --&gt;</b>
+  &lt;topicref href="install.dita"&gt;
+    &lt;ditavalref href="linux.ditaval"&gt;
+      &lt;ditavalmeta&gt;&lt;dvrResourceSuffix&gt;-linux&lt;/dvrResourceSuffix&gt;&lt;/ditavalmeta&gt;
+    &lt;/ditavalref&gt;
+    &lt;topicref href="do-stuff.dita"&gt;
+      &lt;!-- more topics and nested branches --&gt;
+    &lt;/topicref&gt;
+    &lt;topicref href="cleanup.dita"/&gt;
+  &lt;/topicref&gt;
+  &lt;!-- Several chapters worth of other material --&gt;
+&lt;/map&gt;</codeblock>
+      </fig>
+    </example>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:6;15:49" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/branch-filtering.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/examples-of-branch-filter.dita" mapclass="- map/topicref " rev="DITA1.3 proposal-13059a DITA1.3 proposal-13059a" role="parent" scope="local" type="concept" xtrc="topicref:4;11:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/branch-filtering.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Examples of branch filtering</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The branch filtering examples illustrate the processing expectations         for various scenarios involving <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;6:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-of-branch-filter.dita">ditavalref</xmlelement> references. Processing         examples use either before and after markup samples or expanded syntax that shows equivalent         markup without the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;8:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-of-branch-filter.dita">ditavalref</xmlelement> elements.</desc></link></linkpool></related-links></concept>

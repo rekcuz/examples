@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="concept_xxv_rt5_qp" xtrc="concept:1;3:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">Example: Simple DITA map that references a subordinate map</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita"/><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;6:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">
+  <p class="- topic/p " xtrc="p:1;7:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">The following code sample illustrates how a DITA map can reference another DITA map:</p>
+  <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;8:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">&lt;map&gt;
+  &lt;title&gt;DITA work at OASIS&lt;/title&gt;
+  &lt;topicref href="oasis-dita-technical-committees.dita"&gt;
+    &lt;topicref href="dita_technical_committee.dita"/&gt;
+    &lt;topicref href="dita_adoption_technical_committee.dita"/&gt;
+  &lt;/topicref&gt;
+  &lt;mapref href="oasis-processes.ditamap"/&gt;
+  &lt;!-- ... --&gt;
+&lt;/map&gt;</codeblock>
+  <p class="- topic/p " xtrc="p:2;17:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">The map also could be tagged in the following way:</p>
+  <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;18:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">&lt;map&gt;
+  &lt;title&gt;DITA work at OASIS&lt;/title&gt;
+  &lt;topicref href="oasis-dita-technical-committees.dita"&gt;
+    &lt;topicref href="dita_technical_committee.dita"/&gt;
+    &lt;topicref href="dita_adoption_technical_committee.dita"/&gt;
+  &lt;/topicref&gt;
+&lt;topicref href="oasis-processes.ditamap" format="ditamap"/&gt;
+&lt;!-- ... --&gt;
+&lt;/map&gt;</codeblock>
+  <p class="- topic/p " xtrc="p:3;27:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">With either of the above examples, during processing, the map is resolved in the following
+   way:</p>
+  <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;29:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-simple-map-w-submap.dita">&lt;map&gt;
+  &lt;title&gt;DITA work at OASIS&lt;/title&gt;
+  &lt;topicref href="oasis-dita-technical-committees.dita"&gt;
+    &lt;topicref href="dita_technical_committee.dita"/&gt;
+    &lt;topicref href="dita_adoption_technical_committee.dita"/&gt;
+  &lt;/topicref&gt;
+  &lt;!-- Contents of the oasis-processes.ditamap file --&gt;
+  &lt;topicref href="oasis-processes.dita"&gt;
+    &lt;!-- ... --&gt;
+  &lt;/topicref&gt;
+  &lt;!-- ... --&gt;
+&lt;/map&gt;</codeblock>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:9;19:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/maps.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/example-ditamaps.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:7;17:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/maps.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Examples of DITA maps</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">This section of the specification contains examples of DITA maps. The examples    illustrate the wide variety of purposes that DITA maps serve.</desc></link></linkpool></related-links></concept>

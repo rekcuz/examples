@@ -1,0 +1,659 @@
+/*
+============================================================
+Stylesheets customized for the DITA Open Toolkit.
+Written by Darth Zucker
+Edited by Darth Briggs (his apprentice)
+============================================================
+*/
+
+/* KB: I removed Geneva SuiteHelp development era comments. I kept them in suite_default.css in the Geneva branch */
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background: white;
+	color: #393d40;
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 100;	
+}   
+
+p {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.icon {
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.option {
+    font-style: italic;
+}
+
+strong {
+    font-family: 'omnesmedium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+strong, a.link {
+	color: #7299C6;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Nunito", sans-serif;
+	font-weight: normal;
+	color: #1a1a1a;
+	line-height: 1;
+}
+
+h1, h2 {
+    letter-spacing: -0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 35px 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #f5f8fa;
+}
+
+img.logo {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+ul li {
+    padding-left: 10px;
+}
+
+ol li {
+    padding-left: 10px;
+}
+
+/* Kristy: following the move to OTK 2.3.1 i changed code, pre to codeblock pre STRY2431186 STRY2550926 */
+codeblock, pre {
+	background: #dcdcdc;
+	display: block;
+	/* KB: in the Suite products, this padding is overwritten by padding they have in their article stylesheet; it is overwritten to 9.5px */
+	padding: 15px 20px;
+	font-family: Consolas, monaco, monospace;
+	font-size: 13px;
+	line-height: 24px;
+	white-space: pre-wrap;
+	/* Kristy: 09-21-16 removed outline, replaced with border to match styles on Zoomin site
+ 	outline: .1em solid black;
+	outline-offset: .4em;
+	*/
+	border-radius: 10px;
+	border: .1em solid black;
+}
+
+.codeph {
+	background: #f5f8fa;
+	display: inline;
+	padding: 4px 2px;
+	font-family: Consolas, monaco, monospace;
+	font-size: 14px;
+}
+
+.userinput{
+	background: #f5f8fa;
+	display: inline;
+	padding: 4px 2px;
+	font-family: Consolas, monaco, monospace;
+	font-size: 14px;
+	color:#393d40; 	
+}
+
+dl, .comment-content dl {
+    margin: 0 20px;
+}
+
+dt, .comment-content dt {
+    font-weight: bold;
+}
+
+dd, .dd {
+    margin-bottom: 20px;
+}
+
+table, .comment-content table {
+	color: #757575;
+	font-size: 12px;
+	line-height: 2;
+	margin: 10px 0px;
+	width: 95%;
+	margin-left: 40px;
+}
+
+table caption, .comment-content table caption {
+	font-size: 15px;
+	margin: 0px 0;
+}
+
+td, .comment-content td {
+	border-top: 0px solid #ededed;
+	padding: 6px 10px 6px 0px;
+	padding-left: 5px; 
+}
+
+td pre {
+    outline: none;
+}
+
+/*additional styles used for DITA WebHelp elements - JZucker */
+
+.uicontrol {
+    font-weight: bold;
+}
+
+.figcap {
+	font-style: normal;
+	font-weight: 500;
+	color: #455464;
+	font-size: small;
+	margin: 12pt 12pt 0 0pt;
+	margin-bottom: .5em;
+	page-break-after: always;
+	display: block;
+	text-align: left;
+}
+
+.tablecap {
+	font-style: normal;
+	font-weight: bold;
+	color: #455464;
+	font-size: small;
+	margin: 0 0 0 0pt;
+	margin-bottom: .5em;
+	page-break-after: always;
+	display: block;
+	text-align: left;
+}
+
+.title.topictitle1 {
+	color: #3C3738;
+	font-size: 28px;
+	border-bottom: 5px solid #ddd;
+	font-weight: 100;
+	line-height: 1.1;
+	letter-spacing: -0.5px;
+	margin: 0 0 10px;
+	font-weight: 500;
+}
+
+.title.sectiontitle {
+	color: #303a46;
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(51,51,51);
+	letter-spacing: -0.5px;
+    }
+
+/* Most link groups are created with <div>. Ensure they have space before and after. */
+
+.ullinks {
+    list-style-type: none;
+}
+	
+.ulchildlink {
+    margin-top: 1em; margin-bottom: 1em;
+	background-image:url('image/article.png');
+	background-repeat: no-repeat;
+	padding-left: 18px; 
+	display: block;  /* may not need this, but I've found I do */
+}
+
+.olchildlink {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.linklist {
+    margin-bottom: 1em;
+}
+
+.linklistwithchild {
+    margin-left: 1.5em;
+    margin-bottom: 1em;  
+}
+	
+.parentlink {
+    margin-top: 2em; 
+    margin-bottom: 1em;
+}
+	
+.parentlink, strong {
+    margin-top: 2em;
+    margin-bottom: 1em; 
+    color: #303a46;
+}
+
+.sublinklist { 
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.relconcepts { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.reltasks { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.relref { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.relinfo { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.breadcrumb { 
+    font-size: smaller;
+    margin-bottom: 1em;
+}
+
+.prereq { 
+    margin-left: 0px;
+}
+
+.xref {
+	font-style: normal;
+	font-weight: normal;
+	color: #455464;
+	display: inline;
+	text-align: left;
+}
+
+.relinfo.relconcepts, .relinfo.reltasks, .relinfo.relref {
+	background:  #f9f9f9;
+    margin-top: 1em;
+    margin-bottom: 1em;
+	background-repeat: no-repeat;
+	display: block;  /* may not need this, but I've found I do */
+}
+    
+.relinfo.relref .link {
+	background:  #f9f9f9;
+	background-image:url('image/article.png');
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	display: block;  /* may not need this, but I've found I do */
+    }
+    
+.relinfo.reltasks .link {
+	background:  #f9f9f9;
+	background-image:url('image/article.png');
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	display: block;  /* may not need this, but I've found I do */
+    }
+    
+.relinfo.relconcepts .link {
+	background:  #f9f9f9;
+	background-image:url('image/article.png');
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	display: block;  /* may not need this, but I've found I do */
+    }
+    
+/* JZ - adding new styles to control related "x" heading */
+.relinfo.relconcepts, strong {
+    color: #455464; 
+}
+.relinfo.reltasks, strong {
+    color: #455464;
+}
+.relinfo.relref, strong {
+    color: #455464;
+}
+
+/* Links */
+a, a:visited {
+	text-decoration: none;
+	outline: 0;
+	color: #000;
+	-moz-transition: color 0.15s ease-out;
+	-o-transition: color 0.15s ease-out;
+	-webkit-transition: color 0.15s ease-out;
+	-ms-transition: color 0.15s ease-out;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #ff402c;
+}
+
+a.extRef { 
+	font-style: normal;
+	font-weight: normal;
+	color: #7299C6;
+	display: inline;
+	text-align: left;
+}
+
+a.href {
+	font-style: normal;
+	font-weight: normal;
+	color: #7299C6;
+	display: inline;
+	text-align: left;
+}
+
+section.prereq.p {
+    margin-bottom: 400px;
+}
+
+/*   KB: style to support sub-head metadata for table rows	*/
+.sub-head {
+    font-weight: bold;
+}
+ 
+.stentry {
+    padding: 6px 10px 6px 5px;
+}
+
+.systemoutput {
+	background: #f5f8fa;
+	display: inline;
+	padding: 4px 2px;
+	font-family: Consolas, monaco, monospace;
+	font-size: 14px;
+}
+
+simpletabletile {
+    margin-bottom: auto;
+    alignment-adjust: middle;
+    border-bottom: none;
+    border-top: none;
+    border: hidden;
+    margin-left: 50px;
+}
+
+/* 	KB: styles to label dita task elements */
+
+.prereq::before {
+    content: "Before you begin "; 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    color: #455464;
+} 
+    
+.context::before {
+    content: "About this task "; 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    color: #455464;
+} 
+ 
+.result::before {
+    content: "Result "; 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    color: #455464;
+} 
+    
+.example::before {
+    content: "Example ";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    color: #455464;
+} 
+    
+.postreq::before {
+    content: "What to do next "; 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    color: #455464;
+} 
+
+.steps::before {
+    content: "Procedure ";
+    font-weight: bold;
+    margin-left: -40px;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    color: #455464;
+}
+
+/* ARCHIVE AREA: styles below this line are longer used by our builds*/
+
+blockquote p {
+    padding: 0 0 20px;
+    margin: 0;
+} 
+
+blockquote p:last-of-type {
+    padding: 0;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 14px;
+}
+
+/* HOMEPAGE STYLES (not used in customer facing documentation following move to SuiteShare platform) */
+
+.headline {
+	margin: 1em;
+	background: #ededed;
+	color: #393d40;
+	font-family: Sans-Serif;
+	font-size: 12px;
+	line-height: 10px;
+	font-weight: normal;
+	font-size-adjust: inherit;
+	text-indent: 25px; 
+    margin-left: 5%;
+    margin-top: auto;
+    margin-right: 5%;
+    border-style: hidden;
+    border-collapse:collapse;
+    border: hidden;
+    background-color: #ededed;      
+    /* this style overwrote stentry padding padding-bottom: 20px; */
+    white-space: nowrap;
+}
+
+.tile {
+    font-family: Sans-Serif;
+    font-weight: normal;
+    font-effect: emboss;
+	color: #1a1a1a;
+	font-size: 17px;
+	float: left;
+	width: 95%;
+	background: none repeat scroll 0 0 #f6f6f6;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	color: #e7e9eb;
+	display: block;
+	height: 90%;
+    margin: 2% 5% 2% 0;
+	min-height: 170px;
+	max-width: 305px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.tileimage {
+    display: block;
+	margin-left: auto;
+    margin-right: 1%;
+    margin-bottom: 5px;
+    margin-top: 1%;
+    width: 3.0em;
+    height: 3.0em;
+  	border: 0px;	
+}
+
+.more {
+	display: block;
+	margin-right: 25px;
+  	margin-left: 25px;
+  	margin-top: 5%;
+  	font-size: 12px;
+}
+
+.tilelist {
+	display: block;
+	margin-left: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  	font-size: 12px;
+  	font-family: Sans-Serif;
+  	white-space: nowrap;
+}
+
+.simpletableWelcome {
+    text-indent: 25px; 
+    margin-left: 5%;
+    margin-top: auto;
+    margin-right: 5%;
+    border-style: hidden;
+    border-collapse: collapse;
+    border: hidden;
+    background-color: #ededed;      
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.simpletableWelcomeNoTile {
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-right: 5%;
+    border-bottom: 0px solid lightgrey;
+    border-top: none;
+    background-color: #e7e9eb;
+}
+
+
+.simpletableBody {
+    text-indent: -1px; 
+    margin-left: 0%;
+    margin-top: auto;
+    margin-right: 0%;   
+    border-style: hidden;
+    border-collapse:collapse;
+    border: hidden;
+    white-space: nowrap;
+    display:block;
+    padding-bottom: 20px;
+}
+
+.mainHead {
+	border-bottom: 2px solid #e7e9eb;
+	white-space: nowrap;
+	line-height: 31px;
+	padding-bottom: 10px;
+}
+
+.headImage {
+   height: 3em;
+   margin-right:3px;
+   border: 1px solid #ffffff;
+}
+
+.WelcomeH1 { 
+    font-size: 18px;
+    color: black;
+    font-family: Sans-Serif;
+    font-weight:400;
+    padding-top: 20px;
+    background: #ededed;
+    text-indent: 25px; 
+    margin-left: 5%;
+    margin-top: auto;
+    margin-right: 5%;
+    border-style: hidden;
+    border-collapse:collapse;
+    border: hidden;
+    background-color: #ededed;      
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.nowrap {
+    white-space: nowrap;
+    font-size: 20px;
+	color: black;
+	font-family: sans-serif;
+	vertical-align: bottom;
+	font-weight: 400;
+	margin-right:2em;
+	border-bottom-width: 1px;
+	border-bottom-color: rgb(51,51,51);
+	border-bottom-style: solid;
+}
+    
+.tileHead {
+    white-space: nowrap;
+    font-size: 16px;
+	color: #000;
+	font-family: Arial, Helvetica, San-Serif;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	margin-top: 5px;
+}

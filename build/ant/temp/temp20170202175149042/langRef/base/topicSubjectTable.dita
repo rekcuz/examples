@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="topicSubjectTable" xml:lang="en-us" xtrc="reference:1;5:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+<title class="- topic/title " xtrc="title:1;6:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;6:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</xmlelement></title>
+<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;7:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</xmlelement> element is a specialized relationship
+    table which allows a map to use relationship tables to associate topics with subjects. Tools
+    (such as search tools) may use these classifications to retrieve content that is relative to a
+    specific subject or combination of subjects.</shortdesc>
+<prolog class="- topic/prolog " xtrc="prolog:1;11:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author><metadata class="- topic/metadata " xtrc="metadata:1;11:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+<keywords class="- topic/keywords " xtrc="keywords:1;12:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><indexterm class="- topic/indexterm " xtrc="indexterm:1;12:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:2;13:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">classification domain
+          elements<indexterm class="- topic/indexterm " xtrc="indexterm:3;14:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</indexterm></indexterm></keywords>
+</metadata></prolog>
+<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;16:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+<section class="- topic/section " xtrc="section:1;17:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><p class="- topic/p " xtrc="p:1;17:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">In a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;17:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</xmlelement>, the first column is reserved for references to
+        content. Subsequent columns are reserved for subjects that classify the content, each column
+        supplying the subjects for a different category as identified in the header. The table
+        resembles a traditional relationship table in which the first column identifies the source
+        and the other columns identify the targets, but the relationship reflects the subjects
+        covered by the content rather than linking between documents. </p><note class="- topic/note " xtrc="note:1;22:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">In a traditional <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;22:110" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">reltable</xmlelement>, topics in any given column establish
+        relationships with topics in every other cell of the same row. In a
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;24:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</xmlelement>, topics in the first column are related to all
+        of the subjects in the row, but no relationship is implied between subjects in different
+        columns of the same row. Instead, relationships are defined between subjects using a subject
+        scheme map (which provides a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;27:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">subjectRelTable</xmlelement> element for
+        non-hierarchical relationships between subjects).</note></section>
+<section class="- topic/section " id="contains" otherprops="contains" xtrc="section:307;4:98098" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"><title class="- topic/title " xtrc="title:615;4:98105" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">Content models</title><p class="- topic/p " xtrc="p:307;4:98130" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">See <xref class="- topic/xref " href="../../common/../contentmodels/cmbaset.dita#cmbaset/topicSubjectTable" keyref="cmodt/topicSubjectTable" type="reference" xtrc="xref:307;4:98190" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"><?ditaot usertext?>appendix<desc class="- topic/desc " xtrc="desc:307;4:98205" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"/></xref> for information about this element in OASIS document type shells.</p></section>
+<section class="- topic/section " id="inheritance" otherprops="inheritance" xtrc="section:3;32:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><title class="- topic/title " xtrc="title:2;32:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">Inheritance</title><p class="- topic/p " xtrc="p:2;32:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">+
+map/reltable classify-d/topicSubjectTable </p></section>
+    <example class="- topic/example " id="example" xtrc="example:1;34:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+      <title class="- topic/title " xtrc="title:3;35:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">Example</title>
+      <p class="- topic/p " xtrc="p:3;36:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">The topic subject table below classifies topics with goals for retrieval and with operating
+        systems for filtering. The map makes use of definitions in a subject scheme map, defined
+        separately.</p>
+      <fig class="- topic/fig " id="fig_ff4_g3h_dn" xtrc="fig:1;39:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+        <title class="- topic/title " xtrc="title:4;40:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">Subject scheme map</title>
+        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;41:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">&lt;subjectScheme&gt;
+    &lt;hasKind&gt;
+        &lt;subjectdef href="goalType.dita" keys="goal"&gt;
+            &lt;subjectdef href="performanceGoal.dita" keys="performance"/&gt;
+            &lt;subjectdef href="reliabilityGoal.dita" keys="reliability"/&gt;
+        &lt;/subjectdef&gt;
+        &lt;subjectdef href="operatingSystem.dita" keys="os"&gt;
+            &lt;subjectdef href="linuxOS.dita" keys="linux"/&gt;
+            &lt;subjectdef href="unixOS.dita" keys="unix"/&gt;
+            &lt;subjectdef href="windowsOS.dita" keys="windows"/&gt;
+        &lt;/subjectdef&gt;
+    &lt;/hasKind&gt;
+&lt;/subjectScheme&gt;</codeblock>
+      </fig>
+      <fig class="- topic/fig " id="fig_t34_g3h_dn" xtrc="fig:2;55:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+        <title class="- topic/title " xtrc="title:5;56:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">Topic subject table</title>
+        <p class="- topic/p " xtrc="p:4;57:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">The following <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;57:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</xmlelement> classifies several topics
+          according to subjects in the previous map. As with any
+            <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;59:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</xmlelement>, the first column is used to specify topics.
+          In this specific example, the second column is used to specify a goal, based on the "goal"
+          subject in the header. The third column is used to specify an operating system. Based on
+          those definitions, the following classifications are made by this table:<ul class="- topic/ul " xtrc="ul:1;62:87" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+            <li class="- topic/li " xtrc="li:1;63:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">The topics "Configuring cron for efficient startup" and "Allocating raw storage" are
+              each classified by the goal of "performance"; in addition, they are classified by the
+              operating systems "linux" and "unix".</li>
+            <li class="- topic/li " xtrc="li:2;66:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">The topics "Analyzing web logs for service issues" and "Detecting denial-of-service
+              attacks" are each classified by the goal of "reliability"; in addition, they are
+              classified by the operating systems "linux", "unix", and "windows".</li>
+            <li class="- topic/li " xtrc="li:3;69:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">No relationship is defined between subjects in the table, meaning that this table
+              does not define any relationship between the goal of "performance" and the operating
+              systems "linux" or "unix".</li>
+          </ul></p>
+        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;73:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">&lt;map&gt;
+&lt;!-- ... --&gt;
+&lt;topicSubjectTable&gt;
+  &lt;topicSubjectHeader&gt;
+    &lt;topicCell type="task"/&gt;
+    &lt;subjectCell&gt;
+      &lt;topicsubject keyref="goal"/&gt;
+    &lt;/subjectCell&gt;
+    &lt;subjectCell&gt;
+      &lt;topicapply keyref="os"/&gt;
+    &lt;/subjectCell&gt;
+  &lt;/topicSubjectHeader&gt;
+  &lt;topicSubjectRow&gt;
+    &lt;topicCell&gt;
+      &lt;topicref href="webServerStart.dita" navtitle="Configuring cron for efficient startup"/&gt;
+      &lt;topicref href="dbDisk.dita" navtitle="Allocating raw storage"/&gt;
+    &lt;/topicCell&gt;
+    &lt;subjectCell&gt;
+      &lt;topicsubject keyref="performance"/&gt;
+    &lt;/subjectCell&gt;
+    &lt;subjectCell&gt;
+      &lt;topicapply keyref="linux"/&gt;
+      &lt;topicapply keyref="unix"/&gt;
+    &lt;/subjectCell&gt;
+  &lt;/topicSubjectRow&gt;
+  &lt;topicSubjectRow&gt;
+    &lt;topicCell&gt;
+      &lt;topicref href="webLogAnalyze.dita" navtitle="Analyzing web logs for service issues"/&gt;
+      &lt;topicref href="webDenialService.dita" navtitle="Detecting denial-of-service attacks"/&gt;
+    &lt;/topicCell&gt;
+    &lt;subjectCell&gt;
+      &lt;topicsubject keyref="reliability"/&gt;
+    &lt;/subjectCell&gt;
+    &lt;subjectCell&gt;
+      &lt;topicapply keyref="linux"/&gt;
+      &lt;topicapply keyref="unix"/&gt;
+      &lt;topicapply keyref="windows"/&gt;
+    &lt;/subjectCell&gt;
+  &lt;/topicSubjectRow&gt;
+  &lt;!-- ... --&gt;
+&lt;/topicSubjectTable&gt;
+&lt;/map&gt;</codeblock>
+        <p class="- topic/p " xtrc="p:5;115:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">A table view of this <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:9;115:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">topicSubjectTable</xmlelement> might look as follows.
+          This is only one of many possible views; to aid in understanding the example, the content
+          topics in the first column are displayed using only their titles, and related subjects are
+          displayed using only their <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;118:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">keyref</xmlatt> attribute value.</p>
+        <simpletable class="- topic/simpletable " xtrc="simpletable:1;119:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+          <sthead class="- topic/sthead " xtrc="sthead:1;120:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+            <stentry class="- topic/stentry " xtrc="stentry:1;121:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><i class="+ topic/ph hi-d/i " xtrc="i:1;121:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">task</i></stentry>
+            <stentry class="- topic/stentry " xtrc="stentry:2;122:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><i class="+ topic/ph hi-d/i " xtrc="i:2;122:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">goal</i></stentry>
+            <stentry class="- topic/stentry " xtrc="stentry:3;123:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><i class="+ topic/ph hi-d/i " xtrc="i:3;123:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">os</i></stentry>
+          </sthead>
+          <strow class="- topic/strow " xtrc="strow:1;125:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+            <stentry class="- topic/stentry " xtrc="stentry:4;126:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+              <lines class="- topic/lines " xml:space="preserve" xtrc="lines:1;127:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">Configuring cron for efficient startup
+
+Allocating raw storage</lines>
+            </stentry>
+            <stentry class="- topic/stentry " xtrc="stentry:5;131:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+              <lines class="- topic/lines " xml:space="preserve" xtrc="lines:2;132:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">performance</lines>
+            </stentry>
+            <stentry class="- topic/stentry " xtrc="stentry:6;134:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+              <lines class="- topic/lines " xml:space="preserve" xtrc="lines:3;135:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">linux
+unix</lines>
+            </stentry>
+          </strow>
+          <strow class="- topic/strow " xtrc="strow:2;139:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+            <stentry class="- topic/stentry " xtrc="stentry:7;140:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+              <lines class="- topic/lines " xml:space="preserve" xtrc="lines:4;141:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">Analyzing web logs for service issues
+
+Detecting denial-of-service attacks</lines>
+            </stentry>
+            <stentry class="- topic/stentry " xtrc="stentry:8;145:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+              <lines class="- topic/lines " xml:space="preserve" xtrc="lines:5;146:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">reliability</lines>
+            </stentry>
+            <stentry class="- topic/stentry " xtrc="stentry:9;148:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">
+              <lines class="- topic/lines " xml:space="preserve" xtrc="lines:6;149:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">linux
+unix
+windows</lines>
+            </stentry>
+          </strow>
+        </simpletable>
+      </fig>
+    </example>
+<section class="- topic/section " id="attributes" xtrc="section:4;157:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita"><title class="- topic/title " xtrc="title:6;157:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/topicSubjectTable.dita">Attributes</title><sectiondiv class="- topic/sectiondiv " xtrc="sectiondiv:24;1077:88" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">
+                                <p class="- topic/p " xtrc="p:63;1078:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">The following attributes are available on this element: <xref class="- topic/xref " href="../../common/../langRef/attributes/universalAttributes.dita" xtrc="xref:163;1080:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita" type="reference"><?ditaot gentext?>Universal attribute group<?ditaot genshortdesc?><desc class="- topic/desc ">The universal attribute group defines a set of common attributes available on most DITA     elements. The universal attribute group includes all attributes from the metadata, ID,     localization, and debug attribute groups, plus the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;8:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/universalAttributes.dita">class</xmlatt> attribute.</desc></xref> and <xref class="- topic/xref " href="../../common/../langRef/attributes/commonMapAttributes.dita" xtrc="xref:164;1082:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita" type="reference"><?ditaot gentext?>Attributes common to many map elements<?ditaot genshortdesc?><desc class="- topic/desc ">This attribute group collects several attributes that are used on a variety of map   elements. For a few elements, the group is modified slightly to remove an attribute such as    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;8:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">toc</xmlatt> or <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;8:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">format</xmlatt>; in those cases the element definition will   clarify that the element does not use this full set. That is generally done in order to specify a   default for one attribute, such as defaulting <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;10:57" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">format</xmlatt> to "ditamap" on the    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;11:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">mapref</xmlelement> element.</desc></xref> (with a narrowed definition of <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:132;1082:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">toc</xmlatt>,
+                                        given below). This element also uses <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:133;1083:86" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">type</xmlatt>,
+                                                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:134;1084:57" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">scope</xmlatt>, and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:135;1084:85" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">format</xmlatt>
+                                        from <xref class="- topic/xref " href="../../common/../langRef/attributes/linkRelationshipAttributes.dita" xtrc="xref:165;1087:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita" type="reference"><?ditaot gentext?>Link relationship attribute group<?ditaot genshortdesc?><desc class="- topic/desc ">The link relationship attribute group includes attributes whose values can be used for     representing navigational relationships. These attributes occur only on elements that represent     relationships among DITA elements or between DITA elements and non-DITA resources.</desc></xref>.</p>
+                                <dl class="- topic/dl " xtrc="dl:37;1088:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">
+                                        <dlentry class="- topic/dlentry " xtrc="dlentry:15;414:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">
+                                                <dt class="- topic/dt " xtrc="dt:15;415:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:45;415:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">toc</xmlatt></dt>
+                                                <dd class="- topic/dd " xtrc="dd:15;416:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">Specifies whether a topic appears in the table
+                                                  of contents (TOC). If the value is not specified
+                                                  locally, but is specified on an ancestor, the
+                                                  value will cascade from the closest ancestor. On
+                                                  this element the default value for
+                                                  <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:46;421:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">toc</xmlatt> is "no". See <xref class="- topic/xref " href="../../common/../langRef/attributes/commonMapAttributes.dita" xtrc="xref:90;423:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita" type="reference"><?ditaot gentext?>Attributes common to many map elements<?ditaot genshortdesc?><desc class="- topic/desc ">This attribute group collects several attributes that are used on a variety of map   elements. For a few elements, the group is modified slightly to remove an attribute such as    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;8:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">toc</xmlatt> or <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;8:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">format</xmlatt>; in those cases the element definition will   clarify that the element does not use this full set. That is generally done in order to specify a   default for one attribute, such as defaulting <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;10:57" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">format</xmlatt> to "ditamap" on the    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;11:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/commonMapAttributes.dita">mapref</xmlelement> element.</desc></xref> for a complete definition of
+                                                  <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:47;424:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">toc</xmlatt>.</dd>
+                                        </dlentry>
+                                </dl>
+                        </sectiondiv></section>
+</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:5;9:103" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/classification-domain-elements.ditamap"><link class="- topic/link " format="dita" href="../../langRef/containers/classify-d.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:1;5:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/classification-domain-elements.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Classification domain elements</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The classification domain elements are used to identify the subject matter of content that is referenced in a map. These subjects must be subjects defined in a subject scheme map. In particular, this allows an author to classify content in new subject categories that are not bound to existing metadata attributes.</desc></link></linkpool></related-links></reference>

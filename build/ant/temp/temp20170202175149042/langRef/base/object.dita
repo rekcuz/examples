@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="object" xml:lang="en-us" xtrc="reference:1;5:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+<title class="- topic/title " xtrc="title:1;6:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;6:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">object</xmlelement></title>
+<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">The DITA <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;7:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">object</xmlelement> element corresponds to the
+            HTML <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;8:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">object</xmlelement> element, and attribute semantics derive from their
+        HTML definitions. For example, the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;9:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">type</xmlatt> attribute differs from the
+            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;10:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">type</xmlatt> attribute on many other DITA elements.</shortdesc>
+<prolog class="- topic/prolog " xtrc="prolog:1;11:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author><metadata class="- topic/metadata " xtrc="metadata:1;11:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+<keywords class="- topic/keywords " xtrc="keywords:1;12:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><indexterm class="- topic/indexterm " xtrc="indexterm:1;12:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">objects<indexterm class="- topic/indexterm " xtrc="indexterm:2;12:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">overview</indexterm></indexterm>
+                <indexterm class="- topic/indexterm " xtrc="indexterm:3;13:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">elements<indexterm class="- topic/indexterm " xtrc="indexterm:4;13:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">body<indexterm class="- topic/indexterm " xtrc="indexterm:5;13:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;13:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">object</xmlelement></indexterm></indexterm></indexterm>
+</keywords>
+</metadata></prolog>
+<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;16:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+<section class="- topic/section " xtrc="section:1;17:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><p class="- topic/p " xtrc="p:1;17:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;17:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">object</xmlelement> element enables authors to include animated images, applets,
+                plug-ins, ActiveX controls, video clips, and other multimedia objects in a
+                topic.</p></section>
+<section class="- topic/section " id="contains" otherprops="contains" xtrc="section:78;4:24714" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"><title class="- topic/title " xtrc="title:157;4:24721" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">Content models</title><p class="- topic/p " xtrc="p:78;4:24746" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">See <xref class="- topic/xref " href="../../common/../contentmodels/cmbaseo.dita#cmbaseo/object" keyref="cmodo/object" type="reference" xtrc="xref:78;4:24795" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"><?ditaot usertext?>appendix<desc class="- topic/desc " xtrc="desc:78;4:24810" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"/></xref> for information about this element in OASIS document type shells.</p></section>
+<section class="- topic/section " id="inheritance" otherprops="inheritance" xtrc="section:3;23:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><title class="- topic/title " xtrc="title:2;23:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Inheritance</title><p class="- topic/p " xtrc="p:2;23:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">-
+topic/object </p></section>
+<example class="- topic/example " id="example" xtrc="example:1;25:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+            <title class="- topic/title " xtrc="title:3;26:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Example</title>
+            <p class="- topic/p " xtrc="p:3;27:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Output processors might need to modify data in order to enable compatible function
+                across various browsers, so these examples are only representative:</p>
+            <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;29:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">&lt;p&gt;Cutting the keys from the system unit:&lt;/p&gt;
+&lt;object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/
+flash/swflash.cab#version=6,0,0,0"
+ data="cutkey370.swf"
+ type="application/x-shockwave-flash"
+ height="280"
+ width="370"
+ id="cutkey370"&gt;
+ &lt;desc&gt;A description of the task&lt;/desc&gt;
+ &lt;param name="movie" value="cutkey370.swf"/&gt;
+ &lt;param name="quality" value="high"/&gt;
+ &lt;param name="bgcolor" value="#FFFFFF"/&gt;
+&lt;/object&gt;
+</codeblock>
+            <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;44:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">&lt;p&gt;What's EIM?&lt;/p&gt;
+&lt;object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/
+flash/swflash.cab#version=6,0,0,0"
+ data="eim.swf"
+ height="400"
+ width="500"
+ id="eim"&gt;
+ &lt;desc&gt;Some great, glorious info&lt;/desc&gt;
+ &lt;param name="movie" value="eim.swf"/&gt;
+ &lt;param name="quality" value="high"/&gt;
+ &lt;param name="bgcolor" value="#FFFFFF"/&gt;
+ &lt;param name="pluginspace"
+ value="http://www.macromedia.com/go/getflashplayer"/&gt;
+&lt;/object&gt;</codeblock>
+            <fig class="- topic/fig " id="fig_o2l_bfb_4k" rev="DITA1.3 proposal-13104" xtrc="fig:1;59:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                <title class="- topic/title " xtrc="title:4;60:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Object with reference to video using key reference on the
+                        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;61:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">param</xmlelement> elements</title>
+                <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;62:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">&lt;object
+  id="E5123_026.mp4"
+  width="300"
+  height="300"&gt;
+  &lt;param name="poster"
+     <b class="+ topic/ph hi-d/b " xtrc="b:1;67:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">keyref="E5123_026_poster"</b>
+  /&gt;
+  &lt;param name="source"
+     <b class="+ topic/ph hi-d/b " xtrc="b:2;70:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">keyref="E5123_026_video"</b>
+  /&gt;
+&lt;/object&gt;</codeblock>
+                <p class="- topic/p " xtrc="p:4;73:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Where the keys could
+                    be:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;74:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">&lt;map&gt;
+  &lt;!-- ... --&gt;
+  &lt;keydef keys="E5123_026_poster"
+      href="../images/E5123_026_poster.png"
+      type="video/mp4"
+  /&gt;
+  &lt;keydef keys="E5123_026_video"
+      href="../media/E5123_026_poster.mp4"
+      type="video/mp4"
+  /&gt;
+  &lt;!-- ... --&gt;
+&lt;/map&gt;</codeblock></p>
+            </fig>
+            <fig class="- topic/fig " rev="DITA1.3 proposal-13104" xtrc="fig:2;87:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                <title class="- topic/title " xtrc="title:5;88:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Object with indirect reference to a flash file and fallback
+                        <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;89:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt> value</title>
+                <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:5;90:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">&lt;object 
+ <b class="+ topic/ph hi-d/b " xtrc="b:3;91:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">classidkeyref="video_classid"</b>
+ <b class="+ topic/ph hi-d/b " xtrc="b:4;92:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebasekeyref="video_codebase"</b>
+ <b class="+ topic/ph hi-d/b " xtrc="b:5;93:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">datakeyref="cutkey370"</b>
+ height="280"
+ width="370"
+ id="cutkey370"&gt;
+ &lt;desc&gt;A description of the task&lt;/desc&gt;
+ &lt;param name="movie" <b class="+ topic/ph hi-d/b " xtrc="b:6;98:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">keyref="cutkey370"</b>/&gt;
+ &lt;param name="quality" value="high"/&gt;
+ &lt;param name="bgcolor" value="#FFFFFF"/&gt;
+&lt;/object&gt;</codeblock>
+                <p class="- topic/p " xtrc="p:5;102:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Where the key could
+                    be:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:6;103:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">&lt;map&gt;
+  &lt;!-- ... --&gt;
+  &lt;!-- NOTE: Using @scope="external" because
+       the class ID is a URI that is not intended to
+       be directly resolved.
+    --&gt;
+  &lt;keydef keys="video_classid"
+    href="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+    scope="external"
+  /&gt;
+  &lt;!-- NOTE: Using @scope="external" to avoid systems trying to
+             download this file when they don't need to.
+    --&gt;
+  &lt;keydef keys="video_codebase"
+    href="http://download.macromedia.com/pub/shockwave/cabs/
+flash/swflash.cab#version=6,0,0,0"
+    format="shockwave"
+    scope="external"
+  /&gt;
+  &lt;!-- Using @scope="external" here because the referenced URL
+       is not intended to be resolved in isolation but relative
+       to the codebase URI.
+    --&gt;
+  &lt;keydef keys="cutkey370"
+      href="cutkey370.swf"
+      type="application/x-shockwave-flash"
+      scope="external"
+  /&gt;
+  &lt;!-- ... --&gt;
+&lt;/map&gt;</codeblock></p>
+            </fig>
+        </example>
+<section class="- topic/section " id="attributes" xtrc="section:4;135:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><title class="- topic/title " xtrc="title:6;135:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Attributes</title>
+            <p class="- topic/p " xtrc="p:6;136:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">The following attributes are available on this element: <xref class="- topic/xref " href="../attributes/universalAttributes.dita" xtrc="xref:1;137:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita" type="reference"><?ditaot gentext?>Universal attribute group<?ditaot genshortdesc?><desc class="- topic/desc ">The universal attribute group defines a set of common attributes available on most DITA     elements. The universal attribute group includes all attributes from the metadata, ID,     localization, and debug attribute groups, plus the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;8:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/universalAttributes.dita">class</xmlatt> attribute.</desc></xref>, <xref class="- topic/xref " href="../attributes/commonAttributes.dita#common-atts/outputclass" xtrc="xref:2;138:89" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita" type="dlentry"><?ditaot gentext?>outputclass</xref>, and the
+                attributes defined below.</p>
+   <dl class="- topic/dl " xtrc="dl:1;140:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                <dlentry class="- topic/dlentry " xtrc="dlentry:1;141:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:1;142:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;142:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">archive</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:1;143:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Specifies a space-separated list of URIs indicating resources needed by the
+                        object. These resources may include those URIs specified by the
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;145:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">classid</xmlatt> and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:6;145:66" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt> attributes.
+                        Preloading these resources usually results in faster loadtimes for objects.
+                        The URIs in the list should be relative to the URI specified in the
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:7;148:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt> attribute.
+                        </dd>
+                </dlentry>
+    <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13104" xtrc="dlentry:2;151:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+     <dt class="- topic/dt " xtrc="dt:2;152:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:8;152:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">archivekeyrefs</xmlatt></dt>
+     <dd class="- topic/dd " xtrc="dd:2;153:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Key references to one or more archives, as for <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:9;153:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">archive</xmlatt>. The value is a
+                        space-separated list of key names. Each resolvable key reference is treated
+                        as a URI as though it had been specified on the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:10;155:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">archive</xmlatt>
+                        attribute. When specified, and at least one key name is resolvable, the
+                        key-provided archive list is used. If <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:11;157:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">archive</xmlatt> is specified,
+                        it is used as a fallback when no key names can be resolved to a URI.
+                        </dd>
+    </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:3;161:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:3;162:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:12;162:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">classid</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:3;163:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Contains a URI that specifies the location of an object's
+                        implementation. It can be used together with the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:13;164:82" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt>
+                        attribute which is specified relative to the value of the
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:14;166:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt> attribute.
+                        </dd>
+                </dlentry>
+    <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13104" xtrc="dlentry:4;169:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+     <dt class="- topic/dt " xtrc="dt:4;170:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:15;170:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">classidkeyref</xmlatt></dt>
+     <dd class="- topic/dd " xtrc="dd:4;171:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Key reference to the URI that specifies the location of an object's implementation, as for
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:16;172:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">classid</xmlatt>. When specified, and the key is resolvable, the
+                        key-provided class ID URI is used. If <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:17;173:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">classid</xmlatt> is specified,
+                        it is used as a fallback when the key cannot be resolved to a URI.
+                        </dd>
+    </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:5;177:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:5;178:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:18;178:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:5;179:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Specifies the base URI used for resolving the relative URI values given for
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:19;180:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">classid</xmlatt>, <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:20;180:63" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt>, and
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:21;181:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">archive</xmlatt> attributes. If <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:22;181:77" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt> is not
+                        set, the default is the base URI of the current element.
+                        </dd>
+                </dlentry>
+    <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13104" xtrc="dlentry:6;185:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+     <dt class="- topic/dt " xtrc="dt:6;186:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:23;186:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebasekeyref</xmlatt></dt>
+     <dd class="- topic/dd " xtrc="dd:6;187:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Key reference to the base URI used for resolving other attributes, as for
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:24;188:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt>. When specified, and the key is resolvable,
+                        the key-provided code base URI is used. If <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:25;189:76" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt> is
+                        specified, it is used as a fallback if the key cannot be resolved to a URI.
+                        If no URI results from processing <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:26;191:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebasekeyref</xmlatt> and
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:27;192:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt> is not specified, the default is the base URL
+                        of the current element.
+                        </dd>
+    </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:7;196:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:7;197:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:28;197:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:7;198:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Contains a reference to the location of an object's data. If this
+                        attribute is a relative URL, it is specified relative to the value of the
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:29;200:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">codebase</xmlatt> attribute. If this attribute is set, the
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:30;201:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">type</xmlatt> attribute should also be set.
+                        </dd>
+                </dlentry>
+    <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13104" xtrc="dlentry:8;204:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+     <dt class="- topic/dt " xtrc="dt:8;205:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:31;205:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">datakeyref</xmlatt></dt>
+     <dd class="- topic/dd " xtrc="dd:8;206:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Key reference to the location of an object's data, as for <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:32;206:76" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt>. When
+                        specified and the key is resolvable, the key-provided URI is used. A key
+                        that has no associated resource, only link text, is considered to be
+                        unresolved for the purpose of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:33;209:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">datakeyref</xmlatt> attribute. If
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:34;210:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt> is specified, it is used as a fallback when the
+                        key cannot be resolved to a resource.
+                        </dd>
+    </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:9;214:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:9;215:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:35;215:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">declare</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:9;216:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">When this attribute is set to "declare", the current object definition is a
+                        declaration only. The object must be instantiated by a later nested object
+                        definition referring to this declaration. The only allowable value is
+                        "declare".</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:10;221:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:10;222:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:36;222:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">type</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:10;223:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Indicates the content type (MIME type) for the data specified by the
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:37;224:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt>
+                        <ph class="- topic/ph " rev="DITA1.3 proposal-13104" xtrc="ph:1;225:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">or <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:38;225:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">datakeyref</xmlatt>
+                        </ph> attribute. This attribute should be set when the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:39;226:88" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">data</xmlatt>
+                        attribute is set to avoid loading unsupported content types. Note that this
+                        differs from the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:40;228:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">type</xmlatt> attribute on many other DITA elements
+                        (it specifies a MIME type rather than a content type). <ph class="- topic/ph " rev="DITA1.3 proposal-13104" xtrc="ph:2;230:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">If <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:41;230:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">type</xmlatt> is not specified,
+                            the effective type value for the key named by the
+                                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:42;232:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">datakeyref</xmlatt> attribute is used as the this
+                            attribute's value.</ph></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:11;235:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:11;236:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:43;236:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">standby</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:11;237:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Contains a message to be displayed while an object is loading.
+                        </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:12;240:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:12;241:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:44;241:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">height</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:12;242:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Indicates the vertical dimension for the resulting object display. If
+                        necessary, the object is scaled to the specified size. <ph class="- topic/ph " xtrc="ph:13;49:94" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">The
+                                        value of this attribute is a real number (expressed in
+                                        decimal notation) optionally followed by a unit of measure
+                                        from the set of pc, pt, px, in, cm, mm, em (picas, points,
+                                        pixels, inches, centimeters, millimeters, and ems
+                                        respectively). The default unit is px (pixels). Possible
+                                        values include: "5", "5in", and "10.5cm".</ph> If a height value is specified and no width value is specified, the width
+                        will be scaled by the same factor as the height. <ph class="- topic/ph " xtrc="ph:14;56:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">If both a height value and width
+                                        value are specified, implementations <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;58:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">MAY</term> ignore one of the
+                                        two values when they are unable to scale to each direction
+                                        using different factors.</ph>
+                        </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:13;250:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:13;251:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:45;251:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">width</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:13;252:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Indicates the horizontal dimension for the resulting object display. If
+                        necessary, the object is scaled to the specified size. <ph class="- topic/ph " xtrc="ph:13;49:94" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">The
+                                        value of this attribute is a real number (expressed in
+                                        decimal notation) optionally followed by a unit of measure
+                                        from the set of pc, pt, px, in, cm, mm, em (picas, points,
+                                        pixels, inches, centimeters, millimeters, and ems
+                                        respectively). The default unit is px (pixels). Possible
+                                        values include: "5", "5in", and "10.5cm".</ph> If a width value is specified and no height value is specified, the
+                        height will be scaled by the same factor as the width. <ph class="- topic/ph " xtrc="ph:14;56:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">If both a height value and width
+                                        value are specified, implementations <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;58:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">MAY</term> ignore one of the
+                                        two values when they are unable to scale to each direction
+                                        using different factors.</ph>
+                        </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:14;260:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:14;261:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:46;261:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">usemap</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:14;262:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Indicates that a client-side image map is to be used. An image map specifies
+                        active geometric regions of an included object and assigns a link to each
+                        region. When a link is selected, a document may be retrieved or a program
+                        may run on the server.
+                        </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:15;268:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:15;269:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:47;269:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">name</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:15;270:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Defines a unique name for the object.
+                        </dd>
+                </dlentry>
+   </dl>
+            <dl class="- topic/dl " xtrc="dl:2;274:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                <dlentry class="- topic/dlentry " xtrc="dlentry:16;275:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:16;276:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:48;276:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">tabindex</xmlatt></dt>
+                    <dd class="- topic/dd " xtrc="dd:16;277:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">Position the object in tabbing order.
+                        </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrc="dlentry:17;280:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">
+                    <dt class="- topic/dt " xtrc="dt:17;281:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:49;281:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">longdescref</xmlatt>
+                        <ph class="- topic/ph " xtrc="ph:12;49:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">(DEPRECATED)</ph>
+                    </dt>
+                    <dd class="- topic/dd " xtrc="dd:17;286:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">A reference to a textual description of the graphic or object. This
+                        attribute supports creating accessible content. See <xref class="- topic/xref " href="../attributes/thehrefattribute.dita" xtrc="xref:3;288:73" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita" type="reference"><?ditaot gentext?>The href attribute<?ditaot genshortdesc?><desc class="- topic/desc ">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;6:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/thehrefattribute.dita">href</xmlatt> attribute is used to reference another DITA topic or map,  a   specific element inside a DITA topic or map, an external Web page, or another non-DITA   resource.</desc></xref> for detailed information on
+                        supported values and processing implications. <ph class="- topic/ph " xtrc="ph:8;289:75" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita">For examples of how this
+                            attribute is used in output, see this topic on <xref class="- topic/xref " format="html" href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#long-descriptions" scope="external" xtrc="xref:4;292:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita"><?ditaot usertext?>long descriptions</xref>.</ph> NOTE: This attribute
+                        is deprecated in favor of the <xref class="- topic/xref " href="longdescref.dita" xtrc="xref:5;293:86" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/object.dita" type="reference"><?ditaot gentext?>longdescref<?ditaot genshortdesc?><desc class="- topic/desc ">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;7:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/longdescref.dita">longdescref</xmlelement> element supports a reference to a text description of the graphic or     object. This element replaces the deprecated <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;8:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/longdescref.dita">longdescref</xmlatt> attribute on       <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;9:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/longdescref.dita">image</xmlelement> and <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;9:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/longdescref.dita">object</xmlelement> elements.</desc></xref> subelement to
+                        this element.
+                        </dd>
+                </dlentry>
+            </dl></section>
+</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:26;30:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/body-elements.ditamap"><link class="- topic/link " format="dita" href="../../langRef/containers/body-elements.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:1;5:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/body-elements.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Body elements</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The body elements support the most common types of content authoring for topics: paragraphs, lists, phrases, figures, and other common types of exhibits in a document.</desc></link></linkpool></related-links></reference>

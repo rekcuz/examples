@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="concept_b1c_mn1_mp" xtrc="concept:1;3:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">Example: Scoped key definitions for variable text</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">Scoped key definition can be used for variable text. This enables you to use the same
+  DITA topic multiple times in a DITA map, and in each instance the variable text can resolve
+  differently.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;8:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">
+  <p class="- topic/p " xtrc="p:1;9:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">The Acme Tractor Company produces two models of tractor: X and Y. Their product manual contains
+   sets of instructions for each  model. While most maintenance procedures are different for each
+   model, the instructions for changing the oil are identical for both model X and model Y. The
+   company policies call for including the specific model number in each topic, so a generic topic
+   that can be used for both models is not permitted.</p>
+  <ol class="- topic/ol " xtrc="ol:1;14:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">
+   <li class="- topic/li " xtrc="li:1;15:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">
+    <p class="- topic/p " xtrc="p:2;16:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">The authoring team references the model information in the
+      <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;17:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">changing-the-oil.dita</filepath> topic by using the following mark-up:</p>
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;18:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;keyword keyref="model"/&gt;</codeblock>
+   </li>
+   <li class="- topic/li " xtrc="li:2;20:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">
+    <p class="- topic/p " xtrc="p:3;21:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">The information architect examines the root map for the manual, and decides how to define key
+          scopes. Originally, the map looked like the following:</p>
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;23:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;map&gt;
+  &lt;!-- Model X: Maintenance procedures --&gt;
+  &lt;topicref href="model-x-procedures.dita"&gt;
+    &lt;topicref href="model-x/replacing-a-tire.dita"/&gt;
+    &lt;topicref href="model-x/adding-fluid.dita"/&gt;
+  &lt;/topicref&gt;
+
+&lt;!-- Model Y: Maintenance procedures --&gt;
+  &lt;topicref href="model-y-procedures.dita"&gt;
+    &lt;topicref href="model-y/replacing-a-tire.dita"/&gt;
+    &lt;topicref href="model-y/adding-fluid.dita"/&gt;
+  &lt;/topicref&gt;
+&lt;/map&gt;</codeblock>
+   </li>
+   <li class="- topic/li " xtrc="li:3;37:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">
+    <p class="- topic/p " xtrc="p:4;38:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">The information architect wraps each set of procedures in a
+      <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;39:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">topicgroup</xmlelement> element and sets the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;39:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">keyscope</xmlatt>
+     attribute.</p>
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;41:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;map&gt;
+  &lt;!-- Model X: Maintenance procedures --&gt;
+  &lt;topicgroup <b class="+ topic/ph hi-d/b " xtrc="b:1;43:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">keyscope="model-x"</b>&gt;
+    &lt;topicref href="model-x-procedures.dita"&gt;
+      &lt;topicref href="model-x/replacing-a-tire.dita"/&gt;
+      &lt;topicref href="model-x/adding-fluid.dita"/&gt;
+    &lt;/topicref&gt;
+  &lt;/topicgroup&gt;
+
+&lt;!-- Model Y: Maintenance procedures --&gt;
+  &lt;topicgroup <b class="+ topic/ph hi-d/b " xtrc="b:2;51:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">keyscope="model-y"</b>&gt;
+    &lt;topicref href="model-y-procedures.dita"&gt;
+      &lt;topicref href="model-y/replacing-a-tire.dita"/&gt;
+      &lt;topicref href="model-y/adding-fluid.dita"/&gt;
+    &lt;/topicref&gt;
+  &lt;/topicgroup&gt;
+&lt;/map&gt;</codeblock>
+    <p class="- topic/p " xtrc="p:5;58:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">This defines the key scopes for each set of procedures.</p>
+   </li>
+   <li class="- topic/li " xtrc="li:4;60:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">
+    <p class="- topic/p " xtrc="p:6;61:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">The information architect then adds key definitions to each set of procedures, as well as a
+     reference to the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;62:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">changing-the-oil.dita</filepath> topic.</p>
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;63:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;map&gt;
+  &lt;!-- Model X: Maintenance procedures --&gt;
+  &lt;topicgroup keyscope="model-x"&gt;
+    <b class="+ topic/ph hi-d/b " xtrc="b:3;66:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;keydef keys="model"&gt;
+      &lt;topicmeta&gt;
+        &lt;linktext&gt;X&lt;/linktext&gt;
+      &lt;/topicmeta&gt;
+    &lt;/keydef&gt;</b>
+    &lt;topicref href="model-x-procedures.dita"&gt;
+      &lt;topicref href="model-x/replacing-a-tire.dita"/&gt;
+      &lt;topicref href="model-x/adding-fluid.dita"/&gt;
+      <b class="+ topic/ph hi-d/b " xtrc="b:4;74:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;topicref href="common/changing-the-oil.dita"/&gt;</b>
+    &lt;/topicref&gt;
+  &lt;/topicgroup&gt;
+
+&lt;!-- Model Y: Maintenance procedures --&gt;
+  &lt;topicgroup keyscope="model-y"&gt;
+    <b class="+ topic/ph hi-d/b " xtrc="b:5;80:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;keydef keys="model"&gt;
+      &lt;topicmeta&gt;
+        &lt;linktext&gt;Y&lt;/linktext&gt;
+      &lt;/topicmeta&gt;
+    &lt;/keydef&gt;</b>
+    &lt;topicref href="model-y-procedures.dita"&gt;
+      &lt;topicref href="model-y/replacing-a-tire.dita"/&gt;
+      &lt;topicref href="model-y/adding-fluid.dita"/&gt;
+      <b class="+ topic/ph hi-d/b " xtrc="b:6;88:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">&lt;topicref href="common/changing-the-oil.dita"/&gt;</b>
+    &lt;/topicref&gt;
+  &lt;/topicgroup&gt;
+&lt;/map&gt;</codeblock>
+    <p class="- topic/p " xtrc="p:7;92:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">When the DITA map is processed, the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:3;92:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-keys-for-variable-text.dita">changing-the-oil.dita</filepath> topic is
+     rendered twice. The model variable is rendered differently in each instance, using the text as
+     specified in the scoped key definition.</p>
+   </li>
+  </ol>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:4;8:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/examples_of_keys.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:1;5:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Examples of keys</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">This section of the specification contains examples and scenarios. They illustrate a         wide variety of ways that keys can be used.</desc></link><link class="- topic/link " format="dita" href="../../archSpec/base/example-key-definition-for-variable-text.dita" mapclass="- map/topicref " role="previous" scope="local" type="concept" xtrc="topicref:3;7:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Examples: Key definitions for variable text</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Key definitions can be used to store variable text, such as product names and   user-interface labels. Depending on the key definition, the rendered output might have a link to a   related resource.</desc></link><link class="- topic/link " format="dita" href="../../archSpec/base/example-resolution-of-duplicate-key-definitions.dita" mapclass="- map/topicref " role="next" scope="local" type="concept" xtrc="topicref:5;9:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Example: Duplicate key definitions within a single map</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">A DITA map might contain duplicate key definitions. How processors find the effective     key definition depends on document order <ph class="- topic/ph " rev="review-2" xtrc="ph:1;6:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-resolution-of-duplicate-key-definitions.dita">and the effect of filtering applied       to the key definitions.</ph></desc></link></linkpool></related-links></concept>

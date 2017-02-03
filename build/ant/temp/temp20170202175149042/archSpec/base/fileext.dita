@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="fileext" xml:lang="en-us" xtrc="concept:1;4:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+  <title class="- topic/title " xtrc="title:1;5:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">File naming conventions</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">DITA uses certain naming conventions and file extensions for topics, maps, modules, and
+    document type shells.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;8:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+    <author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author><metadata class="- topic/metadata " xtrc="metadata:1;9:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+      <keywords class="- topic/keywords " xtrc="keywords:1;10:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+        <indexterm class="- topic/indexterm " xtrc="indexterm:1;11:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">constraint modules<indexterm class="- topic/indexterm " xtrc="indexterm:2;11:49" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file names</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:3;12:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">conventions<indexterm class="- topic/indexterm " xtrc="indexterm:4;12:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file extensions</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:5;12:80" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file
+            names</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:6;14:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">document type shells<indexterm class="- topic/indexterm " xtrc="indexterm:7;14:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file names</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:8;15:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">domain modules<indexterm class="- topic/indexterm " xtrc="indexterm:9;15:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file names</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:10;16:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file extensions<indexterm class="- topic/indexterm " xtrc="indexterm:11;16:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">conditional processing
+            profiles</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:12;17:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">DITAVAL</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:13;17:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">maps</indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:14;17:101" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">topics</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:15;18:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file names<indexterm class="- topic/indexterm " xtrc="indexterm:16;18:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">conventions</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:17;19:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">structural modules<indexterm class="- topic/indexterm " xtrc="indexterm:18;19:49" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">file names</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;23:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+    <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="28 November 2014" translate="no" xtrc="draft-comment:1;24:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+      <p class="- topic/p " xtrc="p:1;25:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">This is a problematic topic. We are repeating information covered elsewhere in the spec --
+        primarily in the "Configuration, specialization, and constraints" section -- and we are
+        covering it in substantially less detail. For example, in the "Constraints" topics, we give
+        much further guidance about distinguishing between domain and structural contraints.</p>
+    </draft-comment>
+    <p class="- topic/p " xtrc="p:2;30:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">Files that contain DITA content <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;30:87" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">SHOULD</term>
+      use the following naming conventions <ph class="- topic/ph " rev="DITA1.3" xtrc="ph:1;31:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">and file extensions</ph>:</p>
+    <dl class="- topic/dl " xtrc="dl:1;32:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+      <dlentry class="- topic/dlentry " xtrc="dlentry:1;33:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+        <dt class="- topic/dt " xtrc="dt:1;34:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">DITA topics</dt>
+        <dd class="- topic/dd " xtrc="dd:1;35:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <ul base="" class="- topic/ul " xtrc="ul:1;36:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <li class="- topic/li " xtrc="li:1;37:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">*.dita (preferred)</li>
+            <li class="- topic/li " xtrc="li:2;38:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">*.xml </li>
+          </ul>
+        </dd>
+      </dlentry>
+      <dlentry class="- topic/dlentry " xtrc="dlentry:2;42:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+        <dt class="- topic/dt " xtrc="dt:2;43:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">DITA maps</dt>
+        <dd class="- topic/dd " xtrc="dd:2;44:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">*.ditamap</dd>
+      </dlentry>
+      <dlentry class="- topic/dlentry " xtrc="dlentry:3;46:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+        <dt class="- topic/dt " xtrc="dt:3;47:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">Conditional processing profiles</dt>
+        <dd class="- topic/dd " xtrc="dd:3;48:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;48:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">*.ditaval</filepath></dd>
+      </dlentry>
+    </dl>
+    <p class="- topic/p " id="doctype-naming-conventions" xtrc="p:3;51:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">Files that define DITA document-type components <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:2;52:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">SHOULD</term> use the following naming conventions:<dl class="- topic/dl " xtrc="dl:2;52:105" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:4;53:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:4;54:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">Document-type shell files</dt>
+          <dd class="- topic/dd " xtrc="dd:4;55:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:2;56:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:3;57:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:1;57:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>.dtd</li>
+              <li class="- topic/li " xtrc="li:4;58:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:2;58:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>.xsd</li>
+              <li class="- topic/li " xtrc="li:5;59:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:3;59:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>.rnc</li>
+              <li class="- topic/li " xtrc="li:6;60:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:4;60:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>.rng</li>
+            </ul>
+            <p class="- topic/p " xtrc="p:4;62:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">where <varname class="+ topic/keyword sw-d/varname " xtrc="varname:5;62:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname> is the name of the root topic or map type that is
+              defined by the document type shell. <ph class="- topic/ph " rev="review-2" xtrc="ph:2;63:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">In certain circumstances,
+                  <varname class="+ topic/keyword sw-d/varname " xtrc="varname:6;64:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname> might also contain a modifier to distinguish the
+                document-type shell from other document-type shells for the same root type.</ph></p>
+            <p class="- topic/p " xtrc="p:5;66:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">For example, the OASIS-provided document-type shells for technical content include
+              two different document-type shells for the task topic type:
+                <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;68:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">task.dtd</filepath> and <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:3;68:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">generalTask.dtd</filepath>. <ph class="- topic/ph " rev="review-2" xtrc="ph:3;69:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">The root element for both document-type shells is the same --
+                  <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;70:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">task</xmlelement> -- but the DTDs require unique file names because
+                they represent different sets of vocabulary and constraint modules.</ph></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:5;74:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:5;75:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">DTD structural module files</dt>
+          <dd class="- topic/dd " xtrc="dd:5;76:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:3;77:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:7;78:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:4;78:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:7;78:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>.mod</filepath></li>
+              <li class="- topic/li " xtrc="li:8;79:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:5;79:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:8;79:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>.ent</filepath>
+              </li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:6;84:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:6;85:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">DTD domain module files</dt>
+          <dd class="- topic/dd " xtrc="dd:6;86:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:4;87:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:9;88:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:6;88:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:9;88:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Domain.mod</filepath></li>
+              <li class="- topic/li " xtrc="li:10;89:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:7;89:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:10;89:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Domain.ent</filepath></li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:7;93:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:7;94:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">DTD constraint module files</dt>
+          <dd class="- topic/dd " xtrc="dd:7;95:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <p class="- topic/p " xtrc="p:6;96:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:8;96:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:11;96:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">constraintname</varname>Constraint.mod</filepath></p>
+            <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " translate="no" xtrc="draft-comment:2;97:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <p class="- topic/p " xtrc="p:7;98:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">In review #2, Nancy Harrison suggested adding
+                    <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:9;99:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:12;99:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">constraintname</varname>Constraint.ent</filepath></p>
+              <p class="- topic/p " xtrc="p:8;100:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">We need to ensure that everything we state here agrees with content in the
+                "Configuration, specialization, and constraints" section.</p>
+            </draft-comment>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:8;105:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:8;106:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">Schema structural module files</dt>
+          <dd class="- topic/dd " xtrc="dd:8;107:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:5;108:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:11;109:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:10;109:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:13;109:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Mod.xsd</filepath></li>
+              <li class="- topic/li " xtrc="li:12;110:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:11;110:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:14;110:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Grp.xsd</filepath></li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:9;114:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:9;115:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">Schema domain module files</dt>
+          <dd class="- topic/dd " xtrc="dd:9;116:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:12;116:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:15;116:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Domain.xsd</filepath>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:10;119:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:10;120:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">Schema constraint module files</dt>
+          <dd class="- topic/dd " xtrc="dd:10;121:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:6;122:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:13;123:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:13;123:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:16;123:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">constraintname</varname>ConstraintMod.xsd</filepath></li>
+              <li class="- topic/li " xtrc="li:14;124:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:14;124:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:17;124:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">constraintname</varname>ConstraintIntMod.xsd</filepath></li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13112" xtrc="dlentry:11;128:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:11;129:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">RELAX NG structural module files</dt>
+          <dd class="- topic/dd " xtrc="dd:11;130:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:7;131:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:15;132:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:18;132:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Mod.rnc</li>
+              <li class="- topic/li " xtrc="li:16;133:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:19;133:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Mod.rng</li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13112" xtrc="dlentry:12;137:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:12;138:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">RELAX NG domain module files</dt>
+          <dd class="- topic/dd " xtrc="dd:12;139:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:8;140:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:17;141:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:20;141:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Domain.rnc</li>
+              <li class="- topic/li " xtrc="li:18;142:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:21;142:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">typename</varname>Domain.rng</li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " rev="DITA1.3 proposal-13112" xtrc="dlentry:13;146:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+          <dt class="- topic/dt " xtrc="dt:13;147:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">RELAX NG constraint module files</dt>
+          <dd class="- topic/dd " xtrc="dd:13;148:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+            <ul class="- topic/ul " xtrc="ul:9;149:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">
+              <li class="- topic/li " xtrc="li:19;150:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:22;150:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">constraintname</varname>ConstraintMod.rnc</li>
+              <li class="- topic/li " xtrc="li:20;151:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:23;151:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/fileext.dita">constraintname</varname>ConstraintMod.rng</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl></p>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:4;8:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/introduction-to-dita.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/introduction-to-dita.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:1;5:78" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/introduction-to-dita.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Introduction to DITA</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The Darwin Information Typing Architecture (DITA) is an XML-based architecture for         authoring, producing, and delivering topic-oriented, information-typed content that can be         reused and single-sourced in a variety of ways. While DITA historically has been driven by         the requirements of large-scale technical documentation authoring, management, and delivery,         it is a standard that is applicable to any kind of publication or information that might be         presented to readers, including interactive training and educational materials, standards,         reports, business documents, trade books, travel and nature guides, and more. </desc></link></linkpool></related-links></concept>

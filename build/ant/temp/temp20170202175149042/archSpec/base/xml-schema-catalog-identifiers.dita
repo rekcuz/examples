@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="xml-schema-catalog-identifiers" xtrc="reference:1;3:48" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+  <title class="- topic/title " xtrc="title:1;4:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">XML Schema catalog identifiers</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Each Schema document must be uniquely identified using a Uniform Resource Name (URN).
+    Each Schema document has a version-independent as well as a version-specific URN. </shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;7:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+    <section class="- topic/section " xtrc="section:1;8:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+      <title class="- topic/title " xtrc="title:2;9:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Format</title>
+      <p class="- topic/p " xtrc="p:1;10:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">An XML resolver should be used to uniquely identify an XML Schema in order to map to a
+        local resource. The DITA specification includes both URN- and URL-based versions of the XML
+        schemas. The URL versions are included as a convenience for use with tools that do not
+        support catalog based resolution and are not normative.</p>
+      <p class="- topic/p " xtrc="p:2;14:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">The catalog identifiers use the following patterns.</p>
+      <simpletable class="- topic/simpletable " frame="all" relcolwidth="1.0* 2.0*" xtrc="simpletable:1;15:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+        <sthead class="- topic/sthead " xtrc="sthead:1;16:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:1;17:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Creator</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:2;18:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Pattern</stentry>
+        </sthead>
+        <strow class="- topic/strow " xtrc="strow:1;20:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:3;21:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">OASIS DITA Technical Committee</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:4;22:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;22:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:<varname class="+ topic/keyword sw-d/varname " xtrc="varname:1;22:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">filename</varname>.xsd:<varname class="+ topic/keyword sw-d/varname " xtrc="varname:2;22:97" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">version</varname>
+            </codeph></stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:2;25:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:5;26:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Subcommittee of the OASIS DITA Technical Committee</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:6;27:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;27:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:<varname class="+ topic/keyword sw-d/varname " xtrc="varname:3;27:66" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">subcomittee-specialization</varname>:xsd:<varname class="+ topic/keyword sw-d/varname " xtrc="varname:4;27:116" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">filename</varname>.xsd:<varname class="+ topic/keyword sw-d/varname " xtrc="varname:5;27:148" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">version</varname>
+            </codeph></stentry>
+        </strow>
+      </simpletable>
+      <p class="- topic/p " xtrc="p:3;31:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">where:<ul class="- topic/ul " xtrc="ul:1;31:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <li class="- topic/li " xtrc="li:1;32:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:6;32:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">subcomittee-specialization</varname> indicates the subcommittee and
+            specialization, for example, "machinery" or "learning".</li>
+          <li class="- topic/li " xtrc="li:2;34:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:7;34:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">filename</varname> is the base name of the document-type shell or module
+            component.</li>
+          <li class="- topic/li " xtrc="li:3;36:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:8;36:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">version</varname> either is a DITA version number (for example, 1.0, 1.1,
+            1.2, or 1.3) or is omitted entirely.</li>
+        </ul></p>
+      <p class="- topic/p " xtrc="p:4;39:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Note that "oasis" is the owner identifier; this indicates that the artifacts are owned by
+        OASIS. The keyword "dita" is a convention that indicates that the artifact is DITA-related.
+        The pattern "urn:oasis:names:tc:dita" is a convention that indicates that the artifact is
+        DITA-related and defined by the OASIS DITA Technical Committee.</p>
+      <p class="- topic/p " xtrc="p:5;43:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Catalog identifiers for document-type shells that are not defined by the OASIS DITA
+        Technical Committee or DITA Technical Committee subcommittees <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;45:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">SHOULD</term> use an owner identifier that unambiguously indicates the
+        owner of the shell, for example, "example.com". In that case, the an appropriate URN would
+        be "urn:example.com:names:dita:xsd:topic.xsd". </p>
+      <p class="- topic/p " xtrc="p:6;48:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita"><draft-comment author="robander" class="- topic/draft-comment " time="16 February 2015" translate="no" xtrc="draft-comment:1;48:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">The entity resolution catalog?
+          Does this mean the single "catalog.xml" file we used to distribute? We no longer have one
+          single catalog that lists them all, instead we have an entry point that references a
+          variety of other catalogs.</draft-comment>The entity resolution catalog that is part of
+        the DITA Schema package lists the full set of document-type shells, module components, and
+        their associated catalog identifiers.</p>
+    </section>
+    <section class="- topic/section " xtrc="section:2;55:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+      <title class="- topic/title " xtrc="title:3;56:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Topic and topic-based specializations</title>
+      <p class="- topic/p " xtrc="p:15;210:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">The identifiers listed below are declared by the
+                                OASIS DITA Technical Committee for the modules that are shipped with
+                                DITA 1.3. Values that use a version number of 1.3 refer specifically
+                                to the modules that are delivered with the DITA 1.3 specification.
+                                Values that use a version number of 1.x refer to the modules in the
+                                latest approved DITA 1.x specification. Values without a version
+                                number refer to the modules in the latest approved DITA
+                                specification, regardless of version.</p>
+      <dl class="- topic/dl " xtrc="dl:1;58:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+        <dlentry class="- topic/dlentry " product="base" xtrc="dlentry:1;59:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:1;60:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Base topic</dt>
+          <dd class="- topic/dd " xtrc="dd:1;61:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:1;62:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:basetopic.xsd:1.3
+urn:oasis:names:tc:dita:xsd:basetopic.xsd:1.x
+urn:oasis:names:tc:dita:xsd:basetopic.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:2;67:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:2;68:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Concept</dt>
+          <dd class="- topic/dd " xtrc="dd:2;69:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:2;70:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:concept.xsd:1.3
+urn:oasis:names:tc:dita:xsd:concept.xsd:1.x
+urn:oasis:names:tc:dita:xsd:concept.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:3;75:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:3;76:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">DITAbase</dt>
+          <dd class="- topic/dd " xtrc="dd:3;77:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:3;78:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:ditabase.xsd:1.3
+urn:oasis:names:tc:dita:xsd:ditabase.xsd:1.x
+urn:oasis:names:tc:dita:xsd:ditabase.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:4;83:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:4;84:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Glossary</dt>
+          <dd class="- topic/dd " xtrc="dd:4;85:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:4;86:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:glossary.xsd:1.3
+urn:oasis:names:tc:dita:xsd:glossary.xsd:1.x
+urn:oasis:names:tc:dita:xsd:glossary.xsd</lines>
+          </dd>
+          <dd class="- topic/dd " xtrc="dd:5;90:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <note class="- topic/note " xtrc="note:1;91:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">The <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;91:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">glossary.xsd</filepath> file is provided only for backward
+              compatibility with DITA 1.1. Use the <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;92:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">glossentry.xsd</filepath> file in new
+              documents.</note>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:5;96:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:5;97:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Glossary entry</dt>
+          <dd class="- topic/dd " xtrc="dd:6;98:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:5;99:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:glossentry.xsd:1.3
+urn:oasis:names:tc:dita:xsd:glossentry.xsd:1.x
+urn:oasis:names:tc:dita:xsd:glossentry.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:6;104:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:6;105:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning assessment</dt>
+          <dd class="- topic/dd " xtrc="dd:7;106:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:6;107:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:learning:xsd:learningAssessment.xsd:1.3
+urn:oasis:names:tc:dita:spec:learning:xsd:learningAssessment.xsd:1.x
+urn:oasis:names:tc:dita:spec:learning:xsd:learningAssessment.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:7;112:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:7;113:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning content</dt>
+          <dd class="- topic/dd " xtrc="dd:8;114:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:7;115:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:learning:xsd:learningContent.xsd:1.3
+urn:oasis:names:tc:dita:spec:learning:xsd:learningContent.xsd:1.x
+urn:oasis:names:tc:dita:spec:learning:xsd:learningContent.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:8;120:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:8;121:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning overview</dt>
+          <dd class="- topic/dd " xtrc="dd:9;122:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:8;123:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:learning:xsd:learningOverview.xsd:1.3
+urn:oasis:names:tc:dita:spec:learning:xsd:learningOverview.xsd:1.x
+urn:oasis:names:tc:dita:spec:learning:xsd:learningOverview.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:9;128:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:9;129:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning plan</dt>
+          <dd class="- topic/dd " xtrc="dd:10;130:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:9;131:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:learning:xsd:learningPlan.xsd:1.3
+urn:oasis:names:tc:dita:spec:learning:xsd:learningPlan.xsd:1.x
+urn:oasis:names:tc:dita:spec:learning:xsd:learningPlan.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:10;136:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:10;137:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning summary</dt>
+          <dd class="- topic/dd " xtrc="dd:11;138:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:10;139:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:learning:xsd:learningSummary.xsd:1.3
+urn:oasis:names:tc:dita:spec:learning:xsd:learningSummary.xsd:1.x
+urn:oasis:names:tc:dita:spec:learning:xsd:learningSummary.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:11;144:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:11;145:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Machinery task</dt>
+          <dd class="- topic/dd " xtrc="dd:12;146:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:11;147:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:machinery:xsd:machineryTask.xsd:1.3
+urn:oasis:names:tc:dita:spec:machinery:xsd:machineryTask.xsd:1.x
+urn:oasis:names:tc:dita:spec:machinery:xsd:machineryTask.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:12;152:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:12;153:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Reference</dt>
+          <dd class="- topic/dd " xtrc="dd:13;154:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:12;155:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:reference.xsd:1.3
+urn:oasis:names:tc:dita:xsd:reference.xsd:1.x
+urn:oasis:names:tc:dita:xsd:reference.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:13;160:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:13;161:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Task (general)</dt>
+          <dd class="- topic/dd " xtrc="dd:14;162:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:13;163:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:generalTask.xsd:1.3
+urn:oasis:names:tc:dita:xsd:generalTask.xsd:1.x
+urn:oasis:names:tc:dita:xsd:generalTask.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:14;168:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:14;169:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Task (strict)</dt>
+          <dd class="- topic/dd " xtrc="dd:15;170:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:14;171:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:task.xsd:1.3
+urn:oasis:names:tc:dita:xsd:task.xsd:1.x
+urn:oasis:names:tc:dita:xsd:task.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:15;176:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:15;177:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Topic</dt>
+          <dd class="- topic/dd " xtrc="dd:16;178:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:15;179:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:topic.xsd:1.3
+urn:oasis:names:tc:dita:xsd:topic.xsd:1.x
+urn:oasis:names:tc:dita:xsd:topic.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" rev="DITA1.3 proposal-13097" xtrc="dlentry:16;184:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:16;185:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Troubleshooting</dt>
+          <dd class="- topic/dd " xtrc="dd:17;186:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:16;187:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:troubleshooting.xsd:1.3
+urn:oasis:names:tc:dita:xsd:troubleshooting.xsd:1.x
+urn:oasis:names:tc:dita:xsd:troubleshooting.xsd</lines>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section class="- topic/section " xtrc="section:3;194:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+      <title class="- topic/title " xtrc="title:4;195:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Map and map-based specializations</title>
+      <p class="- topic/p " xtrc="p:15;210:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">The identifiers listed below are declared by the
+                                OASIS DITA Technical Committee for the modules that are shipped with
+                                DITA 1.3. Values that use a version number of 1.3 refer specifically
+                                to the modules that are delivered with the DITA 1.3 specification.
+                                Values that use a version number of 1.x refer to the modules in the
+                                latest approved DITA 1.x specification. Values without a version
+                                number refer to the modules in the latest approved DITA
+                                specification, regardless of version.</p>
+      <dl class="- topic/dl " xtrc="dl:2;197:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+        <dlentry class="- topic/dlentry " product="base" xtrc="dlentry:17;198:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:17;199:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Base map</dt>
+          <dd class="- topic/dd " xtrc="dd:18;200:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:17;201:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:basemap.xsd:1.3
+urn:oasis:names:tc:dita:xsd:basemap.xsd:1.x
+urn:oasis:names:tc:dita:xsd:basemap.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:18;206:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:18;207:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Bookmap</dt>
+          <dd class="- topic/dd " xtrc="dd:19;208:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:18;209:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:bookmap.xsd:1.3
+urn:oasis:names:tc:dita:xsd:bookmap.xsd:1.x
+urn:oasis:names:tc:dita:xsd:bookmap.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="base" xtrc="dlentry:19;214:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:19;215:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Classification</dt>
+          <dd class="- topic/dd " xtrc="dd:20;216:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:19;217:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:classification:xsd:classifyMap.xsd:1.3
+urn:oasis:names:tc:dita:spec:classification:xsd:classifyMap.xsd:1.x
+urn:oasis:names:tc:dita:spec:classification:xsd:classifyMap.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:20;222:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:20;223:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning bookmap</dt>
+          <dd class="- topic/dd " xtrc="dd:21;224:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:20;225:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:learning:xsd:learningBookmap.xsd:1.3
+urn:oasis:names:tc:dita:spec:learning:xsd:learningBookmap.xsd:1.x
+urn:oasis:names:tc:dita:spec:learning:xsd:learningBookmap.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:21;230:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:21;231:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning map</dt>
+          <dd class="- topic/dd " xtrc="dd:22;232:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:21;233:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:learning:xsd:learningMap.xsd:1.3
+urn:oasis:names:tc:dita:spec:learning:xsd:learningMap.xsd:1.x
+urn:oasis:names:tc:dita:spec:learning:xsd:learningMap.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" rev="DITA1.3 proposal-13089" xtrc="dlentry:22;238:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:22;239:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning group map</dt>
+          <dd class="- topic/dd " xtrc="dd:23;240:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:22;241:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:learningGroupMap.xsd:1.3
+urn:oasis:names:tc:dita:xsd:learningGroupMap.xsd:1.x
+urn:oasis:names:tc:dita:xsd:learningGroupMap.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="learningTraining" rev="DITA1.3 proposal-13089" xtrc="dlentry:23;246:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:23;247:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Learning object map</dt>
+          <dd class="- topic/dd " xtrc="dd:24;248:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:23;249:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:learningObjectMap.xsd:1.3
+urn:oasis:names:tc:dita:xsd:learningObjectMap.xsd:1.x
+urn:oasis:names:tc:dita:xsd:learningObjectMap.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="technicalContent" xtrc="dlentry:24;254:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:24;255:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Map</dt>
+          <dd class="- topic/dd " xtrc="dd:25;256:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:24;257:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:map.xsd:1.3
+urn:oasis:names:tc:dita:xsd:map.xsd:1.x
+urn:oasis:names:tc:dita:xsd:map.xsd</lines>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " product="base" xtrc="dlentry:25;262:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+          <dt class="- topic/dt " xtrc="dt:25;263:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">Subject scheme</dt>
+          <dd class="- topic/dd " xtrc="dd:26;264:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+            <lines class="- topic/lines " xml:space="preserve" xtrc="lines:25;265:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:spec:classification:xsd:subjectScheme.xsd:1.3
+urn:oasis:names:tc:dita:spec:classification:xsd:subjectScheme.xsd:1.x
+urn:oasis:names:tc:dita:spec:classification:xsd:subjectScheme.xsd</lines>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section class="- topic/section " xtrc="section:4;272:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">
+      <title class="- topic/title " xtrc="title:5;273:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">DITAVAL for conditional processing</title>
+      <p class="- topic/p " xtrc="p:15;210:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">The identifiers listed below are declared by the
+                                OASIS DITA Technical Committee for the modules that are shipped with
+                                DITA 1.3. Values that use a version number of 1.3 refer specifically
+                                to the modules that are delivered with the DITA 1.3 specification.
+                                Values that use a version number of 1.x refer to the modules in the
+                                latest approved DITA 1.x specification. Values without a version
+                                number refer to the modules in the latest approved DITA
+                                specification, regardless of version.</p>
+      <lines class="- topic/lines " xml:space="preserve" xtrc="lines:26;275:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xml-schema-catalog-identifiers.dita">urn:oasis:names:tc:dita:xsd:ditaval.xsd:1.3
+urn:oasis:names:tc:dita:xsd:ditaval.xsd:1.x
+urn:oasis:names:tc:dita:xsd:ditaval.xsd</lines>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:12;17:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization-and-custom-doctypes.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/createCustomDocType.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:7;12:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization-and-custom-doctypes.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Configuration (Document type shells)</linktext><?ditaot genshortdesc?><desc class="- topic/desc "><ph class="- topic/ph " xtrc="ph:11;64:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">A DITA map or topic is governed by a                                         DITA document type that defines the set of structural                                         modules (topic or map types), domain modules, and constraint                                         modules that the map or topic can use.</ph></desc></link></linkpool></related-links></reference>

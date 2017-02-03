@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="general-coding-requirements" xml:lang="en-us" xtrc="concept:1;3:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+  <title class="- topic/title " xtrc="title:1;4:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">DTD: Coding requirements for element type declarations</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">This topic covers general coding requirements for both structural and element-domain
+    vocabulary modules.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;7:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+    <p class="- topic/p " xtrc="p:1;8:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">A vocabulary module that defines a structural or element domain specialization is composed of
+      two files:</p>
+    <ul class="- topic/ul " outputclass="example" xtrc="ul:1;10:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+      <li class="- topic/li " xtrc="li:1;11:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">An entity declaration (.ent) file, which declares the text entities that are used to
+        integrate the vocabulary module into a document type shell</li>
+      <li class="- topic/li " xtrc="li:2;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">A definition module (.mod) files, which declares the content models and attribute lists
+        for the element types that are defined in the vocabulary module</li>
+    </ul>
+    <section class="- topic/section " xtrc="section:1;16:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+      <title class="- topic/title " xtrc="title:2;17:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Domain declaration entity</title>
+      <p class="- topic/p " xtrc="p:2;18:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The domain declaration entity is used to construct the effective value of the
+          <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;19:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">domains</xmlatt> attribute for a map or topic type</p>
+      <dl class="- topic/dl " xtrc="dl:1;20:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;21:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+          <dt class="- topic/dt " xtrc="dt:1;22:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Text entity name</dt>
+          <dd class="- topic/dd " xtrc="dd:1;23:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+            <p class="- topic/p " xtrc="p:3;24:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The name of the text entity is the structural type name or the domain abbreviation,
+              followed by a hyphen ("-") and the literal <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;25:66" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">att</codeph>.</p>
+            <p class="- topic/p " xtrc="p:4;26:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For example, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;26:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">concept-att</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;26:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">hi-d-att</codeph>.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:2;29:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+          <dt class="- topic/dt " xtrc="dt:2;30:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Text entity values</dt>
+          <dd class="- topic/dd " xtrc="dd:2;31:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+            <p class="- topic/p " xtrc="p:5;32:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The value of the text entity is the specialization hierarchy of the vocabulary
+              modules. This lists the dependencies of the vocabulary module in order of dependency
+              from left to right, enclosed in parentheses. Domain abbreviations are used in the
+              list.</p>
+            <p class="- topic/p " outputclass="example" xtrc="p:6;36:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For example, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;36:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ENTITY concept-att "(topic concept)"
+                &gt;</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;37:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ENTITY hi-d-att "(topic hi-d)" &gt;</codeph>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section class="- topic/section " xtrc="section:2;42:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+      <title class="- topic/title " xtrc="title:3;43:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Element definitions</title>
+      <p class="- topic/p " xtrc="p:7;44:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">A structural or domain vocabulary module <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;45:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> contain a declaration for each element type that is named by the module.
+        While the XML standard allows content models to refer to undeclared element types, the DITA
+        standard does not permit this. All element types or attribute lists that are named within a
+        vocabulary module must be declared in one of the following objects:</p>
+      <ul class="- topic/ul " xtrc="ul:2;49:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+        <li class="- topic/li " xtrc="li:3;50:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The vocabulary module</li>
+        <li class="- topic/li " xtrc="li:4;51:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">A base module of which the vocabulary module is a direct or indirect specialization</li>
+        <li class="- topic/li " xtrc="li:5;52:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">(If the vocabulary module is a structural module)A required domain module</li>
+      </ul>
+      <p class="- topic/p " xtrc="p:8;54:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The following items are declared in the .mod file for the vocabulary module:</p>
+      <dl class="- topic/dl " xtrc="dl:2;55:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;56:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+          <dt class="- topic/dt " xtrc="dt:3;57:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Element name entities</dt>
+          <dd class="- topic/dd " xtrc="dd:3;58:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+            <p class="- topic/p " xtrc="p:9;59:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For each element type, there must be a parameter entity.</p>
+            <p class="- topic/p " xtrc="p:10;60:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The name of the parameter entity is the element type name, and the default value is
+              the element type name.</p>
+            <p class="- topic/p " outputclass="example" xtrc="p:11;62:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For
+              example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;63:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ENTITY % conbody "conbody"&gt;</codeblock></p>
+            <p class="- topic/p " xtrc="p:12;64:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The parameter entity provides a layer of abstraction that facilitates redefinition. A
+              document type shell can redefine an element entity to add domain-specialized elements
+              or replace a base element type with one or more specializations of that type. Because
+              declarations use the parameter entity rather than the element type name to include the
+              element in a content model, the redefinition given in a document type shell is
+              propagated to every context in which the base element occurs.</p>
+            <p class="- topic/p " xtrc="p:13;70:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The parameter entities must be grouped together at the top of the vocabulary module.
+              This ensures that they are declared before they are referenced in the parameter
+              entities that define the content models for the elements The parameter declarations
+              can occur in any order.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:4;76:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+          <dt class="- topic/dt " xtrc="dt:4;77:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Element name declarations</dt>
+          <dd class="- topic/dd " xtrc="dd:4;78:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+            <p class="- topic/p " xtrc="p:14;79:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Intro to definition list needed here.</p>
+            <dl class="- topic/dl " xtrc="dl:3;80:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:5;81:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                <dt class="- topic/dt " xtrc="dt:5;82:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Name and value for the content-model parameter entity</dt>
+                <dd class="- topic/dd " xtrc="dd:5;83:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                  <p class="- topic/p " xtrc="p:15;84:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For each element type, there must be a parameter entity that defines the
+                    content model. The name of the parameter entity is
+                        <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;86:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:1;86:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">tagname</varname>.content</codeph>, and the value is the
+                    content model definition.</p>
+                  <p class="- topic/p " outputclass="example" xtrc="p:16;88:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For
+                    example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;89:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ENTITY % topichead.content
+  "((%topicmeta;)?, 
+    (%anchor; | 
+     %data.elements.incl; | 
+     %navref; | 
+     %topicref;)*)
+"&gt;</codeblock></p>
+                  <p class="- topic/p " xtrc="p:17;96:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The content-model parameter entity can be overridden in document type shells or
+                    constraint modules in order to further constrain the content model for the
+                    element type.</p>
+                </dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:6;101:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                <dt class="- topic/dt " xtrc="dt:6;102:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Name and value for the attribute-list parameter entity</dt>
+                <dd class="- topic/dd " xtrc="dd:6;103:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                  <p class="- topic/p " xtrc="p:18;104:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For each element type, there must be a parameter entity that declares the
+                    attributes that are available on the element. The name of the parameter entity
+                    is <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;106:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:2;106:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">tagname</varname>.attributes</codeph>, and the value is a
+                    list of the attributes that are used by the element type (except for the
+                    attributes provided by the <parameterentity class="+ topic/keyword markup-d/markupname xml-d/parameterentity " xtrc="parameterentity:1;108:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">global-atts</parameterentity>
+                    parameter
+                    entity.</p>
+                  <p class="- topic/p " outputclass="example" xtrc="p:19;111:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For
+                    example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;112:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ENTITY % topichead.attributes
+ "navtitle CDATA #IMPLIED
+  outputclass CDATA #IMPLIED
+  keys CDATA #IMPLIED
+  %topicref-atts;
+  %univ-atts;"
+&gt;</codeblock></p>
+                </dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:7;121:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                <dt class="- topic/dt " xtrc="dt:7;122:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Element declaration</dt>
+                <dd class="- topic/dd " xtrc="dd:7;123:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                  <p class="- topic/p " xtrc="p:20;124:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For each element type, there must be an element declaration that consists of a
+                    reference to the content-model parameter entity.</p>
+                  <p class="- topic/p " outputclass="example" xtrc="p:21;126:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For
+                    example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;127:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ELEMENT topichead    %topichead.content;&gt;</codeblock></p>
+                </dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:8;130:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                <dt class="- topic/dt " xtrc="dt:8;131:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Attribute list declaration</dt>
+                <dd class="- topic/dd " xtrc="dd:8;132:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+                  <p class="- topic/p " xtrc="p:22;133:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For each element type, there must be an attribute list declaration that
+                    consists of a reference to the attribute-list parameter entity.</p>
+                  <p class="- topic/p " outputclass="example" xtrc="p:23;135:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For
+                    example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:5;136:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ATTLIST topichead    %topichead.attributes;&gt;</codeblock></p>
+                </dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p " xtrc="p:24;140:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The content model parameter entity, attribute list parameter entity, ELEMENT
+              declaration, and ATTLIST declaration <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:2;142:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">SHOULD</term> be grouped together. Each group of declarations can occur in any
+              order within the module.</p>
+            <p class="- topic/p " outputclass="example" xtrc="p:25;144:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For
+              example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:6;145:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!--                    LONG NAME: Topic Head                      --&gt;
+&lt;!ENTITY % topichead.content
+  "((%topicmeta;)?, 
+    (%anchor; | 
+     %data.elements.incl; | 
+     %navref; | 
+     %topicref;)* )
+"&gt;
+&lt;!ENTITY % topichead.attributes
+  "navtitle 
+      CDATA 
+          #IMPLIED
+   outputclass 
+      CDATA 
+           #IMPLIED
+   keys 
+      CDATA 
+          #IMPLIED
+   %topicref-atts;
+   %univ-atts;"
+&gt;
+&lt;!ELEMENT topichead    %topichead.content;&gt;
+&lt;!ATTLIST topichead    %topichead.attributes;&gt;</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:9;170:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+          <dt class="- topic/dt " xtrc="dt:9;171:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">Specialization attribute declarations</dt>
+          <dd class="- topic/dd " xtrc="dd:9;172:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">
+            <p class="- topic/p " xtrc="p:26;173:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">A vocabulary module <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:3;173:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> define
+              a <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;174:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute for every specialized element declared in the
+              module. The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;175:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:4;176:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> include the value of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;176:80" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt>
+              attribute of the base element, and append to it the element name qualified by the
+              topic element name with at least one leading and trailing space. The
+                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;179:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute for an element introduced by a structural
+              specialization <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:5;180:77" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> start with a
+              minus sign ("-"). The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:6;181:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute for a domain specialization
+                <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:6;182:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> start with a plus sign
+              ("+"). The initial minus or plus sign <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:7;184:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> be followed by one or more spaces. The attribute value <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:8;185:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> end with one or more trailing
+              spaces. </p>
+            <p class="- topic/p " xtrc="p:27;187:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The ATTLIST declaration for the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:7;187:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:9;188:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> also include a reference to the
+                <parameterentity class="+ topic/keyword markup-d/markupname xml-d/parameterentity " xtrc="parameterentity:2;189:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">global-atts</parameterentity> parameter entity.</p>
+            <p class="- topic/p " outputclass="example" xtrc="p:28;190:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">For example, the ATTLIST definition for the
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;191:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">conbody</xmlelement> element (a specialization of the
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;192:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">body</xmlelement> element in the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;192:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">topic</xmlelement> base
+              type) includes global attributes with an entity, then the definition of the
+                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:8;194:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute, as
+              follows:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:7;195:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">&lt;!ATTLIST conbody     %global-atts;  class CDATA "- topic/body  concept/conbody "&gt;</codeblock></p>
+            <p class="- topic/p " xtrc="p:29;196:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:9;196:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute declarations for a module <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:10;197:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">MUST</term> be grouped together at the end
+              of the module after any other declarations. The declarations can occur in any
+              order.</p>
+            <p class="- topic/p " xtrc="p:30;200:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">See <xref class="- topic/xref " format="dita" href="classatt.dita#classatt" xtrc="xref:1;200:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita" type="concept"><?ditaot gentext?>class attribute<?ditaot genshortdesc?><desc class="- topic/desc ">Each DITA element declares its specialization hierarchy as the value of the       <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;9:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/classatt.dita">class</xmlatt> attribute. The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;9:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/classatt.dita">class</xmlatt> attribute usually provides a     mapping from the current name of the element to its more general equivalents, but it also can     provide a mapping from the current name to more specialized equivalents. All     specialization-aware processing can be defined in terms of <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;12:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/classatt.dita">class</xmlatt> attribute     values without reference to a given element tagname.</desc></xref> for complete details on the
+                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:10;201:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute.</p>
+            <draft-comment author="sethpark" class="- topic/draft-comment " disposition="open" id="commentf6" translate="no" xtrc="draft-comment:1;202:80" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">[RDAnderson, 4 Jan
+              2010] We should provide a pointer to the topic in the specialization section, "Element
+              type class hierarchy declaration (the class attribute)". This section as written
+              leaves out some details, without mentioning that more is required; we should indicate
+              that complete details of constructing the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:11;206:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdGeneralCodingReq.dita">class</xmlatt> attribute are in the
+              other topic.</draft-comment>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:3;7:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/dtdmod.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:2;6:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>DTD: Coding requirements for specialization modules</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">To be extensible and backward compatible, DITA requires that a DTD implementation of     structural and domain specialization modules conform to well-defined implementation (coding)     requirements.</desc></link></linkpool></related-links></concept>

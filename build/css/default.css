@@ -1,0 +1,377 @@
+<!--
+============================================================
+Stylesheets customized for the DITA Open Toolkit.
+Written by Darth Zucker
+Edited by Darth Briggs (his apprentice)
+============================================================
+-->
+
+.unresolved { background-color: skyblue; }
+.noTemplate { background-color: yellow; }
+
+.base { background-color: #ffffff; }
+
+body	{ font-family: Arial, helvetica, sans-serif; 
+	  font-size:12px }
+
+/* Add space for top level topics */
+
+.nested0 
+	{ margin-top : 1em;}
+
+/* div with class=p is used for paragraphs that contain blocks, to keep the XHTML valid */
+
+.p { background-color: #FFFFFF;
+     color: #000000;
+     font-family: Arial, sans-serif; 
+/*   font-size: 13px  	*/
+	 margin-left: 0.5em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+ p { background-color: #FFFFFF;
+     color: #000000;
+     font-family: Arial, sans-serif; 
+/*   font-size: 13px                       						*/
+	 margin-left: 0.5em; margin-top: 0.5em; 
+	 margin-bottom: 0.5em; }
+
+/* do the same to all generic Ps in order to have the default indent. */
+/*p {font-style: normal; margin: 14pt 0 0 72pt }*/
+/* Default of italics to set apart figure captions */
+
+.figcap 
+	{ font-style: normal; color: #0B1594; 
+	  font-size: small; margin: 12pt 12pt 0 0pt; 
+	  margin-bottom : .5em; page-break-after: always; 
+	  display: block; text-align: left;}
+
+.figdesc 
+	{ font-style: normal }
+
+caption 
+	{ font-style: normal; color: #0B1594; 
+	  font-size: small; margin: 24pt 12pt 0 0pt; 
+	  margin-bottom : .5em; page-break-after: always; 
+	  text-align: left;}
+	  
+.landscape 
+	{ font-style: normal; color: #0B1594; 
+	  font-size: small; margin: 24pt 12pt 0 0pt; 
+	  margin-bottom : .5em; page-break-after: always; 
+	  text-align: center;}
+
+.topTopic
+{font-size: xx-small; }
+
+.topLetter
+{font-size: xx-small; }
+
+.tabcap 
+	{ font-weight: bold; font-size: small; 
+ 	  margin: 12pt 12 0 0pt; }
+
+.tabhead 
+ 	{ font-weight: bold; font-size: normal; margin: 2pt 0 0 0; 
+	  background-color: #E0FFBE }
+
+table
+	{ margin-left: auto; margin-right: auto; }
+
+
+/* Use @frame to create frames on figures */
+
+.figborder 
+	{ border-style: solid; padding-left : 3px; 
+	  border-width : 2px; padding-right : 3px; 
+	  margin-top: 1em; border-color : Silver;}
+
+.figsides 
+	{ border-left : 2px solid; padding-left : 3px; 
+	  border-right : 2px solid; padding-right : 3px; 
+	  margin-top: 1em; border-color : Silver;}
+
+.figtop 
+	{ border-top : 2px solid; margin-top: 1em; 
+	  border-color : Silver;}
+
+.figbottom 
+	{ border-bottom : 2px solid; border-color : Silver;}
+	
+.figtopbot 
+	{ border-top : 2px solid; border-bottom : 2px solid; 
+	  margin-top: 1em; border-color : Silver;}
+
+.fignone 
+	{ margin-top: 1em; }
+
+/* Most link groups are created with <div>. Ensure they have space before and after. */
+
+.ullinks 
+	{ list-style-type: none }
+	
+.ulchildlink 
+	{ margin-top: 1em; margin-bottom: 1em }
+
+.olchildlink 
+	{ margin-top: 1em; margin-bottom: 1em }
+
+.linklist 
+ 	{ margin-bottom: 1em }
+
+.linklistwithchild 
+	{ margin-left: 1.5em; margin-bottom: 1em  }
+
+.parentlink 
+	{ margin-top: 2em; margin-bottom: 1em }
+
+.sublinklist 
+	{ margin-left: 1.5em; margin-bottom: 1em  }
+
+.relconcepts 
+	{ margin-top: 1em; margin-bottom: 1em }
+
+.reltasks 
+	{ margin-top: 1em; margin-bottom: 1em }
+
+.relref 
+	{ margin-top: 1em; margin-bottom: 1em }
+
+.relinfo 
+	{ margin-top: 1em; margin-bottom: 1em }
+
+.breadcrumb 
+	{ font-size : smaller; margin-bottom: 1em }
+
+.prereq 
+	{ margin-left : 20px;}
+
+/* Set heading sizes, getting smaller for deeper nesting */
+
+.topictitle1 { color: #333333;
+            font-size: 25px; font-weight: bold;
+            margin-left: 0em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.topictitle2 { color: #333333;
+            font-size: 21px; font-weight: bold;
+            margin-left: 0em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.topictitle3 { color: #666666;
+            font-size: 17px; font-weight: bold;
+            margin-left: 0em; margin-top: 1.5em; margin-bottom: 0.5em; }
+
+.topictitle4 { color: #666666;
+            font-size: 15px; font-weight: bold;
+            margin-left: 0em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.topictitle5 { color: #0B1594;
+            font-size: 13px; font-weight: bold;
+            margin-left: 0.5em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.topictitle6 { color: #0B1594;
+            font-size: 13px; font-weight: bold;
+            margin-left: 0.5em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.sectiontitle 
+			{ margin-top: 1em; margin-bottom: 0em; color: #666666; 
+			  font-size: 1.17em; font-weight: bold;}
+
+.section 
+			{ margin: 14pt 0 0 0pt }
+
+.example 
+			{ margin: 14pt 0 0 72pt }
+
+
+/* All note formats have the same default presentation */
+
+.note 
+	{ margin-top: 1em; margin-bottom: 1em; 
+	  border-bottom: thin solid #0B1594; padding-top: 0.5em;
+	  border-top: thin solid #0B1594; padding-bottom: 0.5em; 
+      margin-left: 2em; margin-right: 2em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.notetitle 
+	{ margin-top: 24pt; font-weight: bold; 
+	  color: #0B1594; page-break-after: always}
+
+.notelisttitle 
+	{ font-weight: bold }
+
+.tip 
+	{ margin-top: 1em; margin-bottom : 1em;}
+
+.tiptitle 
+	{ font-weight: bold }
+
+.fastpath 
+	{ margin-top: 1em; margin-bottom : 1em;}
+
+.fastpathtitle 
+	{ font-weight: bold }
+
+.important  
+	{ margin-top: 1em; margin-bottom: 1em; 
+	  border-bottom: thin solid #0B1594; padding-top: 0.5em;
+	  border-top: thin solid #0B1594; padding-bottom: 0.5em; 
+	  margin-left: 2em; margin-right: 2em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.importanttitle 
+	{ margin-top: 24pt; font-weight: bold; color: #0B1594 }
+
+.remember 
+	{ margin-top: 1em; margin-bottom : 1em;}
+
+.remembertitle 
+ 	{ font-weight: bold }
+
+.restriction 
+	{ margin-top: 1em; margin-bottom : 1em;}
+
+.restrictiontitle 
+ 	{ font-weight: bold }
+
+.attention 
+	{ margin-top: 1em; margin-bottom : 1em;}
+
+.attentiontitle 
+	{ font-weight: bold }
+
+.dangertitle 
+ 	{ font-weight: bold }
+
+.danger 
+	{ margin-top: 1em; margin-bottom : 1em;}
+
+.cautiontitle 
+	{ margin-top: 24pt; font-weight: bold; color: #0B1594;
+	  border-top: thin solid #0B1594; padding-bottom: 0.0em; 
+	  padding-top: 0.5em;
+	  margin-left: 2em; margin-right: 2em; }
+
+.caution 
+	{ margin-top: 1em; margin-bottom: 1em; 
+	  border-bottom: thin solid #0B1594; padding-top: 0.0em; 
+	  padding-bottom: 0.5em; 
+	  margin-left: 2em; margin-right: 2em; margin-top: 0.5em; margin-bottom: 0.5em; }
+
+ol, ul, dl, p 
+    { color: #000000; margin-top: 1em; margin-bottom: 1em; 
+            font-family: Arial, sans-serif; font-size: 13px }
+        li 
+          { color: #000000; margin-top: 0.3em; margin-bottom: 0.3em; 
+            font-family: Arial, sans-serif; font-size: 13px }	
+
+
+/* Simple lists do not get a bullet */
+ 
+ul.simple 
+	{ list-style-type: none }
+
+/* Used on the first column of a table, when rowheader="firstcol" is used */
+
+.firstcol 
+	{ font-weight : bold;}
+
+/* Various basic phrase styles */
+
+.bold 
+	{ font-weight: bold; }
+
+.boldItalic 
+	{ font-weight: bold; font-style: italic; }
+
+.option 
+	{ font-weight: bold; }
+
+.italic 
+	{ font-style: italic; }
+
+.underlined 
+	{ text-decoration: underline; }
+
+.uicontrol 
+	{ font-weight: bold; }
+
+.parmname 
+	{ font-weight: bold; }
+
+.keyword 
+	{font-weight:bold}
+
+.defkwd 
+	{ font-weight: bold; text-decoration: underline; }
+
+.var 
+	{ font-style : italic;}
+
+.shortcut 
+	{ text-decoration: underline; }
+
+.codeblock 
+	{color:#0B1594;  }
+
+.red 
+	{color:#FF0000; font-weight: bold}
+
+/* Default of bold for definition list terms */
+
+.dlterm 
+	{ font-weight: bold; }
+
+/* Use CSS to expand lists with @compact="no" */
+.dltermexpand { font-weight: bold; margin-top: 1em; }
+*[compact="yes"]>li { margin-top: 0em;}
+*[compact="no"]>li { margin-top: .53em;}	
+.liexpand { margin-top: 1em; margin-bottom: 1em }
+.sliexpand { margin-top: 1em; margin-bottom: 1em }
+.dlexpand { margin-top: 1em; margin-bottom: 1em }
+.ddexpand { margin-top: 1em; margin-bottom: 1em }
+.stepexpand { margin-top: 1em; margin-bottom: 1em }
+.substepexpand { margin-top: 1em; margin-bottom: 1em }
+
+/* Align images based on @align on topic/image */
+div.imageleft { text-align: left }
+div.imagecenter { text-align: center }
+div.imageright { text-align: right }
+div.imagejustify { text-align: justify }
+div.fignone { text-align: left }
+
+/* The cell border can be turned on with
+   {border-right:solid}
+   This value creates a very thick border in Firefox (does not match other tables)
+
+   Firefox works with
+   {border-right:solid 1pt}
+   but this causes a barely visible line in IE */
+.cellrowborder { border-left:none; border-top:none; border-right:solid 1px; border-bottom:solid 1px }
+.row-nocellborder { border-left:none; border-right:none; border-top:none; border-right: hidden; border-bottom:solid 1px}
+.cell-norowborder { border-top:none; border-bottom:none; border-left:none; border-bottom: hidden; border-right:solid 1px}
+.nocellnorowborder { border:none; border-right: hidden;border-bottom: hidden }
+
+pre.screen { padding: 5px 5px 5px 5px; border: outset; background-color: #CCCCCC; margin-top: 2px; margin-bottom : 2px; white-space: pre}
+
+ a:active  { color: #0000FF; text-decoration: none; } 
+        a:hover   { color: #0000FF; text-decoration: none; } 
+        a:link    { color: #0000FF; text-decoration: none; } 
+        a:visited { color: #0000FF; text-decoration: none; } 
+        
+        
+/* .dlterm 
+	{ margin-top: 2em; 
+	  border-color : Silver;} */  
+	  
+ dd { background-color: #FFFFFF;
+     color: #000000;
+     font-family: Arial, sans-serif; 
+/*   font-size: 13px                       						*/
+	 margin-left: 0.5em; margin-top: 0.5em; 
+	 margin-bottom: 2.5em; }  
+
+/*   style to make images auto-resize when users alter browser size 	*/	 
+img { 
+    max-width: 100%; 
+    height: auto; 
+}
+
+/*   style to support sub-head metadata for table rows	*/	 
+.sub-head
+ 	{ font-weight: bold; font-size: normal; margin: 2pt 0 0 0; }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="dl" xml:lang="en-us" xtrc="reference:1;4:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<title class="- topic/title " xtrc="title:1;5:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;5:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dl</xmlelement></title>
+<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">A <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;6:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dl</xmlelement> element is a list of terms and corresponding definitions.
+The term (<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;7:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dt</xmlelement>) is usually flush left. The description or definition
+(<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;8:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dd</xmlelement>) is usually either indented and on the next line, or on the same line
+to the right of the term. <ph class="- topic/ph " xtrc="ph:1;9:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">However, actual rendering is up to the rendering
+engine.</ph></shortdesc>
+ <prolog class="- topic/prolog " xtrc="prolog:1;11:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+  <author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author><metadata class="- topic/metadata " xtrc="metadata:1;12:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+   <keywords class="- topic/keywords " xtrc="keywords:1;13:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+    <indexterm class="- topic/indexterm " xtrc="indexterm:1;14:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">definition lists<indexterm class="- topic/indexterm " xtrc="indexterm:2;14:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">overview</indexterm></indexterm>
+    <indexterm class="- topic/indexterm " xtrc="indexterm:3;15:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">elements<indexterm class="- topic/indexterm " xtrc="indexterm:4;15:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">body<indexterm class="- topic/indexterm " xtrc="indexterm:5;15:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;15:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dl</xmlelement></indexterm></indexterm></indexterm>
+    <indexterm class="- topic/indexterm " xtrc="indexterm:6;16:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">formatting
+       expectations<indexterm class="- topic/indexterm " xtrc="indexterm:7;17:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;17:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dl</xmlelement></indexterm><indexterm class="- topic/indexterm " xtrc="indexterm:8;17:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;17:93" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dlhead</xmlelement></indexterm></indexterm>
+    <indexterm class="- topic/indexterm " xtrc="indexterm:9;18:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">lists<indexterm class="- topic/indexterm " xtrc="indexterm:10;18:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">definition<indexterm class="- topic/indexterm " xtrc="indexterm:11;18:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">overview</indexterm></indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;22:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<section class="- topic/section " xtrc="section:1;23:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">       <p class="- topic/p " xtrc="p:1;23:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">An optional heading for the terms and definitions may be provided using the
+<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;24:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dlhead</xmlelement> element, which contains header elements for those columns. The
+default formatting for the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:9;25:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">dlhead</xmlelement> generally looks like a table with a
+heading row, but this is also up to the rendering engine.</p>     </section>
+<section class="- topic/section " id="contains" otherprops="contains" xtrc="section:31;4:9681" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"><title class="- topic/title " xtrc="title:63;4:9688" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">Content models</title><p class="- topic/p " xtrc="p:31;4:9713" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">See <xref class="- topic/xref " href="../../common/../contentmodels/cmbased.dita#cmbased/dl" keyref="cmodd/dl" type="reference" xtrc="xref:31;4:9758" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"><?ditaot usertext?>appendix<desc class="- topic/desc " xtrc="desc:31;4:9773" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"/></xref> for information about this element in OASIS document type shells.</p></section>
+<section class="- topic/section " id="inheritance" otherprops="inheritance" xtrc="section:3;28:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita"><title class="- topic/title " xtrc="title:2;28:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Inheritance</title><p class="- topic/p " xtrc="p:2;28:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">-
+topic/dl </p></section>
+<example class="- topic/example " id="example" xtrc="example:1;30:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita"><title class="- topic/title " xtrc="title:3;30:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Examples</title><fig class="- topic/fig " id="simpleexample" xtrc="fig:1;30:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<title class="- topic/title " xtrc="title:4;31:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Simple definition list example</title>
+<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;32:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">&lt;dl&gt;
+&lt;dlentry&gt;
+&lt;dt&gt;Bytes returned&lt;/dt&gt;
+&lt;dd&gt;The number of bytes of data returned.&lt;/dd&gt;
+&lt;/dlentry&gt;
+&lt;dlentry&gt;
+&lt;dt&gt;Bytes available&lt;/dt&gt;
+&lt;dd&gt;The number of bytes of data available to be returned.&lt;/dd&gt;
+&lt;/dlentry&gt;
+&lt;dlentry&gt;&lt;dt&gt;Handle&lt;/dt&gt;
+&lt;dd&gt;The returned handle value&lt;/dd&gt;
+&lt;/dlentry&gt;
+&lt;/dl&gt;</codeblock>
+</fig><fig class="- topic/fig " id="complexexample" xtrc="fig:2;45:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita"><title class="- topic/title " xtrc="title:5;45:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Definition list with a heading</title>
+<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;46:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">&lt;dl&gt;
+ &lt;dlhead&gt;
+  &lt;dthd&gt;Image File View Selection&lt;/dthd&gt;
+  &lt;ddhd&gt;Resulting Information&lt;/ddhd&gt;
+ &lt;/dlhead&gt;
+ &lt;dlentry&gt;
+  &lt;dt&gt;File Type&lt;/dt&gt;
+  &lt;dd&gt;Image's file extension&lt;/dd&gt;
+ &lt;/dlentry&gt;
+ &lt;dlentry&gt;
+  &lt;dt&gt;Image Class&lt;/dt&gt;
+  &lt;dd&gt;Image is raster, vector, metafile or 3D&lt;/dd&gt;
+ &lt;/dlentry&gt;
+ &lt;dlentry&gt;
+  &lt;dt&gt;Number of pages&lt;/dt&gt;
+  &lt;dd&gt;Number of pages in the image&lt;/dd&gt;
+ &lt;/dlentry&gt;
+ &lt;dlentry&gt;
+  &lt;dt&gt;Fonts&lt;/dt&gt;
+  &lt;dd&gt;Names of the fonts contained within a vector image&lt;/dd&gt;
+ &lt;/dlentry&gt;
+&lt;/dl&gt;</codeblock>
+</fig><p class="- topic/p " xtrc="p:3;68:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Rendering of definition lists will vary by application and by display format. Processors <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;69:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">MIGHT</term> render the second example as follows.</p><dl class="- topic/dl " xtrc="dl:1;69:105" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<dlhead class="- topic/dlhead " xtrc="dlhead:1;70:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<dthd class="- topic/dthd " xtrc="dthd:1;71:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Image File View Selection</dthd><ddhd class="- topic/ddhd " xtrc="ddhd:1;71:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Resulting Information</ddhd>
+</dlhead>
+<dlentry class="- topic/dlentry " xtrc="dlentry:1;73:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<dt class="- topic/dt " xtrc="dt:1;74:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">File Type</dt>
+<dd class="- topic/dd " xtrc="dd:1;75:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Image's file extension</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:2;76:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<dt class="- topic/dt " xtrc="dt:2;77:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Image Class</dt>
+<dd class="- topic/dd " xtrc="dd:2;78:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Image is raster, vector, metafile or 3D</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:3;79:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<dt class="- topic/dt " xtrc="dt:3;80:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Number of pages</dt>
+<dd class="- topic/dd " xtrc="dd:3;81:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Number of pages in the image</dd>
+</dlentry><dlentry class="- topic/dlentry " xtrc="dlentry:4;82:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">
+<dt class="- topic/dt " xtrc="dt:4;83:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Fonts</dt>
+<dd class="- topic/dd " xtrc="dd:4;84:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Names of the fonts contained within a vector image</dd>
+</dlentry></dl></example>
+<section class="- topic/section " id="attributes" xtrc="section:4;86:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">       <title class="- topic/title " xtrc="title:6;86:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">Attributes</title>
+   <p class="- topic/p " xtrc="p:4;87:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita">The following attributes are available on this element: <xref class="- topic/xref " href="../attributes/universalAttributes.dita" xtrc="xref:1;88:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita" type="reference"><?ditaot gentext?>Universal attribute group<?ditaot genshortdesc?><desc class="- topic/desc ">The universal attribute group defines a set of common attributes available on most DITA     elements. The universal attribute group includes all attributes from the metadata, ID,     localization, and debug attribute groups, plus the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;8:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/attributes/universalAttributes.dita">class</xmlatt> attribute.</desc></xref>, <xref class="- topic/xref " href="../attributes/commonAttributes.dita#common-atts/outputclass" xtrc="xref:2;89:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita" type="dlentry"><?ditaot gentext?>outputclass</xref>, <xref class="- topic/xref " href="../attributes/commonAttributes.dita#common-atts/compact" xtrc="xref:3;90:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita" type="dlentry"><?ditaot gentext?>compact</xref>, and <xref class="- topic/xref " href="../attributes/specializationAttributes.dita#specialization-atts/spectitle" xtrc="xref:4;91:88" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/dl.dita" type="dlentry"><?ditaot gentext?>spectitle</xref>.</p>     </section>
+</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:8;12:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/body-elements.ditamap"><link class="- topic/link " format="dita" href="../../langRef/containers/body-elements.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:1;5:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/body-elements.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Body elements</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The body elements support the most common types of content authoring for topics: paragraphs, lists, phrases, figures, and other common types of exhibits in a document.</desc></link></linkpool></related-links></reference>

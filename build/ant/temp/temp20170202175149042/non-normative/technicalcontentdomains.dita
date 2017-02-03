@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="tcdomains" product="technicalContent" rev="DITA1.3 review-2" xml:lang="en-us" xtrc="reference:1;4:94" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<title class="- topic/title " xtrc="title:1;5:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content domains and constraints: where they are used</title>
+<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">This section provides a summary of which document types use each of the technical content
+domains and constraints.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;8:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<section class="- topic/section " id="domainsection" xtrc="section:1;9:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<title class="- topic/title " xtrc="title:2;10:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content domains</title>
+<simpletable class="- topic/simpletable " frame="all" id="domaintable" xtrc="simpletable:1;11:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<sthead class="- topic/sthead " xtrc="sthead:1;12:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:1;13:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Domain</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:2;14:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">What includes it</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:3;15:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">What does NOT include it</stentry>
+</sthead>
+<strow class="- topic/strow " xtrc="strow:1;17:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:4;18:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Abbreviated form (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:5;19:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:1;20:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:1;21:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Classification map, Map, Bookmap</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:2;22:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all topics except Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:6;25:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:2;26:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:3;27:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:4;28:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Subject scheme</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:5;29:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:6;30:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:2;34:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:7;35:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Equation (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:8;36:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:3;37:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:7;38:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all topics except Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:9;41:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:4;42:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:8;43:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:9;44:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: all maps</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:10;45:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:11;46:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:3;50:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:10;51:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Markup (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:11;52:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:5;53:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:12;54:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Classification map, Map, Bookmap</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:13;55:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all topics except Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:12;58:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:6;59:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:14;60:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:15;61:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Subject Scheme</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:16;62:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:17;63:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:4;67:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:13;68:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">MathML (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:14;69:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:7;70:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:18;71:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all topics except Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:15;74:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:8;75:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:19;76:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:20;77:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: all maps</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:21;78:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:22;79:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:5;83:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:16;84:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Programming (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:17;85:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:9;86:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:23;87:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Classification map, Map, Bookmap</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:24;88:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all except Machinery Task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:18;91:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:10;92:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:25;93:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:26;94:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Subject Scheme</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:27;95:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:28;96:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:6;100:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:19;101:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Release Management (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:20;102:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:11;103:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:29;104:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Classification map, Map, Bookmap</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:30;105:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all except Machinery Task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:31;106:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:32;107:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all topics</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:21;110:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:12;111:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:33;112:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:34;113:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Subject Scheme</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:35;114:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:7;118:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:22;119:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Software (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:23;120:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:13;121:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:36;122:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Classification map, Map, Bookmap</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:37;123:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all except Machinery Task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:24;126:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:14;127:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:38;128:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:39;129:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Subject Scheme</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:40;130:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:41;131:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:8;135:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:25;136:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">SVG (map/topi)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:26;137:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:15;138:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:42;139:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all topics except Composite (ditabase),
+Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:27;143:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:16;144:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:43;145:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:44;146:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: all maps</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:45;147:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Composite (ditabase), Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:46;148:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:9;152:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:28;153:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">User interface (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:29;154:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:17;155:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:47;156:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Classification map, Map, Bookmap</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:48;157:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all topics</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:30;160:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:18;161:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:49;162:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:50;163:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Subject Scheme</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:51;164:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:10;168:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:31;169:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">XML Mention (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:32;170:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:19;171:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:52;172:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Classification map, Map, Bookmap</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:53;173:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: all topics except Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:33;176:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:20;177:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:54;178:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:55;179:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content maps: Subject Scheme</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:56;180:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content topics: Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:57;181:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:11;185:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:34;186:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">xNAL (map/topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:35;187:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:21;188:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:58;189:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: bookmap</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:59;190:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: Bookmap</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:36;193:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:22;194:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:60;195:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:61;196:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: all except Bookmap</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:62;197:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all except Bookmap</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:12;201:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:37;202:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Task requirements (topic)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:38;203:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:23;204:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:63;205:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:39;208:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:24;209:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:64;210:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:65;211:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: all except Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:66;212:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:13;216:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:40;217:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Glossary reference (map)</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:41;218:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:25;219:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:67;220:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: Classification map, Map</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:42;223:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:26;224:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:68;225:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:69;226:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: Bookmap, Subject Scheme</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:70;227:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+</simpletable>
+</section>
+<section class="- topic/section " id="constraintsection" product="technicalContent" xtrc="section:2;233:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<title class="- topic/title " xtrc="title:3;234:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content constraints</title>
+<simpletable class="- topic/simpletable " frame="all" id="constrainttable" xtrc="simpletable:2;235:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<sthead class="- topic/sthead " xtrc="sthead:2;236:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:43;237:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Constraint</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:44;238:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">What includes it</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:45;239:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">What does NOT include it</stentry>
+</sthead>
+<strow class="- topic/strow " xtrc="strow:14;241:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:46;242:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Strict task body constraint</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:47;243:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:27;244:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:71;245:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: Task, Composite (ditabase),
+Troubleshooting</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:48;249:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:28;250:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:72;251:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:73;252:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: all except Task, Composite
+(ditabase), Troubleshooting</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:74;254:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+<strow class="- topic/strow " xtrc="strow:15;258:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<stentry class="- topic/stentry " xtrc="stentry:49;259:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Machinery task body constraint</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:50;260:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:29;261:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="technicalContent" xtrc="li:75;262:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: Machinery task</li>
+</ul>
+</stentry>
+<stentry class="- topic/stentry " xtrc="stentry:51;265:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<ul class="- topic/ul " xtrc="ul:30;266:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">
+<li class="- topic/li " product="base" xtrc="li:76;267:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Base map, base topic</li>
+<li class="- topic/li " product="technicalContent" xtrc="li:77;268:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Technical content document types: all except Machinery task</li>
+<li class="- topic/li " product="learningTraining" xtrc="li:78;269:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/technicalcontentdomains.dita">Learning and training document types: all maps and topics</li>
+</ul>
+</stentry>
+</strow>
+</simpletable>
+</section>
+</refbody>
+<?tm 1241557125 2?>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:14;22:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><link class="- topic/link " format="dita" href="../non-normative/domainscontainer.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:11;18:75" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Domains and constraints in the OASIS specification</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">This non-normative section provides a summary of domains and constraints available as   part of the OASIS specification, as well as a summary of how they are used.</desc></link></linkpool></related-links></reference>

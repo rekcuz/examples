@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="concept_cw3_cl1_mp" xtrc="concept:1;3:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">Example: conref redirection</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;5:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">conkeyref</xmlatt> attribute enables authors to share DITA topics that reuse
+  content; it enables each author to specify a different key definition for common keys.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;7:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+  <p class="- topic/p " xtrc="p:1;8:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">In this scenario, Acme produces content for a product that is also resold through a business
+      partner. When the DITA content is published for the partner, several items must be different,
+      including the following:</p>
+  <ul class="- topic/ul " xtrc="ul:1;11:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+   <li class="- topic/li " xtrc="li:1;12:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">Product names</li>
+   <li class="- topic/li " xtrc="li:2;13:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">Standard notes that contain admonitions</li>
+  </ul>
+  <p class="- topic/p " xtrc="p:2;15:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">Simply using the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;15:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">conref</xmlatt> attribute would not be possible for teams that use a
+      component content management system where every DITA topic is addressed by a globally-unique
+      identifier (GUID).</p>
+  <ol class="- topic/ol " xtrc="ol:1;18:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+   <li class="- topic/li " xtrc="li:3;19:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+    <p class="- topic/p " xtrc="p:3;20:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">Authors reference the reusable content in their topics by using the
+      <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;21:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">conkeyref</xmlatt> attribute, for example:</p>
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;22:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">&lt;task&gt;
+  &lt;title&gt;&lt;keyword conkeyref="reuse/product-name"/&gt; prerequisites&lt;/title&gt;
+  &lt;!-- ... --&gt;
+  &lt;note conkeyref="warning-1"/&gt;
+  &lt;!-- ... --&gt;
+&lt;/task&gt;
+</codeblock>
+   </li>
+   <li class="- topic/li " xtrc="li:4;30:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+    <p class="- topic/p " xtrc="p:4;31:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">Authors create two different topics; one topic contain elements that contain the text that is
+          appropriate for Acme, and the other topic contains elements that contain the text that is
+          appropriate for the partner. Note that each reuse topic must use the <ph class="- topic/ph " rev="review-2" xtrc="ph:1;34:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">same element types (or compatible specializations)</ph> and values for the
+            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;35:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">id</xmlatt> attribute, for example:</p>
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;36:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">&lt;topic id="reuse-oem"&gt;
+  &lt;title&gt;Reuse topic for OEM partner&lt;/title&gt;
+  &lt;body&gt;
+    &lt;!-- ... --&gt;
+    &lt;note <b class="+ topic/ph hi-d/b " xtrc="b:1;40:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">id="warning-1"</b>/&gt;
+    &lt;p&gt;&lt;keyword <b class="+ topic/ph hi-d/b " xtrc="b:2;41:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">id="product-name"</b>/&gt;&lt;/p&gt;
+    &lt;!-- ... --&gt;
+  &lt;/body&gt;
+&lt;/topic&gt;</codeblock>
+   </li>
+   <li class="- topic/li " xtrc="li:5;46:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+    <p class="- topic/p " xtrc="p:5;47:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">The two versions of the DITA maps each contain different key definitions for "reuse". (This
+     associates a key with the topic that contains the appropriate reusable elements.) For
+     example:</p>
+    <fig class="- topic/fig " xtrc="fig:1;50:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+     <title class="- topic/title " xtrc="title:2;51:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">DITA map for Acme</title>
+     <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;52:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">&lt;map&gt;
+  &lt;!-- ... --&gt;
+  &lt;keydef keys="reuse" href="acme-reuse.dita"/&gt;
+  &lt;!-- ... --&gt;
+&lt;/map&gt;</codeblock>
+    </fig>
+    <fig class="- topic/fig " xtrc="fig:2;58:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">
+     <title class="- topic/title " xtrc="title:3;59:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">DITA map for OEM partner</title>
+     <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;60:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">&lt;map&gt;
+  &lt;!-- ... --&gt;
+  &lt;keydef keys="reuse" href="oem-reuse.dita"/&gt;
+  &lt;!-- ... --&gt;
+&lt;/map&gt;</codeblock>
+    </fig>
+   </li>
+  </ol>
+  <p class="- topic/p " xtrc="p:6;68:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">When the DITA maps are published, the elements that are referenced by
+    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;69:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">conkeyref</xmlatt> will use the reuse topic that is referenced by the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;69:95" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-conref-redirection.dita">keydef
+   </xmlelement> element in the map. The product names and warnings will be different in the
+   output.</p>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:12;16:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/examples_of_keys.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:1;5:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Examples of keys</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">This section of the specification contains examples and scenarios. They illustrate a         wide variety of ways that keys can be used.</desc></link><link class="- topic/link " format="dita" href="../../archSpec/base/example-keys-links-to-terms.dita" mapclass="- map/topicref " role="previous" scope="local" type="concept" xtrc="topicref:11;15:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Example: Links from term or keyword elements</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;6:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-keys-links-to-terms.dita">keyref</xmlatt> attribute enables authors to specify that references to   keywords or terms in a DITA topic should be rendered as a link to an associated   resource.</desc></link><link class="- topic/link " format="dita" href="../../archSpec/base/example-key-scopes-omnibus-publications.dita" mapclass="- map/topicref " role="next" scope="local" type="concept" xtrc="topicref:13;17:66" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Example: Key scopes and omnibus publications</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Key scopes enable you to create omnibus publications that include multiple submaps that     define the same <ph class="- topic/ph " rev="review-2" xtrc="ph:1;6:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-key-scopes-omnibus-publications.dita">key names for common items, such as product names or common       topic clusters.</ph></desc></link></linkpool></related-links></concept>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.-->
+<!-- (c) Copyright IBM Corp. 2004, 2006 All Rights Reserved. -->
+
+<!-- PURPOSE: This Ant script generates web help and raw HTML for ITSA documentation. -->
+
+<project name="sample_xhtml" default="samples.xhtml" basedir=".">
+  
+  <property name="dita.dir" location="../../resource/ditaot/dita-ot-2.4.3"/>
+	  <path id="classpath">
+	    <fileset dir="../../resource/ditaot/dita-ot-2.4.3/lib">
+	      <include name="*.jar"/>
+	    </fileset>
+	  </path>
+	
+  <target name="samples.xhtml" description="build the samples as HTML with JS">
+  	<!-- This ant code block contains properties for generating raw HTML output -->
+    <ant antfile="${dita.dir}/build.xml">
+    	<!-- DITA Open Tool Kit properties -->
+    	<property file="../../resource/ditaot/dita-ot-2.4.3/lib/CatalogManager.properties"/>
+    	<property file="../../resource/ditaot/dita-ot-2.4.3/lib/configuration.properties"/>
+    	<property file="../../resource/ditaot/dita-ot-2.4.3/lib/org.dita.dost.platform/plugin.properties"/>
+    	<!-- input file -->
+    	<property name="args.input" location="../../source/dita-spec-1-3/dita-1.3-specification-base.ditamap"/>
+    	<!-- output directory -->
+        <property name="output.dir" location="../../output/spec/html4"/>
+    	<!-- CSS properties (suite_default.css used when run from Git, Oxygen transform uses sn_skin) -->
+    	<property name="args.css" value="../css/oasis.css"/> 
+    	<property name="args.csspath" value="CSS"/>
+    	<property name="args.copycss" value="yes"/>
+    	<!-- transform type -->
+      	<property name="transtype" value="tocjs"/>
+    	<!-- command to delete or retain the files in the temporary directory after a build -->
+    	<property name="clean.temp" value="no"/>
+    	<!-- generates TOC -->
+    	<property name="args.xhtml.toc" value="toc"></property>
+    	<!-- content filtering properties -->
+    	<!--<property name="args.filter" value="${basedir}/../ditaval/servicenow.ditaval"/>-->
+    	<!-- related link display properties -->
+    	<property name="args.hide.parent.link" value="no"/>
+    	<property name="args.rellinks" value="all"/>
+    	
+    </ant>
+  	
+  	<!-- This ant code block contains properties for generating web help output -->
+  <!--	<ant antfile="${dita.dir}/build.xml">
+  		<!-\- DITA Open Tool Kit properties -\->
+  	    <property file="../../../../resource/ditaot/dita-ot-2.4.3/lib/CatalogManager.properties"/>
+  	    <property file="../../../../resource/ditaot/dita-ot-2.4.3/lib/configuration.properties"/>
+  		<property file="../../../../resource/ditaot/dita-ot-2.4.3/lib/org.dita.dost.platform/plugin.properties"/>  
+  		<!-\- input file -\->
+  	    <property name="args.input" location="../../../source/itsa_product_documentation.ditamap"/>
+  		<!-\- output directory -\->
+  	    <property name="output.dir" location="../../../output/itsa/web"/>
+  		<!-\- CSS properties (default.css used when run from Git, Oxygen transform uses sn_skin) -\->
+  	    <property name="args.css" value="../css/suite_default.css"/> 
+  	    <property name="args.csspath" value="CSS"/>
+  	 	<property name="args.copycss" value="yes"/>
+  		<!-\- transform type -\->
+  		<property name="transtype" value="tocjs"/>
+  		<!-\- command to delete or retain the files in the temporary directory after a build -\-> 		
+  		<property name="clean.temp" value="no"/>
+  		<!-\- generates TOC -\->
+  		<property name="args.xhtml.toc" value="toc"></property>
+  		<!-\- content filtering properties -\->
+  		<property name="args.filter" value="${basedir}/../ditaval/servicenow.ditaval"/>
+  		<!-\- related link display properties -\->
+  		<property name="args.hide.parent.link" value="yes"/>
+  	    <property name="args.rellinks" value="all"/>
+  	    </ant>-->
+  </target>
+	<!-- Adding image file to be used for CSS styling --> 
+	  <copy todir="../../../output/itsa/web/CSS/image">
+	    <fileset dir="../css/image"/>
+	  </copy>
+
+	  <copy todir="../../../output/itsa/html4/CSS/image">
+	    <fileset dir="../css/image"/>
+	  </copy>
+
+</project>

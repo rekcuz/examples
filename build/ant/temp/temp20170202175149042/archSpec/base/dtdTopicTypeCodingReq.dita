@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="concept_0a4c9c5d-a953-4738-be55-8d3b6c228968" xml:lang="en-us" xtrc="concept:1;6:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+  <title class="- topic/title " xtrc="title:1;7:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">DTD: Coding requirements for topic type modules</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;8:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">The
+    vocabulary modules that define topic types have an additional coding requirement. They need to
+    define whether topics are permitted to nest and what topic types are permitted to nest. These
+    rules for topic nesting are specified by a parameter entity.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;12:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+    <draft-comment author="robander" class="- topic/draft-comment " time="March 3 2015" translate="no" xtrc="draft-comment:1;13:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">Suggestion: change the title to "Setting up
+      topic nesting in a topic module" or similar. Currently it is not at all clear from the title
+      what we're using this topic for. Or maybe this topic should just be part of the topic module
+        section?<p class="- topic/p " xtrc="p:1;16:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">All of this content applies ONLY if a module is defined in a way that allows
+        nesting, AND that allows the nesting to change. That is certainly the typical case but is
+        not required. You could define a topic module that simply cannot ever nest another topic;
+        you can define a topic module that only ever allows one specific topic (also defined in this
+        module) as a child. In either case the entity is meaningless.</p><p class="- topic/p " xtrc="p:2;20:77" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">This gets into the
+        discussion at today's TC: this is a SHOULD, not a MUST, and we should explain the edge
+        cases. </p></draft-comment>
+    <dl class="- topic/dl " xtrc="dl:1;23:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+      <dlentry class="- topic/dlentry " xtrc="dlentry:1;24:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+        <dt class="- topic/dt " xtrc="dt:1;25:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">Parameter entity name</dt>
+        <dd class="- topic/dd " xtrc="dd:1;26:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+          <p class="- topic/p " xtrc="p:3;27:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">The name of the parameter entity <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;28:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">MUST</term> be the root element name plus the <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;28:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">-info-types</codeph>
+            suffix.</p>
+          <p class="- topic/p " outputclass="example" xtrc="p:4;30:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">For example, the name of the parameter entity for the concept
+            topic is <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;31:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">concept-info-types</codeph>. </p>
+        </dd>
+      </dlentry>
+    </dl>
+    <dl class="- topic/dl " xtrc="dl:2;35:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+      <dlentry class="- topic/dlentry " xtrc="dlentry:2;36:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+        <dt class="- topic/dt " xtrc="dt:2;37:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">Parameter entity value</dt>
+        <dd class="- topic/dd " outputclass="example" xtrc="dd:2;38:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+          <p class="- topic/p " xtrc="p:5;39:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">To enable topic nesting, set the parameter entity to X [" a list of element
+            entities"]</p>
+          <p class="- topic/p " xtrc="p:6;41:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">To disallow topic nesting, set the parameter entity to Y ["the value of the
+              <parameterentity class="+ topic/keyword markup-d/markupname xml-d/parameterentity " xtrc="parameterentity:1;42:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">info-types</parameterentity> parameter entity"]. </p>
+          <p class="- topic/p " xtrc="p:7;43:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">For example, the following parameter entity does Z:</p>
+          <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;44:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">&lt;!ENTITY % concept-info-types "%info-types;"&gt;</codeblock>
+        </dd>
+      </dlentry>
+      <dlentry class="- topic/dlentry " xtrc="dlentry:3;47:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+        <dt class="- topic/dt " xtrc="dt:3;48:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">Content model of the root element</dt>
+        <dd class="- topic/dd " xtrc="dd:3;49:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">
+          <p class="- topic/p " xtrc="p:8;50:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">The last position in the content model defined for the root element <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:2;51:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">SHOULD</term> be the
+                <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;52:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:1;52:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">topictype</varname>-info-types</codeph> parameter entity.</p>
+          <p class="- topic/p " outputclass="example" xtrc="p:9;53:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">For example, consider the content model defined for
+              <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;54:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">concept</xmlelement>:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;54:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">&lt;!ENTITY % concept.content
+  "((%title;), 
+    (%titlealts;)?,
+    (%abstract; | 
+     %shortdesc;)?, 
+    (%prolog;)?, 
+    (%conbody;)?, 
+    (%related-links;)?,
+    <b class="+ topic/ph hi-d/b " xtrc="b:1;62:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">(%concept-info-types;)*</b>)"
+&gt;</codeblock></p>
+        </dd>
+      </dlentry>
+    </dl>
+    
+    <p class="- topic/p " xtrc="p:10;68:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">A document type shell then can control how topics are allowed to nest by redefining the
+          <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;69:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:2;69:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">topictype</varname>-info-types</codeph> entity for each topic type, or it
+      can efficiently create common nesting rules by redefining the main
+        <parameterentity class="+ topic/keyword markup-d/markupname xml-d/parameterentity " xtrc="parameterentity:2;71:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/dtdTopicTypeCodingReq.dita">info-types</parameterentity> entity.</p>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:5;9:49" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/dtdmod.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:2;6:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>DTD: Coding requirements for specialization modules</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">To be extensible and backward compatible, DITA requires that a DTD implementation of     structural and domain specialization modules conform to well-defined implementation (coding)     requirements.</desc></link></linkpool></related-links></concept>

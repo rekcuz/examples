@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="foreigngeneralization" xml:lang="en-us" xtrc="concept:1;3:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">
+  <title class="- topic/title " xtrc="title:1;4:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">Considerations for generalizing <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;4:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">foreign</xmlelement> elements</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">(Non-normative) Generalization of a DITA element employs the value of its <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;5:96" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">class</xmlatt>
+    attribute. The content of a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;6:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">foreign</xmlelement> element, or of a specialization of the
+    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;7:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">foreign</xmlelement> element, cannot be generalized because there are no DITA elements in it, and
+    therefore no <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;8:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">class</xmlatt> attributes. The non-DITA contents can only be processed by appropriate
+    non-DITA means.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;10:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">
+    <section class="- topic/section " id="section_318E527E9A464F2AA3B2E154E7D3F2D4" xtrc="section:1;11:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">
+      <p class="- topic/p " xtrc="p:1;12:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">Only the specialization of the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;12:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">foreign</xmlelement> element can be generalized with normal
+        rules. </p>
+      <p class="- topic/p " xtrc="p:2;14:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">Its contents would be exported to a separate file and replaced in-line with an
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;15:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">object</xmlelement> element. The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;15:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">data</xmlatt> attribute of the
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;16:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">object</xmlelement> element would point to the generated file, and the
+          <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;17:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">type</xmlatt> attribute of the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;17:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">object</xmlelement> element would be
+        set to the value "DITA-foreign".</p>
+      <p class="- topic/p " xtrc="p:3;19:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">If an <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;19:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">object</xmlelement> element is present within the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:9;19:90" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">foreign</xmlelement> element (or
+        specialization thereof) during generalization, it would not be included with the content
+        that is exported to the separate file. This original object element is used to specify
+        alternate content in publishing systems that cannot display the foreign content. It would
+        not be modified except as the ordinary rules of generalization require it.</p>
+      <p class="- topic/p " xtrc="p:4;24:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">In the exported file, exported content would be enclosed within a root <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:10;24:93" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">foreign</xmlelement>
+        element in order to accommodate the possibility that it may contain several main elements
+        apart from the alternate content. </p>
+      <p class="- topic/p " xtrc="p:5;27:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">For easy recognition, the name of the exported file would start with
+          <q class="- topic/q " xtrc="q:1;28:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">dita-generalized-</q> , and it is recommended that the file name also contain the topic
+        ID, specialization type, and element ID or generated identifier.</p>
+    </section>
+    <example class="- topic/example " id="example_A17EB229E5AB44CB98E0CDC42BDA529B" xtrc="example:1;31:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">
+      <title class="- topic/title " xtrc="title:2;32:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">Example: Simple object generalization</title>
+      <p class="- topic/p " xtrc="p:6;33:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">For example, a DITA document could contain a specialization of <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:11;33:85" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">foreign</xmlelement> for MathML.
+        It could look like this:</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;35:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">&lt;mathml class="+ topic/foreign mathml/mathml "&gt;
+  &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;
+  &lt;/math&gt;
+  &lt;object&gt;&lt;desc&gt;X plus three&lt;/desc&gt;&lt;/object&gt;
+&lt;/mathml&gt;</codeblock>
+      <p class="- topic/p " xtrc="p:7;41:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:12;41:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">mathml</xmlelement> container is a DITA element, so it should be generalized using normal
+        rules. The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:13;42:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">math</xmlelement> element, which is not a DITA element, will be exported to another
+        file. The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:14;43:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">object</xmlelement> element will remain:</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;44:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">&lt;foreign class="+ topic/foreign mathml/mathml "&gt;
+  &lt;object data="dita-generalized-topicid_mathml1.xml" type="DITA-foreign"/&gt;
+  &lt;object&gt;&lt;desc&gt;X plus three&lt;/desc&gt;&lt;/object&gt;
+&lt;/foreign&gt;
+
+Contents of dita-generalized-topicid_mathml1.xml:
+&lt;foreign class="+ topic/foreign mathml/mathml "&gt;
+  &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;
+  &lt;/math&gt;
+&lt;/foreign&gt;</codeblock>
+    </example>
+    <example class="- topic/example " id="example_1849033DFA214AD59B84A349137EC30D" xtrc="example:2;56:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">
+      <title class="- topic/title " xtrc="title:3;57:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">Example: Multiple object generalization</title>
+      <p class="- topic/p " xtrc="p:8;58:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">An object might also contain multiple object elements:</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;59:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">&lt;mathml class="+ topic/foreign mathml/mathml "&gt;
+  &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;
+  &lt;/math&gt;
+  &lt;object&gt;&lt;desc&gt;X plus three&lt;/desc&gt;&lt;/object&gt;
+  &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;mi&gt;y&lt;/mi&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;
+  &lt;/math&gt;
+&lt;/mathml&gt;</codeblock>
+      <p class="- topic/p " xtrc="p:9;68:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:15;68:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">mathml</xmlelement> container, which is a normal DITA element, should be generalized using
+        normal rules. A file should generated for each set of elements bounded by the container and
+        any existing object elements. In this case, two files will be generated, and two new object
+        elements added to the source.</p>
+      <p class="- topic/p " xtrc="p:10;72:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">The modified source:</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;73:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">&lt;foreign class="+ topic/foreign mathml/mathml "&gt;
+  &lt;object data="dita-generalized-topicid_mathml1.xml" type="DITA-foreign"/&gt;
+  &lt;object&gt;&lt;desc&gt;X plus three&lt;/desc&gt;&lt;/object&gt;
+  &lt;object data="dita-generalized-topicid_mathml2.xml" type="DITA-foreign"/&gt;
+&lt;/foreign&gt;
+</codeblock>
+      <p class="- topic/p " xtrc="p:11;79:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">The contents of dita-generalized-topicid_mathml1.xml, the first exported file:</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:5;80:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">&lt;foreign class="+ topic/foreign mathml/mathml "&gt;
+  &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;
+  &lt;/math&gt;
+&lt;/foreign&gt;
+</codeblock>
+      <p class="- topic/p " xtrc="p:12;86:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">The contents of dita-generalized-topicid_mathml2.xml, the second exported file:</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:6;87:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/foreigngeneralization.dita">
+&lt;foreign class="+ topic/foreign mathml/mathml "&gt;
+  &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;mi&gt;y&lt;/mi&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;
+  &lt;/math&gt;
+&lt;/foreign&gt;</codeblock>
+    </example>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:8;13:88" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><link class="- topic/link " format="dita" href="../non-normative/non-normative-information.dita" mapclass="- map/topicref bookmap/appendix " role="parent" scope="local" type="concept" xtrc="topicref:1;4:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Non-normative information</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">This section contains non-normative information, including topics about new features         in DITA 1.2 and migrating from DITA 1.1 to DITA 1.2. </desc></link></linkpool></related-links></concept>

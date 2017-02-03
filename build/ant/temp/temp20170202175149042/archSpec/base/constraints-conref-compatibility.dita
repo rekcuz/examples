@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="concept_bb1_f11_wq" xtrc="concept:1;3:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+  <title class="- topic/title " xtrc="title:1;4:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Conref compatibility with constraints</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">To determine compatibility between two document instances, a conref processor checks
+    the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;6:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">domains</xmlatt> attribute to confirm whether the referencing document has a
+    superset of the vocabulary modules in the referenced document. If the two document instances
+    each are constrained, the conref processor checks to confirm the compatibility of the
+    constraints.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;10:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+    <author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author><metadata class="- topic/metadata " xtrc="metadata:1;11:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+      <keywords class="- topic/keywords " xtrc="keywords:1;12:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+        <indexterm class="- topic/indexterm " xtrc="indexterm:1;13:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">conref<indexterm class="- topic/indexterm " xtrc="indexterm:2;13:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">constraint modules and compatibility</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:3;14:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">constraints<indexterm class="- topic/indexterm " xtrc="indexterm:4;14:42" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">conref compatibility</indexterm></indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:5;15:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">examples<indexterm class="- topic/indexterm " xtrc="indexterm:6;15:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">constraint modules and conref
+          compatibility</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;20:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+    
+    <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="29 January 2015" translate="no" xtrc="draft-comment:1;22:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+      <p class="- topic/p " xtrc="p:1;23:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The 1.2 topic also contained the following text (applicable to conref push): "For each
+        vocabulary module in the referenced document, the referencing document qualifies the common
+        module with a subset of the constraints in the referenced document." Might need to rephrase
+        and put it back into the content.</p>
+    </draft-comment>
+    <p class="- topic/p " xtrc="p:2;28:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Conref processors take into account whether constraints are specified as strong. For strong
+      constraints, the following rules apply:</p>
+    <dl class="- topic/dl " xtrc="dl:1;30:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+      <dlentry class="- topic/dlentry " xtrc="dlentry:1;31:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+        <dt class="- topic/dt " xtrc="dt:1;32:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Conref pull</dt>
+        <dd class="- topic/dd " xtrc="dd:1;33:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The document type that contains the referencing element must be less (or equally)
+          constrained than the document type that contains the referenced element.</dd>
+      </dlentry>
+      <dlentry class="- topic/dlentry " xtrc="dlentry:2;36:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+        <dt class="- topic/dt " xtrc="dt:2;37:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Conref push</dt>
+        <dd class="- topic/dd " xtrc="dd:2;38:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The document type that contains the referencing element must be more (or equally)
+          constrained than the document type that contains the referenced element.</dd>
+      </dlentry>
+    </dl>
+    <example class="- topic/example " xtrc="example:1;42:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+      <title class="- topic/title " xtrc="title:2;43:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Example: Conref pull and constraint compatibility</title>
+      <p class="- topic/p " rev="targeted-review" xtrc="p:3;44:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The following table contains scenarios where conref pull occurs
+        between constrained and unconstrained document instances. It assumes that the processor is
+          <b class="+ topic/ph hi-d/b " xtrc="b:1;46:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">not</b> configured to treat all constraints as strong constraints.</p>
+      <simpletable class="- topic/simpletable " relcolwidth="3* 3* 1* 2*" rev="targeted-review" xtrc="simpletable:1;47:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+        <sthead class="- topic/sthead " xtrc="sthead:1;48:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:1;49:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Values of @domains attribute on document type that contains the referencing
+            element</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:2;51:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Values of @domains attribute on document type that contains the referenced
+            element</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:3;53:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Resolution</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:4;54:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Comments</stentry>
+        </sthead>
+        <strow class="- topic/strow " xtrc="strow:1;56:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:5;57:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;57:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:6;58:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;58:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic shortdescReq-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:7;59:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Allowed </stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:8;60:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The content model of the referenced topic is more constrained than the
+            referencing topic.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:2;63:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:9;64:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;64:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">s(topic shortdescReq-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:10;65:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;65:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:11;66:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Prevented</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:12;67:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The constraint is specified as a strong constraint, and the content model of the
+            referenced topic is less constrained than the referencing topic.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:3;70:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:13;71:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;71:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic shortdescReq-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:14;72:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;72:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:15;73:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Allowed </stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:16;74:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Although the content model of referenced topic is less constrained than the
+            referencing topic, this is a weak constraint and so permitted.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:4;77:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:17;78:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;78:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic task) (topic hi-d basicHighlightingDomain-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:18;79:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;79:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic simpleSection-c) (topic task simpleStep-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:19;80:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Allowed </stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:20;81:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The referenced topic has a subset of the vocabulary modules that are integrated
+            into the document type shell for the referencing topic. Both document types integrate
+            constraints, but the referencing topic is less constrained than the referenced
+            topic.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:5;86:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:21;87:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:9;87:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic hi-d) (topic simpleSection-c) s(topic
+            simpleP-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:22;89:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:10;89:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic simpleSection-c)(topic task) (topic hi-d
+              basicHighlightingDomain-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:23;91:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Prevented</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:24;92:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The referencing document has more constraints than the referencing document,
+            including a strong constraint applied to the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;93:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">p</xmlelement>
+            element.</stentry>
+        </strow>
+      </simpletable>
+    </example>
+    <example class="- topic/example " xtrc="example:2;98:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+      <title class="- topic/title " xtrc="title:3;99:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Example: Conref push and constraint compatibility</title>
+      <p class="- topic/p " rev="targeted-review" xtrc="p:4;100:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The following table contains scenarios where conref push occurs
+        between constrained and unconstrained document instances. It assumes that the processor has
+          <b class="+ topic/ph hi-d/b " xtrc="b:2;102:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">not</b> been configured to treat all constraints as strong constraints.</p>
+      <simpletable class="- topic/simpletable " relcolwidth="3* 3* 1* 2*" rev="targeted-review" xtrc="simpletable:2;103:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+        <sthead class="- topic/sthead " xtrc="sthead:2;104:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:25;105:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Values of @domains attribute on referencing element</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:26;106:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Values of @domains attribute on referenced element</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:27;107:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Resolution</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:28;108:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Comments</stentry>
+        </sthead>
+        <strow class="- topic/strow " xtrc="strow:6;110:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:29;111:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:11;111:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:30;112:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:12;112:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic shortdescReq-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:31;113:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Allowed</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:32;114:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Although the content model of the referenced topic is more constrained than the
+            referencing topic, this is a weak constraint and so permitted.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:7;117:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:33;118:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:13;118:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:34;119:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:14;119:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">s(topic shortdescReq-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:35;120:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Prevented</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:36;121:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The constraint is specified as a strong constraint, and the content model of the
+            referenced topic is more constrained than the referencing topic.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:8;124:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:37;125:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:15;125:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic shortdescReq-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:38;126:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:16;126:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:39;127:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Allowed</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:40;128:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The content model of the referencing topic is more constrained than the
+            referenced topic.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:9;131:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:41;132:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:17;132:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic task) (topic hi-d basicHighlightingDomain-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:42;133:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:18;133:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic simpleSection-c) (topic task simpleStep-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:43;134:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Allowed </stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:44;135:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The referenced topic has a subset of the vocabulary modules that are integrated
+            into the document type shell for the referencing topic. Both document types integrate
+            constraints, but the referencing topic is less constrained than the referenced
+            topic.</stentry>
+        </strow>
+        <strow class="- topic/strow " xtrc="strow:10;140:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">
+          <stentry class="- topic/stentry " xtrc="stentry:45;141:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:19;141:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic hi-d) (topic simpleSection-c) s(topic
+            simpleP-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:46;143:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:20;143:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">(topic simpleSection-c)(topic task) (topic hi-d
+            basicHighlightingDomain-c)</codeph></stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:47;145:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">Prevented</stentry>
+          <stentry class="- topic/stentry " xtrc="stentry:48;146:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">The referenced document has more constraints than the referencing document,
+            including a strong constraint applied to the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;147:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints-conref-compatibility.dita">p</xmlelement>
+            element.</stentry>
+        </strow>
+      </simpletable>
+    </example>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:9;13:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/constraints.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:1;5:36" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/constraints.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Constraints</linktext><?ditaot genshortdesc?><desc class="- topic/desc "><ph class="- topic/ph " xtrc="ph:13;77:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">Constraint modules define additional                                         constraints for vocabulary modules in order to restrict                                         content models or attribute lists for specific element                                         types, remove certain extension elements from an integrated                                         domain module, or replace base element types with                                         domain-provided, extension element types.</ph></desc></link></linkpool></related-links></concept>

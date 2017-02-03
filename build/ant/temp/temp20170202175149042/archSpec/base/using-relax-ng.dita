@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="using-relax-ng" rev="DITA1.3 proposal-13112 review-1" xtrc="concept:1;3:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Using RELAX NG for document type shells, vocabulary modules, and constraint modules</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">The RELAX NG specification defines two syntaxes for RELAX NG grammars: the XML syntax
+    and the compact syntax. The two syntaxes are functionally equivalent, and either syntax can be
+    reliably converted into the other, for example, by using the open-source Trang tool. The OASIS
+    DITA Technical Committee uses the RELAX NG XML syntax for the normative versions of the XML
+    grammar files that comprise the DITA release. </shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;10:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+    <p class="- topic/p " xtrc="p:1;11:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">The DITA Technical Committee chose the RELAX NG XML syntax for the following reasons:</p>
+    <dl class="- topic/dl " xtrc="dl:1;12:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+      <dlentry class="- topic/dlentry " xtrc="dlentry:1;13:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+        <dt class="- topic/dt " xtrc="dt:1;14:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Easy use of foreign markup</dt>
+        <dd class="- topic/dd " xtrc="dd:1;15:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita"><draft-comment author="robander" class="- topic/draft-comment " time="17 February 2015" translate="no" xtrc="draft-comment:1;15:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Nervous about "The DITA coding
+            requirements depend on" and "such metadata is required", given the non-standard aspect
+            of the foreign markup we're using. Maybe just state that the tools used by OASIS to
+            generate DTD and XSD versions of our grammar files depend on this feature? Then keep the
+            bit about Schematron.</draft-comment>The DITA coding requirements depend on this feature
+          of RELAX NG in order to capture metadata about document type shells and modules; such
+          metadata is required in order to generate the DTD- and XSD-based versions of the grammar
+            files.<p class="- topic/p " xtrc="p:2;22:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">The foreign vocabulary feature also can be used to include Schematron rules
+            directly in RELAX NG grammars. Schematron rules can check for patterns that either are
+            not expressible with RELAX NG directly or that would be inconvenient to
+          express.</p></dd>
+      </dlentry>
+      <dlentry class="- topic/dlentry " xtrc="dlentry:2;27:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+        <dt class="- topic/dt " xtrc="dt:2;28:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">RELAX NG <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;28:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">div</xmlelement> element </dt>
+        <dd class="- topic/dd " xtrc="dd:2;29:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">This general grouping element allows for arbitrary organization and grouping of patterns
+          within grammar documents. Such grouping tends to make the grammar documents easier to work
+          with, especially in XML-aware editors. <ph class="- topic/ph " rev="review-2" xtrc="ph:1;31:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">The use or non-use of the RELAX
+            NG <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;32:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">div</xmlelement> element does not affect the meaning of the patterns that
+            are defined in a RELAX NG schema.</ph></dd>
+      </dlentry>
+      <dlentry class="- topic/dlentry " xtrc="dlentry:3;35:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+        <dt class="- topic/dt " xtrc="dt:3;36:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Capability of expressing precise restrictions</dt>
+        <dd class="- topic/dd " xtrc="dd:3;37:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">RELAX NG is capable of expressing constraints that are more precise than is possible
+          with either DTDs or XSDs. For example, RELAX NG patterns can be context specific such that
+          the same element type can allow different content or attributes in different
+          contexts.</dd>
+        <dd class="- topic/dd " xtrc="dd:4;41:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">If you plan to generate DTD- or XSD-based modules from RELAX NG modules, avoid RELAX NG
+          features that cannot be translated into DTD or XSD constructs. When RELAX NG is used
+          directly for DITA document validation, the document type shells for those documents can
+          integrate constraint modules that use the full power of RELAX NG to enforce constraints
+          that cannot be enforced by DTDs or XSDs.</dd>
+      </dlentry>
+    </dl>
+    <p class="- topic/p " xtrc="p:3;48:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">The DITA use of RELAX NG depends on the <cite class="- topic/cite " xtrc="cite:1;48:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">RELAX NG DTD Compatibility</cite>
+      specification, which provides a mechanism for defining default attribute values and embedded
+      documentation. Processors that use RELAX NG for DITA documents in which required attributes
+      (for example, the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;51:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">domains</xmlatt> and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;51:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">class</xmlatt> attributes)  are not
+      explicitly present must implement the DTD compatibility specification in order to get default
+      attribute values.</p>
+    <p class="- topic/p " xtrc="p:4;54:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita"><draft-comment author="robander" class="- topic/draft-comment " time="17 February 2015" translate="no" xtrc="draft-comment:2;54:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Same issue as above. "The resulting
+        RNG might not contain the metadata that is necessary" ... it's only necessary for the
+        existing tool, which is not part of the standard. I like that we state that grammars may
+        omit this information, but maybe this whole thing could be rephrased a bit. "You can use
+        either RNC or RNG. They're conforming if they have the one-to-one thing. Note: OASIS uses a
+        tool to convert the normative RNG to RNC/DTD/XSD; this process relies on metadata and
+        annotations that may not be preserved when converting from one RELAX NG syntax to the other.
+        However, the metadata to enable such conversions is not required in order to create
+        conforming RNG </draft-comment>DITA practitioners can author DITA modules using one RELAX NG
+      syntax, and then use tools to generate modules in the other syntax. The resulting RELAX NG
+      modules are conforming if there is a one-to-one file correspondence. The resulting RELAX NG
+      XML might not contain the metadata that is necessary to generate corresponding modules that
+      are DTD- or XSD-based, as processors are not required to process the annotations and
+      information from foreign vocabularies. Conforming RELAX NG-based DITA modules, whether compact
+      or XML syntax, <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;68:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">MAY</term> omit the annotations
+      and foreign elements that are required to enable generation of other XML grammars, such as
+      DTDs and XML Schema.</p>
+    
+    
+    <p class="- topic/p " xtrc="p:5;73:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">The DITA coding requirements are defined for the RELAX NG XML syntax. Document type shells,
+      vocabulary modules, and constraint modules that use the RELAX NG compact syntax <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:2;75:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">MUST</term> use the same file naming and
+      organization requirements as those defined for the RELAX NG XML syntax, substituting ".rnc"
+      for ".rng" as the file name extension. </p>
+    <draft-comment author="robander" class="- topic/draft-comment " time="16 February 2015" translate="no" xtrc="draft-comment:3;78:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Reminder: should probably change the
+      previous paragraph as file naming rules move to appendix.</draft-comment>
+  <p class="- topic/p " xtrc="p:6;80:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">RELAX NG grammars for DITA document-type shells, vocabulary modules, and constraint modules
+        <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:3;81:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">MAY</term> do the following:</p>
+    <ul class="- topic/ul " xtrc="ul:1;82:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+      <li class="- topic/li " xtrc="li:1;83:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Use the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;83:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">a:documentation</xmlelement> element anywhere that foreign elements
+        are allowed by RELAX NG. The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;84:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">a:documentation</xmlelement> element refers to the
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;85:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">documentation</xmlelement> element type from the
+          <xmlnsname class="+ topic/keyword markup-d/markupname xml-d/xmlnsname " xtrc="xmlnsname:1;86:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">http://relaxng.org/ns/compatibility/annotations/1.0</xmlnsname> as defined by
+        the DTD compatibility specification. The prefix "a" is used by convention.</li>
+      <li class="- topic/li " xtrc="li:2;88:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Use <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;88:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">div</xmlelement> to group pattern declarations.</li>
+      <li class="- topic/li " xtrc="li:3;89:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Include embedded Schematron rules or any other foreign vocabulary. Processors <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:4;90:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">MAY</term> ignore any foreign vocabularies within
+        DITA grammars that are not in the
+          <xmlnsname class="+ topic/keyword markup-d/markupname xml-d/xmlnsname " xtrc="xmlnsname:2;92:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">http://relaxng.org/ns/compatibility/annotations/1.0</xmlnsname> or
+          <xmlnsname class="+ topic/keyword markup-d/markupname xml-d/xmlnsname " xtrc="xmlnsname:3;93:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">http://dita.oasis-open.org/architecture/2005/</xmlnsname> namespaces.</li>
+    </ul>
+    <p class="- topic/p " xtrc="p:7;95:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">DITA grammar documents <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:5;95:78" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">SHOULD</term> contain
+      the following:</p>
+    <draft-comment author="robander" class="- topic/draft-comment " time="16 February 2015" translate="no" xtrc="draft-comment:4;97:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">We agreed to remove the comment
+      requirements from the spec. Need to deterimne how much more of the following to
+      remove.</draft-comment>
+    <ul class="- topic/ul " xtrc="ul:2;100:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">
+      <li class="- topic/li " xtrc="li:4;101:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">An initial set of comments or a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;101:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">moduleMetadata</xmlelement> element that
+        describes the grammar document and indicates the URNs or absolute URLs by which the grammar
+        should be referenced in RELAX NG grammar references. See <xref class="- topic/xref " href="relax-ng-module-descriptive-markup.dita" xtrc="xref:1;104:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita" type="concept"><?ditaot gentext?>Module description markup for use in DITA-specific RELAX NG grammars<?ditaot genshortdesc?><desc class="- topic/desc ">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;5:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element enables specification of the metadata   that is required in order to generate conforming DTD- and XSD-based modules from the RELAX NG   grammars.</desc></xref>.</li>
+      
+      <li class="- topic/li " xtrc="li:5;106:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">Sections that occur in the order specified in these coding requirements</li>
+      <li class="- topic/li " xtrc="li:6;107:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">(For section titles that use <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;107:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">div</xmlelement> elements) The following
+        format:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;108:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">&lt;div&gt;
+  &lt;a:documentation&gt;<i class="+ topic/ph hi-d/i " xtrc="i:1;109:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/using-relax-ng.dita">SECTION TITLE</i>&lt;/a:documentation&gt;
+ 
+&lt;/div&gt;</codeblock></li>
+    </ul>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:4;8:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization-and-custom-doctypes.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/ditaspecialization.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:2;6:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization-and-custom-doctypes.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Overview of DITA extension facilities</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">DITA provides three extension facilities: configuration, constraint, and     specialization.</desc></link></linkpool><linkpool class="- topic/linkpool " xtrc="topicref:9;63:95" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/base-relationship-tables.ditamap"><link class="- topic/link " format="html" href="http://dita.xml.org/resource/relax-ng-to-dtd-or-xsd-tools" mapclass="- map/topicref " role="friend" scope="external" xtrc="topicref:11;68:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/base-relationship-tables.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot usertext?>Tools for generating DTD or XSD from RELAX NG</linktext></link></linkpool></related-links></concept>

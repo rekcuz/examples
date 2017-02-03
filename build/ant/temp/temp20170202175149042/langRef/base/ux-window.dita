@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/langRef/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="ux-window" rev="DITA1.3 proposal-13061" xtrc="reference:1;3:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+  <title class="- topic/title " xtrc="title:1;4:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;4:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">ux-window</xmlelement></title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Use the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;5:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">ux-window</xmlelement> element to provide specifications for a
+    window or viewport in which a user assistance topic or Web page can be displayed. The window or
+    viewport can be referenced by the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;7:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">resourceid</xmlelement> element associated with a
+    topic or <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;8:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">topicref</xmlelement> element.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;9:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+    <author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author><metadata class="- topic/metadata " xtrc="metadata:1;10:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+      <keywords class="- topic/keywords " xtrc="keywords:1;11:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+        <indexterm class="- topic/indexterm " xtrc="indexterm:1;12:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">context-sensitive help</indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:2;13:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">user assistance</indexterm>
+        <indexterm class="- topic/indexterm " xtrc="indexterm:3;14:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">elements<indexterm class="- topic/indexterm " xtrc="indexterm:4;14:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">basic map<indexterm class="- topic/indexterm " xtrc="indexterm:5;14:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;14:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">ux-window</xmlelement></indexterm></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;18:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+    <section class="- topic/section " xtrc="section:1;19:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+      <p class="- topic/p " xtrc="p:1;20:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;20:26" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">ux-window</xmlelement> element can be used anywhere within a map. If more
+        than one <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;21:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">ux-window</xmlelement> element in a map has the same
+          <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;22:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">name</xmlatt> attribute, the window specification in the first instance of the
+        element is used.</p>
+      <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " disposition="open" time="27 January 2014" translate="no" xtrc="draft-comment:1;24:90" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Should this
+        read the "the first instance of the element <b class="+ topic/ph hi-d/b " xtrc="b:1;25:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">in document order</b>"? Emphasis
+        added.</draft-comment>
+    </section>
+    <section class="- topic/section " id="contains" otherprops="contains" xtrc="section:136;4:43027" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"><title class="- topic/title " xtrc="title:273;4:43034" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">Content models</title><p class="- topic/p " xtrc="p:136;4:43059" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">See <xref class="- topic/xref " href="../../common/../contentmodels/cmbaseu.dita#cmbaseu/ux-window" keyref="cmodu/ux-window" type="reference" xtrc="xref:136;4:43111" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita">appendix<desc class="- topic/desc " xtrc="desc:136;4:43126" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/commonNavLibraryTable.dita"/></xref> for information about this element in OASIS document type shells.</p></section>
+    <section class="- topic/section " id="inheritance" otherprops="inheritance" xtrc="section:3;29:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+      <title class="- topic/title " xtrc="title:2;30:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Inheritance</title>
+      <p class="- topic/p " xtrc="p:2;31:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">- map/ux-window </p>
+    </section>
+    <example class="- topic/example " id="example" xtrc="example:1;33:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+      <title class="- topic/title " xtrc="title:3;34:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Example</title>
+      <p class="- topic/p " xtrc="p:3;35:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">In this example, a window with a name of "csh" is defined in the map. The window name is
+        later referenced by the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;36:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">ux-windowref</xmlatt> attribute on the
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;37:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">resourceid</xmlelement> element.</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;38:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">&lt;map title="Widget Help"&gt;
+ &lt;topicmeta&gt;
+  <b class="+ topic/ph hi-d/b " xtrc="b:2;40:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">&lt;ux-window id="fg23" name="csh" top="10" left="20" height="400" width="500" 
+     features="status=yes,toolbar=no,menubar=no,location=no" relative="yes"
+     full-screen="no" /&gt;</b>
+ &lt;/topicmeta&gt;
+ &lt;topicref href="file_ops.dita" type="concept"&gt;
+   &lt;topicref href="saving.dita" type="task" /&gt;
+   &lt;topicref href="deleting.dita" type="task" /&gt;
+   &lt;topicref href="editing.dita" type="task"&gt;
+     &lt;topicmeta&gt;  
+       <b class="+ topic/ph hi-d/b " xtrc="b:3;49:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">&lt;resourceid id="ab43" appname="ua" 
+          appid="5432" ux-context-string="idh_fileedit" ux-windowref="csh" /&gt;</b>
+     &lt;/topicmeta&gt;
+   &lt;/topicref&gt;
+&lt;/topicref&gt;
+&lt;/map&gt;</codeblock>
+      <p class="- topic/p " xtrc="p:4;55:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">In this example, different window specifications are defined for tablet and desktop
+        presentation:</p>
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;57:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">&lt;map title="Puggles Help"&gt;
+ &lt;topicmeta&gt;
+ <b class="+ topic/ph hi-d/b " xtrc="b:4;59:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">&lt;ux-window id="p76" name="ux-tablet" top="5%" left="5%" height="90%" width="90%" 
+    features="status=no,toolbar=no,menubar=no,location=no" relative="no"
+    full-screen="no" /&gt;</b>
+ <b class="+ topic/ph hi-d/b " xtrc="b:5;62:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">&lt;ux-window id="p80" name="ux-desktop" top="5%" left="55%" height="60%" width="40%" 
+    features="status=yes,toolbar=no,menubar=no,location=yes" relative="no"
+    full-screen="no" /&gt;</b>
+ &lt;/topicmeta&gt;
+ &lt;topicref href="c_puggles_intro.dita" type="concept"&gt;
+  &lt;!-- ... --&gt;
+ &lt;/topicref&gt;
+&lt;/map&gt;</codeblock>
+    </example>
+    <section class="- topic/section " id="attributes" xtrc="section:4;71:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+      <title class="- topic/title " xtrc="title:4;72:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Attributes</title>
+      <p class="- topic/p " xtrc="p:5;73:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The following attributes are available on this element: <xref class="- topic/xref " href="../attributes/idAttributes.dita" xtrc="xref:1;74:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"/>, <xref class="- topic/xref " href="../attributes/metadataAttributes.dita#select-atts" xtrc="xref:2;75:69" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"/>, <xref class="- topic/xref " href="../attributes/debugAttributes.dita" xtrc="xref:3;76:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"/>, <xref class="- topic/xref " href="../attributes/universalAttributes.dita#univ-atts/class" xtrc="xref:4;77:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"/>, and the attributes
+        defined below.</p>
+      <dl class="- topic/dl " xtrc="dl:1;79:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;80:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-name" xtrc="dt:1;81:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;81:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">name</xmlatt>
+            <ph class="- topic/ph " xtrc="ph:11;47:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">(REQUIRED)</ph></dt>
+          <dd class="- topic/dd " xtrc="dd:1;83:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The value used to refer to this window definition.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:2;85:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-top" xtrc="dt:2;86:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;86:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">top</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:2;87:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The top position of the target help window, whether relative to the calling window or
+            to the entire display. The value of this attribute is a real number optionally followed
+            by a unit of measure from the set of pc, pt, px, in, cm, mm, em (picas, points, pixels,
+            inches, centimeters, millimeters, and ems respectively). The default unit is px
+            (pixels).
+            </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;94:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-left" xtrc="dt:3;95:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;95:39" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">left</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:3;96:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The left position of the target help window, whether relative to the calling window or
+            to the entire display. The value of this attribute is a real number optionally followed
+            by a unit of measure from the set of pc, pt, px, in, cm, mm, em (picas, points, pixels,
+            inches, centimeters, millimeters, and ems respectively). The default unit is px
+            (pixels).
+            </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:4;103:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-height" xtrc="dt:4;104:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:6;104:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">height</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:4;105:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The height of the window. The value of this attribute is a real number optionally
+            followed by a unit of measure from the set of pc, pt, px, in, cm, mm, em (picas, points,
+            pixels, inches, centimeters, millimeters, and ems respectively). The default unit is px
+            (pixels).
+            </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:5;111:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-width" xtrc="dt:5;112:32" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:7;112:40" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">width</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:5;113:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The width of the window. The value of this attribute is a real number optionally
+            followed by a unit of measure from the set of pc, pt, px, in, cm, mm, em (picas, points,
+            pixels, inches, centimeters, millimeters, and ems respectively). The default unit is px
+            (pixels).
+            </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:6;119:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-on-top" xtrc="dt:6;120:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:8;120:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">on-top</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:6;121:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Indicates whether the initial z-order of the target help window is on top of all
+            windows on the desktop. Allowable values are: "yes", "no", and <xref class="- topic/xref " href="../attributes/ditauseconreftarget.dita" xtrc="xref:5;123:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">-dita-use-conref-target</xref>. The
+            default value is "no".</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:7;126:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-features" xtrc="dt:7;127:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:9;127:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">features</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:7;128:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">A list of other features (size, position, scrollbars, etc.) of the window. Each
+            feature name and value must not contain any blank space, and each feature name and value
+            must be separated by a comma or other delimiter character.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:8;132:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-relative" xtrc="dt:8;133:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:10;133:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">relative</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:8;134:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Indicates whether the window dimensions are relative to the calling window or the
+            entire target display. The default value is "no". Allowable values are: <dl class="- topic/dl " xtrc="dl:2;135:89" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:9;136:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+                <dt class="- topic/dt " xtrc="dt:9;137:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">no</dt>
+                <dd class="- topic/dd " xtrc="dd:9;138:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The window dimensions specified on this element are absolute positions (not
+                  relative to the calling window).</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:10;141:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+                <dt class="- topic/dt " xtrc="dt:10;142:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">yes</dt>
+                <dd class="- topic/dd " xtrc="dd:10;143:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">The window dimensions specified on this element are relative to the calling
+                  window.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:1;14:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">
+                                        <dt class="- topic/dt " xtrc="dt:1;15:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">-dita-use-conref-target </dt>
+                                        <dd class="- topic/dd " xtrc="dd:1;16:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita">See <xref class="- topic/xref " href="../../common/../langRef/attributes/ditauseconreftarget.dita" xtrc="xref:1;18:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref-attribute.dita"/> for more information. </dd>
+                                </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:12;152:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">
+          <dt class="- topic/dt " id="uxatt-full-screen" xtrc="dt:12;153:38" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:11;153:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">full-screen</xmlatt></dt>
+          <dd class="- topic/dd " xtrc="dd:12;154:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">Indicates whether the window should initially be displayed in a maximized state.
+            Allowable values are: "yes", "no", and <xref class="- topic/xref " href="../attributes/ditauseconreftarget.dita" xtrc="xref:6;156:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/base/ux-window.dita">-dita-use-conref-target</xref>. The
+            default value is "no".</dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:12;17:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/basic-map-elements.ditamap"><link class="- topic/link " format="dita" href="../../langRef/containers/basic-map-elements.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:1;5:98" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/basic-map-elements.ditamap"><linktext class="- topic/linktext "><?ditaot gentext?>Basic map elements</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">DITA maps are built from a few core elements that are used for referencing and organizing topics. The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;7:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/containers/basic-map-elements.dita">topicmeta</xmlelement> element is also available to specify metadata for the map, for individual topics, or for groups of topics. Many elements inside <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;9:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/langRef/containers/basic-map-elements.dita">topicmeta</xmlelement> are also available inside the topic prolog.</desc></link></linkpool><linkpool class="- topic/linkpool " xtrc="topicref:30;160:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/base-relationship-tables.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/help-systems-and-other-user-assistance.dita" mapclass="- map/topicref " role="friend" scope="local" type="concept" xtrc="topicref:28;156:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/base-relationship-tables.ditamap"><linktext class="- topic/linktext "><?ditaot gentext?>Context hooks and window metadata for user assistance</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Context hook information specified in the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;5:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/help-systems-and-other-user-assistance.dita">resourceid</xmlelement> element in     the DITA map or in a DITA topic enables processors to generate the header, map, alias and other     types of support files that are required to integrate the user assistance with the application.     Some user assistance topics might need to be displayed in a specific window or viewport, and     this windowing metadata can be defined in the DITA map within the       <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;10:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/help-systems-and-other-user-assistance.dita">ux-window</xmlelement> element.</desc></link></linkpool></related-links></reference>

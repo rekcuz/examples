@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="relax-ng-topic-module-coding-requirements" xtrc="concept:1;3:57" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">RELAX NG: Coding requirements for topic type modules</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita"><ph class="- topic/ph " xtrc="ph:14;83:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">Topic-type vocabulary modules <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:2;84:54" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">MUST</term> conform to additional coding
+          requirements for defining <term class="- topic/term " xtrc="term:3;85:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/common/conref_file.dita">default topic nesting</term>. Default topic nesting
+          defines whether topics are permitted to nest and what topic types are permitted to
+          nest.</ph></shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;8:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">
+  <p class="- topic/p " xtrc="p:1;9:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">A topic type module <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;9:73" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">MUST</term> define a pattern
+      to specify default topic nesting. The pattern name <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:2;11:27" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">MUST</term> be the topic element name plus the suffix
+        <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;12:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">-info-types</codeph>. For example, the info-types pattern for the concept topic type
+      is <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;13:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">concept-info-types</codeph>.</p>
+  <p class="- topic/p " xtrc="p:2;14:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">If the topic has  default topic nesting, this pattern <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:3;15:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">MAY</term> refer to a list of name patterns for
+      topic element types, as in this example:
+      <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;17:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">&lt;div&gt;
+  &lt;a:documentation&gt;INFO TYPES PATTERNS&lt;/a:documentation&gt;
+  &lt;define name="mytopic-info-types"&gt;
+    &lt;ref name="subtopictype-01.element"/&gt;
+    &lt;ref name="subtopictype-02.element"/&gt;
+  &lt;/define&gt;
+  &lt;!-- ... --&gt;
+&lt;/div&gt;</codeblock></p>
+  <p class="- topic/p " xtrc="p:3;25:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">If the topic does not permit nested topics, the pattern <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:4;26:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">SHOULD</term> refer to the <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;26:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">info-types</codeph> pattern as in the following example:</p>
+  <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;27:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">&lt;div&gt;
+  &lt;a:documentation&gt;INFO TYPES PATTERNS&lt;/a:documentation&gt;
+  &lt;define name="mytopic-info-types"&gt;
+    &lt;ref name="info-types"/&gt;
+  &lt;/define&gt;
+  &lt;!-- ... --&gt;
+&lt;/div&gt;</codeblock>
+  <p class="- topic/p " xtrc="p:4;34:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">A document type shell then can control how topics are allowed to nest by redefining the
+    "<varname class="+ topic/keyword sw-d/varname " xtrc="varname:1;35:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">topictype</varname>-info-types" pattern for each topic type, or it can efficiently
+   create common nesting rules by redefining the main info-types pattern.</p>
+  <p class="- topic/p " xtrc="p:5;37:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">In the declaration of the root element of a topic type, the last position in the content model
+    <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:5;38:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">MUST</term> be the "<varname class="+ topic/keyword sw-d/varname " xtrc="varname:2;38:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">topictype</varname>-info-types"
+   pattern, as in the following example:</p>
+  <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;40:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-topic-module-coding-requirements.dita">&lt;div&gt;
+  &lt;a:documentation&gt;LONG NAME: Concept&lt;/a:documentation&gt;
+  &lt;define name="concept.content"&gt;
+    &lt;ref name="title"/&gt;
+    &lt;optional&gt;
+      &lt;ref name="titlealts"/&gt;
+    &lt;/optional&gt;
+    &lt;optional&gt;
+      &lt;choice&gt;
+        &lt;ref name="abstract"/&gt;
+        &lt;ref name="shortdesc"/&gt;
+      &lt;/choice&gt;
+    &lt;/optional&gt;
+    &lt;optional&gt;
+      &lt;ref name="prolog"/&gt;
+    &lt;/optional&gt;
+    &lt;optional&gt;
+      &lt;ref name="conbody"/&gt;
+    &lt;/optional&gt;
+    &lt;optional&gt;
+      &lt;ref name="related-links"/&gt;
+    &lt;/optional&gt;
+    &lt;zeroOrMore&gt;
+      &lt;ref name="concept-info-types"/&gt;
+    &lt;/zeroOrMore&gt;
+  &lt;/define&gt;
+  &lt;!-- ... --&gt;
+&lt;/div&gt;</codeblock>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:15;21:98" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/coding-requirements-relax-ng.dita" mapclass="- map/topicref " rev="DITA1.3 proposal-13112" role="parent" scope="local" type="concept" xtrc="topicref:12;18:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>RELAX NG: Coding requirements for specialization modules</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">To be extensible and backward compatible, DITA requires that RELAX NG-based structural   and domain specialization modules conform to well-defined coding requirements.</desc></link></linkpool></related-links></concept>

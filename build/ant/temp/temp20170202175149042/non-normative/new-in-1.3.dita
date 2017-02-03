@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/non-normative/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="new-in-1.3" rev="DITA1.3" xml:lang="en-us" xtrc="concept:1;3:57" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Changes from DITA 1.2 to DITA 1.3</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">(Non-normative) DITA 1.3 adds a number of new features and refinements to
+  DITA.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;7:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+  <section class="- topic/section " xtrc="section:1;8:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+   <dl class="- topic/dl " xtrc="dl:1;9:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+    <dlentry class="- topic/dlentry " xtrc="dlentry:1;10:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:1;11:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enhancements to keys</dt>
+     <dd class="- topic/dd " xtrc="dd:1;12:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13004" xtrc="li:1;14:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Scoped keys</li>
+       <li class="- topic/li " rev="proposal-13041" xtrc="li:2;15:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added facility for key-based, cross-deliverable referencing</li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " rev="proposal-13112" xtrc="dlentry:2;19:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:2;20:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">New XML grammars</dt>
+     <dd class="- topic/dd " xtrc="dd:2;21:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">The DITA standard now supports RELAX NG.</dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:3;23:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:3;24:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enhancements to conditional processing (filtering)</dt>
+     <dd class="- topic/dd " xtrc="dd:3;25:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:2;26:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13059a" xtrc="li:3;27:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enabled information architects to associate DITAVAL conditions with
+        specific topic collections in a map. Prior to DITA 1.3, a set of DITAVAL conditions could
+        only be associated with a root map.</li>
+       <li class="- topic/li " rev="proposal-13056" xtrc="li:4;30:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Expanded syntax for filtering attributes. The original property
+        attributes (<xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;31:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">audience</xmlatt>, <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;31:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">platform</xmlatt>, <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;31:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">product</xmlatt>,
+        and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;32:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">otherprops</xmlatt>) now accept grouped values, using the same syntax for
+        generalized attribute values within <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:5;33:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">props</xmlatt> and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:6;33:80" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">base</xmlatt>.</li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " rev="proposal-13001" xtrc="dlentry:4;37:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:4;38:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enhancements to addressing</dt>
+     <dd class="- topic/dd " xtrc="dd:4;39:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">New syntax for addressing an element within the same DITA topic</dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " rev="proposal-13121" xtrc="dlentry:5;41:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:5;42:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enhancements to specialization</dt>
+     <dd class="- topic/dd " xtrc="dd:5;43:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enabled parts of structural specializations to be reused by other structural
+      specializations without requiring one to be specialized from the other. For example, allowed
+      the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;45:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">steps</xmlelement> element from <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;45:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">task</xmlelement> to be reused in
+      place of an <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;46:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">ol</xmlelement> within a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;46:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">remedy</xmlelement> section of
+      the troubleshooting document type.</dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:6;49:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:6;50:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Increased support for producing troubleshooting information</dt>
+     <dd class="- topic/dd " xtrc="dd:6;51:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:3;52:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13098" xtrc="li:5;53:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">A new value, "trouble", for the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:7;53:73" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">type</xmlatt> attribute of
+        the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;54:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">note</xmlelement> element</li>
+       <li class="- topic/li " product="technicalContent" rev="proposal-13086" xtrc="li:6;55:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">A new element in the content model for
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;56:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">step</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;56:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">steptroubleshooting</xmlelement>, designed to
+        contain information that might assist users when a step does not produce the expected result
+        or complete successfully</li>
+       <li class="- topic/li " product="technicalContent" rev="proposal-13096" xtrc="li:7;59:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">A new section in the task document type,
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;60:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">tasktroubleshooting</xmlelement>, designed to contain information that might
+        assist users when a task does not produce the expected result or complete successfully</li>
+       <li class="- topic/li " product="technicalContent" rev="proposal-13097" xtrc="li:8;62:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">A new troubleshooting document type</li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:7;66:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:7;67:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Increased support for producing user assistance</dt>
+     <dd class="- topic/dd " xtrc="dd:7;68:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:4;69:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13060 proposal-13008" xtrc="li:9;70:48" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added the following new attributes to
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:9;71:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">resourceid</xmlelement>:<ul class="- topic/ul " xtrc="ul:5;71:50" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+         <li class="- topic/li " xtrc="li:10;72:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:8;72:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">appid</xmlatt></li>
+         <li class="- topic/li " xtrc="li:11;73:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:9;73:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">ux-context-string</xmlatt>
+         </li>
+         <li class="- topic/li " xtrc="li:12;75:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:10;75:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">ux-source-priority</xmlatt></li>
+         <li class="- topic/li " xtrc="li:13;76:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:11;76:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">ux-windowref</xmlatt>
+         </li>
+        </ul></li>
+       <li class="- topic/li " rev="proposal-13061" xtrc="li:14;79:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added a new element,<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:10;79:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">ux-window</xmlelement>, designed to
+        specify a window or viewport in which an online help topic or Web page is displayed</li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " product="technicalContent learningTraining" xtrc="dlentry:8;84:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:8;85:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">New domains</dt>
+     <dd class="- topic/dd " xtrc="dd:8;86:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:6;87:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " product="technicalContent" rev="proposal-13035" xtrc="li:15;88:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Markup and XML mention domains, designed
+        to support the description and documentation of XML document types and XML applications</li>
+       <li class="- topic/li " product="technicalContent" rev="proposal-13102" xtrc="li:16;90:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Release management domain, designed to
+        enable content authors to log comments and metadata in DITA topics and maps when changes are
+        made</li>
+       <li class="- topic/li " product="technicalContent" rev="proposal-13111" xtrc="li:17;93:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Equation and MathML domains, designed to
+        enable use of MathML markup within DITA documents, as well as use-by-reference of MathML
+        markup that is held in separate, non-DITA documents </li>
+       <li class="- topic/li " product="technicalContent" rev="proposal-13119" xtrc="li:18;96:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">SVG domain, designed to enable use of SVG
+        markup within DITA documents, as well as use-by-reference of SVG markup that is held in
+        separate, non-DITA documents</li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " product="learningTraining" xtrc="dlentry:9;102:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:9;103:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enhancements to the learning and training specialization</dt>
+     <dd class="- topic/dd " xtrc="dd:9;104:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:7;105:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13089" xtrc="li:19;106:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added the learning object map:
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:11;107:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">learningObjectMap</xmlelement></li>
+       <li class="- topic/li " rev="proposal-13089" xtrc="li:20;108:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added the learning object reference:
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:12;109:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">learningObjectMapRef</xmlelement></li>
+       <li class="- topic/li " rev="proposal-13089" xtrc="li:21;110:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added the learning group map:
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:13;111:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">learningGroupMap</xmlelement></li>
+       <li class="- topic/li " rev="proposal-13089" xtrc="li:22;112:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added the learning group reference:
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:14;113:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">learningGroupMapRef</xmlelement></li>
+       <li class="- topic/li " rev="proposal-13106" xtrc="li:23;114:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">New base domain and specialized domain for question and answer
+        interactions</li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:10;119:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:10;120:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">New base elements and attributes</dt>
+     <dd class="- topic/dd " xtrc="dd:10;121:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:8;122:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13023" xtrc="li:24;123:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:15;123:45" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">div</xmlelement> element. This element enables arbitrary
+        grouping of content within a topic. It is primarily intended as a way to group content for
+        content referencing or as a basis for specialization.</li>
+       <li class="- topic/li " rev="proposal-13103" xtrc="li:25;126:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Deprecated the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:12;126:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">print</xmlatt> attribute and replaced it with
+        a new conditional-processing attribute: <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:13;127:57" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">deliveryTarget</xmlatt>. Users can set
+        controlled values for the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:14;128:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">deliveryTarget</xmlatt> attribute by using a subject
+        scheme map.</li>
+       <li class="- topic/li " rev="proposal-13078" xtrc="li:26;130:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:15;130:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">orient</xmlatt> to <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:16;130:78" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">table</xmlelement> and
+         <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:16;131:18" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">rotate</xmlatt> to <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:17;131:49" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">entry</xmlelement>. These new attributes enable
+        authors to control formatting more precisely for print-based output formats.</li>
+       <li class="- topic/li " rev="proposal-62" xtrc="li:27;133:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:17;133:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">scope</xmlatt> and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:18;133:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">headers</xmlatt> attributes to
+        the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:18;134:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">entry</xmlelement> element in tables. These new attributes are intended for
+        extremely complex tables where accessibility cannot be handled based on existing header
+        markup.</li>
+       <li class="- topic/li " rev="proposal-13059" xtrc="li:28;137:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added a new attribute, <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:19;137:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">cascade</xmlatt>, to better control
+        how metadata attributes cascade within a DITA map</li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:11;142:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:11;143:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Modifications to the base content model</dt>
+     <dd class="- topic/dd " xtrc="dd:11;144:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:9;145:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13027" xtrc="li:29;146:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enabled <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:19;146:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">draft-comment</xmlelement> in more places</li>
+       <li class="- topic/li " rev="proposal-13029" xtrc="li:30;147:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enabled <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:20;147:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">text</xmlelement> to be used in more places</li>
+       <li class="- topic/li " rev="proposal-13044" xtrc="li:31;148:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Extended content model of <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:21;148:71" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">data</xmlelement> to allow
+        additional phrase level markup. </li>
+       <li class="- topic/li " rev="proposal-13090" xtrc="li:32;150:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Extended the list of values allowed for the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:20;150:85" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">style</xmlatt>
+        attribute on <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:22;151:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">prop</xmlelement> and <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:23;151:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">revprop</xmlelement> elements in
+        DITAVAL files.</li>
+       <li class="- topic/li " rev="proposal-13092" xtrc="li:33;153:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enabled <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:24;153:53" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">ph</xmlelement> within
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:25;154:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">indexterm</xmlelement>. This makes it possible to use specializations of the
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:26;155:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">ph</xmlelement> element, such as <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:27;155:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">sup</xmlelement> and
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:28;156:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">sub</xmlelement>, within index entries.</li>
+       <li class="- topic/li " rev="proposal-13104" xtrc="li:34;157:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Enabled <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:21;157:49" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">keyref</xmlatt> for <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:29;157:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">object</xmlelement>
+        and <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:30;158:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">param</xmlelement></li>
+       <li class="- topic/li " rev="proposal-13105" xtrc="li:35;159:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:31;159:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">data</xmlelement> to the content model for
+        lists</li>
+       <li class="- topic/li " rev="proposal-13107" xtrc="li:36;161:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">New defaults for <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:22;161:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">format</xmlatt> and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:23;161:86" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">scope</xmlatt>
+        attributes</li>
+       <li class="- topic/li " rev="proposal-13114" xtrc="li:37;163:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:24;163:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">rev</xmlatt> attribute to
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:32;164:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">title</xmlelement></li>
+       <li class="- topic/li " rev="proposal-13116" xtrc="li:38;165:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:33;165:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">cite</xmlelement> to the content model of
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:34;166:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">title</xmlelement> and similar elements</li>
+       <li class="- topic/li " rev="proposal-13117" xtrc="li:39;167:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:35;167:51" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">xref</xmlelement> to the content model for
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:36;168:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">shortdesc</xmlelement></li>
+      </ul>
+     </dd>
+    </dlentry>
+    <dlentry class="- topic/dlentry " xtrc="dlentry:12;172:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+     <dt class="- topic/dt " xtrc="dt:12;173:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Refinements to base domains</dt>
+     <dd class="- topic/dd " xtrc="dd:12;174:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+      <ul class="- topic/ul " xtrc="ul:10;175:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">
+       <li class="- topic/li " rev="proposal-13010" xtrc="li:40;176:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added element for sorting, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:37;176:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">sort-as</xmlelement>, to the
+        utilities domain</li>
+       <li class="- topic/li " rev="proposal-13031" xtrc="li:41;178:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">Added new elements <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:38;178:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">line-through</xmlelement> and
+         <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:39;179:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/new-in-1.3.dita">overline</xmlelement> to the highlighting domain </li>
+      </ul>
+     </dd>
+    </dlentry>
+   </dl>
+  </section>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:4;7:61" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><link class="- topic/link " format="dita" href="../non-normative/changes-from-previous-versions.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:3;6:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/non-normative/non-normative-information.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Changes from previous versions</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">(Non-normative) The following topics outline the changes from earlier versions of DITA     to the current version.</desc></link></linkpool></related-links></concept>

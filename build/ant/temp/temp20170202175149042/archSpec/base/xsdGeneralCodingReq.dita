@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="xsdGeneralCodingReq" xml:lang="en-us" xtrc="concept:1;4:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">
+  <title class="- topic/title " xtrc="title:1;5:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">XML Schema: Coding requirements for element type declarations</title>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Structural and element domain vocabulary modules <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;7:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">MUST</term> reflect the same coding requirements for element type
+    declarations.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;9:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">
+    <p class="- topic/p " xtrc="p:1;10:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">
+      <draft-comment author="sethpark" class="- topic/draft-comment " disposition="open" id="commentf2" translate="no" xtrc="draft-comment:1;11:74" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">[Jeff, 3 Jan 2010] I don't
+        think it makes sense to have both a section for "General element type declaration coding
+        requirements" and another for "Element domain module coding requirements". We should either
+        combine them or give them better titles and otherwise reword them to make it clear what they
+        are about what how they differ from each other. I'd favor combining them. I'm none too sure
+        about the differences between the other sections on "Structural" and "Topic type" module
+        coding requirements either. There seems as if there is a good deal over overlap between the
+        sections, which I find confusing</draft-comment>
+      <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " disposition="open" time="5 April 2014" translate="no" xtrc="draft-comment:2;19:87" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Comment from
+        Eliot Kimber during review #1: "Looks like the normative terms have not been updated in this
+        topic."</draft-comment>
+    </p>
+    <section class="- topic/section " xtrc="section:1;23:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">
+      <title class="- topic/title " xtrc="title:2;24:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Module names</title>
+      <p class="- topic/p " xtrc="p:2;25:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Each vocabulary module has a short name that is used to construct group names and other
+        names used in associated declarations.</p>
+      <p class="- topic/p " xtrc="p:3;27:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">For structural modules, the module name <term class="- topic/term " xtrc="term:2;27:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> be the element type name of the
+        top-level topic or map type defined by the module, such as "concept", "bookmap".</p>
+      <p class="- topic/p " xtrc="p:4;29:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">For element domain modules, the module name <term class="- topic/term " xtrc="term:3;29:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> be a name that reflects the
+        subject domain to which the domain applies, such as "highlight", "software". Domain module
+        names should be sufficiently unique that they are unlikely to conflict with any other
+        domains.</p>
+      <p class="- topic/p " xtrc="p:5;33:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">For attribute domain modules, the module name <term class="- topic/term " xtrc="term:4;33:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> be the name of the
+        attribute defined by the module plus "Att" (to avoid conflict with similarly-named
+        structural types or element domains).</p>
+    </section>
+    <section class="- topic/section " id="section_AF5B8ABA77DA4474A0AF0DF0AFD8E018" xtrc="section:2;37:60" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">
+      <title class="- topic/title " xtrc="title:3;38:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Element definitions</title>
+      <p class="- topic/p " xtrc="p:6;39:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">A structural or domain vocabulary module <term class="- topic/term " xtrc="term:5;39:57" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> contain a declaration for each
+        specialized element type named by the module. While the XSD standard allows content models
+        to refer to undeclared element types, all element types named in content models within a
+        vocabulary module <term class="- topic/term " xtrc="term:6;42:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> have an xs:element declaration, either in the vocabulary
+        module, in a base module of which the vocabulary module is a direct or indirect
+        specialization, or, for structural modules, in a required domain module. The specialized
+        elements <term class="- topic/term " xtrc="term:7;45:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> follow the rules of the architecture in defining content models
+        and attributes.</p>
+      <p class="- topic/p " xtrc="p:7;47:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Domain modules <term class="- topic/term " xtrc="term:8;47:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> consist of a single XSD document. Structural modules
+          <term class="- topic/term " xtrc="term:9;48:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> consist of two modules; one module contains all element name groups, and
+        the other contains all other declarations for the module.</p>
+      <p class="- topic/p " xtrc="p:8;50:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">For each element type declared in the vocabulary module there must be an xs:group whose
+        name is the element type name and whose one member is a reference to the element type,
+        e.g.:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;52:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">&lt;xs:group name="codeph"&gt;
+  &lt;xs:sequence&gt;
+    &lt;xs:choice&gt;
+      &lt;xs:element ref="codeph"/&gt;
+    &lt;/xs:choice&gt;
+  &lt;/xs:sequence&gt;
+&lt;/xs:group&gt;</codeblock></p>
+      <p class="- topic/p " xtrc="p:9;59:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">The element name group provides a layer of abstraction that facilitates redefinition. A
+        document type shell can redefine an element group to add domain-specialized elements or
+        replace a base element type with one or more specializations of that type.</p>
+      <p class="- topic/p " xtrc="p:10;62:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">For domain modules, the group definitions <term class="- topic/term " xtrc="term:10;62:58" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">should</term> be grouped together at the
+        start of the domain's XSD document. The definitions can occur in any order.</p>
+      <p class="- topic/p " xtrc="p:11;64:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Each element type <term class="- topic/term " xtrc="term:11;64:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> have a corresponding content model group named
+            <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;65:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita"><i class="+ topic/ph hi-d/i " xtrc="i:1;65:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">tagname</i>.content</codeph>. The value of the group <term class="- topic/term " xtrc="term:12;65:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> be the
+        complete content model definition. For
+        example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;67:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">&lt;xs:group name="codeph.content"&gt;
+  &lt;xs:sequence&gt;
+    &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+      &lt;xs:group ref="basic.ph.notm" minOccurs="0"/&gt;
+      &lt;xs:group ref="data.elements.incl" minOccurs="0"/&gt;
+      &lt;xs:group ref="foreign.unknown.incl" minOccurs="0"/&gt;
+    &lt;/xs:choice&gt;
+  &lt;/xs:sequence&gt;
+&lt;/xs:group&gt;</codeblock></p>
+      <p class="- topic/p " xtrc="p:12;76:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">The content model group can be overridden in constraint modules to further constrain the
+        content model for the element type.</p>
+      <p class="- topic/p " xtrc="p:13;78:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Each element type <term class="- topic/term " xtrc="term:13;78:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> have a corresponding attribute group named
+            <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;79:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita"><i class="+ topic/ph hi-d/i " xtrc="i:2;79:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">tagname</i>.attributes</codeph>. The group must declare all attributes used
+        by the element type except for the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;80:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">class</xmlatt> attribute. For
+        example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;81:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">&lt;xs:attributeGroup name="codeph.attributes"&gt;
+  &lt;xs:attribute name="outputclass" type="xs:string"/&gt;
+  &lt;xs:attributeGroup ref="global-atts"/&gt;
+  &lt;xs:attributeGroup ref="univ-atts"/&gt;
+&lt;/xs:attributeGroup&gt;</codeblock></p>
+      <p class="- topic/p " xtrc="p:14;86:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Each element type <term class="- topic/term " xtrc="term:14;86:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">must</term> have a complex type definition named
+            <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;87:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:1;87:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">tagname</varname>.class</codeph>, which references the
+            <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;88:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:2;88:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">tagname</varname>.content</codeph> and
+            <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;89:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:3;89:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">tagname</varname>.attributes</codeph> groups. For
+        example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:4;90:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">&lt;xs:complexType name="codeph.class" mixed="true"&gt;
+  &lt;xs:sequence&gt;  
+    &lt;xs:group ref="codeph.content"/&gt;
+  &lt;/xs:sequence&gt;        
+  &lt;xs:attributeGroup ref="codeph.attributes"/&gt;
+&lt;/xs:complexType&gt;</codeblock></p>
+      <p class="- topic/p " xtrc="p:15;96:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">Each element type must have an xs:element declaration named
+            <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;97:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:4;97:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">tagname</varname></codeph>, that uses as its type the
+            <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;98:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita"><varname class="+ topic/keyword sw-d/varname " xtrc="varname:5;98:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">tagname</varname>.class</codeph> complex type and extends that complex
+        type to add the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;99:33" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">class</xmlatt> attribute for the element. For
+        example:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:5;100:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">&lt;xs:element name="codeph"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;
+      The code phrase (&amp;lt;&lt;keyword&gt;codeph&lt;/keyword&gt;&amp;gt;) element represents a snippet
+      of code within the main flow of text. The code phrase may be displayed in
+      a monospaced font for emphasis. This element is part of the DITA programming
+      domain, a special set of DITA elements designed to document programming tasks,
+      concepts and reference information.
+    &lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
+  &lt;xs:complexType mixed="true"&gt;
+    &lt;xs:complexContent&gt;
+      &lt;xs:extension base="codeph.class"&gt;
+        &lt;xs:attribute ref="class" default="+ topic/ph pr-d/codeph "/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</codeblock></p>
+      <p class="- topic/p " xtrc="p:16;118:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">The content model group, attribute group, complex type, and element type definition for an
+        element <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:15;119:64" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">SHOULD</term> be grouped together
+        within the module. Each such group of declarations may occur in any order within the module.
+        It is recommended to sort the element type definitions alphabetically or group them into
+        categories. Here is an example declaration for the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;122:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">codeblock</xmlelement>
+        element:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:6;123:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/xsdGeneralCodingReq.dita">  &lt;xs:element name="codeblock"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;
+        The &amp;lt;&lt;keyword&gt;codeblock&lt;/keyword&gt;&amp;gt; element represents lines of
+        program code. Like the &lt;ph&gt;
+          &lt;xref href="xref.xml"&gt;&amp;lt;&lt;keyword&gt;pre&lt;/keyword&gt;&amp;gt;&lt;/xref&gt;
+        &lt;/ph&gt; element,
+        content of this element has preserved line endings and is output in a monospaced
+        font. This element is part of the DITA programming domain, a special set of
+        DITA elements designed to document programming tasks, concepts and reference
+        information.
+      &lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:complexType mixed="true"&gt;
+      &lt;xs:complexContent&gt;
+        &lt;xs:extension base="codeblock.class"&gt;
+          &lt;xs:attribute ref="class" default="+ topic/pre pr-d/codeblock "/&gt;
+        &lt;/xs:extension&gt;
+      &lt;/xs:complexContent&gt;
+    &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
+  
+  &lt;xs:complexType name="codeblock.class" mixed="true"&gt;
+        &lt;xs:sequence&gt;
+          &lt;xs:group ref="codeblock.content"/&gt;
+        &lt;/xs:sequence&gt;
+        &lt;xs:attributeGroup ref="codeblock.attributes"/&gt;
+  &lt;/xs:complexType&gt;
+  
+  &lt;xs:group name="codeblock.content"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+          &lt;xs:group ref="basic.ph.notm" minOccurs="0"/&gt;
+          &lt;xs:group ref="coderef" minOccurs="0"/&gt;
+          &lt;xs:group ref="txt.incl" minOccurs="0"/&gt;
+          &lt;xs:group ref="data.elements.incl" minOccurs="0"/&gt;
+          &lt;xs:group ref="foreign.unknown.incl" minOccurs="0"/&gt;
+        &lt;/xs:choice&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:group&gt;
+  
+  &lt;xs:attributeGroup name="codeblock.attributes"&gt;
+    &lt;xs:attribute name="outputclass" type="xs:string"/&gt;
+        &lt;xs:attribute name="spectitle" type="xs:string"/&gt;
+        &lt;xs:attributeGroup ref="display-atts"/&gt;
+        &lt;xs:attributeGroup ref="univ-atts"/&gt;
+        &lt;xs:attribute ref="xml:space" fixed="preserve"/&gt;
+        &lt;xs:attributeGroup ref="global-atts"/&gt;
+  &lt;/xs:attributeGroup&gt;</codeblock></p>
+    </section>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:9;14:47" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/schemamod.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:8;13:35" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>XML Schema: Coding requirements for specialization modules</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">To be extensible and backward compatible, DITA requires that an XSD implementation of     structural and domain specialization modules conform to well-defined implementation (coding)     requirements.</desc></link></linkpool></related-links></concept>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="concept_zms_tw1_mp" xtrc="concept:1;3:34" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Example: <ph class="- topic/ph " rev="review-2" xtrc="ph:1;4:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">References to scoped keys</ph></title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">You can address scoped keys definitions from outside the key scope <ph class="- topic/ph " rev="review-2" xtrc="ph:2;5:99" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">in
+   which the keys are defined</ph>.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;7:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+  <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " time="7 December 2014" translate="no" xtrc="draft-comment:1;8:67" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+   <p class="- topic/p " xtrc="p:1;9:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Exchange from review #2:</p>
+   <p class="- topic/p " xtrc="p:2;10:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">[Jarno Elovirta] Referencing a key with the dot notation (scope dot name) is only defined
+    here. This should be described in the actual specification prose, not just hidden into an
+    example. </p>
+   <p class="- topic/p " xtrc="p:3;13:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">[Jarno Elovirta] The topic for keyscope defines the syntax for referencing keys in child
+    scopes, but it should still be at least referenced in non-example topics that describe key
+    processing.</p>
+   <p class="- topic/p " xtrc="p:4;16:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">[Eliot Kimber] I made a similar comment in the main discussion of keys: there's a missing
+    topic that defines key scopes in more complete detail.</p>
+  </draft-comment>
+  <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;19:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">&lt;map xml:lang="en"&gt;
+  &lt;title&gt;Examples of scoped key references&lt;/title&gt;
+
+  &lt;!-- Key scope #1 --&gt;
+  &lt;topicgroup keyscope="scope-1"&gt;
+    <b class="+ topic/ph hi-d/b " xtrc="b:1;24:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">&lt;keydef keys="key-1" href="topic-1.dita"/&gt;</b>
+    &lt;topicref keyref="key-1"/&gt;
+    &lt;topicref keyref="scope-1.key-1"/&gt;
+    &lt;topicref keyref="scope-2.key-1"/&gt;
+  &lt;/topicgroup&gt;
+
+  &lt;!-- Key scope #2 --&gt;
+  &lt;topicgroup keyscope="scope-2"&gt;
+    <b class="+ topic/ph hi-d/b " xtrc="b:2;32:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">&lt;keydef keys="key-1" href="topic-2.dita"/&gt;</b>
+    &lt;topicref keyref="key-1"/&gt;
+    &lt;topicref keyref="scope-1.key-1"/&gt;
+    &lt;topicref keyref="scope-2.key-1" /&gt;
+  &lt;/topicgroup&gt;
+
+  &lt;topicref keyref="key-1" /&gt;
+  &lt;topicref keyref="scope-1.key-1" /&gt;
+  &lt;topicref keyref="scope-2.key-1" /&gt;
+
+&lt;/map&gt;</codeblock>
+  <p class="- topic/p " xtrc="p:5;43:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">For this example, the effective key definitions are listed in the following tables.</p>
+  <table class="- topic/table " colsep="1" frame="all" rowsep="1" xtrc="table:1;44:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+   <title class="- topic/title " xtrc="title:2;45:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Effective key definitions for scope #1</title>
+   <tgroup class="- topic/tgroup " cols="2" xtrc="tgroup:1;46:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+    <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="1.0*" rowheader="headers" xtrc="colspec:1;47:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"/>
+    <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1.0*" rowheader="headers" xtrc="colspec:2;48:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"/>
+    <thead class="- topic/thead " xtrc="thead:1;49:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+     <row class="- topic/row " xtrc="row:1;50:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:1;51:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Key reference</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:2;52:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Resource</entry>
+     </row>
+    </thead>
+    <tbody class="- topic/tbody " xtrc="tbody:1;55:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+     <row class="- topic/row " xtrc="row:2;56:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:3;57:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:4;58:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;58:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-1.dita</filepath></entry>
+     </row>
+     <row class="- topic/row " xtrc="row:3;60:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3" xtrc="entry:5;61:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">scope-1.key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:6;62:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;62:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-1.dita</filepath></entry>
+     </row>
+     <row class="- topic/row " xtrc="row:4;64:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4" xtrc="entry:7;65:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">scope-2.key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:8;66:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:3;66:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-2.dita</filepath></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <table class="- topic/table " colsep="1" frame="all" rowsep="1" xtrc="table:2;71:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+   <title class="- topic/title " xtrc="title:3;72:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Effective key definitions for scope #2</title>
+   <tgroup class="- topic/tgroup " cols="2" xtrc="tgroup:2;73:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+    <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="1.0*" rowheader="headers" xtrc="colspec:3;74:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"/>
+    <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1.0*" rowheader="headers" xtrc="colspec:4;75:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"/>
+    <thead class="- topic/thead " xtrc="thead:2;76:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+     <row class="- topic/row " xtrc="row:5;77:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:9;78:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Key reference</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:10;79:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Resource</entry>
+     </row>
+    </thead>
+    <tbody class="- topic/tbody " xtrc="tbody:2;82:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+     <row class="- topic/row " xtrc="row:6;83:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:11;84:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:12;85:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:4;85:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-2.dita</filepath></entry>
+     </row>
+     <row class="- topic/row " xtrc="row:7;87:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3" xtrc="entry:13;88:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">scope-1.key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:14;89:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:5;89:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-1.dita</filepath></entry>
+     </row>
+     <row class="- topic/row " xtrc="row:8;91:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4" xtrc="entry:15;92:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">scope-2.key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:16;93:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:6;93:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-2.dita</filepath></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <table class="- topic/table " colsep="1" frame="all" rowsep="1" xtrc="table:3;98:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+   <title class="- topic/title " xtrc="title:4;99:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><ph class="- topic/ph " rev="review-2" xtrc="ph:3;99:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Effective key definitions for the key scope associated with the root
+     map</ph></title>
+   <tgroup class="- topic/tgroup " cols="2" xtrc="tgroup:3;101:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+    <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="1.0*" rowheader="headers" xtrc="colspec:5;102:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"/>
+    <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1.0*" rowheader="headers" xtrc="colspec:6;103:55" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"/>
+    <thead class="- topic/thead " xtrc="thead:3;104:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+     <row class="- topic/row " xtrc="row:9;105:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:17;106:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Key reference</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:18;107:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Resource</entry>
+     </row>
+    </thead>
+    <tbody class="- topic/tbody " xtrc="tbody:3;110:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+     <row class="- topic/row " xtrc="row:10;111:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:19;112:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:20;113:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">Undefined</entry>
+     </row>
+     <row class="- topic/row " xtrc="row:11;115:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3" xtrc="entry:21;116:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">scope-1.key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:22;117:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:7;117:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-1.dita</filepath></entry>
+     </row>
+     <row class="- topic/row " xtrc="row:12;119:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+      <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4" xtrc="entry:23;120:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">scope-2.key-1</entry>
+      <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:24;121:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita"><filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:8;121:24" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">topic-2.dita</filepath></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <draft-comment author="Kristen Eberlein" class="- topic/draft-comment " disposition="open" translate="no" xtrc="draft-comment:2;126:63" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">
+   <p class="- topic/p " xtrc="p:6;127:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">The comments in the original code block includes the following: "Keys defined in a scope
+    become a part of the parent scope, prefixed with the scope name and a period." Do they really
+    become part of the parent scope? Or is it just that they can be addressed from within the parent
+    scope? </p>
+   <p class="- topic/p " xtrc="p:7;131:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">[Eliot Kimber, 25 October 2014, review #2] Yes, the key space for a parent scope includes all
+    the keys, qualified by scope name, defined in all descendant scopes. Using this rule, it becomes
+    clear that the root key space always reflects all keys from all scopes, qualified by scope name. </p>
+   <p class="- topic/p " xtrc="p:8;134:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">We've use the terminology "parent scope" and "child scope". Do we need "peer scope"?</p>
+   <p class="- topic/p " xtrc="p:9;135:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-scoped-key-references.dita">[Eliot Kimber, 25 October 2014, review #2] The term "peer scope" comes up in the discussion of
+    key definition precedence. Probably needs to be formally defined somewhere. </p>
+  </draft-comment>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:7;11:56" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/examples_of_keys.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:1;5:68" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Examples of keys</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">This section of the specification contains examples and scenarios. They illustrate a         wide variety of ways that keys can be used.</desc></link><link class="- topic/link " format="dita" href="../../archSpec/base/example-resolution-of-duplicate-key-definitions-multiple-maps.dita" mapclass="- map/topicref " role="previous" scope="local" type="concept" xtrc="topicref:6;10:88" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Example: Duplicate key definitions across multiple maps</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">A root map might reference submaps, each of which might contain duplicate key   definitions. Which key definition is effective depends on the document order  <ph class="- topic/ph " rev="review-2" xtrc="ph:1;7:5" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/example-resolution-of-duplicate-key-definitions-multiple-maps.dita">of the direct URI references to the maps.</ph></desc></link><link class="- topic/link " format="dita" href="../../archSpec/base/example-nested-key-scopes.dita" mapclass="- map/topicref " role="next" scope="local" type="concept" xtrc="topicref:8;12:52" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/examples-keys.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Example: Key definitions in nested key scopes</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">A root map might contain nested key scopes, each of which might contain duplicate key   definitions. Which key definition is effective depends on key-scope precedence rules.</desc></link></linkpool></related-links></concept>

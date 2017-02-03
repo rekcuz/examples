@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Map//EN?><?doctype-system map.dtd?><map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (topic abbrev-d)                            (topic delay-d)                            a(props deliveryTarget)                            (map ditavalref-d)                            (map glossref-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- map/map " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="map:1;3:6" cascade="merge">
+ <title class="- topic/title " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="title:1;4:9">Content reference (conref)</title>
+ <topicref href="conref.dita" class="- map/topicref " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:1;5:31">
+  <topicref href="conref-overview.dita" class="- map/topicref " rev="review-2" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:2;6:57"/>
+  <topicref href="conref-processing.dita" class="- map/topicref " rev="review-2" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:3;7:59"/>
+  <topicref href="conref-attributes-specified-on-elements.dita" class="- map/topicref " rev="review-2" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:4;8:81"/>
+  <topicref href="handling-xref-and-conref-within-topics.dita" class="- map/topicref " rev="review-1" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:5;9:80"/>
+ </topicref>
+ <reltable title="Source&lt;--&gt;Target" toc="no" class="- map/reltable " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="reltable:1;11:40">
+  <relheader class="- map/relheader " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relheader:1;12:14">
+   <relcolspec toc="no" class="- map/relcolspec " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcolspec:1;13:17"/>
+   <relcolspec toc="no" class="- map/relcolspec " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcolspec:2;14:17"/>
+  </relheader>
+  <relrow class="- map/relrow " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relrow:1;16:11">
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:1;17:13">
+    <topicref href="conref.dita" class="- map/topicref " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:6;18:35"/>
+   </relcell>
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:2;20:13">
+    <topicref href="constraints-generalization.dita" class="- map/topicref " navtitle="Conref and generalization for constraint modules" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:7;22:67"/>
+   </relcell>
+  </relrow>
+  <relrow class="- map/relrow " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relrow:2;25:11">
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:3;26:13">
+    <topicref href="conref-overview.dita" class="- map/topicref " rev="review-2" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:8;27:59"/>
+   </relcell>
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:4;29:13">
+    <topicref href="../../langRef/attributes/theconactionattribute.dita" class="- map/topicref " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:9;30:75"/>
+    <topicref href="../../langRef/attributes/theconkeyrefattribute.dita" class="- map/topicref " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:10;31:75"/>
+    <topicref href="../../langRef/attributes/theconrefattribute.dita" class="- map/topicref " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:11;32:72"/>
+    <topicref href="../../langRef/attributes/theconrefendattribute.dita" class="- map/topicref " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:12;33:75"/>
+   </relcell>
+  </relrow>
+  <relrow class="- map/relrow " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relrow:3;36:11">
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:5;37:13">
+    <topicref href="conref-processing.dita" class="- map/topicref " rev="review-2" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:13;38:61"/>
+   </relcell>
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:6;40:13">
+    <topicref href="domainsatt.dita" class="- map/topicref " rev="targeted-review" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:14;41:61"/>
+   </relcell>
+  </relrow>
+  <relrow class="- map/relrow " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relrow:4;44:11">
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:7;45:13">
+    <topicref href="conref-attributes-specified-on-elements.dita" class="- map/topicref " rev="review-2" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:15;46:83"/>
+   </relcell>
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:8;48:13">
+    <topicref href="../../langRef/attributes/ditauseconreftarget.dita" class="- map/topicref " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:16;49:73"/>
+   </relcell>
+  </relrow>
+  <relrow class="- map/relrow " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relrow:5;52:11">
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:9;53:13">
+    <topicref href="handling-xref-and-conref-within-topics.dita" class="- map/topicref " rev="review-1" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="topicref:17;54:82"/>
+   </relcell>
+   <relcell toc="no" class="- map/relcell " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/conref.ditamap" xtrc="relcell:10;56:13"/>
+  </relrow>
+ </reltable>
+</map>

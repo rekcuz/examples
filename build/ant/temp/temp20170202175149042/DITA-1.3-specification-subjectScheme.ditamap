@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/?><?path2project?><?path2project-uri ./?><?doctype-public -//OASIS//DTD DITA Subject Scheme Map//EN?><?doctype-system subjectScheme.dtd?><subjectScheme xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" processing-role="resource-only" toc="no" ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (map subjectScheme)                            a(props deliveryTarget)                            (topic hazard-d)                            (topic hi-d)                            (topic ut-d)   " class="- map/map subjectScheme/subjectScheme " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectScheme:1;3:16" cascade="merge">
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="revisions" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:1;4:34">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="action-item-14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:2;5:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:1;6:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:1;7:27">AI 14: Coverage of constraints, conref, and compatibility</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="terminology" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:3;10:40">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:2;11:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:2;12:27">RFC-2119 terminology</navtitle>
+                <shortdesc class="- map/shortdesc " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="shortdesc:1;13:29"/>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="xml-grammars" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:4;16:41">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:3;17:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:3;18:27">XML grammars</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="DITA1.2-errata" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:5;21:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:4;22:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:4;23:27">DITA 1.2 errata</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="DITA1.3" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:6;26:36">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:5;27:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:5;28:27">DITA 1.3</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="review-1" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:7;31:37">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:6;32:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:6;33:27">Review #1</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="review-2" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:8;36:37">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:7;37:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:7;38:27">Review #2</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="targeted-review" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:9;41:44">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:8;42:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:8;43:27">Targeted review</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:10;46:40">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:9;47:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:9;48:27">62: table accessibility</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13001" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:11;51:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:10;52:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:10;53:27">13001: Same topic URI reference syntax </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13004" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:12;56:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:11;57:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:11;58:27">13004: Scoped keys</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13008" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:13;61:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:12;62:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:12;63:27">13008: Add @appid to resourceid element </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13010" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:14;66:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:13;67:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:13;68:27">13010: sort-as element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13023" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:15;71:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:14;72:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:14;73:27">13023: div element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13027" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:16;76:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:15;77:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:15;78:27">13027: draft-comment in more places</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13029" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:17;81:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:16;82:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:16;83:27">13029: Allow text in more places</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13031" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:18;86:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:17;87:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:17;88:27">13031: Additions to highlighting domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13035" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:19;91:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:18;92:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:18;93:27">13035: XML-mention and markup domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13041" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:20;96:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:19;97:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:19;98:27">13041:  Facility for key-based, cross-deliverable referencing </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13044" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:21;101:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:20;102:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:20;103:27">13044: Extend content model of data</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13056" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:22;106:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:21;107:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:21;108:27">13056: Expanded syntax for filtering attributes</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13059" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:23;111:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:22;112:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:22;113:27">13059: Mechanism for overriding default cascading rules for metadata </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13059a" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:24;116:44">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:23;117:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:23;118:27">13059a: Branch filtering</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13060" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:25;121:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:24;122:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:24;123:27">13060: Enhancements to resourceid element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13061" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:26;126:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:25;127:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:25;128:27">13061: ux-window element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13078" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:27;131:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:26;132:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:26;133:27">13078: orient and rotate attributes</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13086" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:28;136:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:27;137:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:27;138:27">13086: steptroubleshooting element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13089" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:29;141:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:28;142:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:28;143:27">13089: learningObjectMap and learningGroupMap </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13090" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:30;146:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:29;147:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:29;148:27">13090: Change the @style attribute in DITAVAL files to NMTOKENS</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13092" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:31;151:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:30;152:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:30;153:27">13092: Allow ph in indexterm</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13096" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:32;156:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:31;157:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:31;158:27">13096: tasktroubleshooting element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13097" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:33;161:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:32;162:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:32;163:27">13097: Troubleshooting topic</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13098" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:34;166:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:33;167:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:33;168:27">13098: trouble value for @type attribute</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13102" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:35;171:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:34;172:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:34;173:27">13102: Release management domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13103" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:36;176:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:35;177:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:35;178:27">13103: deliveryTarget attribute</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13104" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:37;181:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:36;182:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:36;183:27">13104: @keyref for &lt;object&gt; and &lt;param&gt;</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13105" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:38;186:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:37;187:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:37;188:27">13105: Allow &lt;data&gt; within lists</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13106" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:39;191:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:38;192:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:38;193:27">13106: New base domain and specializations for question/answer
+                    interactions </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13107" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:40;197:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:39;198:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:39;199:27">13107:  Default values for format, type, and scope attributes </navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13111" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:41;202:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:40;203:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:40;204:27">13111: MathML and equation domains</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13112" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:42;207:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:41;208:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:41;209:27">13112: RelaxNG support</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13114" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:43;212:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:42;213:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:42;214:27">13114: Add @rev to title element</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13116" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:44;217:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:43;218:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:43;219:27">13116: Add &lt;cite&gt; to &lt;title&gt; and other elements</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13117" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:45;222:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:44;223:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:44;224:27">13117: Add &lt;xref&gt; to &lt;shortdesc&gt;</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13119" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:46;227:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:45;228:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:45;229:27">13119: SVG domain</navtitle>
+            </topicmeta>
+        </subjectdef>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="proposal-13121" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:47;232:43">
+            <topicmeta class="- map/topicmeta " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="topicmeta:46;233:24">
+                <navtitle class="- topic/navtitle " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="navtitle:46;234:27">13121: Reuse a structural specialization as a domain </navtitle>
+            </topicmeta>
+        </subjectdef>
+    </subjectdef>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="outputclass-values" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:48;238:43">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="cover" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:49;239:35"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="example" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:50;240:37"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="no-indent" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:51;241:39"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="no-space-before" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:52;242:45"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="notices" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:53;243:37"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="RFC-2119" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:54;244:38"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specification" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:55;245:43"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationApproved" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:56;246:51"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationLevel" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:57;247:48"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationShorttitle" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:58;248:53"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationTitle" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:59;249:48"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="specificationTitles" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:60;250:49"/>
+    </subjectdef>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="packages" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:61;252:33">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="base" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:62;253:34"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="learningTraining" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:63;254:46"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="technicalContent" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:64;255:46"/>
+    </subjectdef>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="disposition" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:65;257:36">
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="accepted" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:66;258:38"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="deferred" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:67;259:38"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="informational" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:68;260:43"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="open" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:69;261:34"/>
+    </subjectdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="enumerationdef:1;263:21">
+        <attributedef name="rev" translate="no" class="- topic/data subjectScheme/attributedef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="attributedef:1;264:35"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="revisions" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:70;265:41"/>
+    </enumerationdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="enumerationdef:2;267:21">
+        <attributedef name="outputclass" translate="no" class="- topic/data subjectScheme/attributedef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="attributedef:2;268:43"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="outputclass-values" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:71;269:50"/>
+    </enumerationdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="enumerationdef:3;271:21">
+        <attributedef name="product" translate="no" class="- topic/data subjectScheme/attributedef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="attributedef:3;272:39"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="packages" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:72;273:40"/>
+    </enumerationdef>
+    <enumerationdef class="- map/topicref subjectScheme/enumerationdef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="enumerationdef:4;275:21">
+        <attributedef name="disposition" translate="no" class="- topic/data subjectScheme/attributedef " xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="attributedef:4;276:43"/>
+        <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="disposition" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/DITA-1.3-specification-subjectScheme.ditamap" xtrc="subjectdef:73;277:43"/>
+    </enumerationdef>
+</subjectScheme>

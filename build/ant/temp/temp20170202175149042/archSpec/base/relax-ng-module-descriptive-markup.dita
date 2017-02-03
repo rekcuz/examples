@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base?><?workdir-uri file:/Users/joe.zucker/git/examples/build/ant/temp/temp20170202175149042/archSpec/base/?><?path2project ../../?><?path2project-uri ../../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " id="relax-ng-module-descriptive-markup" rev="DITA1.3 proposal-13112" xtrc="concept:1;3:79" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+ <title class="- topic/title " xtrc="title:1;4:9" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Module description markup for use in DITA-specific RELAX NG grammars</title>
+ <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:1;5:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element enables specification of the metadata
+  that is required in order to generate conforming DTD- and XSD-based modules from the RELAX NG
+  grammars.</shortdesc><prolog class="- topic/prolog "><author class="- topic/author " xtrc="author:1;13:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/dita-1.3-specification-base.ditamap">OASIS DITA Technical Committee</author></prolog>
+ <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;8:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+    <draft-comment author="robander" class="- topic/draft-comment " time="16 February 2015" translate="no" xtrc="draft-comment:1;9:62" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">This topic makes many normative
+      references to markup that is not part of the DITA standard. It also references files that will
+      not be part of the DITA 1.3 standard. It is very unclear as I read what this is -- official
+      DITA markup? A convention that should used by RNG-&gt;XSD/DTD tools? Maybe it should be an
+      appendix -- "these conventions are established for use in RNG files to allow reliable
+      conversion to DTD/XSD"?  I'm uncomfortable with the current version of this topic - its
+      purpose needs to be clearer, and it should be clear that these elements are not XML markup
+      defined by the TC as one of the shipped DITA 1.3 specializations. <p class="- topic/p " xtrc="p:1;16:76" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Related: I did a quick
+        scan of the doctypes directory in SVN to see how this is used. The DTD files for this
+        specialization are not currently valid, containing lines like the
+        following:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;19:30" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">  259 71:&lt;!ATTLIST  {unknown}    %global-atts;  class CDATA "- topic/shortdesc moduleDesc/headerComment "&gt;
+</codeblock></p><p class="- topic/p " xtrc="p:2;20:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The
+        {unknown} portion is invalid - @class is defined the same for all elements. This
+        headerComment element can appear multiple times (not true for base shortdesc); it also uses
+        xml:space="preserve", which (at least in the DTD version) means it is not a valid
+        specialization of shortdesc.</p></draft-comment>
+  <p class="- topic/p " xtrc="p:3;25:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The use of <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:2;25:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> is not required. However, when it is used, the
+        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:3;26:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:1;27:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">MUST</term> be specified as a direct child of the RELAX NG <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:4;27:81" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">grammar</xmlelement>
+      element and <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:2;28:66" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">SHOULD</term> be the first child of
+        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:5;29:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">grammar</xmlelement>. The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:6;29:59" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element functions
+      as a foreign element as defined in the RELAX NG specification. The
+        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:7;31:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element is defined as a specialization of
+        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:8;32:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">topic</xmlelement>. Because it is in a namespace, it cannot be a
+      strictly-conforming DITA topic as DITA elements may not be in a namespace. However, if the
+        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:9;34:21" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element is processed in terms of the
+        <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;35:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">class</xmlatt> attributes, it will be recognized as a DITA topic and otherwise
+      conforms to all rules for conforming topic specializations.<draft-comment author="ekimber" class="- topic/draft-comment " disposition="opne" translate="no" xtrc="draft-comment:2;37:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:10;37:44" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element does not absolutely have
+        to be in a namespace--it could specify the no namespace (xml:ns="") but it just seems like
+        better practice to have it be in the DITA namespace for use within grammar documents. It's
+        also not strictly speaking required that the markup also be a topic but it seemed
+        appropriate to have it be a topic so that everything is within the DITA world. I also wanted
+        to avoid creating another completely standalone vocabulary like DITAVAL that had no relation
+        to anything else in DITA.</draft-comment></p>
+  <p class="- topic/p " xtrc="p:4;44:6" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:11;44:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element type is defined in the
+    <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;45:15" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">vocabularyModuleDescMod.rng</filepath> vocabulary module file.</p>
+  <section class="- topic/section " xtrc="section:1;46:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+   <title class="- topic/title " xtrc="title:2;47:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Namespace</title>
+   <p class="- topic/p " xtrc="p:5;48:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:12;48:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element is in the DITA architecture namespace:
+     <xmlnsname class="+ topic/keyword markup-d/markupname xml-d/xmlnsname " xtrc="xmlnsname:1;49:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">http://dita.oasis-open.org/architecture/2005/</xmlnsname>.</p>
+  </section>
+  <section class="- topic/section " xtrc="section:2;51:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+   <title class="- topic/title " xtrc="title:3;52:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:13;52:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement> element type</title>
+   <dl class="- topic/dl " xtrc="dl:1;53:8" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+    <dlentry class="- topic/dlentry " xtrc="dlentry:1;54:14" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+     <dt class="- topic/dt " xtrc="dt:1;55:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:14;55:22" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleDesc</xmlelement></dt>
+     <dd class="- topic/dd " xtrc="dd:1;56:10" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Contains the module description metadata. It contains the following sub-elements:<dl class="- topic/dl " xtrc="dl:2;56:95" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+       <dlentry class="- topic/dlentry " xtrc="dlentry:2;57:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+        <dt class="- topic/dt " xtrc="dt:2;58:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:15;58:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleTitle</xmlelement></dt>
+        <dd class="- topic/dd " xtrc="dd:2;59:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Provides a descriptive title for the module or document type shell. It contains
+         text.</dd>
+       </dlentry>
+       <dlentry class="- topic/dlentry " xtrc="dlentry:3;62:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+        <dt class="- topic/dt " xtrc="dt:3;63:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:16;63:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">headerComment</xmlelement></dt>
+        <dd class="- topic/dd " xtrc="dd:3;64:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Contains the header comment for the module. The content is text with whitespace
+         preserved (<xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;65:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">xml:space</xmlatt> value of "preserve"). The header comment is used as
+         the header for all generated components.</dd>
+       </dlentry>
+       <dlentry class="- topic/dlentry " xtrc="dlentry:4;68:17" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+        <dt class="- topic/dt " xtrc="dt:4;69:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:17;69:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleMetadata</xmlelement></dt>
+        <dd class="- topic/dd " xtrc="dd:4;70:13" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Contains additional metadata for the module or document type shell. It contain the
+         following sub-elements:<dl class="- topic/dl " xtrc="dl:3;71:37" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+          <dlentry class="- topic/dlentry " xtrc="dlentry:5;72:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+           <dt class="- topic/dt " xtrc="dt:5;73:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:18;73:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleType</xmlelement></dt>
+           <dd class="- topic/dd " xtrc="dd:5;74:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Indicates the module type. It contains one of the following keywords:<dl class="- topic/dl " xtrc="dl:4;74:89" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+             <dlentry class="- topic/dlentry " xtrc="dlentry:6;75:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:6;76:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">attributedomain</dt>
+              <dd class="- topic/dd " xtrc="dd:6;77:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar defines an attribute domain.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:7;79:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:7;80:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">base</dt>
+              <dd class="- topic/dd " xtrc="dd:7;81:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar is one of the DITA base modules. Base modules can only be defined by
+                              the DITA Technical Committee. Examples of base modules are the
+                                <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:2;83:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">commonElementsMod.rng</filepath> and
+                                <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:3;84:43" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">metaDeclMod.rng</filepath> modules.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:8;86:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:8;87:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">constraint</dt>
+              <dd class="- topic/dd " xtrc="dd:8;88:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar defines a constraint module.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:9;90:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:9;91:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">elementdomain</dt>
+              <dd class="- topic/dd " xtrc="dd:9;92:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar defines an element domain.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:10;94:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:10;95:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">map</dt>
+              <dd class="- topic/dd " xtrc="dd:10;96:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar defines a map type.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:11;98:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:11;99:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">mapshell</dt>
+              <dd class="- topic/dd " xtrc="dd:11;100:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar is a document type shell for a map type.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:12;102:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:12;103:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">topic</dt>
+              <dd class="- topic/dd " xtrc="dd:12;104:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar defines a topic type.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:13;106:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:13;107:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">topicshell</dt>
+              <dd class="- topic/dd " xtrc="dd:13;108:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The grammar is a document type shell for a topic type.</dd>
+             </dlentry>
+            </dl></dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrc="dlentry:14;112:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+           <dt class="- topic/dt " xtrc="dt:14;113:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:19;113:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">modulePublicIds</xmlelement></dt>
+           <dd class="- topic/dd " xtrc="dd:14;114:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">For vocabulary and constraint modules, defines the public IDs for the files that are
+            generated from the grammar. Each sub-element specifies the public identifier to use for
+            a specific generated file. It contains the following sub-elements:<dl class="- topic/dl " xtrc="dl:5;116:83" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+             <dlentry class="- topic/dlentry " xtrc="dlentry:15;117:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:15;118:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:20;118:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">dtdMod</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:15;119:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the DTD-syntax <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:4;119:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">.mod</filepath> file to be
+               generated from the grammar.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:16;122:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:16;123:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:21;123:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">dtdEnt</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:16;124:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the DTD-syntax <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:5;124:70" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">.ent</filepath> file to be
+               generated from the grammar. This element is equired for element domain modules; it is
+               not used for attribute domain modules.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:17;128:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:17;129:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:22;129:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">rncMod</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:17;130:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the RELAX NG compact syntax (RNC) module file to be
+               generated from the grammar.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:18;133:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:18;134:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:23;134:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">rngMod</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:18;135:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the RELAX NG XML syntax (RNG) module file (the file that
+               contains the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:24;136:41" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleMetadata</xmlelement> element).</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:19;138:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:19;139:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:25;139:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">xsdMod</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:19;140:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the XSD schema module file to be generated from the
+               grammar.</dd>
+             </dlentry>
+            </dl></dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrc="dlentry:20;145:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+           <dt class="- topic/dt " xtrc="dt:20;146:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:26;146:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">domainsContribution</xmlelement></dt>
+           <dd class="- topic/dd " xtrc="dd:20;147:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Required for modules, not used for shells. Defines the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;147:79" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">domains</xmlatt>
+            attribute contribution for the module, for example, "(topic hi-d)". This is the value
+            that <term class="- topic/term " outputclass="RFC-2119" rev="terminology" xtrc="term:3;149:65" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">MUST</term> be added to the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:4;149:101" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">domains</xmlatt>
+            value for root map or topic types that integrate the module.</dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrc="dlentry:21;152:20" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+           <dt class="- topic/dt " xtrc="dt:21;153:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:27;153:28" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">shellPublicIds</xmlelement></dt>
+           <dd class="- topic/dd " xtrc="dd:21;154:16" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">For document type shells, defines the public IDs for the files that are generated
+            from the grammar. Each sub-element specifies the public identifier to use for a specific
+            generated file. It contains the following sub-elements:<dl class="- topic/dl " xtrc="dl:6;156:72" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+             <dlentry class="- topic/dlentry " xtrc="dlentry:22;157:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:22;158:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:28;158:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">dtdShell</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:22;159:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the DTD document type shell to be generated from the
+               grammar.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:23;162:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:23;163:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:29;163:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">rncShell</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:23;164:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the RELAX NG compact syntax (RNC) document type shell to
+               be generated from the grammar.</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:24;167:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:24;168:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:30;168:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">rngShell</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:24;169:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the RNG document type shell (the file that contains the
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:31;170:29" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">moduleMetadata</xmlelement> element).</dd>
+             </dlentry>
+             <dlentry class="- topic/dlentry " xtrc="dlentry:25;172:23" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+              <dt class="- topic/dt " xtrc="dt:25;173:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrc="xmlelement:32;173:31" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">xsdShell</xmlelement></dt>
+              <dd class="- topic/dd " xtrc="dd:25;174:19" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The public identifier for the XSD schema document type shell to be generated from
+               the grammar.</dd>
+             </dlentry>
+            </dl></dd>
+          </dlentry>
+         </dl></dd>
+       </dlentry>
+      </dl></dd>
+    </dlentry>
+   </dl>
+  </section>
+  <example class="- topic/example " xtrc="example:1;185:12" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">
+   <title class="- topic/title " xtrc="title:4;186:11" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">Example: RELAX NG grammars with module metadata</title>
+   <p class="- topic/p " xtrc="p:6;187:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The following code provides the descriptive metadata for a vocabulary module for a topic
+        type:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:2;188:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="vocabularyModuleDesc.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+&lt;grammar xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  &gt;
+ &lt;moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/"&gt;
+   &lt;moduleTitle&gt;DITA Module Description Module&lt;/moduleTitle&gt;
+   &lt;headerComment&gt;&lt;![CDATA[
+============================================================= 
+                    HEADER                                     
+ ============================================================= 
+  MODULE:    DITA Module Description                             
+  VERSION:   1.3                                               
+  DATE:      September 2013                                     
+
+  &lt;!-- ... --&gt;
+]]&gt;&lt;/headerComment&gt;
+   &lt;moduleMetadata&gt;
+     &lt;moduleType&gt;topic&lt;/moduleType&gt;
+     &lt;moduleShortName&gt;vocabularyModule&lt;/moduleShortName&gt;
+     &lt;modulePublicIds&gt;
+       &lt;dtdMod&gt;-//OASIS//ELEMENTS DITA Vocabulary Module Description//EN&lt;/dtdMod&gt;
+       &lt;dtdEnt&gt;-//OASIS//ENTITIES DITA Vocabulary Module Description//EN&lt;/dtdEnt&gt;
+       &lt;xsdMod&gt;urn:oasis:names:tc:dita:xsd:vocabularyModuleDescMod.xsd&lt;/xsdMod&gt;
+       &lt;rncMod&gt;urn:oasis:names:tc:dita:rnc:vocabularyModuleDescMod.rnc&lt;/rncMod&gt;
+       &lt;rngMod&gt;urn:oasis:names:tc:dita:rng:vocabularyModuleDescMod.rng&lt;/rngMod&gt;
+     &lt;/modulePublicIds&gt;
+     &lt;domainsContribution&gt;(topic myTopicType)&lt;/domainsContribution&gt;
+   &lt;/moduleMetadata&gt;
+ &lt;/moduleDesc&gt;
+ 
+ &lt;!-- ... --&gt;
+
+&lt;/grammar&gt;</codeblock></p>
+   <p class="- topic/p " xtrc="p:7;226:7" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">The following code provides the descriptive metadata for a document type shell for a topic
+        type:<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:3;227:25" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/relax-ng-module-descriptive-markup.dita">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="vocabularyModuleDesc.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+&lt;grammar xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"&gt;
+  &lt;moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/"&gt;
+   &lt;moduleTitle&gt;DITA Module Description Module&lt;/moduleTitle&gt;
+   &lt;headerComment&gt;&lt;![CDATA[
+============================================================= 
+                    HEADER                                     
+ ============================================================= 
+  MODULE:    DITA Module Description Topic Type Shell                           
+  VERSION:   1.3                                               
+  DATE:      September 2013                                     
+
+  &lt;!-- ... --&gt;
+
+]]&gt;&lt;/headerComment&gt;
+   &lt;moduleMetadata&gt;
+     &lt;moduleType&gt;topicshell&lt;/moduleType&gt;
+     &lt;moduleShortName&gt;vocabularyModule&lt;/moduleShortName&gt;
+     &lt;shellPublicIds&gt;
+       &lt;dtdShell&gt;-//OASIS//DTD DITA Vocabulary Module Description//EN&lt;/dtdShell&gt;
+       &lt;xsdShell&gt;urn:oasis:names:tc:dita:xsd:vocabularyModuleDesc.xsd&lt;/xsdShell&gt;
+       &lt;rncShell&gt;urn:oasis:names:tc:dita:rnc:vocabularyModuleDesc.rnc&lt;/rncShell&gt;
+       &lt;rngShell&gt;urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng&lt;/rngShell&gt;
+     &lt;/shellPublicIds&gt;
+   &lt;/moduleMetadata&gt;
+ &lt;/moduleDesc&gt;
+
+ &lt;!-- ... --&gt;
+
+&lt;/grammar&gt;</codeblock></p>
+  </example>
+ </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:6;10:94" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization-and-custom-doctypes.ditamap"><link class="- topic/link " format="dita" href="../../archSpec/base/ditaspecialization.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:2;6:46" xtrf="file:/Users/joe.zucker/git/examples/source/dita-spec-1-3/archSpec/base/specialization-and-custom-doctypes.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Overview of DITA extension facilities</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">DITA provides three extension facilities: configuration, constraint, and     specialization.</desc></link></linkpool></related-links></concept>
